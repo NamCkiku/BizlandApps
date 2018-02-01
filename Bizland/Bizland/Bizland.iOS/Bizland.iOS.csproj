@@ -125,18 +125,18 @@
     <PackageReference Include="Prism.Unity.Forms" Version="7.0.0.362" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Bizland.Core.iOS\Bizland.Core.iOS.csproj">
-      <Project>{f25790ea-c51f-426d-815a-407b4779cb29}</Project>
+    <ProjectReference Include="..\Bizland.Core.iOS\Bizland.Core.iOS.csproj">
+      <Project>{8dd0f28b-ec66-408e-93f1-4721f42c2afe}</Project>
       <Name>Bizland.Core.iOS</Name>
       <IsAppExtension>false</IsAppExtension>
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
-    <ProjectReference Include="..\..\Bizland.Core\Bizland.Core.csproj">
-      <Project>{198ed7d7-9090-406f-bca5-b096e2d88a0f}</Project>
+    <ProjectReference Include="..\Bizland.Core\Bizland.Core.csproj">
+      <Project>{512847c0-ad19-402b-938f-68b9a8202aeb}</Project>
       <Name>Bizland.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\BizlandApiService\BizlandApiService.csproj">
-      <Project>{0ca785f5-1a65-4d68-b852-8261bd1ed356}</Project>
+    <ProjectReference Include="..\BizlandApiService\BizlandApiService.csproj">
+      <Project>{461020dc-2843-46ed-9f6c-c087c8b1f0f7}</Project>
       <Name>BizlandApiService</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bizland\Bizland.csproj">
