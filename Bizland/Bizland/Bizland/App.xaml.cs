@@ -5,6 +5,8 @@ using Bizland.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Prism.Unity;
+using BizlandApiService.IService;
+using BizlandApiService.Service;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Bizland
@@ -24,13 +26,17 @@ namespace Bizland
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<IRequestProvider, RequestProvider>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
+            containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");
+            containerRegistry.RegisterForNavigation<BaseNavigationPage, BaseNavigationPageViewModel>("BaseNavigationPage");
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>("MainPage");
         }
     }
 }
