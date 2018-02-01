@@ -36,10 +36,14 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="MessageBarLib\MessageBarManager.cs" />
+    <Compile Include="MessageBarLib\MessageBarMessageType.cs" />
+    <Compile Include="MessageBarLib\MessageBarStyleSheet.cs" />
+    <Compile Include="MessageBarLib\MessageBarViewController.cs" />
+    <Compile Include="MessageBarLib\MessageView.cs" />
+    <Compile Include="MessageBarLib\MessageWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
