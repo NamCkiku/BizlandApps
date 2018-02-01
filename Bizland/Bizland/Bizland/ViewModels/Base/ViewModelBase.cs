@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Bizland.ViewModels
 {
-    public class ViewModelBase : BindableBase, INavigationAware, IDestructible
+    public class ViewModelBase : ExtendedBindableObject, INavigationAware, IDestructible
     {
         protected INavigationService NavigationService { get; private set; }
 

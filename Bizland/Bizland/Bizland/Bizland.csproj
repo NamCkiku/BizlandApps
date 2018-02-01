@@ -16,4 +16,24 @@
     <ProjectReference Include="..\BizlandApiService\BizlandApiService.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CustomControl\" />
+    <Folder Include="Model\" />
+    <Folder Include="Views\Authentication\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\Home\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MasterDetail\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MasterDetail\RootPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Navigation\BaseNavigationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
