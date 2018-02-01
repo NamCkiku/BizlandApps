@@ -4,8 +4,26 @@
              x:Class="Bizland.Views.MainPage"
              Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
-    </StackLayout>
-
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+            <Button
+            x:Name="buttonLoadingPage1Timer"
+            Margin="10,0,10,0"
+            BackgroundColor="White"
+            Clicked="buttonLoadingPage1Timer_OnClicked"
+            HeightRequest="55"
+            Text="Open Loading Page Style 1"
+            TextColor="#D93463"
+            VerticalOptions="Center" />
+            <Button
+            x:Name="buttonLoadingPage2Timer"
+            Margin="10,0,10,0"
+            BackgroundColor="White"
+            Clicked="buttonLoadingPage2Timer_OnClicked"
+            HeightRequest="55"
+            Text="Open Loading Page Style 2"
+            TextColor="#D93463"
+            VerticalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
