@@ -90,12 +90,12 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Bizland.Core\Bizland.Core.csproj">
-      <Project>{198ed7d7-9090-406f-bca5-b096e2d88a0f}</Project>
+    <ProjectReference Include="..\Bizland.Core\Bizland.Core.csproj">
+      <Project>{512847c0-ad19-402b-938f-68b9a8202aeb}</Project>
       <Name>Bizland.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\BizlandApiService\BizlandApiService.csproj">
-      <Project>{0ca785f5-1a65-4d68-b852-8261bd1ed356}</Project>
+    <ProjectReference Include="..\BizlandApiService\BizlandApiService.csproj">
+      <Project>{461020dc-2843-46ed-9f6c-c087c8b1f0f7}</Project>
       <Name>BizlandApiService</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bizland\Bizland.csproj">
