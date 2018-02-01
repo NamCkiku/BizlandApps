@@ -7,6 +7,10 @@ using Xamarin.Forms.Xaml;
 using Prism.Unity;
 using BizlandApiService.IService;
 using BizlandApiService.Service;
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
+using Bizland.Core.Extensions;
+using Bizland.Core.Helpers;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Bizland
@@ -28,7 +32,30 @@ namespace Bizland
 
             await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/MainPage");
         }
+        protected override void OnStart()
+        {
+            // Handle when your app starts  
+            CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
+        }
+        void HandleConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        {
+            if (e.IsConnected)
+            {
+                "Kết nối mạng ổn định".ToToast(ToastNotificationType.Info, null, 10);
+            }
+            else if (!e.IsConnected)
+            {
+                "Kết nối mạng không ổn định".ToToast(ToastNotificationType.Info, null, 10);
+            }
+        }
+        protected override void OnResume()
+        {
 
+        }
+        protected override void OnSleep()
+        {
+
+        }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IRequestProvider, RequestProvider>();
@@ -37,6 +64,8 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");
             containerRegistry.RegisterForNavigation<BaseNavigationPage, BaseNavigationPageViewModel>("BaseNavigationPage");
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>("MainPage");
+            containerRegistry.RegisterForNavigation<LoginPage>();
+            containerRegistry.RegisterForNavigation<LoginPage>();
         }
     }
 }
