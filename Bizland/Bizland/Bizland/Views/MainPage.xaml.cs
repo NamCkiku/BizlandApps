@@ -1,4 +1,5 @@
-﻿using Bizland.Service;
+﻿using Bizland.CustomControl;
+using Bizland.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using Xamarin.Forms;
 
 namespace Bizland.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : LogoPage
     {
         public MainPage()
         {

@@ -88,9 +88,12 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CustomRenderer\ContentPageRenderer.cs" />
     <Compile Include="CustomRenderer\HtmlFormattedLabelRenderer.cs" />
     <Compile Include="CustomRenderer\IconViewRenderer.cs" />
+    <Compile Include="CustomRenderer\LogoPageRenderer.cs" />
     <Compile Include="DependencyService\LoadingPageServiceiOS.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Providers\ToastNotifier.cs" />
@@ -162,6 +165,9 @@
       <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
       <Name>Bizland</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
