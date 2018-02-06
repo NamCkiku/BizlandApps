@@ -1,30 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<controls:LogoPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:control="clr-namespace:Bizland.CustomControl;assembly=Bizland"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              x:Class="Bizland.Views.MainPage"
              Title="{Binding Title}">
-
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon_settings.png" />
+        <ToolbarItem Icon="icon_add.png" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Title>
+        <OnPlatform x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Bizland" />
+        </OnPlatform>
+    </ContentPage.Title>
     <ContentPage.Content>
-        <StackLayout Spacing="10">
-            <Button
-            x:Name="buttonLoadingPage1Timer"
-            Margin="10,0,10,0"
-            BackgroundColor="White"
-            Clicked="buttonLoadingPage1Timer_OnClicked"
-            HeightRequest="55"
-            Text="Open Loading Page Style 1"
-            TextColor="#D93463"
-            VerticalOptions="Center" />
-            <Button
-            x:Name="buttonLoadingPage2Timer"
-            Margin="10,0,10,0"
-            BackgroundColor="White"
-            Clicked="buttonLoadingPage2Timer_OnClicked"
-            HeightRequest="55"
-            Text="Open Loading Page Style 2"
-            TextColor="#D93463"
-            VerticalOptions="Center" />
-        </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</controls:LogoPage>

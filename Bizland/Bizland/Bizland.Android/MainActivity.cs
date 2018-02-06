@@ -12,7 +12,7 @@ namespace Bizland.Droid
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+            ToolbarResource = Resource.Layout.ToolbarWithLogo;
 
             base.OnCreate(bundle);
 
