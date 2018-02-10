@@ -20,7 +20,7 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await NavigationService.NavigateAsync("BaseNavigationPage/MainPage");
+                    await NavigationService.NavigateAsync("BaseNavigationPage/MainPage", null, useModalNavigation: true);
                 });
             }
         }
