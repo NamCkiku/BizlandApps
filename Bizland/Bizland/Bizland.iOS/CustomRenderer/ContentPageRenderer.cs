@@ -18,7 +18,7 @@ namespace Bizland.iOS.CustomRenderer
             base.OnElementChanged(e);
 
             // Some basic navigationbar styling.
-            var color = Color.FromHex("#2dc9d7");
+            var color = Color.FromHex("#79b338");
 
             //UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes
             //{
