@@ -5,11 +5,55 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              Title="DemoMenu"
              Icon="hamburger.png"
+             BackgroundColor="#79b338"
+             xmlns:CustomControl="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              x:Class="Bizland.Views.MenuPage">
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
     </ContentPage.Padding>
-    <StackLayout Padding="40">
-        <Button Text="View C" Command="{Binding NavigateCommand}"/>
-    </StackLayout>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Spacing="0">
+                    <CustomControl:CircleImage Source="http://api.bizland.vn//UploadedFiles/Avatars/avatar-2a30f836-5197-4ed7-9843-36578e6fdc6b-20171206541039.jpg"
+                                               BorderThickness="3"
+                                               Aspect="Fill"
+                                               FillColor="White"
+                                               WidthRequest="70"
+                                               HeightRequest="70"
+                                               HorizontalOptions="Center"
+                                               BorderColor="#e8e8e8"/>
+
+                    <Label Text="Trần Hoàng Nam"
+                           FontSize="13"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="TailTruncation"
+                           HorizontalOptions="Center"
+                           TextColor="White"/>
+                    <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="100 Xu"
+                           FontSize="13"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="TailTruncation"
+                           HorizontalOptions="Center"
+                           TextColor="White"/>
+                        <BoxView WidthRequest="1" HorizontalOptions="FillAndExpand" HeightRequest="20" VerticalOptions="Center" BackgroundColor="White"/>
+                        <Label Text="Thành viên ưu đãi"
+                           FontSize="13"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="TailTruncation"
+                           HorizontalOptions="Center"
+                           TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+                <!--<StackLayout Padding="40">
+                    <Button Text="View C" Command="{Binding NavigateCommand}"/>
+                </StackLayout>-->
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
