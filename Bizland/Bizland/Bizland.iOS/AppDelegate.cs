@@ -22,6 +22,9 @@ namespace Bizland.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            //Xamarin.FormsMaps.Init();
+            Xamarin.FormsGoogleMaps.Init("AIzaSyDSdW_P8JRfGlL620LM3pL3umSnh0_lUjo");
+            Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
