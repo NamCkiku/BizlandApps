@@ -17,6 +17,8 @@ namespace Bizland.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
+            Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
