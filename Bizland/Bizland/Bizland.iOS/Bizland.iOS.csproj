@@ -93,6 +93,7 @@
     <Compile Include="CustomRenderer\IconViewRenderer.cs" />
     <Compile Include="CustomRenderer\ImageCircleRenderer.cs" />
     <Compile Include="CustomRenderer\LogoPageRenderer.cs" />
+    <Compile Include="CustomRenderer\PullToRefreshViewRenderer.cs" />
     <Compile Include="DependencyService\LoadingPageServiceiOS.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Main.cs" />
