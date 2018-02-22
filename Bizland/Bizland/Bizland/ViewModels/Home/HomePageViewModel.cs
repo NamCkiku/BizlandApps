@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Bizland.Views;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -17,7 +18,6 @@ namespace Bizland.ViewModels
             : base(navigationService)
         {
             Title = "Trang chủ";
-            
         }
 
 
@@ -55,7 +55,18 @@ namespace Bizland.ViewModels
                    17d, // zoom
                    45d, // bearing(rotation)
                    60d // tilt
-               )), TimeSpan.FromSeconds(2)); 
+               )), TimeSpan.FromSeconds(2));
+
+            var pin = new Pin()
+            {
+                Type = PinType.Place,
+                Label = "dsadasdasd",
+                Position = new Position(35.681298, 139.766247),
+                IsDraggable = true,
+                Tag = "dsadasda",
+                Icon = BitmapDescriptorFactory.FromView(new BindingPinView("car0.png"))
+            };
+            Pins?.Add(pin);
         });
     }
 }
