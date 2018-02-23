@@ -34,6 +34,7 @@ namespace Bizland
         }
         protected override void OnStart()
         {
+            var mylocation = await LocationHelper.GetGpsLocation();
             // Handle when your app starts  
             CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
         }
