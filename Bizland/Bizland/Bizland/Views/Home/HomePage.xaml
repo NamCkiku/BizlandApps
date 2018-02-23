@@ -5,42 +5,46 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:googleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
-              xmlns:customs="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              Title="{Binding Title}"
              x:Class="Bizland.Views.HomePage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="Thông Báo" x:Name="btnNotification"  Icon="ic_notification.png" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <customs:PullToRefreshView x:Name="vwRefresh" IsPullToRefreshEnabled="True" RefreshColor="Blue" RefreshBackgroundColor="Black"/>
-            <ScrollView  x:Name="ProfileScrollView" Orientation="Vertical">
-                <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="5">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Label Grid.Row="0" Grid.Column="0" Text="Longitude:"/>
-                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding VisibleRegion.Center.Longitude}"/>
-                        <Label Grid.Row="1" Grid.Column="0" Text="Latitude:"/>
-                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding VisibleRegion.Center.Latitude}"/>
-                    </Grid>
-                    <Button Text="Move to Tokyo" Command="{Binding MoveToTokyoCommand}"/>
-                    <googleMaps:Map x:Name="MyMap" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" MyLocationEnabled="True">
-                        <googleMaps:Map.Behaviors>
-                            <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
-                            <bindings:BindingVisibleRegionBehavior Value="{Binding VisibleRegion}"/>
-                            <bindings:MoveToRegionBehavior Request="{Binding Request}"/>
-                            <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
-                        </googleMaps:Map.Behaviors>
-                    </googleMaps:Map>
-                </StackLayout>
-            </ScrollView>
+        <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Longitude:"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding VisibleRegion.Center.Longitude}"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Latitude:"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding VisibleRegion.Center.Latitude}"/>
+            </Grid>
+            <Button Text="Move to Tokyo" Command="{Binding MoveToTokyoCommand}"/>
+            <googleMaps:Map x:Name="MyMap"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="FillAndExpand"
+                            IsShowingUser="True"
+                            HasRotationEnabled="True"
+                            MapType="Street"
+                            MyLocationEnabled="True"
+                            HasScrollEnabled="True"
+                            IsIndoorEnabled="True"
+                            IsTrafficEnabled="True"
+                            HasZoomEnabled="True">
+                <googleMaps:Map.Behaviors>
+                    <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                    <bindings:BindingVisibleRegionBehavior Value="{Binding VisibleRegion}"/>
+                    <bindings:MoveToRegionBehavior Request="{Binding Request}"/>
+                    <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
+                </googleMaps:Map.Behaviors>
+            </googleMaps:Map>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
