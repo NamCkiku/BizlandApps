@@ -20,6 +20,12 @@
       <string>UIInterfaceOrientationLandscapeLeft</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Ứng dụng này cần truy cập vị trí của bạn để có thể đề cử xe phù hợp, bạn có cho phép ứng dụng sử dụng vị trí của bạn không?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Bạn có cho phép ứng dụng này luôn sử dụng vị trí của bạn không?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Bạn có cho phép ứng dụng này sử dụng vị trí hiện tại của bạn không?</string>
     <key>MinimumOSVersion</key>
     <string>8.0</string>
     <key>CFBundleDisplayName</key>

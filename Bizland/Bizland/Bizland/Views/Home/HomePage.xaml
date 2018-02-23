@@ -27,7 +27,7 @@
                 <Label Grid.Row="1" Grid.Column="1" Text="{Binding VisibleRegion.Center.Latitude}"/>
             </Grid>
             <Button Text="Move to Tokyo" Command="{Binding MoveToTokyoCommand}"/>
-            <googleMaps:Map x:Name="MyMap"
+            <googleMaps:Map x:Name="map"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
                             IsShowingUser="True"
