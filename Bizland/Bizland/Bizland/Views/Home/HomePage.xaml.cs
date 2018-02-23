@@ -8,9 +8,13 @@ namespace Bizland.Views
         public HomePage()
         {
             InitializeComponent();
-            MyMap.PropertyChanged += (sender, e) =>
+            map.UiSettings.MyLocationButtonEnabled = true;
+            map.UiSettings.ZoomControlsEnabled = true;
+            map.UiSettings.CompassEnabled = true;
+            map.UiSettings.ZoomControlsEnabled = true;
+            map.PropertyChanged += (sender, e) =>
             {
-                if (e.PropertyName == "VisibleRegion" && MyMap.VisibleRegion != null) CalculateBoundingCoordinates(MyMap.VisibleRegion);
+                if (e.PropertyName == "VisibleRegion" && map.VisibleRegion != null) CalculateBoundingCoordinates(map.VisibleRegion);
             };
         }
         protected override void OnAppearing()
