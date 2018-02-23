@@ -12,7 +12,7 @@ namespace Bizland.Core.Extensions
         {
             Device.BeginInvokeOnMainThread(() =>
             {
-                var toaster = DependencyService.Get<IToastNotifier>();
+                var toaster = Xamarin.Forms.DependencyService.Get<IToastNotifier>();
                 toaster?.Notify(type, title ?? type.ToString().ToUpper(), message, timespan);
             });
         }
