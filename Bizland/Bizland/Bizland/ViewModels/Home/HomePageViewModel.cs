@@ -49,18 +49,12 @@ namespace Bizland.ViewModels
         public AnimateCameraRequest AnimateCameraRequest { get; } = new AnimateCameraRequest();
         public Command MoveToTokyoCommand => new Command(() =>
         {
-            //AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewCameraPosition(
-            //   new CameraPosition(
-            //       new Position(35.681298, 139.766247), // Tokyo
-            //       17d, // zoom
-            //       45d, // bearing(rotation)
-            //       60d // tilt
-            //   )), TimeSpan.FromSeconds(VisibleRegion.Radius.Kilometers));
+            AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(new Position(35.681298, 139.766247)));
 
-            Request.MoveToRegion(
-                        MapSpan.FromCenterAndRadius(
-                        new Position(35.681298, 139.766247),
-                        Distance.FromKilometers(VisibleRegion.Radius.Kilometers)));
+            //Request.MoveToRegion(
+            //            MapSpan.FromCenterAndRadius(
+            //            new Position(35.681298, 139.766247),
+            //            Distance.FromKilometers(VisibleRegion.Radius.Kilometers)));
 
             var pin = new Pin()
             {

@@ -54,5 +54,12 @@
     </array>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
+
+
+    <key>AccountKitAppID</key>
+    <string>558379944581811</string>
+    <key>AccountKitClientToken</key>
+    <string>3013b2175a7e03e1c24ce58b9dd0fc13</string>
+    
   </dict>
 </plist>
