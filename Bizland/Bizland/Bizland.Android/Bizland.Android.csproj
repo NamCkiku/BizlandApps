@@ -56,6 +56,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AndHUD">
+      <Version>1.2.0</Version>
+    </PackageReference>
     <PackageReference Include="IdentityModel">
       <Version>3.0.0</Version>
     </PackageReference>
@@ -90,6 +93,7 @@
     <Compile Include="CustomRenderer\IconViewRenderer.cs" />
     <Compile Include="CustomRenderer\ImageCircleRenderer.cs" />
     <Compile Include="CustomRenderer\PullToRefreshViewRenderer.cs" />
+    <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\LoadingPageServiceDroid.cs" />
     <Compile Include="DependencyService\SettingsService.cs" />
     <Compile Include="MainActivity.cs" />

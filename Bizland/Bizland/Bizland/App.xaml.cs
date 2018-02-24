@@ -11,6 +11,7 @@ using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using Bizland.Core.Extensions;
 using Bizland.Core.Helpers;
+using Bizland.Interfaces;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Bizland
@@ -22,9 +23,32 @@ namespace Bizland
          * This imposes a limitation in which the App class must have a default constructor. 
          * App(IPlatformInitializer initializer = null) cannot be handled by the Activator.
          */
-        public App() : this(null) { }
 
-        public App(IPlatformInitializer initializer) : base(initializer) { }
+        public IHUDProvider _hud;
+        static App _instance;
+
+        public App() : this(null) {}
+
+        public App(IPlatformInitializer initializer) : base(initializer) {
+
+            _instance = this;
+        }
+
+        public static App Instance
+        {
+            get
+            {
+                return _instance;
+            }
+        }
+
+        public IHUDProvider Hud
+        {
+            get
+            {
+                return _hud ?? (_hud = DependencyService.Get<IHUDProvider>());
+            }
+        }
 
         protected override async void OnInitialized()
         {
