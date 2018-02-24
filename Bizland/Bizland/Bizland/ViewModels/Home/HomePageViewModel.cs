@@ -1,4 +1,6 @@
-﻿using Bizland.Views;
+﻿using Bizland.Core.Extensions;
+using Bizland.Interfaces;
+using Bizland.Views;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -6,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.GoogleMaps.Bindings;
@@ -49,6 +52,17 @@ namespace Bizland.ViewModels
         public AnimateCameraRequest AnimateCameraRequest { get; } = new AnimateCameraRequest();
         public Command MoveToTokyoCommand => new Command(() =>
         {
+            bool success;
+            using (new HUD("Xin chờ..."))
+            {
+                Task.Delay(3000);
+                success = false;
+            }
+
+            if (success)
+            {
+                "Đã xong".ToToast();
+            }
             AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(new Position(35.681298, 139.766247)));
 
             //Request.MoveToRegion(
