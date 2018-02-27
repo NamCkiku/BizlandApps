@@ -89,6 +89,7 @@ namespace Bizland
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IRequestProvider, RequestProvider>();
+            containerRegistry.Register<IChatServices, ChatServices>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");

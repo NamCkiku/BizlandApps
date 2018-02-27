@@ -33,7 +33,9 @@
                 </googleMaps:Map.Behaviors>
             </googleMaps:Map>
 
-            <Label TextColor="Black" FontSize="Default" Text="{Binding Message2}"/>
+            <Label TextColor="Black" VerticalOptions="EndAndExpand"
+                  HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="Default" Text="{Binding Message2}"/>
+            
             <Grid x:Name="MessageControls" RowSpacing="1" ColumnSpacing="2" Padding="5"
                   BackgroundColor="#EFEFF4"
                   VerticalOptions="EndAndExpand"
