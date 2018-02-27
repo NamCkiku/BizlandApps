@@ -12,21 +12,8 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="5">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Text="Longitude:"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="{Binding VisibleRegion.Center.Longitude}"/>
-                <Label Grid.Row="1" Grid.Column="0" Text="Latitude:"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="{Binding VisibleRegion.Center.Latitude}"/>
-            </Grid>
-            <Button Text="Move to Tokyo" Command="{Binding MoveToTokyoCommand}"/>
+            <Button Text="Join Group" Command="{Binding JoinRoomCommand}"/>
+            <Button Text="Send Message" Command="{Binding MoveToTokyoCommand}"/>
             <googleMaps:Map x:Name="map"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
@@ -45,6 +32,19 @@
                     <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                 </googleMaps:Map.Behaviors>
             </googleMaps:Map>
+
+            <Label TextColor="Black" FontSize="Default" Text="{Binding Message2}"/>
+            <Grid x:Name="MessageControls" RowSpacing="1" ColumnSpacing="2" Padding="5"
+                  BackgroundColor="#EFEFF4"
+                  VerticalOptions="EndAndExpand"
+                  HorizontalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Column="0" HeightRequest="25" Placeholder="Message" Text="{Binding Message}"></Entry>
+                <Button Grid.Column="1" Text="Send" Command="{Binding SendMessage}"></Button>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
