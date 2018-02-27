@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(ChatServices))]
-namespace Bizland.Service
+namespace Bizland
 {
     public class ChatServices : IChatServices
     {

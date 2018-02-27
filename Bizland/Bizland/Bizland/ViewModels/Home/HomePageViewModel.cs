@@ -18,12 +18,12 @@ namespace Bizland.ViewModels
 {
     public class HomePageViewModel : ViewModelBase
     {
-        private IChatServices _chatServices;
-        public HomePageViewModel(INavigationService navigationService)
+        private readonly IChatServices _chatServices;
+        public HomePageViewModel(INavigationService navigationService, IChatServices chatservice)
             : base(navigationService)
         {
             Title = "Trang chủ";
-            _chatServices = DependencyService.Get<IChatServices>();
+            this._chatServices = chatservice;
             _chatServices.Connect();
             _chatServices.OnMessageReceived += _chatServices_OnMessageReceived;
         }
@@ -53,7 +53,7 @@ namespace Bizland.ViewModels
             get { return _message2; }
             set
             {
-                _message = value;
+                _message2 = value;
                 RaisePropertyChanged(() => Message2);
             }
         }

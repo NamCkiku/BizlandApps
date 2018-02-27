@@ -95,6 +95,7 @@
     <Compile Include="CustomRenderer\HtmlFormattedLabelRenderer.cs" />
     <Compile Include="CustomRenderer\IconViewRenderer.cs" />
     <Compile Include="CustomRenderer\ImageCircleRenderer.cs" />
+    <Compile Include="CustomRenderer\KeyboardOverlapRenderer.cs" />
     <Compile Include="CustomRenderer\LogoPageRenderer.cs" />
     <Compile Include="CustomRenderer\PullToRefreshViewRenderer.cs" />
     <Compile Include="DependencyService\AccountKitService.cs" />
