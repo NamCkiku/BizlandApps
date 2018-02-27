@@ -28,9 +28,10 @@ namespace Bizland
         public IHUDProvider _hud;
         static App _instance;
 
-        public App() : this(null) {}
+        public App() : this(null) { }
 
-        public App(IPlatformInitializer initializer) : base(initializer) {
+        public App(IPlatformInitializer initializer) : base(initializer)
+        {
 
             _instance = this;
         }
@@ -95,6 +96,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>("MainPage");
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>("LoginPage");
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>("HomePage");
+            containerRegistry.RegisterForNavigation<ChatPage, ChatPageViewModel>("ChatPage");
         }
     }
 }
