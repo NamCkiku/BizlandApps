@@ -12,6 +12,7 @@ using Plugin.Connectivity.Abstractions;
 using Bizland.Core.Extensions;
 using Bizland.Core.Helpers;
 using Bizland.Interfaces;
+using Bizland.Helpers;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Bizland
@@ -61,6 +62,9 @@ namespace Bizland
             var mylocation = await LocationHelper.GetGpsLocation();
             // Handle when your app starts  
             CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
+
+            // trungtq: Đăng ký firebase
+            FirebaseHelper.RegisterFirebase();
         }
         void HandleConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
