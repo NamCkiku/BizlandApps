@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "435534031148",
+    "firebase_url": "https://bizland-1506313424704.firebaseio.com",
+    "project_id": "bizland-1506313424704",
+    "storage_bucket": "bizland-1506313424704.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435534031148:android:6e4a94546c7c8f21",
+        "android_client_info": {
+          "package_name": "Bizland.Android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435534031148-v8j28cjscp9qikf6fac7ianeo0k0p1lp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2lJ6s89bNdzKlfQpTjVgS8RkQeEff-nU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
