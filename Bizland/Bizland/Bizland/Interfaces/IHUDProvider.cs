@@ -18,6 +18,8 @@ namespace Bizland.Interfaces
 
     public class HUD : IDisposable
     {
+        bool _cancel;
+
         public HUD(string message)
         {
             StartHUD(message);
@@ -26,11 +28,20 @@ namespace Bizland.Interfaces
         async void StartHUD(string message)
         {
             await Task.Delay(100);
+
+            if (_cancel)
+            {
+                _cancel = false;
+                return;
+            }
+
+            _cancel = false;
             App.Instance.Hud.DisplayProgress(message);
         }
 
         public void Dispose()
         {
+            _cancel = true;
             App.Instance.Hud.Dismiss();
         }
     }
