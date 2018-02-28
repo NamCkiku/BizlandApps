@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:googleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              Title="{Binding Title}"
              x:Class="Bizland.Views.HomePage">
     <ContentPage.ToolbarItems>
@@ -12,6 +13,17 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="5">
+            <controls:RoundedSearchEntry Margin="10,10" FontSize="Small" HeightRequest="30"
+                                         Image="ic_Search.png" ImageHeight="15" ImageWidth="15"
+                                         Placeholder="Tìm kiếm" PlaceholderColor="Black"
+                                         BackgroundColor="White"
+                                         BorderColor="Black"
+                                         BorderRadius="5"
+                                         BorderWidth="1"
+                                         InputTransparent="False"
+                                         TextColor="#003975" 
+                                         VerticalOptions="Center" />
+            
             <Button Text="Join Group" Command="{Binding JoinRoomCommand}"/>
             <Button Text="Send Message" Command="{Binding MoveToTokyoCommand}"/>
             <googleMaps:Map x:Name="map"

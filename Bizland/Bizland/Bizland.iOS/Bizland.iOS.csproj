@@ -98,6 +98,7 @@
     <Compile Include="CustomRenderer\KeyboardOverlapRenderer.cs" />
     <Compile Include="CustomRenderer\LogoPageRenderer.cs" />
     <Compile Include="CustomRenderer\PullToRefreshViewRenderer.cs" />
+    <Compile Include="CustomRenderer\RoundedSearchEntryRenderer.cs" />
     <Compile Include="DependencyService\AccountKitService.cs" />
     <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\LoadingPageServiceiOS.cs" />
@@ -235,6 +236,12 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\switch_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_Search%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
