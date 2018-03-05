@@ -56,9 +56,9 @@ namespace Bizland.iOS.CustomRenderer
         {
             var uiImageView = new UIImageView(UIImage.FromBundle(imagePath))
             {
-                Frame = new RectangleF(0, 0, width, height)
+                Frame = new RectangleF(10, 0, width, height)
             };
-            UIView objLeftView = new UIView(new System.Drawing.Rectangle(0, 0, width + 10, height));
+            UIView objLeftView = new UIView(new System.Drawing.Rectangle(0, 0, width + 15, height));
             objLeftView.AddSubview(uiImageView);
 
             return objLeftView;

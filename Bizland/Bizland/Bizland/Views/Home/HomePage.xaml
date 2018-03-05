@@ -13,7 +13,7 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="5">
-            <controls:RoundedSearchEntry Margin="10,10" FontSize="Small" HeightRequest="30"
+            <controls:RoundedSearchEntry Margin="10,10" HeightRequest="40"
                                          Image="ic_Search.png" ImageHeight="15" ImageWidth="15"
                                          Placeholder="Tìm kiếm" PlaceholderColor="Black"
                                          BackgroundColor="White"
