@@ -45,7 +45,7 @@ namespace Bizland.Droid.CustomRenderer
             Control.SetBackground(gradientDrawable);
 
 
-            Control.SetPadding(50, 10, 0, 10);
+            Control.SetPadding(10, 10, 10, 10);
 
             // Icon Renderer
             if (!string.IsNullOrEmpty(_element.Image))
@@ -60,7 +60,7 @@ namespace Bizland.Droid.CustomRenderer
                         break;
                 }
             }
-            Control.CompoundDrawablePadding = 25;
+            Control.CompoundDrawablePadding = 10;
         }
         /// <summary>
         /// 
