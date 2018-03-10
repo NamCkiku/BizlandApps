@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Bizland.Core.DependencyService;
+using Bizland.Core;
 using Bizland.iOS.DependencyService;
 using Bizland.iOS.FBAccountkit;
 using Facebook.Accountkit;
