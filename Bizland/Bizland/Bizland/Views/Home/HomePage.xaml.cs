@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using Bizland.Core;
+using System.Linq;
+using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 
 namespace Bizland.Views
@@ -22,7 +24,15 @@ namespace Bizland.Views
             base.OnAppearing();
 
         }
+        private void Stepper_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            if (ToolbarItems.Count > 0)
+            {
+                DependencyService.Get<IToolbarItemBadgeService>().SetBadge(this, ToolbarItems.First(), $"{e.NewValue}", Color.Red, Color.White);
+            }
 
+
+        }
         protected override void OnDisappearing()
         {
             base.OnDisappearing();

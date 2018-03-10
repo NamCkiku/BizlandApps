@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bizland.Core.DependencyService
+namespace Bizland.Core
 {
     /// <summary>
     /// Service dùng cho Settings

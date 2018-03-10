@@ -11,7 +11,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Bizland.Core.DependencyService;
+using Bizland.Core;
 using Bizland.Droid.DependencyService;
 using Xamarin.Forms;
 

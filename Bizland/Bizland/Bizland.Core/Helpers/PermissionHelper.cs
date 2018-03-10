@@ -1,5 +1,4 @@
-﻿using Bizland.Core.DependencyService;
-using Plugin.Geolocator;
+﻿using Plugin.Geolocator;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using System;
