@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Timers;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.GoogleMaps.Bindings;
@@ -26,6 +27,26 @@ namespace Bizland.ViewModels
             this._chatServices = chatservice;
             _chatServices.Connect();
             _chatServices.OnMessageReceived += _chatServices_OnMessageReceived;
+
+
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+            timer.Elapsed += Timer_Elapsed;
+            timer.Start();
+        }
+
+        private int _i = 0;
+
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            _i++;
+            Message = _i.ToString();
+            var obj = (Timer)sender;
+            if (obj != null && _i > 30)
+            {
+                obj.Stop();
+                obj.Dispose();
+            }
         }
 
         void _chatServices_OnMessageReceived(object sender, ChatMessage e)

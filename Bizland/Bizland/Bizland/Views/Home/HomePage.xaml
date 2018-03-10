@@ -26,6 +26,9 @@
             
             <Button Text="Join Group" Command="{Binding JoinRoomCommand}"/>
             <Button Text="Send Message" Command="{Binding MoveToTokyoCommand}"/>
+
+            <Stepper Value="0" Minimum="0" Maximum="99" Increment="1" HorizontalOptions="Center" VerticalOptions="Center" ValueChanged="Stepper_ValueChanged" />
+            
             <googleMaps:Map x:Name="map"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
