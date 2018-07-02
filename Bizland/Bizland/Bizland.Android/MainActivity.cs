@@ -25,7 +25,7 @@ namespace Bizland.Droid
             LoadApplication(new App(new AndroidInitializer()));
 
             // namth: Đăng ký PushNotification
-            //FirebasePushNotificationManager.ProcessIntent(this, Intent);
+            FirebasePushNotificationManager.ProcessIntent(this, Intent);
         }
         protected override void OnNewIntent(Intent intent)
         {

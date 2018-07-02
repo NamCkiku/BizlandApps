@@ -75,7 +75,7 @@ namespace Bizland.iOS
 
         public override void OnActivated(UIApplication uiApplication)
         {
-            FirebasePushNotificationManager.Connect();
+            //FirebasePushNotificationManager.Connect();
             base.OnActivated(uiApplication);
         }
 
@@ -83,7 +83,7 @@ namespace Bizland.iOS
         {
             // Use this method to release shared resources, save user data, invalidate timers and store the application state.
             // If your application supports background exection this method is called instead of WillTerminate when the user quits.
-            FirebasePushNotificationManager.Disconnect();
+            //FirebasePushNotificationManager.Disconnect();
         }
     }
 
