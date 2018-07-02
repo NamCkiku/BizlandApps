@@ -9,7 +9,6 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Plugin.FirebasePushNotification;
 
 namespace Bizland.Droid
 {
@@ -23,21 +22,6 @@ namespace Bizland.Droid
         public override void OnCreate()
         {
             base.OnCreate();
-
-            //If debug you should reset the token each time.
-#if DEBUG
-            //FirebasePushNotificationManager.Initialize(this, false);
-#else
-              FirebasePushNotificationManager.Initialize(this,false);
-#endif
-
-            //CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
-            //{
-            //    System.Diagnostics.Debug.WriteLine("NOTIFICATION RECEIVED", p.Data);
-
-            //    // Kiểm tra để bật sáng màn hình trong trường hợp màn hình bị tối
-            //    TurnOnScreen();
-            //};
         }
         /// </summary>
         /// <param name="context">The context.</param>

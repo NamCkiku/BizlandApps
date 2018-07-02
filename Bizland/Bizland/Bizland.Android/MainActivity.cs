@@ -3,7 +3,6 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
-using Plugin.FirebasePushNotification;
 using Android.Content;
 using Plugin.Permissions;
 
@@ -23,18 +22,6 @@ namespace Bizland.Droid
             Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
             Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
             LoadApplication(new App(new AndroidInitializer()));
-
-            // namth: Đăng ký PushNotification
-            FirebasePushNotificationManager.ProcessIntent(this, Intent);
-        }
-        protected override void OnNewIntent(Intent intent)
-        {
-            base.OnNewIntent(intent);
-            //FirebasePushNotificationManager.ProcessIntent(this, intent);
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
-        {
-            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 
