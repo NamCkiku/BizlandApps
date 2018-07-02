@@ -63,9 +63,6 @@ namespace Bizland
             var mylocation = await LocationHelper.GetGpsLocation();
             // Handle when your app starts  
             CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
-
-            // trungtq: Đăng ký firebase
-            FirebaseHelper.RegisterFirebase();
         }
         void HandleConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
