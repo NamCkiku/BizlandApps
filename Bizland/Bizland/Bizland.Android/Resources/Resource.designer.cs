@@ -4145,15 +4145,6 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f08000f
 			public const int common_signin_button_text_long = 2131230735;
 			
-			// aapt resource value: 0x7f080051
-			public const int firebase_database_url = 2131230801;
-			
-			// aapt resource value: 0x7f080050
-			public const int gcm_defaultSenderId = 2131230800;
-			
-			// aapt resource value: 0x7f080052
-			public const int google_storage_bucket = 2131230802;
-			
 			// aapt resource value: 0x7f08004f
 			public const int library_name = 2131230799;
 			
