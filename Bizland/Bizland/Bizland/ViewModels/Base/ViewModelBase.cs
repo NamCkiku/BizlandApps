@@ -23,21 +23,6 @@ namespace Bizland.ViewModels
             NavigationService = navigationService;
         }
 
-        public virtual void OnNavigatedFrom(NavigationParameters parameters)
-        {
-            
-        }
-
-        public virtual void OnNavigatedTo(NavigationParameters parameters)
-        {
-            
-        }
-
-        public virtual void OnNavigatingTo(NavigationParameters parameters)
-        {
-            
-        }
-
         public virtual void Destroy()
         {
             
