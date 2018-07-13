@@ -63,6 +63,2109 @@ namespace Bizland.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::Bizland.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::Bizland.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::Bizland.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_fade_in = global::Bizland.Droid.Resource.Animation.abc_fade_in;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_fade_out = global::Bizland.Droid.Resource.Animation.abc_fade_out;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Bizland.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_popup_enter = global::Bizland.Droid.Resource.Animation.abc_popup_enter;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_popup_exit = global::Bizland.Droid.Resource.Animation.abc_popup_exit;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Bizland.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_slide_in_bottom = global::Bizland.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_slide_in_top = global::Bizland.Droid.Resource.Animation.abc_slide_in_top;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_slide_out_bottom = global::Bizland.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.abc_slide_out_top = global::Bizland.Droid.Resource.Animation.abc_slide_out_top;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.design_bottom_sheet_slide_in = global::Bizland.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.design_bottom_sheet_slide_out = global::Bizland.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.design_snackbar_in = global::Bizland.Droid.Resource.Animation.design_snackbar_in;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animation.design_snackbar_out = global::Bizland.Droid.Resource.Animation.design_snackbar_out;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Animator.design_appbar_state_list_animator = global::Bizland.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarDivider = global::Bizland.Droid.Resource.Attribute.actionBarDivider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarItemBackground = global::Bizland.Droid.Resource.Attribute.actionBarItemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarPopupTheme = global::Bizland.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarSize = global::Bizland.Droid.Resource.Attribute.actionBarSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarSplitStyle = global::Bizland.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarStyle = global::Bizland.Droid.Resource.Attribute.actionBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarTabBarStyle = global::Bizland.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarTabStyle = global::Bizland.Droid.Resource.Attribute.actionBarTabStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarTabTextStyle = global::Bizland.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarTheme = global::Bizland.Droid.Resource.Attribute.actionBarTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionBarWidgetTheme = global::Bizland.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionButtonStyle = global::Bizland.Droid.Resource.Attribute.actionButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionDropDownStyle = global::Bizland.Droid.Resource.Attribute.actionDropDownStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionLayout = global::Bizland.Droid.Resource.Attribute.actionLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionMenuTextAppearance = global::Bizland.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionMenuTextColor = global::Bizland.Droid.Resource.Attribute.actionMenuTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeBackground = global::Bizland.Droid.Resource.Attribute.actionModeBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeCloseButtonStyle = global::Bizland.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeCloseDrawable = global::Bizland.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeCopyDrawable = global::Bizland.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeCutDrawable = global::Bizland.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeFindDrawable = global::Bizland.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModePasteDrawable = global::Bizland.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModePopupWindowStyle = global::Bizland.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeSelectAllDrawable = global::Bizland.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeShareDrawable = global::Bizland.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeSplitBackground = global::Bizland.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeStyle = global::Bizland.Droid.Resource.Attribute.actionModeStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionModeWebSearchDrawable = global::Bizland.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionOverflowButtonStyle = global::Bizland.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionOverflowMenuStyle = global::Bizland.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionProviderClass = global::Bizland.Droid.Resource.Attribute.actionProviderClass;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.actionViewClass = global::Bizland.Droid.Resource.Attribute.actionViewClass;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.activityChooserViewStyle = global::Bizland.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::Bizland.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.alertDialogCenterButtons = global::Bizland.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.alertDialogStyle = global::Bizland.Droid.Resource.Attribute.alertDialogStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.alertDialogTheme = global::Bizland.Droid.Resource.Attribute.alertDialogTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.allowStacking = global::Bizland.Droid.Resource.Attribute.allowStacking;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.alpha = global::Bizland.Droid.Resource.Attribute.alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.arrowHeadLength = global::Bizland.Droid.Resource.Attribute.arrowHeadLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.arrowShaftLength = global::Bizland.Droid.Resource.Attribute.arrowShaftLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.autoCompleteTextViewStyle = global::Bizland.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.background = global::Bizland.Droid.Resource.Attribute.background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.backgroundSplit = global::Bizland.Droid.Resource.Attribute.backgroundSplit;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.backgroundStacked = global::Bizland.Droid.Resource.Attribute.backgroundStacked;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.backgroundTint = global::Bizland.Droid.Resource.Attribute.backgroundTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.backgroundTintMode = global::Bizland.Droid.Resource.Attribute.backgroundTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.barLength = global::Bizland.Droid.Resource.Attribute.barLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.behavior_autoHide = global::Bizland.Droid.Resource.Attribute.behavior_autoHide;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.behavior_hideable = global::Bizland.Droid.Resource.Attribute.behavior_hideable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.behavior_overlapTop = global::Bizland.Droid.Resource.Attribute.behavior_overlapTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.behavior_peekHeight = global::Bizland.Droid.Resource.Attribute.behavior_peekHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.behavior_skipCollapsed = global::Bizland.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.borderWidth = global::Bizland.Droid.Resource.Attribute.borderWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.borderlessButtonStyle = global::Bizland.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.bottomSheetDialogTheme = global::Bizland.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.bottomSheetStyle = global::Bizland.Droid.Resource.Attribute.bottomSheetStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonBarButtonStyle = global::Bizland.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::Bizland.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::Bizland.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::Bizland.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonBarStyle = global::Bizland.Droid.Resource.Attribute.buttonBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonGravity = global::Bizland.Droid.Resource.Attribute.buttonGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonPanelSideLayout = global::Bizland.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonStyle = global::Bizland.Droid.Resource.Attribute.buttonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonStyleSmall = global::Bizland.Droid.Resource.Attribute.buttonStyleSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonTint = global::Bizland.Droid.Resource.Attribute.buttonTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.buttonTintMode = global::Bizland.Droid.Resource.Attribute.buttonTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.cardBackgroundColor = global::Bizland.Droid.Resource.Attribute.cardBackgroundColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.cardCornerRadius = global::Bizland.Droid.Resource.Attribute.cardCornerRadius;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.cardElevation = global::Bizland.Droid.Resource.Attribute.cardElevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.cardMaxElevation = global::Bizland.Droid.Resource.Attribute.cardMaxElevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.cardPreventCornerOverlap = global::Bizland.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.cardUseCompatPadding = global::Bizland.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.checkboxStyle = global::Bizland.Droid.Resource.Attribute.checkboxStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.checkedTextViewStyle = global::Bizland.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.closeIcon = global::Bizland.Droid.Resource.Attribute.closeIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.closeItemLayout = global::Bizland.Droid.Resource.Attribute.closeItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.collapseContentDescription = global::Bizland.Droid.Resource.Attribute.collapseContentDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.collapseIcon = global::Bizland.Droid.Resource.Attribute.collapseIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.collapsedTitleGravity = global::Bizland.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.collapsedTitleTextAppearance = global::Bizland.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.color = global::Bizland.Droid.Resource.Attribute.color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorAccent = global::Bizland.Droid.Resource.Attribute.colorAccent;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorBackgroundFloating = global::Bizland.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorButtonNormal = global::Bizland.Droid.Resource.Attribute.colorButtonNormal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorControlActivated = global::Bizland.Droid.Resource.Attribute.colorControlActivated;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorControlHighlight = global::Bizland.Droid.Resource.Attribute.colorControlHighlight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorControlNormal = global::Bizland.Droid.Resource.Attribute.colorControlNormal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorPrimary = global::Bizland.Droid.Resource.Attribute.colorPrimary;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorPrimaryDark = global::Bizland.Droid.Resource.Attribute.colorPrimaryDark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.colorSwitchThumbNormal = global::Bizland.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.commitIcon = global::Bizland.Droid.Resource.Attribute.commitIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentInsetEnd = global::Bizland.Droid.Resource.Attribute.contentInsetEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentInsetEndWithActions = global::Bizland.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentInsetLeft = global::Bizland.Droid.Resource.Attribute.contentInsetLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentInsetRight = global::Bizland.Droid.Resource.Attribute.contentInsetRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentInsetStart = global::Bizland.Droid.Resource.Attribute.contentInsetStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentInsetStartWithNavigation = global::Bizland.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentPadding = global::Bizland.Droid.Resource.Attribute.contentPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentPaddingBottom = global::Bizland.Droid.Resource.Attribute.contentPaddingBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentPaddingLeft = global::Bizland.Droid.Resource.Attribute.contentPaddingLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentPaddingRight = global::Bizland.Droid.Resource.Attribute.contentPaddingRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentPaddingTop = global::Bizland.Droid.Resource.Attribute.contentPaddingTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.contentScrim = global::Bizland.Droid.Resource.Attribute.contentScrim;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.controlBackground = global::Bizland.Droid.Resource.Attribute.controlBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.counterEnabled = global::Bizland.Droid.Resource.Attribute.counterEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.counterMaxLength = global::Bizland.Droid.Resource.Attribute.counterMaxLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.counterOverflowTextAppearance = global::Bizland.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.counterTextAppearance = global::Bizland.Droid.Resource.Attribute.counterTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.customNavigationLayout = global::Bizland.Droid.Resource.Attribute.customNavigationLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.defaultQueryHint = global::Bizland.Droid.Resource.Attribute.defaultQueryHint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.dialogPreferredPadding = global::Bizland.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.dialogTheme = global::Bizland.Droid.Resource.Attribute.dialogTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.displayOptions = global::Bizland.Droid.Resource.Attribute.displayOptions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.divider = global::Bizland.Droid.Resource.Attribute.divider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.dividerHorizontal = global::Bizland.Droid.Resource.Attribute.dividerHorizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.dividerPadding = global::Bizland.Droid.Resource.Attribute.dividerPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.dividerVertical = global::Bizland.Droid.Resource.Attribute.dividerVertical;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.drawableSize = global::Bizland.Droid.Resource.Attribute.drawableSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.drawerArrowStyle = global::Bizland.Droid.Resource.Attribute.drawerArrowStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.dropDownListViewStyle = global::Bizland.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::Bizland.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.editTextBackground = global::Bizland.Droid.Resource.Attribute.editTextBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.editTextColor = global::Bizland.Droid.Resource.Attribute.editTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.editTextStyle = global::Bizland.Droid.Resource.Attribute.editTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.elevation = global::Bizland.Droid.Resource.Attribute.elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.errorEnabled = global::Bizland.Droid.Resource.Attribute.errorEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.errorTextAppearance = global::Bizland.Droid.Resource.Attribute.errorTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Bizland.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expanded = global::Bizland.Droid.Resource.Attribute.expanded;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandedTitleGravity = global::Bizland.Droid.Resource.Attribute.expandedTitleGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandedTitleMargin = global::Bizland.Droid.Resource.Attribute.expandedTitleMargin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandedTitleMarginBottom = global::Bizland.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandedTitleMarginEnd = global::Bizland.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandedTitleMarginStart = global::Bizland.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandedTitleMarginTop = global::Bizland.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.expandedTitleTextAppearance = global::Bizland.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.externalRouteEnabledDrawable = global::Bizland.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.fabSize = global::Bizland.Droid.Resource.Attribute.fabSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.foregroundInsidePadding = global::Bizland.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.gapBetweenBars = global::Bizland.Droid.Resource.Attribute.gapBetweenBars;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.goIcon = global::Bizland.Droid.Resource.Attribute.goIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.headerLayout = global::Bizland.Droid.Resource.Attribute.headerLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.height = global::Bizland.Droid.Resource.Attribute.height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.hideOnContentScroll = global::Bizland.Droid.Resource.Attribute.hideOnContentScroll;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.hintAnimationEnabled = global::Bizland.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.hintEnabled = global::Bizland.Droid.Resource.Attribute.hintEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.hintTextAppearance = global::Bizland.Droid.Resource.Attribute.hintTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.homeAsUpIndicator = global::Bizland.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.homeLayout = global::Bizland.Droid.Resource.Attribute.homeLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.icon = global::Bizland.Droid.Resource.Attribute.icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.iconifiedByDefault = global::Bizland.Droid.Resource.Attribute.iconifiedByDefault;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.imageButtonStyle = global::Bizland.Droid.Resource.Attribute.imageButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.indeterminateProgressStyle = global::Bizland.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.initialActivityCount = global::Bizland.Droid.Resource.Attribute.initialActivityCount;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.insetForeground = global::Bizland.Droid.Resource.Attribute.insetForeground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.isLightTheme = global::Bizland.Droid.Resource.Attribute.isLightTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.itemBackground = global::Bizland.Droid.Resource.Attribute.itemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.itemIconTint = global::Bizland.Droid.Resource.Attribute.itemIconTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.itemPadding = global::Bizland.Droid.Resource.Attribute.itemPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.itemTextAppearance = global::Bizland.Droid.Resource.Attribute.itemTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.itemTextColor = global::Bizland.Droid.Resource.Attribute.itemTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.keylines = global::Bizland.Droid.Resource.Attribute.keylines;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout = global::Bizland.Droid.Resource.Attribute.layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layoutManager = global::Bizland.Droid.Resource.Attribute.layoutManager;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_anchor = global::Bizland.Droid.Resource.Attribute.layout_anchor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_anchorGravity = global::Bizland.Droid.Resource.Attribute.layout_anchorGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_behavior = global::Bizland.Droid.Resource.Attribute.layout_behavior;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_collapseMode = global::Bizland.Droid.Resource.Attribute.layout_collapseMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::Bizland.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_dodgeInsetEdges = global::Bizland.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_insetEdge = global::Bizland.Droid.Resource.Attribute.layout_insetEdge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_keyline = global::Bizland.Droid.Resource.Attribute.layout_keyline;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_scrollFlags = global::Bizland.Droid.Resource.Attribute.layout_scrollFlags;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.layout_scrollInterpolator = global::Bizland.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::Bizland.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listDividerAlertDialog = global::Bizland.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listItemLayout = global::Bizland.Droid.Resource.Attribute.listItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listLayout = global::Bizland.Droid.Resource.Attribute.listLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listMenuViewStyle = global::Bizland.Droid.Resource.Attribute.listMenuViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listPopupWindowStyle = global::Bizland.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listPreferredItemHeight = global::Bizland.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listPreferredItemHeightLarge = global::Bizland.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listPreferredItemHeightSmall = global::Bizland.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::Bizland.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.listPreferredItemPaddingRight = global::Bizland.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.logo = global::Bizland.Droid.Resource.Attribute.logo;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.logoDescription = global::Bizland.Droid.Resource.Attribute.logoDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.maxActionInlineWidth = global::Bizland.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.maxButtonHeight = global::Bizland.Droid.Resource.Attribute.maxButtonHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.measureWithLargestChild = global::Bizland.Droid.Resource.Attribute.measureWithLargestChild;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Bizland.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteButtonStyle = global::Bizland.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteCloseDrawable = global::Bizland.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Bizland.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Bizland.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRoutePauseDrawable = global::Bizland.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRoutePlayDrawable = global::Bizland.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Bizland.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Bizland.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteStopDrawable = global::Bizland.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteTheme = global::Bizland.Droid.Resource.Attribute.mediaRouteTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.mediaRouteTvIconDrawable = global::Bizland.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.menu = global::Bizland.Droid.Resource.Attribute.menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.multiChoiceItemLayout = global::Bizland.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.navigationContentDescription = global::Bizland.Droid.Resource.Attribute.navigationContentDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.navigationIcon = global::Bizland.Droid.Resource.Attribute.navigationIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.navigationMode = global::Bizland.Droid.Resource.Attribute.navigationMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.overlapAnchor = global::Bizland.Droid.Resource.Attribute.overlapAnchor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.paddingBottomNoButtons = global::Bizland.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.paddingEnd = global::Bizland.Droid.Resource.Attribute.paddingEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.paddingStart = global::Bizland.Droid.Resource.Attribute.paddingStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.paddingTopNoTitle = global::Bizland.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.panelBackground = global::Bizland.Droid.Resource.Attribute.panelBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.panelMenuListTheme = global::Bizland.Droid.Resource.Attribute.panelMenuListTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.panelMenuListWidth = global::Bizland.Droid.Resource.Attribute.panelMenuListWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.passwordToggleContentDescription = global::Bizland.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.passwordToggleDrawable = global::Bizland.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.passwordToggleEnabled = global::Bizland.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.passwordToggleTint = global::Bizland.Droid.Resource.Attribute.passwordToggleTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.passwordToggleTintMode = global::Bizland.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.popupMenuStyle = global::Bizland.Droid.Resource.Attribute.popupMenuStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.popupTheme = global::Bizland.Droid.Resource.Attribute.popupTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.popupWindowStyle = global::Bizland.Droid.Resource.Attribute.popupWindowStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.preserveIconSpacing = global::Bizland.Droid.Resource.Attribute.preserveIconSpacing;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.pressedTranslationZ = global::Bizland.Droid.Resource.Attribute.pressedTranslationZ;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.progressBarPadding = global::Bizland.Droid.Resource.Attribute.progressBarPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.progressBarStyle = global::Bizland.Droid.Resource.Attribute.progressBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.queryBackground = global::Bizland.Droid.Resource.Attribute.queryBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.queryHint = global::Bizland.Droid.Resource.Attribute.queryHint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.radioButtonStyle = global::Bizland.Droid.Resource.Attribute.radioButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.ratingBarStyle = global::Bizland.Droid.Resource.Attribute.ratingBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.ratingBarStyleIndicator = global::Bizland.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.ratingBarStyleSmall = global::Bizland.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.reverseLayout = global::Bizland.Droid.Resource.Attribute.reverseLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.rippleColor = global::Bizland.Droid.Resource.Attribute.rippleColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.scrimAnimationDuration = global::Bizland.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::Bizland.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.searchHintIcon = global::Bizland.Droid.Resource.Attribute.searchHintIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.searchIcon = global::Bizland.Droid.Resource.Attribute.searchIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.searchViewStyle = global::Bizland.Droid.Resource.Attribute.searchViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.seekBarStyle = global::Bizland.Droid.Resource.Attribute.seekBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.selectableItemBackground = global::Bizland.Droid.Resource.Attribute.selectableItemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::Bizland.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.showAsAction = global::Bizland.Droid.Resource.Attribute.showAsAction;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.showDividers = global::Bizland.Droid.Resource.Attribute.showDividers;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.showText = global::Bizland.Droid.Resource.Attribute.showText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.showTitle = global::Bizland.Droid.Resource.Attribute.showTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.singleChoiceItemLayout = global::Bizland.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.spanCount = global::Bizland.Droid.Resource.Attribute.spanCount;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.spinBars = global::Bizland.Droid.Resource.Attribute.spinBars;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.spinnerDropDownItemStyle = global::Bizland.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.spinnerStyle = global::Bizland.Droid.Resource.Attribute.spinnerStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.splitTrack = global::Bizland.Droid.Resource.Attribute.splitTrack;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.srcCompat = global::Bizland.Droid.Resource.Attribute.srcCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.stackFromEnd = global::Bizland.Droid.Resource.Attribute.stackFromEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.state_above_anchor = global::Bizland.Droid.Resource.Attribute.state_above_anchor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.state_collapsed = global::Bizland.Droid.Resource.Attribute.state_collapsed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.state_collapsible = global::Bizland.Droid.Resource.Attribute.state_collapsible;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.statusBarBackground = global::Bizland.Droid.Resource.Attribute.statusBarBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.statusBarScrim = global::Bizland.Droid.Resource.Attribute.statusBarScrim;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.subMenuArrow = global::Bizland.Droid.Resource.Attribute.subMenuArrow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.submitBackground = global::Bizland.Droid.Resource.Attribute.submitBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.subtitle = global::Bizland.Droid.Resource.Attribute.subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.subtitleTextAppearance = global::Bizland.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.subtitleTextColor = global::Bizland.Droid.Resource.Attribute.subtitleTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.subtitleTextStyle = global::Bizland.Droid.Resource.Attribute.subtitleTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.suggestionRowLayout = global::Bizland.Droid.Resource.Attribute.suggestionRowLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.switchMinWidth = global::Bizland.Droid.Resource.Attribute.switchMinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.switchPadding = global::Bizland.Droid.Resource.Attribute.switchPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.switchStyle = global::Bizland.Droid.Resource.Attribute.switchStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.switchTextAppearance = global::Bizland.Droid.Resource.Attribute.switchTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabBackground = global::Bizland.Droid.Resource.Attribute.tabBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabContentStart = global::Bizland.Droid.Resource.Attribute.tabContentStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabGravity = global::Bizland.Droid.Resource.Attribute.tabGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabIndicatorColor = global::Bizland.Droid.Resource.Attribute.tabIndicatorColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabIndicatorHeight = global::Bizland.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabMaxWidth = global::Bizland.Droid.Resource.Attribute.tabMaxWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabMinWidth = global::Bizland.Droid.Resource.Attribute.tabMinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabMode = global::Bizland.Droid.Resource.Attribute.tabMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabPadding = global::Bizland.Droid.Resource.Attribute.tabPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabPaddingBottom = global::Bizland.Droid.Resource.Attribute.tabPaddingBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabPaddingEnd = global::Bizland.Droid.Resource.Attribute.tabPaddingEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabPaddingStart = global::Bizland.Droid.Resource.Attribute.tabPaddingStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabPaddingTop = global::Bizland.Droid.Resource.Attribute.tabPaddingTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabSelectedTextColor = global::Bizland.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabTextAppearance = global::Bizland.Droid.Resource.Attribute.tabTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tabTextColor = global::Bizland.Droid.Resource.Attribute.tabTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAllCaps = global::Bizland.Droid.Resource.Attribute.textAllCaps;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::Bizland.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearanceListItem = global::Bizland.Droid.Resource.Attribute.textAppearanceListItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearanceListItemSecondary = global::Bizland.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearanceListItemSmall = global::Bizland.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::Bizland.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Bizland.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::Bizland.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::Bizland.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textColorAlertDialogListItem = global::Bizland.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textColorError = global::Bizland.Droid.Resource.Attribute.textColorError;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.textColorSearchUrl = global::Bizland.Droid.Resource.Attribute.textColorSearchUrl;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.theme = global::Bizland.Droid.Resource.Attribute.theme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.thickness = global::Bizland.Droid.Resource.Attribute.thickness;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.thumbTextPadding = global::Bizland.Droid.Resource.Attribute.thumbTextPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.thumbTint = global::Bizland.Droid.Resource.Attribute.thumbTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.thumbTintMode = global::Bizland.Droid.Resource.Attribute.thumbTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tickMark = global::Bizland.Droid.Resource.Attribute.tickMark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tickMarkTint = global::Bizland.Droid.Resource.Attribute.tickMarkTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tickMarkTintMode = global::Bizland.Droid.Resource.Attribute.tickMarkTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tint = global::Bizland.Droid.Resource.Attribute.tint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.tintMode = global::Bizland.Droid.Resource.Attribute.tintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.title = global::Bizland.Droid.Resource.Attribute.title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleEnabled = global::Bizland.Droid.Resource.Attribute.titleEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleMargin = global::Bizland.Droid.Resource.Attribute.titleMargin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleMarginBottom = global::Bizland.Droid.Resource.Attribute.titleMarginBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleMarginEnd = global::Bizland.Droid.Resource.Attribute.titleMarginEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleMarginStart = global::Bizland.Droid.Resource.Attribute.titleMarginStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleMarginTop = global::Bizland.Droid.Resource.Attribute.titleMarginTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleMargins = global::Bizland.Droid.Resource.Attribute.titleMargins;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleTextAppearance = global::Bizland.Droid.Resource.Attribute.titleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleTextColor = global::Bizland.Droid.Resource.Attribute.titleTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.titleTextStyle = global::Bizland.Droid.Resource.Attribute.titleTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.toolbarId = global::Bizland.Droid.Resource.Attribute.toolbarId;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::Bizland.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.toolbarStyle = global::Bizland.Droid.Resource.Attribute.toolbarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.track = global::Bizland.Droid.Resource.Attribute.track;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.trackTint = global::Bizland.Droid.Resource.Attribute.trackTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.trackTintMode = global::Bizland.Droid.Resource.Attribute.trackTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.useCompatPadding = global::Bizland.Droid.Resource.Attribute.useCompatPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.voiceIcon = global::Bizland.Droid.Resource.Attribute.voiceIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowActionBar = global::Bizland.Droid.Resource.Attribute.windowActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowActionBarOverlay = global::Bizland.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowActionModeOverlay = global::Bizland.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowFixedHeightMajor = global::Bizland.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowFixedHeightMinor = global::Bizland.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowFixedWidthMajor = global::Bizland.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowFixedWidthMinor = global::Bizland.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowMinWidthMajor = global::Bizland.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowMinWidthMinor = global::Bizland.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Attribute.windowNoTitle = global::Bizland.Droid.Resource.Attribute.windowNoTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::Bizland.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::Bizland.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Bizland.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Bizland.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Bizland.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Bizland.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::Bizland.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::Bizland.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_btn_colored_text_material = global::Bizland.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_color_highlight_material = global::Bizland.Droid.Resource.Color.abc_color_highlight_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_hint_foreground_material_dark = global::Bizland.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_hint_foreground_material_light = global::Bizland.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_input_method_navigation_guard = global::Bizland.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::Bizland.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::Bizland.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_primary_text_material_dark = global::Bizland.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_primary_text_material_light = global::Bizland.Droid.Resource.Color.abc_primary_text_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_search_url_text = global::Bizland.Droid.Resource.Color.abc_search_url_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_search_url_text_normal = global::Bizland.Droid.Resource.Color.abc_search_url_text_normal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_search_url_text_pressed = global::Bizland.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_search_url_text_selected = global::Bizland.Droid.Resource.Color.abc_search_url_text_selected;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_secondary_text_material_dark = global::Bizland.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_secondary_text_material_light = global::Bizland.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_tint_btn_checkable = global::Bizland.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_tint_default = global::Bizland.Droid.Resource.Color.abc_tint_default;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_tint_edittext = global::Bizland.Droid.Resource.Color.abc_tint_edittext;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_tint_seek_thumb = global::Bizland.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_tint_spinner = global::Bizland.Droid.Resource.Color.abc_tint_spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.abc_tint_switch_track = global::Bizland.Droid.Resource.Color.abc_tint_switch_track;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.accent_material_dark = global::Bizland.Droid.Resource.Color.accent_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.accent_material_light = global::Bizland.Droid.Resource.Color.accent_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.background_floating_material_dark = global::Bizland.Droid.Resource.Color.background_floating_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.background_floating_material_light = global::Bizland.Droid.Resource.Color.background_floating_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.background_material_dark = global::Bizland.Droid.Resource.Color.background_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.background_material_light = global::Bizland.Droid.Resource.Color.background_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.bright_foreground_disabled_material_dark = global::Bizland.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.bright_foreground_disabled_material_light = global::Bizland.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.bright_foreground_inverse_material_dark = global::Bizland.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.bright_foreground_inverse_material_light = global::Bizland.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.bright_foreground_material_dark = global::Bizland.Droid.Resource.Color.bright_foreground_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.bright_foreground_material_light = global::Bizland.Droid.Resource.Color.bright_foreground_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.button_material_dark = global::Bizland.Droid.Resource.Color.button_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.button_material_light = global::Bizland.Droid.Resource.Color.button_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.cardview_dark_background = global::Bizland.Droid.Resource.Color.cardview_dark_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.cardview_light_background = global::Bizland.Droid.Resource.Color.cardview_light_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.cardview_shadow_end_color = global::Bizland.Droid.Resource.Color.cardview_shadow_end_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.cardview_shadow_start_color = global::Bizland.Droid.Resource.Color.cardview_shadow_start_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_bottom_navigation_shadow_color = global::Bizland.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_error = global::Bizland.Droid.Resource.Color.design_error;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_fab_shadow_end_color = global::Bizland.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_fab_shadow_mid_color = global::Bizland.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_fab_shadow_start_color = global::Bizland.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_fab_stroke_end_inner_color = global::Bizland.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_fab_stroke_end_outer_color = global::Bizland.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_fab_stroke_top_inner_color = global::Bizland.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_fab_stroke_top_outer_color = global::Bizland.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_snackbar_background_color = global::Bizland.Droid.Resource.Color.design_snackbar_background_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.design_tint_password_toggle = global::Bizland.Droid.Resource.Color.design_tint_password_toggle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.dim_foreground_disabled_material_dark = global::Bizland.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.dim_foreground_disabled_material_light = global::Bizland.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.dim_foreground_material_dark = global::Bizland.Droid.Resource.Color.dim_foreground_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.dim_foreground_material_light = global::Bizland.Droid.Resource.Color.dim_foreground_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.foreground_material_dark = global::Bizland.Droid.Resource.Color.foreground_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.foreground_material_light = global::Bizland.Droid.Resource.Color.foreground_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.highlighted_text_material_dark = global::Bizland.Droid.Resource.Color.highlighted_text_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.highlighted_text_material_light = global::Bizland.Droid.Resource.Color.highlighted_text_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_blue_grey_800 = global::Bizland.Droid.Resource.Color.material_blue_grey_800;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_blue_grey_900 = global::Bizland.Droid.Resource.Color.material_blue_grey_900;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_blue_grey_950 = global::Bizland.Droid.Resource.Color.material_blue_grey_950;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_deep_teal_200 = global::Bizland.Droid.Resource.Color.material_deep_teal_200;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_deep_teal_500 = global::Bizland.Droid.Resource.Color.material_deep_teal_500;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_grey_100 = global::Bizland.Droid.Resource.Color.material_grey_100;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_grey_300 = global::Bizland.Droid.Resource.Color.material_grey_300;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_grey_50 = global::Bizland.Droid.Resource.Color.material_grey_50;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_grey_600 = global::Bizland.Droid.Resource.Color.material_grey_600;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_grey_800 = global::Bizland.Droid.Resource.Color.material_grey_800;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_grey_850 = global::Bizland.Droid.Resource.Color.material_grey_850;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.material_grey_900 = global::Bizland.Droid.Resource.Color.material_grey_900;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.normal = global::Bizland.Droid.Resource.Color.normal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.notification_action_color_filter = global::Bizland.Droid.Resource.Color.notification_action_color_filter;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.notification_icon_bg_color = global::Bizland.Droid.Resource.Color.notification_icon_bg_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.notification_material_background_media_default_color = global::Bizland.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_dark_material_dark = global::Bizland.Droid.Resource.Color.primary_dark_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_dark_material_light = global::Bizland.Droid.Resource.Color.primary_dark_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_material_dark = global::Bizland.Droid.Resource.Color.primary_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_material_light = global::Bizland.Droid.Resource.Color.primary_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_text_default_material_dark = global::Bizland.Droid.Resource.Color.primary_text_default_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_text_default_material_light = global::Bizland.Droid.Resource.Color.primary_text_default_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_text_disabled_material_dark = global::Bizland.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.primary_text_disabled_material_light = global::Bizland.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.ripple_material_dark = global::Bizland.Droid.Resource.Color.ripple_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.ripple_material_light = global::Bizland.Droid.Resource.Color.ripple_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.secondary_text_default_material_dark = global::Bizland.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.secondary_text_default_material_light = global::Bizland.Droid.Resource.Color.secondary_text_default_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.secondary_text_disabled_material_dark = global::Bizland.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.secondary_text_disabled_material_light = global::Bizland.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.segmented_control_text = global::Bizland.Droid.Resource.Color.segmented_control_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.selected = global::Bizland.Droid.Resource.Color.selected;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.switch_thumb_disabled_material_dark = global::Bizland.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.switch_thumb_disabled_material_light = global::Bizland.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.switch_thumb_material_dark = global::Bizland.Droid.Resource.Color.switch_thumb_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.switch_thumb_material_light = global::Bizland.Droid.Resource.Color.switch_thumb_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.switch_thumb_normal_material_dark = global::Bizland.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Color.switch_thumb_normal_material_light = global::Bizland.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Bizland.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_default_height_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_elevation_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::Bizland.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::Bizland.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Bizland.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Bizland.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_button_min_height_material = global::Bizland.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_button_min_width_material = global::Bizland.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Bizland.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Bizland.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::Bizland.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_button_inset_vertical_material = global::Bizland.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::Bizland.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_button_padding_vertical_material = global::Bizland.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Bizland.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_config_prefDialogWidth = global::Bizland.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_control_corner_material = global::Bizland.Droid.Resource.Dimension.abc_control_corner_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_control_inset_material = global::Bizland.Droid.Resource.Dimension.abc_control_inset_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_control_padding_material = global::Bizland.Droid.Resource.Dimension.abc_control_padding_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::Bizland.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::Bizland.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::Bizland.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::Bizland.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Bizland.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Bizland.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_min_width_major = global::Bizland.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_min_width_minor = global::Bizland.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_padding_material = global::Bizland.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_padding_top_material = global::Bizland.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dialog_title_divider_material = global::Bizland.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::Bizland.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::Bizland.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::Bizland.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Bizland.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Bizland.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Bizland.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Bizland.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::Bizland.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_floating_window_z = global::Bizland.Droid.Resource.Dimension.abc_floating_window_z;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Bizland.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_panel_menu_list_width = global::Bizland.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_progress_bar_height_material = global::Bizland.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_search_view_preferred_height = global::Bizland.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_search_view_preferred_width = global::Bizland.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::Bizland.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Bizland.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::Bizland.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_switch_padding = global::Bizland.Droid.Resource.Dimension.abc_switch_padding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_body_1_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_body_2_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_button_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_caption_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_display_1_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_display_2_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_display_3_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_display_4_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_headline_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_large_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_medium_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_menu_header_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_menu_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_small_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_subhead_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Bizland.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_title_material = global::Bizland.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::Bizland.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.cardview_compat_inset_shadow = global::Bizland.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.cardview_default_elevation = global::Bizland.Droid.Resource.Dimension.cardview_default_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.cardview_default_radius = global::Bizland.Droid.Resource.Dimension.cardview_default_radius;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_appbar_elevation = global::Bizland.Droid.Resource.Dimension.design_appbar_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_elevation = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_height = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_margin = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_navigation_text_size = global::Bizland.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Bizland.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Bizland.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_fab_border_width = global::Bizland.Droid.Resource.Dimension.design_fab_border_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_fab_elevation = global::Bizland.Droid.Resource.Dimension.design_fab_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_fab_image_size = global::Bizland.Droid.Resource.Dimension.design_fab_image_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_fab_size_mini = global::Bizland.Droid.Resource.Dimension.design_fab_size_mini;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_fab_size_normal = global::Bizland.Droid.Resource.Dimension.design_fab_size_normal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_fab_translation_z_pressed = global::Bizland.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_navigation_elevation = global::Bizland.Droid.Resource.Dimension.design_navigation_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_navigation_icon_padding = global::Bizland.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_navigation_icon_size = global::Bizland.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_navigation_max_width = global::Bizland.Droid.Resource.Dimension.design_navigation_max_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_navigation_padding_bottom = global::Bizland.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::Bizland.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::Bizland.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::Bizland.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_elevation = global::Bizland.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Bizland.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_max_width = global::Bizland.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_min_width = global::Bizland.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::Bizland.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_padding_vertical = global::Bizland.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Bizland.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_snackbar_text_size = global::Bizland.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_tab_max_width = global::Bizland.Droid.Resource.Dimension.design_tab_max_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_tab_scrollable_min_width = global::Bizland.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_tab_text_size = global::Bizland.Droid.Resource.Dimension.design_tab_text_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.design_tab_text_size_2line = global::Bizland.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.disabled_alpha_material_dark = global::Bizland.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.disabled_alpha_material_light = global::Bizland.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.highlight_alpha_material_colored = global::Bizland.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.highlight_alpha_material_dark = global::Bizland.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.highlight_alpha_material_light = global::Bizland.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.hint_alpha_material_dark = global::Bizland.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.hint_alpha_material_light = global::Bizland.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::Bizland.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::Bizland.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Bizland.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Bizland.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Bizland.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Bizland.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Bizland.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Bizland.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Bizland.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.mr_dialog_fixed_width_major = global::Bizland.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.mr_dialog_fixed_width_minor = global::Bizland.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_action_icon_size = global::Bizland.Droid.Resource.Dimension.notification_action_icon_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_action_text_size = global::Bizland.Droid.Resource.Dimension.notification_action_text_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_big_circle_margin = global::Bizland.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_content_margin_start = global::Bizland.Droid.Resource.Dimension.notification_content_margin_start;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_large_icon_height = global::Bizland.Droid.Resource.Dimension.notification_large_icon_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_large_icon_width = global::Bizland.Droid.Resource.Dimension.notification_large_icon_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_main_column_padding_top = global::Bizland.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_media_narrow_margin = global::Bizland.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_right_icon_size = global::Bizland.Droid.Resource.Dimension.notification_right_icon_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_right_side_padding_top = global::Bizland.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_small_icon_background_padding = global::Bizland.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_small_icon_size_as_large = global::Bizland.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_subtext_size = global::Bizland.Droid.Resource.Dimension.notification_subtext_size;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_top_pad = global::Bizland.Droid.Resource.Dimension.notification_top_pad;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Dimension.notification_top_pad_large_text = global::Bizland.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_action_bar_item_background_material = global::Bizland.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_borderless_material = global::Bizland.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_check_material = global::Bizland.Droid.Resource.Drawable.abc_btn_check_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Bizland.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Bizland.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_colored_material = global::Bizland.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::Bizland.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_radio_material = global::Bizland.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Bizland.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Bizland.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Bizland.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Bizland.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_cab_background_internal_bg = global::Bizland.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_cab_background_top_material = global::Bizland.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_control_background_material = global::Bizland.Droid.Resource.Drawable.abc_control_background_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_dialog_material_background = global::Bizland.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_edit_text_material = global::Bizland.Droid.Resource.Drawable.abc_edit_text_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_ab_back_material = global::Bizland.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Bizland.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_clear_material = global::Bizland.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_go_search_api_material = global::Bizland.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Bizland.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::Bizland.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Bizland.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_search_api_material = global::Bizland.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_star_black_16dp = global::Bizland.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_star_black_36dp = global::Bizland.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_star_black_48dp = global::Bizland.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::Bizland.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::Bizland.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::Bizland.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::Bizland.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_item_background_holo_dark = global::Bizland.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_item_background_holo_light = global::Bizland.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_focused_holo = global::Bizland.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_longpressed_holo = global::Bizland.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::Bizland.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_pressed_holo_light = global::Bizland.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Bizland.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Bizland.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Bizland.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Bizland.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_selector_holo_dark = global::Bizland.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_list_selector_holo_light = global::Bizland.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Bizland.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::Bizland.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::Bizland.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ratingbar_material = global::Bizland.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_ratingbar_small_material = global::Bizland.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Bizland.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Bizland.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_seekbar_thumb_material = global::Bizland.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::Bizland.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_seekbar_track_material = global::Bizland.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Bizland.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::Bizland.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_switch_thumb_material = global::Bizland.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_tab_indicator_material = global::Bizland.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_text_cursor_material = global::Bizland.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Bizland.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Bizland.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Bizland.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Bizland.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Bizland.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Bizland.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Bizland.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_textfield_search_material = global::Bizland.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.abc_vector_test = global::Bizland.Droid.Resource.Drawable.abc_vector_test;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_hide_password = global::Bizland.Droid.Resource.Drawable.avd_hide_password;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_hide_password_1 = global::Bizland.Droid.Resource.Drawable.avd_hide_password_1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_hide_password_2 = global::Bizland.Droid.Resource.Drawable.avd_hide_password_2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_hide_password_3 = global::Bizland.Droid.Resource.Drawable.avd_hide_password_3;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_show_password = global::Bizland.Droid.Resource.Drawable.avd_show_password;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_show_password_1 = global::Bizland.Droid.Resource.Drawable.avd_show_password_1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_show_password_2 = global::Bizland.Droid.Resource.Drawable.avd_show_password_2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.avd_show_password_3 = global::Bizland.Droid.Resource.Drawable.avd_show_password_3;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.design_bottom_navigation_item_background = global::Bizland.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.design_fab_background = global::Bizland.Droid.Resource.Drawable.design_fab_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.design_ic_visibility = global::Bizland.Droid.Resource.Drawable.design_ic_visibility;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.design_ic_visibility_off = global::Bizland.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.design_password_eye = global::Bizland.Droid.Resource.Drawable.design_password_eye;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.design_snackbar_background = global::Bizland.Droid.Resource.Drawable.design_snackbar_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_audiotrack_dark = global::Bizland.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_audiotrack_light = global::Bizland.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_dialog_close_dark = global::Bizland.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_dialog_close_light = global::Bizland.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_00 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_01 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_02 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_03 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_04 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_05 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_06 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_07 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_08 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_09 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_10 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_11 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_12 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_13 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_14 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_collapse_15 = global::Bizland.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_00 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_00;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_01 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_01;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_02 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_02;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_03 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_03;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_04 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_04;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_05 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_05;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_06 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_06;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_07 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_07;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_08 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_08;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_09 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_09;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_10 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_10;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_11 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_11;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_12 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_12;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_13 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_13;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_14 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_14;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_group_expand_15 = global::Bizland.Droid.Resource.Drawable.ic_group_expand_15;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_media_pause_dark = global::Bizland.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_media_pause_light = global::Bizland.Droid.Resource.Drawable.ic_media_pause_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_media_play_dark = global::Bizland.Droid.Resource.Drawable.ic_media_play_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_media_play_light = global::Bizland.Droid.Resource.Drawable.ic_media_play_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_media_stop_dark = global::Bizland.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_media_stop_light = global::Bizland.Droid.Resource.Drawable.ic_media_stop_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_00_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_00_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_01_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_01_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_02_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_02_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_03_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_03_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_04_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_04_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_05_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_05_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_06_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_06_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_07_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_07_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_08_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_08_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_09_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_09_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_10_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_10_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_11_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_11_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_12_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_12_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_13_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_13_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_14_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_14_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_15_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_15_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_16_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_16_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_17_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_17_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_18_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_18_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_19_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_19_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_20_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_20_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_21_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_21_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_22_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connected_22_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_00_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_01_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_02_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_02_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_03_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_03_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_04_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_04_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_05_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_05_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_06_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_06_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_07_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_07_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_08_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_08_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_09_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_09_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_10_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_10_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_11_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_11_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_12_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_12_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_13_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_13_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_14_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_14_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_15_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_15_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_16_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_16_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_17_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_17_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_18_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_18_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_19_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_19_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_20_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_20_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_21_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_21_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_connecting_22_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_disabled_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_disabled_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_disconnected_dark = global::Bizland.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_disconnected_light = global::Bizland.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_mr_button_grey = global::Bizland.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_vol_type_speaker_dark = global::Bizland.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Bizland.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_vol_type_speaker_group_light = global::Bizland.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_vol_type_speaker_light = global::Bizland.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_vol_type_tv_dark = global::Bizland.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.ic_vol_type_tv_light = global::Bizland.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_button_connected_dark = global::Bizland.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_button_connected_light = global::Bizland.Droid.Resource.Drawable.mr_button_connected_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_button_connecting_dark = global::Bizland.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_button_connecting_light = global::Bizland.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_button_dark = global::Bizland.Droid.Resource.Drawable.mr_button_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_button_light = global::Bizland.Droid.Resource.Drawable.mr_button_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_dialog_close_dark = global::Bizland.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_dialog_close_light = global::Bizland.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_dialog_material_background_dark = global::Bizland.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_dialog_material_background_light = global::Bizland.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_group_collapse = global::Bizland.Droid.Resource.Drawable.mr_group_collapse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_group_expand = global::Bizland.Droid.Resource.Drawable.mr_group_expand;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_media_pause_dark = global::Bizland.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_media_pause_light = global::Bizland.Droid.Resource.Drawable.mr_media_pause_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_media_play_dark = global::Bizland.Droid.Resource.Drawable.mr_media_play_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_media_play_light = global::Bizland.Droid.Resource.Drawable.mr_media_play_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_media_stop_dark = global::Bizland.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_media_stop_light = global::Bizland.Droid.Resource.Drawable.mr_media_stop_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Bizland.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.mr_vol_type_audiotrack_light = global::Bizland.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.navigation_empty_icon = global::Bizland.Droid.Resource.Drawable.navigation_empty_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_action_background = global::Bizland.Droid.Resource.Drawable.notification_action_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_bg = global::Bizland.Droid.Resource.Drawable.notification_bg;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_bg_low = global::Bizland.Droid.Resource.Drawable.notification_bg_low;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_bg_low_normal = global::Bizland.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_bg_low_pressed = global::Bizland.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_bg_normal = global::Bizland.Droid.Resource.Drawable.notification_bg_normal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_bg_normal_pressed = global::Bizland.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_icon_background = global::Bizland.Droid.Resource.Drawable.notification_icon_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_template_icon_bg = global::Bizland.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_template_icon_low_bg = global::Bizland.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notification_tile_bg = global::Bizland.Droid.Resource.Drawable.notification_tile_bg;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::Bizland.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.segmented_control_background = global::Bizland.Droid.Resource.Drawable.segmented_control_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.segmented_control_first_background = global::Bizland.Droid.Resource.Drawable.segmented_control_first_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Drawable.segmented_control_last_background = global::Bizland.Droid.Resource.Drawable.segmented_control_last_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.SegControl = global::Bizland.Droid.Resource.Id.SegControl;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action0 = global::Bizland.Droid.Resource.Id.action0;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_bar = global::Bizland.Droid.Resource.Id.action_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_bar_activity_content = global::Bizland.Droid.Resource.Id.action_bar_activity_content;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_bar_container = global::Bizland.Droid.Resource.Id.action_bar_container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_bar_root = global::Bizland.Droid.Resource.Id.action_bar_root;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_bar_spinner = global::Bizland.Droid.Resource.Id.action_bar_spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_bar_subtitle = global::Bizland.Droid.Resource.Id.action_bar_subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_bar_title = global::Bizland.Droid.Resource.Id.action_bar_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_container = global::Bizland.Droid.Resource.Id.action_container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_context_bar = global::Bizland.Droid.Resource.Id.action_context_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_divider = global::Bizland.Droid.Resource.Id.action_divider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_image = global::Bizland.Droid.Resource.Id.action_image;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_menu_divider = global::Bizland.Droid.Resource.Id.action_menu_divider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_menu_presenter = global::Bizland.Droid.Resource.Id.action_menu_presenter;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_mode_bar = global::Bizland.Droid.Resource.Id.action_mode_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_mode_bar_stub = global::Bizland.Droid.Resource.Id.action_mode_bar_stub;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_mode_close_button = global::Bizland.Droid.Resource.Id.action_mode_close_button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.action_text = global::Bizland.Droid.Resource.Id.action_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.actions = global::Bizland.Droid.Resource.Id.actions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.activity_chooser_view_content = global::Bizland.Droid.Resource.Id.activity_chooser_view_content;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.add = global::Bizland.Droid.Resource.Id.add;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.alertTitle = global::Bizland.Droid.Resource.Id.alertTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.all = global::Bizland.Droid.Resource.Id.all;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.always = global::Bizland.Droid.Resource.Id.always;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.auto = global::Bizland.Droid.Resource.Id.auto;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.beginning = global::Bizland.Droid.Resource.Id.beginning;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.bottom = global::Bizland.Droid.Resource.Id.bottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.buttonPanel = global::Bizland.Droid.Resource.Id.buttonPanel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.cancel_action = global::Bizland.Droid.Resource.Id.cancel_action;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.center = global::Bizland.Droid.Resource.Id.center;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.center_horizontal = global::Bizland.Droid.Resource.Id.center_horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.center_vertical = global::Bizland.Droid.Resource.Id.center_vertical;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.checkbox = global::Bizland.Droid.Resource.Id.checkbox;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.chronometer = global::Bizland.Droid.Resource.Id.chronometer;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.clip_horizontal = global::Bizland.Droid.Resource.Id.clip_horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.clip_vertical = global::Bizland.Droid.Resource.Id.clip_vertical;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.collapseActionView = global::Bizland.Droid.Resource.Id.collapseActionView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.container = global::Bizland.Droid.Resource.Id.container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.contentPanel = global::Bizland.Droid.Resource.Id.contentPanel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.coordinator = global::Bizland.Droid.Resource.Id.coordinator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.custom = global::Bizland.Droid.Resource.Id.custom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.customPanel = global::Bizland.Droid.Resource.Id.customPanel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.decor_content_parent = global::Bizland.Droid.Resource.Id.decor_content_parent;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.default_activity_button = global::Bizland.Droid.Resource.Id.default_activity_button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.design_bottom_sheet = global::Bizland.Droid.Resource.Id.design_bottom_sheet;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.design_menu_item_action_area = global::Bizland.Droid.Resource.Id.design_menu_item_action_area;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.design_menu_item_action_area_stub = global::Bizland.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.design_menu_item_text = global::Bizland.Droid.Resource.Id.design_menu_item_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.design_navigation_view = global::Bizland.Droid.Resource.Id.design_navigation_view;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.disableHome = global::Bizland.Droid.Resource.Id.disableHome;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.edit_query = global::Bizland.Droid.Resource.Id.edit_query;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.end = global::Bizland.Droid.Resource.Id.end;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.end_padder = global::Bizland.Droid.Resource.Id.end_padder;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.enterAlways = global::Bizland.Droid.Resource.Id.enterAlways;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.enterAlwaysCollapsed = global::Bizland.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.exitUntilCollapsed = global::Bizland.Droid.Resource.Id.exitUntilCollapsed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.expand_activities_button = global::Bizland.Droid.Resource.Id.expand_activities_button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.expanded_menu = global::Bizland.Droid.Resource.Id.expanded_menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.fill = global::Bizland.Droid.Resource.Id.fill;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.fill_horizontal = global::Bizland.Droid.Resource.Id.fill_horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.fill_vertical = global::Bizland.Droid.Resource.Id.fill_vertical;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.@fixed = global::Bizland.Droid.Resource.Id.@fixed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.home = global::Bizland.Droid.Resource.Id.home;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.homeAsUp = global::Bizland.Droid.Resource.Id.homeAsUp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.icon = global::Bizland.Droid.Resource.Id.icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.icon_group = global::Bizland.Droid.Resource.Id.icon_group;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.ifRoom = global::Bizland.Droid.Resource.Id.ifRoom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.image = global::Bizland.Droid.Resource.Id.image;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.info = global::Bizland.Droid.Resource.Id.info;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.item_touch_helper_previous_elevation = global::Bizland.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.largeLabel = global::Bizland.Droid.Resource.Id.largeLabel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.left = global::Bizland.Droid.Resource.Id.left;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.line1 = global::Bizland.Droid.Resource.Id.line1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.line3 = global::Bizland.Droid.Resource.Id.line3;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.listMode = global::Bizland.Droid.Resource.Id.listMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.list_item = global::Bizland.Droid.Resource.Id.list_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.masked = global::Bizland.Droid.Resource.Id.masked;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.media_actions = global::Bizland.Droid.Resource.Id.media_actions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.middle = global::Bizland.Droid.Resource.Id.middle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mini = global::Bizland.Droid.Resource.Id.mini;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_art = global::Bizland.Droid.Resource.Id.mr_art;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_chooser_list = global::Bizland.Droid.Resource.Id.mr_chooser_list;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_chooser_route_desc = global::Bizland.Droid.Resource.Id.mr_chooser_route_desc;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_chooser_route_icon = global::Bizland.Droid.Resource.Id.mr_chooser_route_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_chooser_route_name = global::Bizland.Droid.Resource.Id.mr_chooser_route_name;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_chooser_title = global::Bizland.Droid.Resource.Id.mr_chooser_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_close = global::Bizland.Droid.Resource.Id.mr_close;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_control_divider = global::Bizland.Droid.Resource.Id.mr_control_divider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_control_playback_ctrl = global::Bizland.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_control_subtitle = global::Bizland.Droid.Resource.Id.mr_control_subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_control_title = global::Bizland.Droid.Resource.Id.mr_control_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_control_title_container = global::Bizland.Droid.Resource.Id.mr_control_title_container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_custom_control = global::Bizland.Droid.Resource.Id.mr_custom_control;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_default_control = global::Bizland.Droid.Resource.Id.mr_default_control;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_dialog_area = global::Bizland.Droid.Resource.Id.mr_dialog_area;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_expandable_area = global::Bizland.Droid.Resource.Id.mr_expandable_area;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_group_expand_collapse = global::Bizland.Droid.Resource.Id.mr_group_expand_collapse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_media_main_control = global::Bizland.Droid.Resource.Id.mr_media_main_control;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_name = global::Bizland.Droid.Resource.Id.mr_name;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_playback_control = global::Bizland.Droid.Resource.Id.mr_playback_control;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_title_bar = global::Bizland.Droid.Resource.Id.mr_title_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_volume_control = global::Bizland.Droid.Resource.Id.mr_volume_control;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_volume_group_list = global::Bizland.Droid.Resource.Id.mr_volume_group_list;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_volume_item_icon = global::Bizland.Droid.Resource.Id.mr_volume_item_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.mr_volume_slider = global::Bizland.Droid.Resource.Id.mr_volume_slider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.multiply = global::Bizland.Droid.Resource.Id.multiply;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.navigation_header_container = global::Bizland.Droid.Resource.Id.navigation_header_container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.never = global::Bizland.Droid.Resource.Id.never;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.none = global::Bizland.Droid.Resource.Id.none;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.normal = global::Bizland.Droid.Resource.Id.normal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.notification_background = global::Bizland.Droid.Resource.Id.notification_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.notification_main_column = global::Bizland.Droid.Resource.Id.notification_main_column;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.notification_main_column_container = global::Bizland.Droid.Resource.Id.notification_main_column_container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.parallax = global::Bizland.Droid.Resource.Id.parallax;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.parentPanel = global::Bizland.Droid.Resource.Id.parentPanel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.pin = global::Bizland.Droid.Resource.Id.pin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.progress_circular = global::Bizland.Droid.Resource.Id.progress_circular;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.progress_horizontal = global::Bizland.Droid.Resource.Id.progress_horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.radio = global::Bizland.Droid.Resource.Id.radio;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.right = global::Bizland.Droid.Resource.Id.right;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.right_icon = global::Bizland.Droid.Resource.Id.right_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.right_side = global::Bizland.Droid.Resource.Id.right_side;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.screen = global::Bizland.Droid.Resource.Id.screen;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.scroll = global::Bizland.Droid.Resource.Id.scroll;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.scrollIndicatorDown = global::Bizland.Droid.Resource.Id.scrollIndicatorDown;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.scrollIndicatorUp = global::Bizland.Droid.Resource.Id.scrollIndicatorUp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.scrollView = global::Bizland.Droid.Resource.Id.scrollView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.scrollable = global::Bizland.Droid.Resource.Id.scrollable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_badge = global::Bizland.Droid.Resource.Id.search_badge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_bar = global::Bizland.Droid.Resource.Id.search_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_button = global::Bizland.Droid.Resource.Id.search_button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_close_btn = global::Bizland.Droid.Resource.Id.search_close_btn;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_edit_frame = global::Bizland.Droid.Resource.Id.search_edit_frame;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_go_btn = global::Bizland.Droid.Resource.Id.search_go_btn;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_mag_icon = global::Bizland.Droid.Resource.Id.search_mag_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_plate = global::Bizland.Droid.Resource.Id.search_plate;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_src_text = global::Bizland.Droid.Resource.Id.search_src_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.search_voice_btn = global::Bizland.Droid.Resource.Id.search_voice_btn;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.select_dialog_listview = global::Bizland.Droid.Resource.Id.select_dialog_listview;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.shape_id = global::Bizland.Droid.Resource.Id.shape_id;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.shortcut = global::Bizland.Droid.Resource.Id.shortcut;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.showCustom = global::Bizland.Droid.Resource.Id.showCustom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.showHome = global::Bizland.Droid.Resource.Id.showHome;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.showTitle = global::Bizland.Droid.Resource.Id.showTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.smallLabel = global::Bizland.Droid.Resource.Id.smallLabel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.snackbar_action = global::Bizland.Droid.Resource.Id.snackbar_action;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.snackbar_text = global::Bizland.Droid.Resource.Id.snackbar_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.snap = global::Bizland.Droid.Resource.Id.snap;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.spacer = global::Bizland.Droid.Resource.Id.spacer;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.split_action_bar = global::Bizland.Droid.Resource.Id.split_action_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.src_atop = global::Bizland.Droid.Resource.Id.src_atop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.src_in = global::Bizland.Droid.Resource.Id.src_in;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.src_over = global::Bizland.Droid.Resource.Id.src_over;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.start = global::Bizland.Droid.Resource.Id.start;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.status_bar_latest_event_content = global::Bizland.Droid.Resource.Id.status_bar_latest_event_content;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.submenuarrow = global::Bizland.Droid.Resource.Id.submenuarrow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.submit_area = global::Bizland.Droid.Resource.Id.submit_area;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.tabMode = global::Bizland.Droid.Resource.Id.tabMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.text = global::Bizland.Droid.Resource.Id.text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.text2 = global::Bizland.Droid.Resource.Id.text2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.textSpacerNoButtons = global::Bizland.Droid.Resource.Id.textSpacerNoButtons;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.textSpacerNoTitle = global::Bizland.Droid.Resource.Id.textSpacerNoTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.text_input_password_toggle = global::Bizland.Droid.Resource.Id.text_input_password_toggle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.textinput_counter = global::Bizland.Droid.Resource.Id.textinput_counter;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.textinput_error = global::Bizland.Droid.Resource.Id.textinput_error;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.time = global::Bizland.Droid.Resource.Id.time;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.title = global::Bizland.Droid.Resource.Id.title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.titleDividerNoCustom = global::Bizland.Droid.Resource.Id.titleDividerNoCustom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.title_template = global::Bizland.Droid.Resource.Id.title_template;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.top = global::Bizland.Droid.Resource.Id.top;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.topPanel = global::Bizland.Droid.Resource.Id.topPanel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.touch_outside = global::Bizland.Droid.Resource.Id.touch_outside;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.transition_current_scene = global::Bizland.Droid.Resource.Id.transition_current_scene;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.transition_scene_layoutid_cache = global::Bizland.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.up = global::Bizland.Droid.Resource.Id.up;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.useLogo = global::Bizland.Droid.Resource.Id.useLogo;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.view_offset_helper = global::Bizland.Droid.Resource.Id.view_offset_helper;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.visible = global::Bizland.Droid.Resource.Id.visible;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.volume_item_container = global::Bizland.Droid.Resource.Id.volume_item_container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.withText = global::Bizland.Droid.Resource.Id.withText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Id.wrap_content = global::Bizland.Droid.Resource.Id.wrap_content;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.abc_config_activityDefaultDur = global::Bizland.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.abc_config_activityShortDur = global::Bizland.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.app_bar_elevation_anim_duration = global::Bizland.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.bottom_sheet_slide_duration = global::Bizland.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.cancel_button_image_alpha = global::Bizland.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.design_snackbar_text_max_lines = global::Bizland.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.hide_password_duration = global::Bizland.Droid.Resource.Integer.hide_password_duration;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Bizland.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Bizland.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Bizland.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.show_password_duration = global::Bizland.Droid.Resource.Integer.show_password_duration;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Integer.status_bar_notification_info_maxnum = global::Bizland.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Interpolator.mr_fast_out_slow_in = global::Bizland.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Interpolator.mr_linear_out_slow_in = global::Bizland.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_action_bar_title_item = global::Bizland.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_action_bar_up_container = global::Bizland.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_action_menu_item_layout = global::Bizland.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_action_menu_layout = global::Bizland.Droid.Resource.Layout.abc_action_menu_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_action_mode_bar = global::Bizland.Droid.Resource.Layout.abc_action_mode_bar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_action_mode_close_item_material = global::Bizland.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_activity_chooser_view = global::Bizland.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::Bizland.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::Bizland.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_alert_dialog_material = global::Bizland.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_alert_dialog_title_material = global::Bizland.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_dialog_title_material = global::Bizland.Droid.Resource.Layout.abc_dialog_title_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_expanded_menu_layout = global::Bizland.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_list_menu_item_checkbox = global::Bizland.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_list_menu_item_icon = global::Bizland.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_list_menu_item_layout = global::Bizland.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_list_menu_item_radio = global::Bizland.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::Bizland.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_popup_menu_item_layout = global::Bizland.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_screen_content_include = global::Bizland.Droid.Resource.Layout.abc_screen_content_include;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_screen_simple = global::Bizland.Droid.Resource.Layout.abc_screen_simple;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Bizland.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_screen_toolbar = global::Bizland.Droid.Resource.Layout.abc_screen_toolbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Bizland.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_search_view = global::Bizland.Droid.Resource.Layout.abc_search_view;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.abc_select_dialog_material = global::Bizland.Droid.Resource.Layout.abc_select_dialog_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_bottom_navigation_item = global::Bizland.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_bottom_sheet_dialog = global::Bizland.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_layout_snackbar = global::Bizland.Droid.Resource.Layout.design_layout_snackbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_layout_snackbar_include = global::Bizland.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_layout_tab_icon = global::Bizland.Droid.Resource.Layout.design_layout_tab_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_layout_tab_text = global::Bizland.Droid.Resource.Layout.design_layout_tab_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_menu_item_action_area = global::Bizland.Droid.Resource.Layout.design_menu_item_action_area;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_navigation_item = global::Bizland.Droid.Resource.Layout.design_navigation_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_navigation_item_header = global::Bizland.Droid.Resource.Layout.design_navigation_item_header;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_navigation_item_separator = global::Bizland.Droid.Resource.Layout.design_navigation_item_separator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_navigation_item_subheader = global::Bizland.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_navigation_menu = global::Bizland.Droid.Resource.Layout.design_navigation_menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_navigation_menu_item = global::Bizland.Droid.Resource.Layout.design_navigation_menu_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.design_text_input_password_icon = global::Bizland.Droid.Resource.Layout.design_text_input_password_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.mr_chooser_dialog = global::Bizland.Droid.Resource.Layout.mr_chooser_dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.mr_chooser_list_item = global::Bizland.Droid.Resource.Layout.mr_chooser_list_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.mr_controller_material_dialog_b = global::Bizland.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.mr_controller_volume_item = global::Bizland.Droid.Resource.Layout.mr_controller_volume_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.mr_playback_control = global::Bizland.Droid.Resource.Layout.mr_playback_control;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.mr_volume_control = global::Bizland.Droid.Resource.Layout.mr_volume_control;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_action = global::Bizland.Droid.Resource.Layout.notification_action;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_action_tombstone = global::Bizland.Droid.Resource.Layout.notification_action_tombstone;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_media_action = global::Bizland.Droid.Resource.Layout.notification_media_action;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_media_cancel_action = global::Bizland.Droid.Resource.Layout.notification_media_cancel_action;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_big_media = global::Bizland.Droid.Resource.Layout.notification_template_big_media;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_big_media_custom = global::Bizland.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_big_media_narrow = global::Bizland.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::Bizland.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_custom_big = global::Bizland.Droid.Resource.Layout.notification_template_custom_big;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_icon_group = global::Bizland.Droid.Resource.Layout.notification_template_icon_group;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_lines_media = global::Bizland.Droid.Resource.Layout.notification_template_lines_media;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_media = global::Bizland.Droid.Resource.Layout.notification_template_media;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_media_custom = global::Bizland.Droid.Resource.Layout.notification_template_media_custom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_part_chronometer = global::Bizland.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.notification_template_part_time = global::Bizland.Droid.Resource.Layout.notification_template_part_time;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.RadioButton = global::Bizland.Droid.Resource.Layout.RadioButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.RadioGroup = global::Bizland.Droid.Resource.Layout.RadioGroup;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.select_dialog_item_material = global::Bizland.Droid.Resource.Layout.select_dialog_item_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.select_dialog_multichoice_material = global::Bizland.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.select_dialog_singlechoice_material = global::Bizland.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::Bizland.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_action_bar_home_description = global::Bizland.Droid.Resource.String.abc_action_bar_home_description;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_action_bar_up_description = global::Bizland.Droid.Resource.String.abc_action_bar_up_description;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_action_menu_overflow_description = global::Bizland.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_action_mode_done = global::Bizland.Droid.Resource.String.abc_action_mode_done;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_activity_chooser_view_see_all = global::Bizland.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_activitychooserview_choose_application = global::Bizland.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_capital_off = global::Bizland.Droid.Resource.String.abc_capital_off;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_capital_on = global::Bizland.Droid.Resource.String.abc_capital_on;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_body_1_material = global::Bizland.Droid.Resource.String.abc_font_family_body_1_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_body_2_material = global::Bizland.Droid.Resource.String.abc_font_family_body_2_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_button_material = global::Bizland.Droid.Resource.String.abc_font_family_button_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_caption_material = global::Bizland.Droid.Resource.String.abc_font_family_caption_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_display_1_material = global::Bizland.Droid.Resource.String.abc_font_family_display_1_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_display_2_material = global::Bizland.Droid.Resource.String.abc_font_family_display_2_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_display_3_material = global::Bizland.Droid.Resource.String.abc_font_family_display_3_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_display_4_material = global::Bizland.Droid.Resource.String.abc_font_family_display_4_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_headline_material = global::Bizland.Droid.Resource.String.abc_font_family_headline_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_menu_material = global::Bizland.Droid.Resource.String.abc_font_family_menu_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_subhead_material = global::Bizland.Droid.Resource.String.abc_font_family_subhead_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_font_family_title_material = global::Bizland.Droid.Resource.String.abc_font_family_title_material;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_search_hint = global::Bizland.Droid.Resource.String.abc_search_hint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_searchview_description_clear = global::Bizland.Droid.Resource.String.abc_searchview_description_clear;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_searchview_description_query = global::Bizland.Droid.Resource.String.abc_searchview_description_query;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_searchview_description_search = global::Bizland.Droid.Resource.String.abc_searchview_description_search;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_searchview_description_submit = global::Bizland.Droid.Resource.String.abc_searchview_description_submit;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_searchview_description_voice = global::Bizland.Droid.Resource.String.abc_searchview_description_voice;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_shareactionprovider_share_with = global::Bizland.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_shareactionprovider_share_with_application = global::Bizland.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.abc_toolbar_collapse_description = global::Bizland.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.appbar_scrolling_view_behavior = global::Bizland.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.bottom_sheet_behavior = global::Bizland.Droid.Resource.String.bottom_sheet_behavior;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.character_counter_pattern = global::Bizland.Droid.Resource.String.character_counter_pattern;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_button_content_description = global::Bizland.Droid.Resource.String.mr_button_content_description;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_cast_button_connected = global::Bizland.Droid.Resource.String.mr_cast_button_connected;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_cast_button_connecting = global::Bizland.Droid.Resource.String.mr_cast_button_connecting;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_cast_button_disconnected = global::Bizland.Droid.Resource.String.mr_cast_button_disconnected;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_chooser_searching = global::Bizland.Droid.Resource.String.mr_chooser_searching;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_chooser_title = global::Bizland.Droid.Resource.String.mr_chooser_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_album_art = global::Bizland.Droid.Resource.String.mr_controller_album_art;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_casting_screen = global::Bizland.Droid.Resource.String.mr_controller_casting_screen;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_close_description = global::Bizland.Droid.Resource.String.mr_controller_close_description;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_collapse_group = global::Bizland.Droid.Resource.String.mr_controller_collapse_group;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_disconnect = global::Bizland.Droid.Resource.String.mr_controller_disconnect;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_expand_group = global::Bizland.Droid.Resource.String.mr_controller_expand_group;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_no_info_available = global::Bizland.Droid.Resource.String.mr_controller_no_info_available;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_no_media_selected = global::Bizland.Droid.Resource.String.mr_controller_no_media_selected;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_pause = global::Bizland.Droid.Resource.String.mr_controller_pause;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_play = global::Bizland.Droid.Resource.String.mr_controller_play;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_stop = global::Bizland.Droid.Resource.String.mr_controller_stop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_stop_casting = global::Bizland.Droid.Resource.String.mr_controller_stop_casting;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_controller_volume_slider = global::Bizland.Droid.Resource.String.mr_controller_volume_slider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_system_route_name = global::Bizland.Droid.Resource.String.mr_system_route_name;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.mr_user_route_category_name = global::Bizland.Droid.Resource.String.mr_user_route_category_name;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.password_toggle_content_description = global::Bizland.Droid.Resource.String.password_toggle_content_description;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.path_password_eye = global::Bizland.Droid.Resource.String.path_password_eye;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.path_password_eye_mask_strike_through = global::Bizland.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.path_password_eye_mask_visible = global::Bizland.Droid.Resource.String.path_password_eye_mask_visible;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.path_password_strike_through = global::Bizland.Droid.Resource.String.path_password_strike_through;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.search_menu_title = global::Bizland.Droid.Resource.String.search_menu_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.String.status_bar_notification_info_overflow = global::Bizland.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.AlertDialog_AppCompat = global::Bizland.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.AlertDialog_AppCompat_Light = global::Bizland.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Animation_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::Bizland.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::Bizland.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_AlertDialog_AppCompat = global::Bizland.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Bizland.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Bizland.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_CardView = global::Bizland.Droid.Resource.Style.Base_CardView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Bizland.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Bizland.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Bizland.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Bizland.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Bizland.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Bizland.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Light = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Bizland.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::Bizland.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Bizland.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Bizland.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Bizland.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Bizland.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Bizland.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Bizland.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Bizland.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Bizland.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V21_Theme_AppCompat = global::Bizland.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Bizland.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Bizland.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V22_Theme_AppCompat = global::Bizland.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Bizland.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V23_Theme_AppCompat = global::Bizland.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Bizland.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V7_Theme_AppCompat = global::Bizland.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Bizland.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Bizland.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Bizland.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Bizland.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Button = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Bizland.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::Bizland.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Base_Widget_Design_TabLayout = global::Bizland.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.CardView = global::Bizland.Droid.Resource.Style.CardView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.CardView_Dark = global::Bizland.Droid.Resource.Style.CardView_Dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.CardView_Light = global::Bizland.Droid.Resource.Style.CardView_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_AppCompat = global::Bizland.Droid.Resource.Style.Platform_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_AppCompat_Light = global::Bizland.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Bizland.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Bizland.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Bizland.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V11_AppCompat = global::Bizland.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V11_AppCompat_Light = global::Bizland.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V14_AppCompat = global::Bizland.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V14_AppCompat_Light = global::Bizland.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V21_AppCompat = global::Bizland.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V21_AppCompat_Light = global::Bizland.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V25_AppCompat = global::Bizland.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_V25_AppCompat_Light = global::Bizland.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Bizland.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Bizland.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Bizland.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Bizland.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Bizland.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Button = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Large = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Small = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Title = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Bizland.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Bizland.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Design_Counter = global::Bizland.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Bizland.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Design_Error = global::Bizland.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Design_Hint = global::Bizland.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Bizland.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Design_Tab = global::Bizland.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Bizland.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Bizland.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_MediaRouter_Title = global::Bizland.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Bizland.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Bizland.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Bizland.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat = global::Bizland.Droid.Resource.Style.Theme_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::Bizland.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DayNight = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Bizland.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Light = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Bizland.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::Bizland.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_Design = global::Bizland.Droid.Resource.Style.Theme_Design;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::Bizland.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_Design_Light = global::Bizland.Droid.Resource.Style.Theme_Design_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Bizland.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::Bizland.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_Design_NoActionBar = global::Bizland.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_MediaRouter = global::Bizland.Droid.Resource.Style.Theme_MediaRouter;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_MediaRouter_Light = global::Bizland.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Bizland.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Bizland.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_AppCompat = global::Bizland.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Bizland.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Bizland.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Bizland.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Bizland.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Bizland.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::Bizland.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Bizland.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Bizland.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionButton = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActionMode = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Button = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Button_Small = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Bizland.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Bizland.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Bizland.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Bizland.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Bizland.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_EditText = global::Bizland.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ImageButton = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ListView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::Bizland.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Bizland.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::Bizland.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Bizland.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_RatingBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Bizland.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Bizland.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_SearchView = global::Bizland.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_SeekBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Bizland.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Spinner = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Bizland.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Toolbar = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Bizland.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_AppBarLayout = global::Bizland.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_BottomNavigationView = global::Bizland.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::Bizland.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::Bizland.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::Bizland.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_FloatingActionButton = global::Bizland.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_NavigationView = global::Bizland.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Bizland.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_Snackbar = global::Bizland.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_TabLayout = global::Bizland.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_Design_TextInputLayout = global::Bizland.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Bizland.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Bizland.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar = global::Bizland.Droid.Resource.Styleable.ActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_background = global::Bizland.Droid.Resource.Styleable.ActionBar_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_backgroundSplit = global::Bizland.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_backgroundStacked = global::Bizland.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::Bizland.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Bizland.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::Bizland.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_contentInsetRight = global::Bizland.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_contentInsetStart = global::Bizland.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Bizland.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::Bizland.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_displayOptions = global::Bizland.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_divider = global::Bizland.Droid.Resource.Styleable.ActionBar_divider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_elevation = global::Bizland.Droid.Resource.Styleable.ActionBar_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_height = global::Bizland.Droid.Resource.Styleable.ActionBar_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::Bizland.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Bizland.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_homeLayout = global::Bizland.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_icon = global::Bizland.Droid.Resource.Styleable.ActionBar_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Bizland.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_itemPadding = global::Bizland.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_logo = global::Bizland.Droid.Resource.Styleable.ActionBar_logo;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_navigationMode = global::Bizland.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_popupTheme = global::Bizland.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_progressBarPadding = global::Bizland.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_progressBarStyle = global::Bizland.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_subtitle = global::Bizland.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::Bizland.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_title = global::Bizland.Droid.Resource.Styleable.ActionBar_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBar_titleTextStyle = global::Bizland.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBarLayout = global::Bizland.Droid.Resource.Styleable.ActionBarLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Bizland.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMenuItemView = global::Bizland.Droid.Resource.Styleable.ActionMenuItemView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Bizland.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMenuView = global::Bizland.Droid.Resource.Styleable.ActionMenuView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMode = global::Bizland.Droid.Resource.Styleable.ActionMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMode_background = global::Bizland.Droid.Resource.Styleable.ActionMode_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMode_backgroundSplit = global::Bizland.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMode_closeItemLayout = global::Bizland.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMode_height = global::Bizland.Droid.Resource.Styleable.ActionMode_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::Bizland.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActionMode_titleTextStyle = global::Bizland.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActivityChooserView = global::Bizland.Droid.Resource.Styleable.ActivityChooserView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Bizland.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Bizland.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog = global::Bizland.Droid.Resource.Styleable.AlertDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog_android_layout = global::Bizland.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Bizland.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog_listItemLayout = global::Bizland.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog_listLayout = global::Bizland.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Bizland.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog_showTitle = global::Bizland.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Bizland.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayout = global::Bizland.Droid.Resource.Styleable.AppBarLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayout_android_background = global::Bizland.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayout_elevation = global::Bizland.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayout_expanded = global::Bizland.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayoutStates = global::Bizland.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Bizland.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Bizland.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayout_Layout = global::Bizland.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Bizland.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Bizland.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatImageView = global::Bizland.Droid.Resource.Styleable.AppCompatImageView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatImageView_android_src = global::Bizland.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::Bizland.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatImageView_tint = global::Bizland.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatImageView_tintMode = global::Bizland.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatSeekBar = global::Bizland.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Bizland.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::Bizland.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Bizland.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Bizland.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Bizland.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextView = global::Bizland.Droid.Resource.Styleable.AppCompatTextView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Bizland.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::Bizland.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme = global::Bizland.Droid.Resource.Styleable.AppCompatTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Bizland.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomNavigationView = global::Bizland.Droid.Resource.Styleable.BottomNavigationView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomNavigationView_elevation = global::Bizland.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::Bizland.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::Bizland.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::Bizland.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomNavigationView_menu = global::Bizland.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::Bizland.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Bizland.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Bizland.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Bizland.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ButtonBarLayout = global::Bizland.Droid.Resource.Styleable.ButtonBarLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::Bizland.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView = global::Bizland.Droid.Resource.Styleable.CardView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_android_minHeight = global::Bizland.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_android_minWidth = global::Bizland.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_cardBackgroundColor = global::Bizland.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_cardCornerRadius = global::Bizland.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_cardElevation = global::Bizland.Droid.Resource.Styleable.CardView_cardElevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_cardMaxElevation = global::Bizland.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Bizland.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::Bizland.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_contentPadding = global::Bizland.Droid.Resource.Styleable.CardView_contentPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_contentPaddingBottom = global::Bizland.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_contentPaddingLeft = global::Bizland.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_contentPaddingRight = global::Bizland.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CardView_contentPaddingTop = global::Bizland.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Bizland.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ColorStateListItem = global::Bizland.Droid.Resource.Styleable.ColorStateListItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ColorStateListItem_alpha = global::Bizland.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::Bizland.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ColorStateListItem_android_color = global::Bizland.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CompoundButton = global::Bizland.Droid.Resource.Styleable.CompoundButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CompoundButton_android_button = global::Bizland.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CompoundButton_buttonTint = global::Bizland.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::Bizland.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_keylines = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Bizland.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DesignTheme = global::Bizland.Droid.Resource.Styleable.DesignTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Bizland.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Bizland.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DesignTheme_textColorError = global::Bizland.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_color = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::Bizland.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton = global::Bizland.Droid.Resource.Styleable.FloatingActionButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_elevation = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_fabSize = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Bizland.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ForegroundLinearLayout = global::Bizland.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Bizland.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Bizland.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Bizland.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_divider = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Bizland.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ListPopupWindow = global::Bizland.Droid.Resource.Styleable.ListPopupWindow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Bizland.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Bizland.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MediaRouteButton = global::Bizland.Droid.Resource.Styleable.MediaRouteButton;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::Bizland.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::Bizland.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Bizland.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuGroup = global::Bizland.Droid.Resource.Styleable.MenuGroup;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Bizland.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuGroup_android_enabled = global::Bizland.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuGroup_android_id = global::Bizland.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::Bizland.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::Bizland.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuGroup_android_visible = global::Bizland.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem = global::Bizland.Droid.Resource.Styleable.MenuItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_actionLayout = global::Bizland.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_actionProviderClass = global::Bizland.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_actionViewClass = global::Bizland.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Bizland.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_checkable = global::Bizland.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_checked = global::Bizland.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_enabled = global::Bizland.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_icon = global::Bizland.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_id = global::Bizland.Droid.Resource.Styleable.MenuItem_android_id;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_menuCategory = global::Bizland.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::Bizland.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_onClick = global::Bizland.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::Bizland.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_title = global::Bizland.Droid.Resource.Styleable.MenuItem_android_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::Bizland.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_android_visible = global::Bizland.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuItem_showAsAction = global::Bizland.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView = global::Bizland.Droid.Resource.Styleable.MenuView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_android_headerBackground = global::Bizland.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::Bizland.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_android_itemBackground = global::Bizland.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Bizland.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::Bizland.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_android_verticalDivider = global::Bizland.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Bizland.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::Bizland.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.MenuView_subMenuArrow = global::Bizland.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView = global::Bizland.Droid.Resource.Styleable.NavigationView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_android_background = global::Bizland.Droid.Resource.Styleable.NavigationView_android_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Bizland.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_android_maxWidth = global::Bizland.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_elevation = global::Bizland.Droid.Resource.Styleable.NavigationView_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_headerLayout = global::Bizland.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_itemBackground = global::Bizland.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_itemIconTint = global::Bizland.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::Bizland.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_itemTextColor = global::Bizland.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.NavigationView_menu = global::Bizland.Droid.Resource.Styleable.NavigationView_menu;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.PopupWindow = global::Bizland.Droid.Resource.Styleable.PopupWindow;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Bizland.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::Bizland.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::Bizland.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.PopupWindowBackgroundState = global::Bizland.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Bizland.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecycleListView = global::Bizland.Droid.Resource.Styleable.RecycleListView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Bizland.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Bizland.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecyclerView = global::Bizland.Droid.Resource.Styleable.RecyclerView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Bizland.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecyclerView_android_orientation = global::Bizland.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecyclerView_layoutManager = global::Bizland.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecyclerView_reverseLayout = global::Bizland.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecyclerView_spanCount = global::Bizland.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::Bizland.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::Bizland.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Bizland.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::Bizland.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Bizland.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView = global::Bizland.Droid.Resource.Styleable.SearchView;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_android_focusable = global::Bizland.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_android_imeOptions = global::Bizland.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_android_inputType = global::Bizland.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_android_maxWidth = global::Bizland.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_closeIcon = global::Bizland.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_commitIcon = global::Bizland.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_defaultQueryHint = global::Bizland.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_goIcon = global::Bizland.Droid.Resource.Styleable.SearchView_goIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::Bizland.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_layout = global::Bizland.Droid.Resource.Styleable.SearchView_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_queryBackground = global::Bizland.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_queryHint = global::Bizland.Droid.Resource.Styleable.SearchView_queryHint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_searchHintIcon = global::Bizland.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_searchIcon = global::Bizland.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_submitBackground = global::Bizland.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::Bizland.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SearchView_voiceIcon = global::Bizland.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SnackbarLayout = global::Bizland.Droid.Resource.Styleable.SnackbarLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Bizland.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SnackbarLayout_elevation = global::Bizland.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Bizland.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Spinner = global::Bizland.Droid.Resource.Styleable.Spinner;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::Bizland.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Spinner_android_entries = global::Bizland.Droid.Resource.Styleable.Spinner_android_entries;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Spinner_android_popupBackground = global::Bizland.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Spinner_android_prompt = global::Bizland.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Spinner_popupTheme = global::Bizland.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat = global::Bizland.Droid.Resource.Styleable.SwitchCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_android_textOff = global::Bizland.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_android_textOn = global::Bizland.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_android_thumb = global::Bizland.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_showText = global::Bizland.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_splitTrack = global::Bizland.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::Bizland.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_switchPadding = global::Bizland.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Bizland.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Bizland.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_thumbTint = global::Bizland.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::Bizland.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_track = global::Bizland.Droid.Resource.Styleable.SwitchCompat_track;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_trackTint = global::Bizland.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::Bizland.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabItem = global::Bizland.Droid.Resource.Styleable.TabItem;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabItem_android_icon = global::Bizland.Droid.Resource.Styleable.TabItem_android_icon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabItem_android_layout = global::Bizland.Droid.Resource.Styleable.TabItem_android_layout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabItem_android_text = global::Bizland.Droid.Resource.Styleable.TabItem_android_text;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout = global::Bizland.Droid.Resource.Styleable.TabLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabBackground = global::Bizland.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabContentStart = global::Bizland.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabGravity = global::Bizland.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::Bizland.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Bizland.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::Bizland.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabMinWidth = global::Bizland.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabMode = global::Bizland.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabPadding = global::Bizland.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::Bizland.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::Bizland.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::Bizland.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::Bizland.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Bizland.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::Bizland.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TabLayout_tabTextColor = global::Bizland.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance = global::Bizland.Droid.Resource.Styleable.TextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_textColor = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_textSize = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_textStyle = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_android_typeface = global::Bizland.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextAppearance_textAllCaps = global::Bizland.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout = global::Bizland.Droid.Resource.Styleable.TextInputLayout;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_android_hint = global::Bizland.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::Bizland.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::Bizland.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::Bizland.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Bizland.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Bizland.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::Bizland.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Bizland.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Bizland.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::Bizland.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Bizland.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Bizland.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Bizland.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Bizland.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Bizland.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Bizland.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar = global::Bizland.Droid.Resource.Styleable.Toolbar;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_android_gravity = global::Bizland.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_android_minHeight = global::Bizland.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_buttonGravity = global::Bizland.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::Bizland.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_collapseIcon = global::Bizland.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::Bizland.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Bizland.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::Bizland.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_contentInsetRight = global::Bizland.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_contentInsetStart = global::Bizland.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Bizland.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_logo = global::Bizland.Droid.Resource.Styleable.Toolbar_logo;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_logoDescription = global::Bizland.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::Bizland.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::Bizland.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_navigationIcon = global::Bizland.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_popupTheme = global::Bizland.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_subtitle = global::Bizland.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Bizland.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::Bizland.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_title = global::Bizland.Droid.Resource.Styleable.Toolbar_title;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleMargin = global::Bizland.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::Bizland.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::Bizland.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleMarginStart = global::Bizland.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleMarginTop = global::Bizland.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleMargins = global::Bizland.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::Bizland.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.Toolbar_titleTextColor = global::Bizland.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.View = global::Bizland.Droid.Resource.Styleable.View;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.View_android_focusable = global::Bizland.Droid.Resource.Styleable.View_android_focusable;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.View_android_theme = global::Bizland.Droid.Resource.Styleable.View_android_theme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.View_paddingEnd = global::Bizland.Droid.Resource.Styleable.View_paddingEnd;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.View_paddingStart = global::Bizland.Droid.Resource.Styleable.View_paddingStart;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.View_theme = global::Bizland.Droid.Resource.Styleable.View_theme;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewBackgroundHelper = global::Bizland.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::Bizland.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Bizland.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Bizland.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewStubCompat = global::Bizland.Droid.Resource.Styleable.ViewStubCompat;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewStubCompat_android_id = global::Bizland.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Bizland.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewStubCompat_android_layout = global::Bizland.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Bizland.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -248,41 +2351,41 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0100ab
 			public const int activityChooserViewStyle = 2130772139;
 			
-			// aapt resource value: 0x7f010193
-			public const int ahBarColor = 2130772371;
+			// aapt resource value: 0x7f01019f
+			public const int ahBarColor = 2130772383;
 			
-			// aapt resource value: 0x7f01019b
-			public const int ahBarLength = 2130772379;
+			// aapt resource value: 0x7f0101a7
+			public const int ahBarLength = 2130772391;
 			
-			// aapt resource value: 0x7f01019a
-			public const int ahBarWidth = 2130772378;
+			// aapt resource value: 0x7f0101a6
+			public const int ahBarWidth = 2130772390;
 			
-			// aapt resource value: 0x7f010198
-			public const int ahCircleColor = 2130772376;
+			// aapt resource value: 0x7f0101a4
+			public const int ahCircleColor = 2130772388;
 			
-			// aapt resource value: 0x7f010197
-			public const int ahDelayMillis = 2130772375;
+			// aapt resource value: 0x7f0101a3
+			public const int ahDelayMillis = 2130772387;
 			
-			// aapt resource value: 0x7f010199
-			public const int ahRadius = 2130772377;
+			// aapt resource value: 0x7f0101a5
+			public const int ahRadius = 2130772389;
 			
-			// aapt resource value: 0x7f010194
-			public const int ahRimColor = 2130772372;
+			// aapt resource value: 0x7f0101a0
+			public const int ahRimColor = 2130772384;
 			
-			// aapt resource value: 0x7f010195
-			public const int ahRimWidth = 2130772373;
+			// aapt resource value: 0x7f0101a1
+			public const int ahRimWidth = 2130772385;
 			
-			// aapt resource value: 0x7f010196
-			public const int ahSpinSpeed = 2130772374;
+			// aapt resource value: 0x7f0101a2
+			public const int ahSpinSpeed = 2130772386;
 			
-			// aapt resource value: 0x7f010190
-			public const int ahText = 2130772368;
+			// aapt resource value: 0x7f01019c
+			public const int ahText = 2130772380;
 			
-			// aapt resource value: 0x7f010191
-			public const int ahTextColor = 2130772369;
+			// aapt resource value: 0x7f01019d
+			public const int ahTextColor = 2130772381;
 			
-			// aapt resource value: 0x7f010192
-			public const int ahTextSize = 2130772370;
+			// aapt resource value: 0x7f01019e
+			public const int ahTextSize = 2130772382;
 			
 			// aapt resource value: 0x7f0100d0
 			public const int alertDialogButtonGroupStyle = 2130772176;
@@ -881,6 +2984,42 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f01012d
 			public const int logoDescription = 2130772269;
 			
+			// aapt resource value: 0x7f010192
+			public const int lottie_autoPlay = 2130772370;
+			
+			// aapt resource value: 0x7f010199
+			public const int lottie_cacheStrategy = 2130772377;
+			
+			// aapt resource value: 0x7f01019a
+			public const int lottie_colorFilter = 2130772378;
+			
+			// aapt resource value: 0x7f010198
+			public const int lottie_enableMergePathsForKitKatAndAbove = 2130772376;
+			
+			// aapt resource value: 0x7f010190
+			public const int lottie_fileName = 2130772368;
+			
+			// aapt resource value: 0x7f010196
+			public const int lottie_imageAssetsFolder = 2130772374;
+			
+			// aapt resource value: 0x7f010193
+			public const int lottie_loop = 2130772371;
+			
+			// aapt resource value: 0x7f010197
+			public const int lottie_progress = 2130772375;
+			
+			// aapt resource value: 0x7f010191
+			public const int lottie_rawRes = 2130772369;
+			
+			// aapt resource value: 0x7f010195
+			public const int lottie_repeatCount = 2130772373;
+			
+			// aapt resource value: 0x7f010194
+			public const int lottie_repeatMode = 2130772372;
+			
+			// aapt resource value: 0x7f01019b
+			public const int lottie_scale = 2130772379;
+			
 			// aapt resource value: 0x7f010000
 			public const int mapType = 2130771968;
 			
@@ -1423,44 +3562,44 @@ namespace Bizland.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f090053
-			public const int abc_background_cache_hint_selector_material_dark = 2131296339;
-			
-			// aapt resource value: 0x7f090054
-			public const int abc_background_cache_hint_selector_material_light = 2131296340;
-			
 			// aapt resource value: 0x7f090055
-			public const int abc_btn_colored_borderless_text_material = 2131296341;
+			public const int abc_background_cache_hint_selector_material_dark = 2131296341;
 			
 			// aapt resource value: 0x7f090056
-			public const int abc_btn_colored_text_material = 2131296342;
+			public const int abc_background_cache_hint_selector_material_light = 2131296342;
 			
 			// aapt resource value: 0x7f090057
-			public const int abc_color_highlight_material = 2131296343;
+			public const int abc_btn_colored_borderless_text_material = 2131296343;
 			
 			// aapt resource value: 0x7f090058
-			public const int abc_hint_foreground_material_dark = 2131296344;
+			public const int abc_btn_colored_text_material = 2131296344;
 			
 			// aapt resource value: 0x7f090059
-			public const int abc_hint_foreground_material_light = 2131296345;
+			public const int abc_color_highlight_material = 2131296345;
+			
+			// aapt resource value: 0x7f09005a
+			public const int abc_hint_foreground_material_dark = 2131296346;
+			
+			// aapt resource value: 0x7f09005b
+			public const int abc_hint_foreground_material_light = 2131296347;
 			
 			// aapt resource value: 0x7f09000c
 			public const int abc_input_method_navigation_guard = 2131296268;
 			
-			// aapt resource value: 0x7f09005a
-			public const int abc_primary_text_disable_only_material_dark = 2131296346;
-			
-			// aapt resource value: 0x7f09005b
-			public const int abc_primary_text_disable_only_material_light = 2131296347;
-			
 			// aapt resource value: 0x7f09005c
-			public const int abc_primary_text_material_dark = 2131296348;
+			public const int abc_primary_text_disable_only_material_dark = 2131296348;
 			
 			// aapt resource value: 0x7f09005d
-			public const int abc_primary_text_material_light = 2131296349;
+			public const int abc_primary_text_disable_only_material_light = 2131296349;
 			
 			// aapt resource value: 0x7f09005e
-			public const int abc_search_url_text = 2131296350;
+			public const int abc_primary_text_material_dark = 2131296350;
+			
+			// aapt resource value: 0x7f09005f
+			public const int abc_primary_text_material_light = 2131296351;
+			
+			// aapt resource value: 0x7f090060
+			public const int abc_search_url_text = 2131296352;
 			
 			// aapt resource value: 0x7f09000d
 			public const int abc_search_url_text_normal = 2131296269;
@@ -1471,29 +3610,29 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f09000f
 			public const int abc_search_url_text_selected = 2131296271;
 			
-			// aapt resource value: 0x7f09005f
-			public const int abc_secondary_text_material_dark = 2131296351;
-			
-			// aapt resource value: 0x7f090060
-			public const int abc_secondary_text_material_light = 2131296352;
-			
 			// aapt resource value: 0x7f090061
-			public const int abc_tint_btn_checkable = 2131296353;
+			public const int abc_secondary_text_material_dark = 2131296353;
 			
 			// aapt resource value: 0x7f090062
-			public const int abc_tint_default = 2131296354;
+			public const int abc_secondary_text_material_light = 2131296354;
 			
 			// aapt resource value: 0x7f090063
-			public const int abc_tint_edittext = 2131296355;
+			public const int abc_tint_btn_checkable = 2131296355;
 			
 			// aapt resource value: 0x7f090064
-			public const int abc_tint_seek_thumb = 2131296356;
+			public const int abc_tint_default = 2131296356;
 			
 			// aapt resource value: 0x7f090065
-			public const int abc_tint_spinner = 2131296357;
+			public const int abc_tint_edittext = 2131296357;
 			
 			// aapt resource value: 0x7f090066
-			public const int abc_tint_switch_track = 2131296358;
+			public const int abc_tint_seek_thumb = 2131296358;
+			
+			// aapt resource value: 0x7f090067
+			public const int abc_tint_spinner = 2131296359;
+			
+			// aapt resource value: 0x7f090068
+			public const int abc_tint_switch_track = 2131296360;
 			
 			// aapt resource value: 0x7f090010
 			public const int accent_material_dark = 2131296272;
@@ -1549,8 +3688,8 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f09000b
 			public const int cardview_shadow_start_color = 2131296267;
 			
-			// aapt resource value: 0x7f090067
-			public const int common_google_signin_btn_text_dark = 2131296359;
+			// aapt resource value: 0x7f090069
+			public const int common_google_signin_btn_text_dark = 2131296361;
 			
 			// aapt resource value: 0x7f090000
 			public const int common_google_signin_btn_text_dark_default = 2131296256;
@@ -1564,8 +3703,8 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f090003
 			public const int common_google_signin_btn_text_dark_pressed = 2131296259;
 			
-			// aapt resource value: 0x7f090068
-			public const int common_google_signin_btn_text_light = 2131296360;
+			// aapt resource value: 0x7f09006a
+			public const int common_google_signin_btn_text_light = 2131296362;
 			
 			// aapt resource value: 0x7f090004
 			public const int common_google_signin_btn_text_light_default = 2131296260;
@@ -1579,14 +3718,14 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f090007
 			public const int common_google_signin_btn_text_light_pressed = 2131296263;
 			
-			// aapt resource value: 0x7f090069
-			public const int common_google_signin_btn_tint = 2131296361;
+			// aapt resource value: 0x7f09006b
+			public const int common_google_signin_btn_tint = 2131296363;
 			
 			// aapt resource value: 0x7f090048
 			public const int design_bottom_navigation_shadow_color = 2131296328;
 			
-			// aapt resource value: 0x7f09006a
-			public const int design_error = 2131296362;
+			// aapt resource value: 0x7f09006c
+			public const int design_error = 2131296364;
 			
 			// aapt resource value: 0x7f090049
 			public const int design_fab_shadow_end_color = 2131296329;
@@ -1612,8 +3751,8 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f090050
 			public const int design_snackbar_background_color = 2131296336;
 			
-			// aapt resource value: 0x7f09006b
-			public const int design_tint_password_toggle = 2131296363;
+			// aapt resource value: 0x7f09006d
+			public const int design_tint_password_toggle = 2131296365;
 			
 			// aapt resource value: 0x7f09001e
 			public const int dim_foreground_disabled_material_dark = 2131296286;
@@ -1678,6 +3817,9 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f090032
 			public const int material_grey_900 = 2131296306;
 			
+			// aapt resource value: 0x7f090053
+			public const int normal = 2131296339;
+			
 			// aapt resource value: 0x7f090051
 			public const int notification_action_color_filter = 2131296337;
 			
@@ -1729,17 +3871,23 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f090040
 			public const int secondary_text_disabled_material_light = 2131296320;
 			
+			// aapt resource value: 0x7f09006e
+			public const int segmented_control_text = 2131296366;
+			
+			// aapt resource value: 0x7f090054
+			public const int selected = 2131296340;
+			
 			// aapt resource value: 0x7f090041
 			public const int switch_thumb_disabled_material_dark = 2131296321;
 			
 			// aapt resource value: 0x7f090042
 			public const int switch_thumb_disabled_material_light = 2131296322;
 			
-			// aapt resource value: 0x7f09006c
-			public const int switch_thumb_material_dark = 2131296364;
+			// aapt resource value: 0x7f09006f
+			public const int switch_thumb_material_dark = 2131296367;
 			
-			// aapt resource value: 0x7f09006d
-			public const int switch_thumb_material_light = 2131296365;
+			// aapt resource value: 0x7f090070
+			public const int switch_thumb_material_light = 2131296368;
 			
 			// aapt resource value: 0x7f090043
 			public const int switch_thumb_normal_material_dark = 2131296323;
@@ -2523,26 +4671,26 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020156
-			public const int avd_hide_password_1 = 2130837846;
+			// aapt resource value: 0x7f020159
+			public const int avd_hide_password_1 = 2130837849;
 			
-			// aapt resource value: 0x7f020157
-			public const int avd_hide_password_2 = 2130837847;
+			// aapt resource value: 0x7f02015a
+			public const int avd_hide_password_2 = 2130837850;
 			
-			// aapt resource value: 0x7f020158
-			public const int avd_hide_password_3 = 2130837848;
+			// aapt resource value: 0x7f02015b
+			public const int avd_hide_password_3 = 2130837851;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020159
-			public const int avd_show_password_1 = 2130837849;
+			// aapt resource value: 0x7f02015c
+			public const int avd_show_password_1 = 2130837852;
 			
-			// aapt resource value: 0x7f02015a
-			public const int avd_show_password_2 = 2130837850;
+			// aapt resource value: 0x7f02015d
+			public const int avd_show_password_2 = 2130837853;
 			
-			// aapt resource value: 0x7f02015b
-			public const int avd_show_password_3 = 2130837851;
+			// aapt resource value: 0x7f02015e
+			public const int avd_show_password_3 = 2130837854;
 			
 			// aapt resource value: 0x7f020055
 			public const int close_white = 2130837589;
@@ -3285,11 +5433,11 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f02014b
 			public const int notification_icon_background = 2130837835;
 			
-			// aapt resource value: 0x7f020154
-			public const int notification_template_icon_bg = 2130837844;
+			// aapt resource value: 0x7f020157
+			public const int notification_template_icon_bg = 2130837847;
 			
-			// aapt resource value: 0x7f020155
-			public const int notification_template_icon_low_bg = 2130837845;
+			// aapt resource value: 0x7f020158
+			public const int notification_template_icon_low_bg = 2130837848;
 			
 			// aapt resource value: 0x7f02014c
 			public const int notification_tile_bg = 2130837836;
@@ -3304,16 +5452,25 @@ namespace Bizland.Droid
 			public const int roundedbgdark = 2130837839;
 			
 			// aapt resource value: 0x7f020150
-			public const int switch_off = 2130837840;
+			public const int segmented_control_background = 2130837840;
 			
 			// aapt resource value: 0x7f020151
-			public const int switch_on = 2130837841;
+			public const int segmented_control_first_background = 2130837841;
 			
 			// aapt resource value: 0x7f020152
-			public const int tooltip_frame_dark = 2130837842;
+			public const int segmented_control_last_background = 2130837842;
 			
 			// aapt resource value: 0x7f020153
-			public const int tooltip_frame_light = 2130837843;
+			public const int switch_off = 2130837843;
+			
+			// aapt resource value: 0x7f020154
+			public const int switch_on = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int tooltip_frame_dark = 2130837845;
+			
+			// aapt resource value: 0x7f020156
+			public const int tooltip_frame_light = 2130837846;
 			
 			static Drawable()
 			{
@@ -3328,59 +5485,62 @@ namespace Bizland.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b003d
-			public const int ALT = 2131427389;
-			
 			// aapt resource value: 0x7f0b003e
-			public const int CTRL = 2131427390;
+			public const int ALT = 2131427390;
 			
 			// aapt resource value: 0x7f0b003f
-			public const int FUNCTION = 2131427391;
+			public const int CTRL = 2131427391;
 			
 			// aapt resource value: 0x7f0b0040
-			public const int META = 2131427392;
+			public const int FUNCTION = 2131427392;
 			
 			// aapt resource value: 0x7f0b0041
-			public const int SHIFT = 2131427393;
+			public const int META = 2131427393;
 			
 			// aapt resource value: 0x7f0b0042
-			public const int SYM = 2131427394;
+			public const int SHIFT = 2131427394;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int action0 = 2131427524;
+			// aapt resource value: 0x7f0b0043
+			public const int SYM = 2131427395;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int action_bar = 2131427462;
+			// aapt resource value: 0x7f0b00d9
+			public const int SegControl = 2131427545;
+			
+			// aapt resource value: 0x7f0b00c9
+			public const int action0 = 2131427529;
+			
+			// aapt resource value: 0x7f0b008b
+			public const int action_bar = 2131427467;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int action_bar_activity_content = 2131427329;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int action_bar_container = 2131427461;
+			// aapt resource value: 0x7f0b008a
+			public const int action_bar_container = 2131427466;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int action_bar_root = 2131427457;
+			// aapt resource value: 0x7f0b0086
+			public const int action_bar_root = 2131427462;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_bar_spinner = 2131427330;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int action_bar_subtitle = 2131427429;
+			// aapt resource value: 0x7f0b006a
+			public const int action_bar_subtitle = 2131427434;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int action_bar_title = 2131427428;
+			// aapt resource value: 0x7f0b0069
+			public const int action_bar_title = 2131427433;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int action_container = 2131427521;
+			// aapt resource value: 0x7f0b00c6
+			public const int action_container = 2131427526;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int action_context_bar = 2131427463;
+			// aapt resource value: 0x7f0b008c
+			public const int action_context_bar = 2131427468;
 			
-			// aapt resource value: 0x7f0b00c8
-			public const int action_divider = 2131427528;
+			// aapt resource value: 0x7f0b00cd
+			public const int action_divider = 2131427533;
 			
-			// aapt resource value: 0x7f0b00c2
-			public const int action_image = 2131427522;
+			// aapt resource value: 0x7f0b00c7
+			public const int action_image = 2131427527;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -3388,167 +5548,167 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b0004
 			public const int action_menu_presenter = 2131427332;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int action_mode_bar = 2131427459;
+			// aapt resource value: 0x7f0b0088
+			public const int action_mode_bar = 2131427464;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int action_mode_bar_stub = 2131427458;
+			// aapt resource value: 0x7f0b0087
+			public const int action_mode_bar_stub = 2131427463;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int action_mode_close_button = 2131427430;
+			// aapt resource value: 0x7f0b006b
+			public const int action_mode_close_button = 2131427435;
 			
-			// aapt resource value: 0x7f0b00c3
-			public const int action_text = 2131427523;
+			// aapt resource value: 0x7f0b00c8
+			public const int action_text = 2131427528;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int actions = 2131427537;
+			// aapt resource value: 0x7f0b00d6
+			public const int actions = 2131427542;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int activity_chooser_view_content = 2131427431;
+			// aapt resource value: 0x7f0b006c
+			public const int activity_chooser_view_content = 2131427436;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int add = 2131427378;
-			
-			// aapt resource value: 0x7f0b0022
-			public const int adjust_height = 2131427362;
+			// aapt resource value: 0x7f0b0033
+			public const int add = 2131427379;
 			
 			// aapt resource value: 0x7f0b0023
-			public const int adjust_width = 2131427363;
+			public const int adjust_height = 2131427363;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int alertTitle = 2131427450;
+			// aapt resource value: 0x7f0b0024
+			public const int adjust_width = 2131427364;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int all = 2131427420;
+			// aapt resource value: 0x7f0b007f
+			public const int alertTitle = 2131427455;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int always = 2131427395;
-			
-			// aapt resource value: 0x7f0b0060
-			public const int async = 2131427424;
-			
-			// aapt resource value: 0x7f0b0027
-			public const int auto = 2131427367;
-			
-			// aapt resource value: 0x7f0b003a
-			public const int beginning = 2131427386;
-			
-			// aapt resource value: 0x7f0b0061
-			public const int blocking = 2131427425;
-			
-			// aapt resource value: 0x7f0b0048
-			public const int bottom = 2131427400;
-			
-			// aapt resource value: 0x7f0b006d
-			public const int buttonPanel = 2131427437;
-			
-			// aapt resource value: 0x7f0b00c5
-			public const int cancel_action = 2131427525;
-			
-			// aapt resource value: 0x7f0b004f
-			public const int center = 2131427407;
-			
-			// aapt resource value: 0x7f0b0050
-			public const int center_horizontal = 2131427408;
-			
-			// aapt resource value: 0x7f0b0051
-			public const int center_vertical = 2131427409;
-			
-			// aapt resource value: 0x7f0b007d
-			public const int checkbox = 2131427453;
-			
-			// aapt resource value: 0x7f0b00cd
-			public const int chronometer = 2131427533;
-			
-			// aapt resource value: 0x7f0b0058
-			public const int clip_horizontal = 2131427416;
-			
-			// aapt resource value: 0x7f0b0059
-			public const int clip_vertical = 2131427417;
+			// aapt resource value: 0x7f0b005d
+			public const int all = 2131427421;
 			
 			// aapt resource value: 0x7f0b0044
-			public const int collapseActionView = 2131427396;
+			public const int always = 2131427396;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int container = 2131427479;
-			
-			// aapt resource value: 0x7f0b0070
-			public const int contentPanel = 2131427440;
-			
-			// aapt resource value: 0x7f0b0098
-			public const int coordinator = 2131427480;
-			
-			// aapt resource value: 0x7f0b0077
-			public const int custom = 2131427447;
-			
-			// aapt resource value: 0x7f0b0076
-			public const int customPanel = 2131427446;
+			// aapt resource value: 0x7f0b0061
+			public const int async = 2131427425;
 			
 			// aapt resource value: 0x7f0b0028
-			public const int dark = 2131427368;
-			
-			// aapt resource value: 0x7f0b0084
-			public const int decor_content_parent = 2131427460;
-			
-			// aapt resource value: 0x7f0b006a
-			public const int default_activity_button = 2131427434;
-			
-			// aapt resource value: 0x7f0b009a
-			public const int design_bottom_sheet = 2131427482;
-			
-			// aapt resource value: 0x7f0b00a1
-			public const int design_menu_item_action_area = 2131427489;
-			
-			// aapt resource value: 0x7f0b00a0
-			public const int design_menu_item_action_area_stub = 2131427488;
-			
-			// aapt resource value: 0x7f0b009f
-			public const int design_menu_item_text = 2131427487;
-			
-			// aapt resource value: 0x7f0b009e
-			public const int design_navigation_view = 2131427486;
-			
-			// aapt resource value: 0x7f0b002c
-			public const int disableHome = 2131427372;
-			
-			// aapt resource value: 0x7f0b0088
-			public const int edit_query = 2131427464;
+			public const int auto = 2131427368;
 			
 			// aapt resource value: 0x7f0b003b
-			public const int end = 2131427387;
-			
-			// aapt resource value: 0x7f0b00d3
-			public const int end_padder = 2131427539;
-			
-			// aapt resource value: 0x7f0b004a
-			public const int enterAlways = 2131427402;
-			
-			// aapt resource value: 0x7f0b004b
-			public const int enterAlwaysCollapsed = 2131427403;
-			
-			// aapt resource value: 0x7f0b004c
-			public const int exitUntilCollapsed = 2131427404;
-			
-			// aapt resource value: 0x7f0b0068
-			public const int expand_activities_button = 2131427432;
-			
-			// aapt resource value: 0x7f0b007c
-			public const int expanded_menu = 2131427452;
-			
-			// aapt resource value: 0x7f0b005a
-			public const int fill = 2131427418;
-			
-			// aapt resource value: 0x7f0b005b
-			public const int fill_horizontal = 2131427419;
-			
-			// aapt resource value: 0x7f0b0052
-			public const int fill_vertical = 2131427410;
-			
-			// aapt resource value: 0x7f0b005e
-			public const int @fixed = 2131427422;
+			public const int beginning = 2131427387;
 			
 			// aapt resource value: 0x7f0b0062
-			public const int forever = 2131427426;
+			public const int blocking = 2131427426;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int bottom = 2131427401;
+			
+			// aapt resource value: 0x7f0b0072
+			public const int buttonPanel = 2131427442;
+			
+			// aapt resource value: 0x7f0b00ca
+			public const int cancel_action = 2131427530;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int center = 2131427408;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int center_horizontal = 2131427409;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int center_vertical = 2131427410;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int checkbox = 2131427458;
+			
+			// aapt resource value: 0x7f0b00d2
+			public const int chronometer = 2131427538;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int clip_horizontal = 2131427417;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int clip_vertical = 2131427418;
+			
+			// aapt resource value: 0x7f0b0045
+			public const int collapseActionView = 2131427397;
+			
+			// aapt resource value: 0x7f0b009c
+			public const int container = 2131427484;
+			
+			// aapt resource value: 0x7f0b0075
+			public const int contentPanel = 2131427445;
+			
+			// aapt resource value: 0x7f0b009d
+			public const int coordinator = 2131427485;
+			
+			// aapt resource value: 0x7f0b007c
+			public const int custom = 2131427452;
+			
+			// aapt resource value: 0x7f0b007b
+			public const int customPanel = 2131427451;
+			
+			// aapt resource value: 0x7f0b0029
+			public const int dark = 2131427369;
+			
+			// aapt resource value: 0x7f0b0089
+			public const int decor_content_parent = 2131427465;
+			
+			// aapt resource value: 0x7f0b006f
+			public const int default_activity_button = 2131427439;
+			
+			// aapt resource value: 0x7f0b009f
+			public const int design_bottom_sheet = 2131427487;
+			
+			// aapt resource value: 0x7f0b00a6
+			public const int design_menu_item_action_area = 2131427494;
+			
+			// aapt resource value: 0x7f0b00a5
+			public const int design_menu_item_action_area_stub = 2131427493;
+			
+			// aapt resource value: 0x7f0b00a4
+			public const int design_menu_item_text = 2131427492;
+			
+			// aapt resource value: 0x7f0b00a3
+			public const int design_navigation_view = 2131427491;
+			
+			// aapt resource value: 0x7f0b002d
+			public const int disableHome = 2131427373;
+			
+			// aapt resource value: 0x7f0b008d
+			public const int edit_query = 2131427469;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int end = 2131427388;
+			
+			// aapt resource value: 0x7f0b00d8
+			public const int end_padder = 2131427544;
+			
+			// aapt resource value: 0x7f0b004b
+			public const int enterAlways = 2131427403;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int enterAlwaysCollapsed = 2131427404;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int exitUntilCollapsed = 2131427405;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int expand_activities_button = 2131427437;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int expanded_menu = 2131427457;
+			
+			// aapt resource value: 0x7f0b005b
+			public const int fill = 2131427419;
+			
+			// aapt resource value: 0x7f0b005c
+			public const int fill_horizontal = 2131427420;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int fill_vertical = 2131427411;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int @fixed = 2131427423;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int forever = 2131427427;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int ghost_view = 2131427338;
@@ -3556,44 +5716,44 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b0005
 			public const int home = 2131427333;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int homeAsUp = 2131427373;
+			// aapt resource value: 0x7f0b002e
+			public const int homeAsUp = 2131427374;
 			
-			// aapt resource value: 0x7f0b001d
-			public const int hybrid = 2131427357;
+			// aapt resource value: 0x7f0b001e
+			public const int hybrid = 2131427358;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int icon = 2131427436;
+			// aapt resource value: 0x7f0b0071
+			public const int icon = 2131427441;
 			
-			// aapt resource value: 0x7f0b00d2
-			public const int icon_group = 2131427538;
+			// aapt resource value: 0x7f0b00d7
+			public const int icon_group = 2131427543;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int icon_only = 2131427364;
+			// aapt resource value: 0x7f0b0025
+			public const int icon_only = 2131427365;
 			
-			// aapt resource value: 0x7f0b0045
-			public const int ifRoom = 2131427397;
+			// aapt resource value: 0x7f0b0046
+			public const int ifRoom = 2131427398;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int image = 2131427433;
+			// aapt resource value: 0x7f0b006e
+			public const int image = 2131427438;
 			
-			// aapt resource value: 0x7f0b00ce
-			public const int info = 2131427534;
+			// aapt resource value: 0x7f0b00d3
+			public const int info = 2131427539;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int italic = 2131427427;
+			// aapt resource value: 0x7f0b0064
+			public const int italic = 2131427428;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int item_touch_helper_previous_elevation = 2131427328;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int largeLabel = 2131427478;
+			// aapt resource value: 0x7f0b009b
+			public const int largeLabel = 2131427483;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int left = 2131427411;
+			// aapt resource value: 0x7f0b0054
+			public const int left = 2131427412;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int light = 2131427369;
+			// aapt resource value: 0x7f0b002a
+			public const int light = 2131427370;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int line1 = 2131427351;
@@ -3601,149 +5761,152 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b0018
 			public const int line3 = 2131427352;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int listMode = 2131427370;
+			// aapt resource value: 0x7f0b002b
+			public const int listMode = 2131427371;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int list_item = 2131427435;
-			
-			// aapt resource value: 0x7f0b00a5
-			public const int loadingImage = 2131427493;
-			
-			// aapt resource value: 0x7f0b00a3
-			public const int loadingProgressBar = 2131427491;
-			
-			// aapt resource value: 0x7f0b00a6
-			public const int loadingProgressWheel = 2131427494;
-			
-			// aapt resource value: 0x7f0b00d6
-			public const int logoImageLayout = 2131427542;
-			
-			// aapt resource value: 0x7f0b00d9
-			public const int masked = 2131427545;
-			
-			// aapt resource value: 0x7f0b00c7
-			public const int media_actions = 2131427527;
-			
-			// aapt resource value: 0x7f0b00d7
-			public const int message = 2131427543;
-			
-			// aapt resource value: 0x7f0b003c
-			public const int middle = 2131427388;
-			
-			// aapt resource value: 0x7f0b005d
-			public const int mini = 2131427421;
-			
-			// aapt resource value: 0x7f0b00b3
-			public const int mr_art = 2131427507;
-			
-			// aapt resource value: 0x7f0b00a8
-			public const int mr_chooser_list = 2131427496;
-			
-			// aapt resource value: 0x7f0b00ab
-			public const int mr_chooser_route_desc = 2131427499;
-			
-			// aapt resource value: 0x7f0b00a9
-			public const int mr_chooser_route_icon = 2131427497;
+			// aapt resource value: 0x7f0b0070
+			public const int list_item = 2131427440;
 			
 			// aapt resource value: 0x7f0b00aa
-			public const int mr_chooser_route_name = 2131427498;
+			public const int loadingImage = 2131427498;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int mr_chooser_title = 2131427495;
+			// aapt resource value: 0x7f0b00a8
+			public const int loadingProgressBar = 2131427496;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int mr_close = 2131427504;
+			// aapt resource value: 0x7f0b00ab
+			public const int loadingProgressWheel = 2131427499;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int mr_control_divider = 2131427510;
+			// aapt resource value: 0x7f0b00dc
+			public const int logoImageLayout = 2131427548;
 			
-			// aapt resource value: 0x7f0b00bc
-			public const int mr_control_playback_ctrl = 2131427516;
+			// aapt resource value: 0x7f0b001d
+			public const int lottie_layer_name = 2131427357;
 			
-			// aapt resource value: 0x7f0b00bf
-			public const int mr_control_subtitle = 2131427519;
+			// aapt resource value: 0x7f0b00df
+			public const int masked = 2131427551;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int mr_control_title = 2131427518;
+			// aapt resource value: 0x7f0b00cc
+			public const int media_actions = 2131427532;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int mr_control_title_container = 2131427517;
+			// aapt resource value: 0x7f0b00dd
+			public const int message = 2131427549;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int mr_custom_control = 2131427505;
+			// aapt resource value: 0x7f0b003d
+			public const int middle = 2131427389;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int mr_default_control = 2131427506;
-			
-			// aapt resource value: 0x7f0b00ad
-			public const int mr_dialog_area = 2131427501;
-			
-			// aapt resource value: 0x7f0b00ac
-			public const int mr_expandable_area = 2131427500;
-			
-			// aapt resource value: 0x7f0b00c0
-			public const int mr_group_expand_collapse = 2131427520;
-			
-			// aapt resource value: 0x7f0b00b4
-			public const int mr_media_main_control = 2131427508;
-			
-			// aapt resource value: 0x7f0b00af
-			public const int mr_name = 2131427503;
-			
-			// aapt resource value: 0x7f0b00b5
-			public const int mr_playback_control = 2131427509;
-			
-			// aapt resource value: 0x7f0b00ae
-			public const int mr_title_bar = 2131427502;
-			
-			// aapt resource value: 0x7f0b00b7
-			public const int mr_volume_control = 2131427511;
+			// aapt resource value: 0x7f0b005e
+			public const int mini = 2131427422;
 			
 			// aapt resource value: 0x7f0b00b8
-			public const int mr_volume_group_list = 2131427512;
+			public const int mr_art = 2131427512;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int mr_volume_item_icon = 2131427514;
+			// aapt resource value: 0x7f0b00ad
+			public const int mr_chooser_list = 2131427501;
+			
+			// aapt resource value: 0x7f0b00b0
+			public const int mr_chooser_route_desc = 2131427504;
+			
+			// aapt resource value: 0x7f0b00ae
+			public const int mr_chooser_route_icon = 2131427502;
+			
+			// aapt resource value: 0x7f0b00af
+			public const int mr_chooser_route_name = 2131427503;
+			
+			// aapt resource value: 0x7f0b00ac
+			public const int mr_chooser_title = 2131427500;
+			
+			// aapt resource value: 0x7f0b00b5
+			public const int mr_close = 2131427509;
 			
 			// aapt resource value: 0x7f0b00bb
-			public const int mr_volume_slider = 2131427515;
+			public const int mr_control_divider = 2131427515;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int multiply = 2131427379;
+			// aapt resource value: 0x7f0b00c1
+			public const int mr_control_playback_ctrl = 2131427521;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int navigation_header_container = 2131427485;
+			// aapt resource value: 0x7f0b00c4
+			public const int mr_control_subtitle = 2131427524;
 			
-			// aapt resource value: 0x7f0b0046
-			public const int never = 2131427398;
+			// aapt resource value: 0x7f0b00c3
+			public const int mr_control_title = 2131427523;
 			
-			// aapt resource value: 0x7f0b001e
-			public const int none = 2131427358;
+			// aapt resource value: 0x7f0b00c2
+			public const int mr_control_title_container = 2131427522;
+			
+			// aapt resource value: 0x7f0b00b6
+			public const int mr_custom_control = 2131427510;
+			
+			// aapt resource value: 0x7f0b00b7
+			public const int mr_default_control = 2131427511;
+			
+			// aapt resource value: 0x7f0b00b2
+			public const int mr_dialog_area = 2131427506;
+			
+			// aapt resource value: 0x7f0b00b1
+			public const int mr_expandable_area = 2131427505;
+			
+			// aapt resource value: 0x7f0b00c5
+			public const int mr_group_expand_collapse = 2131427525;
+			
+			// aapt resource value: 0x7f0b00b9
+			public const int mr_media_main_control = 2131427513;
+			
+			// aapt resource value: 0x7f0b00b4
+			public const int mr_name = 2131427508;
+			
+			// aapt resource value: 0x7f0b00ba
+			public const int mr_playback_control = 2131427514;
+			
+			// aapt resource value: 0x7f0b00b3
+			public const int mr_title_bar = 2131427507;
+			
+			// aapt resource value: 0x7f0b00bc
+			public const int mr_volume_control = 2131427516;
+			
+			// aapt resource value: 0x7f0b00bd
+			public const int mr_volume_group_list = 2131427517;
+			
+			// aapt resource value: 0x7f0b00bf
+			public const int mr_volume_item_icon = 2131427519;
+			
+			// aapt resource value: 0x7f0b00c0
+			public const int mr_volume_slider = 2131427520;
+			
+			// aapt resource value: 0x7f0b0034
+			public const int multiply = 2131427380;
+			
+			// aapt resource value: 0x7f0b00a2
+			public const int navigation_header_container = 2131427490;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int never = 2131427399;
 			
 			// aapt resource value: 0x7f0b001f
-			public const int normal = 2131427359;
+			public const int none = 2131427359;
 			
-			// aapt resource value: 0x7f0b00d0
-			public const int notification_background = 2131427536;
+			// aapt resource value: 0x7f0b0020
+			public const int normal = 2131427360;
 			
-			// aapt resource value: 0x7f0b00ca
-			public const int notification_main_column = 2131427530;
+			// aapt resource value: 0x7f0b00d5
+			public const int notification_background = 2131427541;
 			
-			// aapt resource value: 0x7f0b00c9
-			public const int notification_main_column_container = 2131427529;
+			// aapt resource value: 0x7f0b00cf
+			public const int notification_main_column = 2131427535;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int parallax = 2131427414;
+			// aapt resource value: 0x7f0b00ce
+			public const int notification_main_column_container = 2131427534;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int parentPanel = 2131427439;
+			// aapt resource value: 0x7f0b0057
+			public const int parallax = 2131427415;
+			
+			// aapt resource value: 0x7f0b0074
+			public const int parentPanel = 2131427444;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int parent_matrix = 2131427339;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int pin = 2131427415;
+			// aapt resource value: 0x7f0b0058
+			public const int pin = 2131427416;
 			
 			// aapt resource value: 0x7f0b0006
 			public const int progress_circular = 2131427334;
@@ -3751,20 +5914,26 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b0007
 			public const int progress_horizontal = 2131427335;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int radio = 2131427455;
+			// aapt resource value: 0x7f0b0084
+			public const int radio = 2131427460;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int right = 2131427412;
+			// aapt resource value: 0x7f0b0065
+			public const int restart = 2131427429;
 			
-			// aapt resource value: 0x7f0b00cf
-			public const int right_icon = 2131427535;
+			// aapt resource value: 0x7f0b0066
+			public const int reverse = 2131427430;
 			
-			// aapt resource value: 0x7f0b00cb
-			public const int right_side = 2131427531;
+			// aapt resource value: 0x7f0b0055
+			public const int right = 2131427413;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int satellite = 2131427360;
+			// aapt resource value: 0x7f0b00d4
+			public const int right_icon = 2131427540;
+			
+			// aapt resource value: 0x7f0b00d0
+			public const int right_side = 2131427536;
+			
+			// aapt resource value: 0x7f0b0021
+			public const int satellite = 2131427361;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int save_image_matrix = 2131427340;
@@ -3775,122 +5944,128 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b000e
 			public const int save_scale_type = 2131427342;
 			
-			// aapt resource value: 0x7f0b0034
-			public const int screen = 2131427380;
-			
-			// aapt resource value: 0x7f0b004d
-			public const int scroll = 2131427405;
-			
-			// aapt resource value: 0x7f0b0075
-			public const int scrollIndicatorDown = 2131427445;
-			
-			// aapt resource value: 0x7f0b0071
-			public const int scrollIndicatorUp = 2131427441;
-			
-			// aapt resource value: 0x7f0b0072
-			public const int scrollView = 2131427442;
-			
-			// aapt resource value: 0x7f0b005f
-			public const int scrollable = 2131427423;
-			
-			// aapt resource value: 0x7f0b008a
-			public const int search_badge = 2131427466;
-			
-			// aapt resource value: 0x7f0b0089
-			public const int search_bar = 2131427465;
-			
-			// aapt resource value: 0x7f0b008b
-			public const int search_button = 2131427467;
-			
-			// aapt resource value: 0x7f0b0090
-			public const int search_close_btn = 2131427472;
-			
-			// aapt resource value: 0x7f0b008c
-			public const int search_edit_frame = 2131427468;
-			
-			// aapt resource value: 0x7f0b0092
-			public const int search_go_btn = 2131427474;
-			
-			// aapt resource value: 0x7f0b008d
-			public const int search_mag_icon = 2131427469;
-			
-			// aapt resource value: 0x7f0b008e
-			public const int search_plate = 2131427470;
-			
-			// aapt resource value: 0x7f0b008f
-			public const int search_src_text = 2131427471;
-			
-			// aapt resource value: 0x7f0b0093
-			public const int search_voice_btn = 2131427475;
-			
-			// aapt resource value: 0x7f0b0094
-			public const int select_dialog_listview = 2131427476;
-			
-			// aapt resource value: 0x7f0b007e
-			public const int shortcut = 2131427454;
-			
-			// aapt resource value: 0x7f0b002e
-			public const int showCustom = 2131427374;
-			
-			// aapt resource value: 0x7f0b002f
-			public const int showHome = 2131427375;
-			
-			// aapt resource value: 0x7f0b0030
-			public const int showTitle = 2131427376;
-			
-			// aapt resource value: 0x7f0b00d4
-			public const int sliding_tabs = 2131427540;
-			
-			// aapt resource value: 0x7f0b0095
-			public const int smallLabel = 2131427477;
-			
-			// aapt resource value: 0x7f0b009c
-			public const int snackbar_action = 2131427484;
-			
-			// aapt resource value: 0x7f0b009b
-			public const int snackbar_text = 2131427483;
+			// aapt resource value: 0x7f0b0035
+			public const int screen = 2131427381;
 			
 			// aapt resource value: 0x7f0b004e
-			public const int snap = 2131427406;
+			public const int scroll = 2131427406;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int spacer = 2131427438;
+			// aapt resource value: 0x7f0b007a
+			public const int scrollIndicatorDown = 2131427450;
+			
+			// aapt resource value: 0x7f0b0076
+			public const int scrollIndicatorUp = 2131427446;
+			
+			// aapt resource value: 0x7f0b0077
+			public const int scrollView = 2131427447;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int scrollable = 2131427424;
+			
+			// aapt resource value: 0x7f0b008f
+			public const int search_badge = 2131427471;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int search_bar = 2131427470;
+			
+			// aapt resource value: 0x7f0b0090
+			public const int search_button = 2131427472;
+			
+			// aapt resource value: 0x7f0b0095
+			public const int search_close_btn = 2131427477;
+			
+			// aapt resource value: 0x7f0b0091
+			public const int search_edit_frame = 2131427473;
+			
+			// aapt resource value: 0x7f0b0097
+			public const int search_go_btn = 2131427479;
+			
+			// aapt resource value: 0x7f0b0092
+			public const int search_mag_icon = 2131427474;
+			
+			// aapt resource value: 0x7f0b0093
+			public const int search_plate = 2131427475;
+			
+			// aapt resource value: 0x7f0b0094
+			public const int search_src_text = 2131427476;
+			
+			// aapt resource value: 0x7f0b0098
+			public const int search_voice_btn = 2131427480;
+			
+			// aapt resource value: 0x7f0b0099
+			public const int select_dialog_listview = 2131427481;
+			
+			// aapt resource value: 0x7f0b00e0
+			public const int shape_id = 2131427552;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int shortcut = 2131427459;
+			
+			// aapt resource value: 0x7f0b002f
+			public const int showCustom = 2131427375;
+			
+			// aapt resource value: 0x7f0b0030
+			public const int showHome = 2131427376;
+			
+			// aapt resource value: 0x7f0b0031
+			public const int showTitle = 2131427377;
+			
+			// aapt resource value: 0x7f0b00da
+			public const int sliding_tabs = 2131427546;
+			
+			// aapt resource value: 0x7f0b009a
+			public const int smallLabel = 2131427482;
+			
+			// aapt resource value: 0x7f0b00a1
+			public const int snackbar_action = 2131427489;
+			
+			// aapt resource value: 0x7f0b00a0
+			public const int snackbar_text = 2131427488;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int snap = 2131427407;
+			
+			// aapt resource value: 0x7f0b0073
+			public const int spacer = 2131427443;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int split_action_bar = 2131427336;
 			
-			// aapt resource value: 0x7f0b0035
-			public const int src_atop = 2131427381;
-			
 			// aapt resource value: 0x7f0b0036
-			public const int src_in = 2131427382;
+			public const int src_atop = 2131427382;
 			
 			// aapt resource value: 0x7f0b0037
-			public const int src_over = 2131427383;
+			public const int src_in = 2131427383;
 			
-			// aapt resource value: 0x7f0b0025
-			public const int standard = 2131427365;
+			// aapt resource value: 0x7f0b0038
+			public const int src_over = 2131427384;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int start = 2131427413;
+			// aapt resource value: 0x7f0b0026
+			public const int standard = 2131427366;
 			
-			// aapt resource value: 0x7f0b00c6
-			public const int status_bar_latest_event_content = 2131427526;
+			// aapt resource value: 0x7f0b0056
+			public const int start = 2131427414;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int submenuarrow = 2131427456;
+			// aapt resource value: 0x7f0b00cb
+			public const int status_bar_latest_event_content = 2131427531;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int submit_area = 2131427473;
+			// aapt resource value: 0x7f0b0067
+			public const int strong = 2131427431;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int tabMode = 2131427371;
+			// aapt resource value: 0x7f0b0085
+			public const int submenuarrow = 2131427461;
+			
+			// aapt resource value: 0x7f0b0096
+			public const int submit_area = 2131427478;
+			
+			// aapt resource value: 0x7f0b002c
+			public const int tabMode = 2131427372;
 			
 			// aapt resource value: 0x7f0b0019
 			public const int tag_transition_group = 2131427353;
 			
-			// aapt resource value: 0x7f0b0021
-			public const int terrain = 2131427361;
+			// aapt resource value: 0x7f0b0022
+			public const int terrain = 2131427362;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int text = 2131427354;
@@ -3898,17 +6073,17 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int text2 = 2131427355;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int textSpacerNoButtons = 2131427444;
+			// aapt resource value: 0x7f0b0079
+			public const int textSpacerNoButtons = 2131427449;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int textSpacerNoTitle = 2131427443;
+			// aapt resource value: 0x7f0b0078
+			public const int textSpacerNoTitle = 2131427448;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int textViewStatus = 2131427492;
+			// aapt resource value: 0x7f0b00a9
+			public const int textViewStatus = 2131427497;
 			
-			// aapt resource value: 0x7f0b00a2
-			public const int text_input_password_toggle = 2131427490;
+			// aapt resource value: 0x7f0b00a7
+			public const int text_input_password_toggle = 2131427495;
 			
 			// aapt resource value: 0x7f0b0014
 			public const int textinput_counter = 2131427348;
@@ -3916,29 +6091,29 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b0015
 			public const int textinput_error = 2131427349;
 			
-			// aapt resource value: 0x7f0b00cc
-			public const int time = 2131427532;
+			// aapt resource value: 0x7f0b00d1
+			public const int time = 2131427537;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int title = 2131427356;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int titleDividerNoCustom = 2131427451;
+			// aapt resource value: 0x7f0b0080
+			public const int titleDividerNoCustom = 2131427456;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int title_template = 2131427449;
+			// aapt resource value: 0x7f0b007e
+			public const int title_template = 2131427454;
 			
-			// aapt resource value: 0x7f0b00d5
-			public const int toolbar = 2131427541;
+			// aapt resource value: 0x7f0b00db
+			public const int toolbar = 2131427547;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int top = 2131427401;
+			// aapt resource value: 0x7f0b004a
+			public const int top = 2131427402;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int topPanel = 2131427448;
+			// aapt resource value: 0x7f0b007d
+			public const int topPanel = 2131427453;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int touch_outside = 2131427481;
+			// aapt resource value: 0x7f0b009e
+			public const int touch_outside = 2131427486;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int transition_current_scene = 2131427343;
@@ -3955,32 +6130,35 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0b0013
 			public const int transition_transform = 2131427347;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int uniform = 2131427384;
+			// aapt resource value: 0x7f0b0039
+			public const int uniform = 2131427385;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int up = 2131427337;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int useLogo = 2131427377;
+			// aapt resource value: 0x7f0b0032
+			public const int useLogo = 2131427378;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00d8
-			public const int visible = 2131427544;
+			// aapt resource value: 0x7f0b00de
+			public const int visible = 2131427550;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int volume_item_container = 2131427513;
+			// aapt resource value: 0x7f0b00be
+			public const int volume_item_container = 2131427518;
 			
-			// aapt resource value: 0x7f0b0026
-			public const int wide = 2131427366;
+			// aapt resource value: 0x7f0b0068
+			public const int weak = 2131427432;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int withText = 2131427399;
+			// aapt resource value: 0x7f0b0027
+			public const int wide = 2131427367;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int wrap_content = 2131427385;
+			// aapt resource value: 0x7f0b0048
+			public const int withText = 2131427400;
+			
+			// aapt resource value: 0x7f0b003a
+			public const int wrap_content = 2131427386;
 			
 			static Id()
 			{
@@ -4262,28 +6440,34 @@ namespace Bizland.Droid
 			public const int notification_template_part_time = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int select_dialog_item_material = 2130903104;
+			public const int RadioButton = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_multichoice_material = 2130903105;
+			public const int RadioGroup = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int select_dialog_singlechoice_material = 2130903106;
+			public const int select_dialog_item_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int support_simple_spinner_dropdown_item = 2130903107;
+			public const int select_dialog_multichoice_material = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int Tabbar = 2130903108;
+			public const int select_dialog_singlechoice_material = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int Toolbar = 2130903109;
+			public const int support_simple_spinner_dropdown_item = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int ToolbarWithLogo = 2130903110;
+			public const int Tabbar = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int tooltip = 2130903111;
+			public const int Toolbar = 2130903111;
+			
+			// aapt resource value: 0x7f030048
+			public const int ToolbarWithLogo = 2130903112;
+			
+			// aapt resource value: 0x7f030049
+			public const int tooltip = 2130903113;
 			
 			static Layout()
 			{
@@ -7056,6 +9240,56 @@ namespace Bizland.Droid
 			// aapt resource value: 0
 			public const int LoadingImageView_imageAspectRatioAdjust = 0;
 			
+			public static int[] LottieAnimationView = new int[] {
+					2130772368,
+					2130772369,
+					2130772370,
+					2130772371,
+					2130772372,
+					2130772373,
+					2130772374,
+					2130772375,
+					2130772376,
+					2130772377,
+					2130772378,
+					2130772379};
+			
+			// aapt resource value: 2
+			public const int LottieAnimationView_lottie_autoPlay = 2;
+			
+			// aapt resource value: 9
+			public const int LottieAnimationView_lottie_cacheStrategy = 9;
+			
+			// aapt resource value: 10
+			public const int LottieAnimationView_lottie_colorFilter = 10;
+			
+			// aapt resource value: 8
+			public const int LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove = 8;
+			
+			// aapt resource value: 0
+			public const int LottieAnimationView_lottie_fileName = 0;
+			
+			// aapt resource value: 6
+			public const int LottieAnimationView_lottie_imageAssetsFolder = 6;
+			
+			// aapt resource value: 3
+			public const int LottieAnimationView_lottie_loop = 3;
+			
+			// aapt resource value: 7
+			public const int LottieAnimationView_lottie_progress = 7;
+			
+			// aapt resource value: 1
+			public const int LottieAnimationView_lottie_rawRes = 1;
+			
+			// aapt resource value: 5
+			public const int LottieAnimationView_lottie_repeatCount = 5;
+			
+			// aapt resource value: 4
+			public const int LottieAnimationView_lottie_repeatMode = 4;
+			
+			// aapt resource value: 11
+			public const int LottieAnimationView_lottie_scale = 11;
+			
 			public static int[] MapAttrs = new int[] {
 					2130771968,
 					2130771969,
@@ -7389,18 +9623,18 @@ namespace Bizland.Droid
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] ProgressWheel = new int[] {
-					2130772368,
-					2130772369,
-					2130772370,
-					2130772371,
-					2130772372,
-					2130772373,
-					2130772374,
-					2130772375,
-					2130772376,
-					2130772377,
-					2130772378,
-					2130772379};
+					2130772380,
+					2130772381,
+					2130772382,
+					2130772383,
+					2130772384,
+					2130772385,
+					2130772386,
+					2130772387,
+					2130772388,
+					2130772389,
+					2130772390,
+					2130772391};
 			
 			// aapt resource value: 3
 			public const int ProgressWheel_ahBarColor = 3;
