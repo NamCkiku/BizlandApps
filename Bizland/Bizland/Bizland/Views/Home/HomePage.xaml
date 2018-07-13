@@ -6,13 +6,26 @@
              xmlns:googleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
+             xmlns:segmented="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              Title="{Binding Title}"
              x:Class="Bizland.Views.HomePage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="Thông Báo" x:Name="btnNotification"  Icon="ic_notification.png" />
+        <ToolbarItem Name="Thông Báo" Priority="2" x:Name="btnNotification"  Icon="ic_notification.png" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="5">
+
+            <segmented:SegmentedControl x:Name="SegControl" TintColor="#007AFF" SelectedSegment="0">
+                <segmented:SegmentedControl.Children>
+                    <segmented:SegmentedControlOption Text="Tab 1" />
+                    <segmented:SegmentedControlOption Text="Tab 2" />
+                    <segmented:SegmentedControlOption Text="Tab 3" />
+                    <segmented:SegmentedControlOption Text="Tab 4" />
+                </segmented:SegmentedControl.Children>
+            </segmented:SegmentedControl>
+
+
             <controls:RoundedSearchEntry Margin="10,10" HeightRequest="40"
                                          Image="ic_Search.png" ImageHeight="15" ImageWidth="15"
                                          Placeholder="Tìm kiếm" PlaceholderColor="Black"
@@ -23,12 +36,8 @@
                                          InputTransparent="False"
                                          TextColor="#003975" 
                                          VerticalOptions="Center" />
-            
-            <Button Text="Join Group" Command="{Binding JoinRoomCommand}"/>
-            <Button Text="Send Message" Command="{Binding MoveToTokyoCommand}"/>
 
-            <Stepper Value="0" Minimum="0" Maximum="99" Increment="1" HorizontalOptions="Center" VerticalOptions="Center" ValueChanged="Stepper_ValueChanged" />
-            
+
             <googleMaps:Map x:Name="map"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
@@ -48,20 +57,17 @@
                 </googleMaps:Map.Behaviors>
             </googleMaps:Map>
 
-            <Label TextColor="Black" VerticalOptions="EndAndExpand"
-                  HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="Default" Text="{Binding Message2}"/>
-            
-            <Grid x:Name="MessageControls" RowSpacing="1" ColumnSpacing="2" Padding="5"
-                  BackgroundColor="#EFEFF4"
-                  VerticalOptions="EndAndExpand"
-                  HorizontalOptions="EndAndExpand">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="Auto"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Entry Grid.Column="0" HeightRequest="25" Placeholder="Message" Text="{Binding Message}"></Entry>
-                <Button Grid.Column="1" Text="Send" Command="{Binding SendMessage}"></Button>
-            </Grid>
+            <!--<lottie:AnimationView 
+            x:Name="animationView" 
+                WidthRequest="200"
+                HeightRequest="200"
+            Animation="animation.json" 
+            Loop="True" 
+            AutoPlay="True"
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="FillAndExpand" />-->
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

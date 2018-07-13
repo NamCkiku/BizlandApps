@@ -4,7 +4,7 @@
                   xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                   prism:ViewModelLocator.AutowireViewModel="True"
                   xmlns:page="clr-namespace:Bizland.Views;assembly=Bizland"
-                  MasterBehavior="SplitOnPortrait"
+                  MasterBehavior="Default"
                   x:Class="Bizland.Views.RootPage">
 
     <MasterDetailPage.Master>
