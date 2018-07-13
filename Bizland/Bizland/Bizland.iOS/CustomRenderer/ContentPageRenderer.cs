@@ -3,6 +3,7 @@ using Bizland.iOS.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using UIKit;
 using Xamarin.Forms;
@@ -37,23 +38,44 @@ namespace Bizland.iOS.CustomRenderer
         {
             base.ViewWillAppear(animated);
 
-            if (NavigationController == null)
+            var contentPage = this.Element as ContentPage;
+            if (contentPage == null || NavigationController == null)
                 return;
 
+            var itemsInfo = contentPage.ToolbarItems;
+
             // Move toolbaritems over to the left if we have more than 1.
-            var navigationItem = NavigationController.TopViewController.NavigationItem;
+            var navigationItem = this.NavigationController.TopViewController.NavigationItem;
             var leftNativeButtons = (navigationItem.LeftBarButtonItems ?? new UIBarButtonItem[] { }).ToList();
             var rightNativeButtons = (navigationItem.RightBarButtonItems ?? new UIBarButtonItem[] { }).ToList();
 
-            if (rightNativeButtons.Count > 1)
-            {
-                var nativeItem = rightNativeButtons.Last();
-                rightNativeButtons.Remove(nativeItem);
-                leftNativeButtons.Add(nativeItem);
-            }
+            var newLeftButtons = new UIBarButtonItem[] { }.ToList();
+            var newRightButtons = new UIBarButtonItem[] { }.ToList();
 
-            navigationItem.RightBarButtonItems = rightNativeButtons.ToArray();
-            navigationItem.LeftBarButtonItems = leftNativeButtons.ToArray();
+            rightNativeButtons.ForEach(nativeItem =>
+            {
+                // [Hack] Get Xamarin private field "item"
+                var field = nativeItem.GetType().GetField("_item", BindingFlags.NonPublic | BindingFlags.Instance);
+                if (field == null)
+                    return;
+
+                var info = field.GetValue(nativeItem) as ToolbarItem;
+                if (info == null)
+                    return;
+
+                if (info.Priority == 0)
+                    newLeftButtons.Add(nativeItem);
+                else
+                    newRightButtons.Add(nativeItem);
+            });
+
+            leftNativeButtons.ForEach(nativeItem =>
+            {
+                newLeftButtons.Add(nativeItem);
+            });
+
+            navigationItem.RightBarButtonItems = newRightButtons.ToArray();
+            navigationItem.LeftBarButtonItems = newLeftButtons.ToArray();
 
 
             ModalPresentationCapturesStatusBarAppearance = true;
