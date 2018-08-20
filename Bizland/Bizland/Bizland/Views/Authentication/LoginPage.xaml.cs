@@ -11,12 +11,11 @@ namespace Bizland.Views
             btnLogin.Clicked += BtnLogin_Clicked;
         }
 
-        private void BtnLogin_Clicked(object sender, System.EventArgs e)
+        private async void BtnLogin_Clicked(object sender, System.EventArgs e)
         {
-            var result = DependencyService.Get<IAccountKitService>().LoginWithAccountKit(LoginType.Phone, ResponseType.AuthorizationCode);
-            if (result.IsCompleted)
+            var result = await DependencyService.Get<IAccountKitService>().LoginWithAccountKit(LoginType.Phone, ResponseType.AuthorizationCode);
+            if (result.IsSuccessful)
             {
-                string a = "";
             };
         }
     }
