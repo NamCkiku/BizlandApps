@@ -145,6 +145,10 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BindingLibrary\BindingLibrary.csproj">
+      <Project>{1b92c914-7e23-4347-bd99-0919abd2fac6}</Project>
+      <Name>BindingLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Bizland.Core\Bizland.Core.csproj">
       <Project>{512847c0-ad19-402b-938f-68b9a8202aeb}</Project>
       <Name>Bizland.Core</Name>
@@ -197,7 +201,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\GPS_A.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\ic_star_normal.png" />
   </ItemGroup>
@@ -263,6 +266,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

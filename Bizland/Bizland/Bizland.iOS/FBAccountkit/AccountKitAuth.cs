@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Acr.Support.iOS;
 using Facebook.Accountkit;
-using Acr.Support.iOS;
 using Foundation;
+using System.Threading.Tasks;
 using UIKit;
+using INXAccountKitAuth = Bizland.Core.IAccountKitService;
+using NXLoginAccount = Bizland.Core.LoginAccount;
+using NXLoginResult = Bizland.Core.LoginResult;
+using NXLoginType = Bizland.Core.LoginType;
+using NXResponseType = Bizland.Core.ResponseType;
 
 namespace Bizland.iOS.FBAccountkit
 {
-    public class AccountKitAuth : NSObject, IAKFViewControllerDelegate
+    public class AccountKitAuth : NSObject, INXAccountKitAuth, IAKFViewControllerDelegate
     {
         readonly AKFTheme theme;
 
@@ -22,11 +23,13 @@ namespace Bizland.iOS.FBAccountkit
             this.theme = theme;
         }
 
-        public Task<IAKFAccount> GetCurrentAccount(AKFResponseType responseType)
+        public Task<NXLoginAccount> GetCurrentAccount(NXResponseType responseType)
         {
-            var taskCompletionSource = new TaskCompletionSource<IAKFAccount>();
+            var taskCompletionSource = new TaskCompletionSource<NXLoginAccount>();
 
-            InitAK(responseType);
+            InitAK(responseType == NXResponseType.AccessToken
+                    ? AKFResponseType.AccessToken
+                    : AKFResponseType.AuthorizationCode);
 
             accountKit.RequestAccount((obj, error) =>
             {
@@ -37,19 +40,24 @@ namespace Bizland.iOS.FBAccountkit
                 }
 
                 var account = obj as IAKFAccount;
-                taskCompletionSource.SetResult(account);
+
+                var phoneNumber = account?.PhoneNumber?.stringRepresentation()?.ToString();
+
+                taskCompletionSource.SetResult(new NXLoginAccount(obj == null, phoneNumber, account?.EmailAddress));
             });
 
             return taskCompletionSource.Task;
         }
 
-        public Task<string> LoginWithAccountKit(AKFLoginType type, AKFResponseType responseType)
+        public Task<NXLoginResult> LoginWithAccountKit(NXLoginType type, NXResponseType responseType)
         {
-            InitAK(responseType);
+            InitAK(responseType == NXResponseType.AccessToken
+                   ? AKFResponseType.AccessToken
+                   : AKFResponseType.AuthorizationCode, true);
 
             loginTaskCompletionSource?.TrySetCanceled();
-            loginTaskCompletionSource = new TaskCompletionSource<string>();
-            pendingLoginViewController = type == AKFLoginType.Phone
+            loginTaskCompletionSource = new TaskCompletionSource<NXLoginResult>();
+            pendingLoginViewController = type == NXLoginType.Phone
                                                              ? accountKit.ViewControllerForPhoneLogin()
                                                              : accountKit.ViewControllerForEmailLogin();
 
@@ -77,9 +85,10 @@ namespace Bizland.iOS.FBAccountkit
         {
             var vc = UIApplication.SharedApplication.GetTopViewController();
 
-            //if (vc is AKFViewController) {
-            //	vc = vc.PresentingViewController;
-            //}
+            if (vc is AKFNavigationController)
+            {
+                vc = vc.PresentingViewController;
+            }
 
             return vc;
         }
@@ -92,35 +101,33 @@ namespace Bizland.iOS.FBAccountkit
             }
         }
 
-        TaskCompletionSource<string> loginTaskCompletionSource;
+        TaskCompletionSource<NXLoginResult> loginTaskCompletionSource;
 
         [Export("viewControllerDidCancel:")]
         public void DidCancel(UIViewController viewController)
         {
-            loginTaskCompletionSource?.SetResult(null);
+            loginTaskCompletionSource?.SetResult(new NXLoginResult(false, true));
             loginTaskCompletionSource = null;
         }
 
         [Export("viewController:didCompleteLoginWithAuthorizationCode:state:")]
         public void DidCompleteLoginWithAuthorizationCode(UIViewController viewController, string code, string state)
         {
-            loginTaskCompletionSource?.SetResult(code);
+            loginTaskCompletionSource?.SetResult(new NXLoginResult(true, false, code));
             loginTaskCompletionSource = null;
         }
 
         [Export("viewController:didCompleteLoginWithAccessToken:state:")]
         public void DidCompleteLoginWithAccessToken(UIViewController viewController, IAKFAccessToken accessToken, string state)
         {
-            var x = accessToken as IAKFAccessToken;
-
-            loginTaskCompletionSource?.SetResult(x.GetTokenString());
+            loginTaskCompletionSource?.SetResult(new NXLoginResult(true, false, accessToken.GetTokenString()));
             loginTaskCompletionSource = null;
         }
 
         [Export("viewController:didFailWithError:")]
         public void DidFailWithError(UIViewController viewController, NSError error)
         {
-            loginTaskCompletionSource?.SetResult(null);
+            loginTaskCompletionSource?.SetResult(new NXLoginResult(false));
             loginTaskCompletionSource = null;
         }
     }
