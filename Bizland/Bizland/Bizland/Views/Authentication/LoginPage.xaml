@@ -4,5 +4,13 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Bizland.Views.LoginPage">
-  
+
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Button Text="Login With Facebook" x:Name="btnLogin" BackgroundColor="Red" TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+
 </ContentPage>
