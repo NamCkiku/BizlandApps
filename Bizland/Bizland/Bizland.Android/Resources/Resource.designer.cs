@@ -2640,140 +2640,140 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0100cc
 			public const int colorSwitchThumbNormal = 2130772172;
 			
-			// aapt resource value: 0x7f01019c
-			public const int com_accountkit_aspect_height = 2130772380;
+			// aapt resource value: 0x7f010190
+			public const int com_accountkit_aspect_height = 2130772368;
 			
-			// aapt resource value: 0x7f01019d
-			public const int com_accountkit_aspect_width = 2130772381;
+			// aapt resource value: 0x7f010191
+			public const int com_accountkit_aspect_width = 2130772369;
 			
-			// aapt resource value: 0x7f0101a1
-			public const int com_accountkit_background = 2130772385;
+			// aapt resource value: 0x7f010195
+			public const int com_accountkit_background = 2130772373;
 			
-			// aapt resource value: 0x7f0101a2
-			public const int com_accountkit_background_color = 2130772386;
-			
-			// aapt resource value: 0x7f0101ac
-			public const int com_accountkit_border_button_background_color = 2130772396;
-			
-			// aapt resource value: 0x7f0101ae
-			public const int com_accountkit_border_button_disabled_text_color = 2130772398;
-			
-			// aapt resource value: 0x7f0101ad
-			public const int com_accountkit_border_button_text_color = 2130772397;
-			
-			// aapt resource value: 0x7f0101a3
-			public const int com_accountkit_button_background_color = 2130772387;
-			
-			// aapt resource value: 0x7f0101a4
-			public const int com_accountkit_button_border_color = 2130772388;
-			
-			// aapt resource value: 0x7f0101a5
-			public const int com_accountkit_button_disabled_background_color = 2130772389;
-			
-			// aapt resource value: 0x7f0101a6
-			public const int com_accountkit_button_disabled_border_color = 2130772390;
-			
-			// aapt resource value: 0x7f0101a7
-			public const int com_accountkit_button_disabled_text_color = 2130772391;
-			
-			// aapt resource value: 0x7f0101a8
-			public const int com_accountkit_button_pressed_background_color = 2130772392;
-			
-			// aapt resource value: 0x7f0101a9
-			public const int com_accountkit_button_pressed_border_color = 2130772393;
-			
-			// aapt resource value: 0x7f0101aa
-			public const int com_accountkit_button_pressed_text_color = 2130772394;
-			
-			// aapt resource value: 0x7f0101ab
-			public const int com_accountkit_button_text_color = 2130772395;
-			
-			// aapt resource value: 0x7f0101af
-			public const int com_accountkit_content_body_layout_weight = 2130772399;
-			
-			// aapt resource value: 0x7f0101b0
-			public const int com_accountkit_content_bottom_layout_weight = 2130772400;
-			
-			// aapt resource value: 0x7f0101b1
-			public const int com_accountkit_content_footer_layout_weight = 2130772401;
-			
-			// aapt resource value: 0x7f0101b2
-			public const int com_accountkit_content_header_layout_weight = 2130772402;
-			
-			// aapt resource value: 0x7f0101b3
-			public const int com_accountkit_content_layout_weight = 2130772403;
-			
-			// aapt resource value: 0x7f0101b7
-			public const int com_accountkit_content_margin_end = 2130772407;
-			
-			// aapt resource value: 0x7f0101b6
-			public const int com_accountkit_content_margin_start = 2130772406;
-			
-			// aapt resource value: 0x7f0101b8
-			public const int com_accountkit_content_max_width = 2130772408;
-			
-			// aapt resource value: 0x7f0101b9
-			public const int com_accountkit_content_min_height = 2130772409;
-			
-			// aapt resource value: 0x7f0101b4
-			public const int com_accountkit_content_text_layout_weight = 2130772404;
-			
-			// aapt resource value: 0x7f0101b5
-			public const int com_accountkit_content_top_layout_weight = 2130772405;
-			
-			// aapt resource value: 0x7f0101ba
-			public const int com_accountkit_header_background_color = 2130772410;
-			
-			// aapt resource value: 0x7f0101bb
-			public const int com_accountkit_header_text_color = 2130772411;
-			
-			// aapt resource value: 0x7f0101bc
-			public const int com_accountkit_icon_color = 2130772412;
-			
-			// aapt resource value: 0x7f0101bd
-			public const int com_accountkit_input_accent_color = 2130772413;
-			
-			// aapt resource value: 0x7f0101be
-			public const int com_accountkit_input_background_color = 2130772414;
-			
-			// aapt resource value: 0x7f0101bf
-			public const int com_accountkit_input_border_color = 2130772415;
-			
-			// aapt resource value: 0x7f0101c0
-			public const int com_accountkit_input_text_color = 2130772416;
-			
-			// aapt resource value: 0x7f01019e
-			public const int com_accountkit_max_height = 2130772382;
-			
-			// aapt resource value: 0x7f01019f
-			public const int com_accountkit_max_width = 2130772383;
+			// aapt resource value: 0x7f010196
+			public const int com_accountkit_background_color = 2130772374;
 			
 			// aapt resource value: 0x7f0101a0
-			public const int com_accountkit_min_height = 2130772384;
+			public const int com_accountkit_border_button_background_color = 2130772384;
 			
-			// aapt resource value: 0x7f0101c4
-			public const int com_accountkit_primary_color = 2130772420;
+			// aapt resource value: 0x7f0101a2
+			public const int com_accountkit_border_button_disabled_text_color = 2130772386;
 			
-			// aapt resource value: 0x7f0101c5
-			public const int com_accountkit_primary_text_color = 2130772421;
+			// aapt resource value: 0x7f0101a1
+			public const int com_accountkit_border_button_text_color = 2130772385;
 			
-			// aapt resource value: 0x7f0101c6
-			public const int com_accountkit_secondary_color = 2130772422;
+			// aapt resource value: 0x7f010197
+			public const int com_accountkit_button_background_color = 2130772375;
 			
-			// aapt resource value: 0x7f0101c7
-			public const int com_accountkit_secondary_text_color = 2130772423;
+			// aapt resource value: 0x7f010198
+			public const int com_accountkit_button_border_color = 2130772376;
 			
-			// aapt resource value: 0x7f0101c8
-			public const int com_accountkit_status_bar_color = 2130772424;
+			// aapt resource value: 0x7f010199
+			public const int com_accountkit_button_disabled_background_color = 2130772377;
 			
-			// aapt resource value: 0x7f0101c1
-			public const int com_accountkit_text_color = 2130772417;
+			// aapt resource value: 0x7f01019a
+			public const int com_accountkit_button_disabled_border_color = 2130772378;
 			
-			// aapt resource value: 0x7f0101c2
-			public const int com_accountkit_title_text_color = 2130772418;
+			// aapt resource value: 0x7f01019b
+			public const int com_accountkit_button_disabled_text_color = 2130772379;
 			
-			// aapt resource value: 0x7f0101c3
-			public const int com_accountkit_toolbar_elevation = 2130772419;
+			// aapt resource value: 0x7f01019c
+			public const int com_accountkit_button_pressed_background_color = 2130772380;
+			
+			// aapt resource value: 0x7f01019d
+			public const int com_accountkit_button_pressed_border_color = 2130772381;
+			
+			// aapt resource value: 0x7f01019e
+			public const int com_accountkit_button_pressed_text_color = 2130772382;
+			
+			// aapt resource value: 0x7f01019f
+			public const int com_accountkit_button_text_color = 2130772383;
+			
+			// aapt resource value: 0x7f0101a3
+			public const int com_accountkit_content_body_layout_weight = 2130772387;
+			
+			// aapt resource value: 0x7f0101a4
+			public const int com_accountkit_content_bottom_layout_weight = 2130772388;
+			
+			// aapt resource value: 0x7f0101a5
+			public const int com_accountkit_content_footer_layout_weight = 2130772389;
+			
+			// aapt resource value: 0x7f0101a6
+			public const int com_accountkit_content_header_layout_weight = 2130772390;
+			
+			// aapt resource value: 0x7f0101a7
+			public const int com_accountkit_content_layout_weight = 2130772391;
+			
+			// aapt resource value: 0x7f0101ab
+			public const int com_accountkit_content_margin_end = 2130772395;
+			
+			// aapt resource value: 0x7f0101aa
+			public const int com_accountkit_content_margin_start = 2130772394;
+			
+			// aapt resource value: 0x7f0101ac
+			public const int com_accountkit_content_max_width = 2130772396;
+			
+			// aapt resource value: 0x7f0101ad
+			public const int com_accountkit_content_min_height = 2130772397;
+			
+			// aapt resource value: 0x7f0101a8
+			public const int com_accountkit_content_text_layout_weight = 2130772392;
+			
+			// aapt resource value: 0x7f0101a9
+			public const int com_accountkit_content_top_layout_weight = 2130772393;
+			
+			// aapt resource value: 0x7f0101ae
+			public const int com_accountkit_header_background_color = 2130772398;
+			
+			// aapt resource value: 0x7f0101af
+			public const int com_accountkit_header_text_color = 2130772399;
+			
+			// aapt resource value: 0x7f0101b0
+			public const int com_accountkit_icon_color = 2130772400;
+			
+			// aapt resource value: 0x7f0101b1
+			public const int com_accountkit_input_accent_color = 2130772401;
+			
+			// aapt resource value: 0x7f0101b2
+			public const int com_accountkit_input_background_color = 2130772402;
+			
+			// aapt resource value: 0x7f0101b3
+			public const int com_accountkit_input_border_color = 2130772403;
+			
+			// aapt resource value: 0x7f0101b4
+			public const int com_accountkit_input_text_color = 2130772404;
+			
+			// aapt resource value: 0x7f010192
+			public const int com_accountkit_max_height = 2130772370;
+			
+			// aapt resource value: 0x7f010193
+			public const int com_accountkit_max_width = 2130772371;
+			
+			// aapt resource value: 0x7f010194
+			public const int com_accountkit_min_height = 2130772372;
+			
+			// aapt resource value: 0x7f0101b8
+			public const int com_accountkit_primary_color = 2130772408;
+			
+			// aapt resource value: 0x7f0101b9
+			public const int com_accountkit_primary_text_color = 2130772409;
+			
+			// aapt resource value: 0x7f0101ba
+			public const int com_accountkit_secondary_color = 2130772410;
+			
+			// aapt resource value: 0x7f0101bb
+			public const int com_accountkit_secondary_text_color = 2130772411;
+			
+			// aapt resource value: 0x7f0101bc
+			public const int com_accountkit_status_bar_color = 2130772412;
+			
+			// aapt resource value: 0x7f0101b5
+			public const int com_accountkit_text_color = 2130772405;
+			
+			// aapt resource value: 0x7f0101b6
+			public const int com_accountkit_title_text_color = 2130772406;
+			
+			// aapt resource value: 0x7f0101b7
+			public const int com_accountkit_toolbar_elevation = 2130772407;
 			
 			// aapt resource value: 0x7f010110
 			public const int commitIcon = 2130772240;
@@ -3141,41 +3141,41 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f01012d
 			public const int logoDescription = 2130772269;
 			
-			// aapt resource value: 0x7f010192
-			public const int lottie_autoPlay = 2130772370;
+			// aapt resource value: 0x7f0101bf
+			public const int lottie_autoPlay = 2130772415;
 			
-			// aapt resource value: 0x7f010199
-			public const int lottie_cacheStrategy = 2130772377;
+			// aapt resource value: 0x7f0101c6
+			public const int lottie_cacheStrategy = 2130772422;
 			
-			// aapt resource value: 0x7f01019a
-			public const int lottie_colorFilter = 2130772378;
+			// aapt resource value: 0x7f0101c7
+			public const int lottie_colorFilter = 2130772423;
 			
-			// aapt resource value: 0x7f010198
-			public const int lottie_enableMergePathsForKitKatAndAbove = 2130772376;
+			// aapt resource value: 0x7f0101c5
+			public const int lottie_enableMergePathsForKitKatAndAbove = 2130772421;
 			
-			// aapt resource value: 0x7f010190
-			public const int lottie_fileName = 2130772368;
+			// aapt resource value: 0x7f0101bd
+			public const int lottie_fileName = 2130772413;
 			
-			// aapt resource value: 0x7f010196
-			public const int lottie_imageAssetsFolder = 2130772374;
+			// aapt resource value: 0x7f0101c3
+			public const int lottie_imageAssetsFolder = 2130772419;
 			
-			// aapt resource value: 0x7f010193
-			public const int lottie_loop = 2130772371;
+			// aapt resource value: 0x7f0101c0
+			public const int lottie_loop = 2130772416;
 			
-			// aapt resource value: 0x7f010197
-			public const int lottie_progress = 2130772375;
+			// aapt resource value: 0x7f0101c4
+			public const int lottie_progress = 2130772420;
 			
-			// aapt resource value: 0x7f010191
-			public const int lottie_rawRes = 2130772369;
+			// aapt resource value: 0x7f0101be
+			public const int lottie_rawRes = 2130772414;
 			
-			// aapt resource value: 0x7f010195
-			public const int lottie_repeatCount = 2130772373;
+			// aapt resource value: 0x7f0101c2
+			public const int lottie_repeatCount = 2130772418;
 			
-			// aapt resource value: 0x7f010194
-			public const int lottie_repeatMode = 2130772372;
+			// aapt resource value: 0x7f0101c1
+			public const int lottie_repeatMode = 2130772417;
 			
-			// aapt resource value: 0x7f01019b
-			public const int lottie_scale = 2130772379;
+			// aapt resource value: 0x7f0101c8
+			public const int lottie_scale = 2130772424;
 			
 			// aapt resource value: 0x7f010000
 			public const int mapType = 2130771968;
@@ -6981,6 +6981,12 @@ namespace Bizland.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f08008d
+			public const int ACCOUNT_KIT_CLIENT_TOKEN = 2131230861;
+			
+			// aapt resource value: 0x7f08008c
+			public const int FACEBOOK_APP_ID = 2131230860;
+			
 			// aapt resource value: 0x7f080026
 			public const int abc_action_bar_home_description = 2131230758;
 			
@@ -7067,6 +7073,9 @@ namespace Bizland.Droid
 			
 			// aapt resource value: 0x7f080036
 			public const int abc_toolbar_collapse_description = 2131230774;
+			
+			// aapt resource value: 0x7f08008e
+			public const int ak_login_protocol_scheme = 2131230862;
 			
 			// aapt resource value: 0x7f08008b
 			public const int app_name = 2131230859;
@@ -9542,8 +9551,8 @@ namespace Bizland.Droid
 			public const int AppCompatTheme_windowNoTitle = 3;
 			
 			public static int[] AspectFrameLayout = new int[] {
-					2130772380,
-					2130772381};
+					2130772368,
+					2130772369};
 			
 			// aapt resource value: 0
 			public const int AspectFrameLayout_com_accountkit_aspect_height = 0;
@@ -9752,9 +9761,9 @@ namespace Bizland.Droid
 			public const int CompoundButton_buttonTintMode = 2;
 			
 			public static int[] ConstrainedLinearLayout = new int[] {
-					2130772382,
-					2130772383,
-					2130772384};
+					2130772370,
+					2130772371,
+					2130772372};
 			
 			// aapt resource value: 0
 			public const int ConstrainedLinearLayout_com_accountkit_max_height = 0;
@@ -10040,18 +10049,18 @@ namespace Bizland.Droid
 			public const int LoadingImageView_imageAspectRatioAdjust = 0;
 			
 			public static int[] LottieAnimationView = new int[] {
-					2130772368,
-					2130772369,
-					2130772370,
-					2130772371,
-					2130772372,
-					2130772373,
-					2130772374,
-					2130772375,
-					2130772376,
-					2130772377,
-					2130772378,
-					2130772379};
+					2130772413,
+					2130772414,
+					2130772415,
+					2130772416,
+					2130772417,
+					2130772418,
+					2130772419,
+					2130772420,
+					2130772421,
+					2130772422,
+					2130772423,
+					2130772424};
 			
 			// aapt resource value: 2
 			public const int LottieAnimationView_lottie_autoPlay = 2;
@@ -10918,6 +10927,18 @@ namespace Bizland.Droid
 			public const int TextInputLayout_passwordToggleTintMode = 15;
 			
 			public static int[] Theme_AccountKit_GranularStyle = new int[] {
+					2130772373,
+					2130772374,
+					2130772375,
+					2130772376,
+					2130772377,
+					2130772378,
+					2130772379,
+					2130772380,
+					2130772381,
+					2130772382,
+					2130772383,
+					2130772384,
 					2130772385,
 					2130772386,
 					2130772387,
@@ -10940,19 +10961,7 @@ namespace Bizland.Droid
 					2130772404,
 					2130772405,
 					2130772406,
-					2130772407,
-					2130772408,
-					2130772409,
-					2130772410,
-					2130772411,
-					2130772412,
-					2130772413,
-					2130772414,
-					2130772415,
-					2130772416,
-					2130772417,
-					2130772418,
-					2130772419};
+					2130772407};
 			
 			// aapt resource value: 0
 			public const int Theme_AccountKit_GranularStyle_com_accountkit_background = 0;
@@ -11060,11 +11069,11 @@ namespace Bizland.Droid
 			public const int Theme_AccountKit_GranularStyle_com_accountkit_toolbar_elevation = 34;
 			
 			public static int[] Theme_AccountKit_Style = new int[] {
-					2130772420,
-					2130772421,
-					2130772422,
-					2130772423,
-					2130772424};
+					2130772408,
+					2130772409,
+					2130772410,
+					2130772411,
+					2130772412};
 			
 			// aapt resource value: 0
 			public const int Theme_AccountKit_Style_com_accountkit_primary_color = 0;

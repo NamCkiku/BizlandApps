@@ -1,10 +1,8 @@
-﻿using System.Threading.Tasks;
-using Bizland.Core;
-using Bizland.Droid.DependencyService;
+﻿using Bizland.Core;
 using Bizland.Droid.FBAccountkit;
-using Xamarin.Forms;
+using System.Threading.Tasks;
 
-[assembly: Dependency(typeof(AccountKitService))]
+//[assembly: Dependency(typeof(AccountKitService))]
 
 namespace Bizland.Droid.DependencyService
 {
@@ -14,7 +12,7 @@ namespace Bizland.Droid.DependencyService
 
         public AccountKitService()
         {
-            this.auth = new AccountKitAuth();
+            //this.auth = new AccountKitAuth();
         }
 
         public Task<LoginAccount> GetCurrentAccount(ResponseType responseType)
