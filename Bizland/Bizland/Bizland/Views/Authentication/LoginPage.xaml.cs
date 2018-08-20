@@ -13,7 +13,11 @@ namespace Bizland.Views
 
         private void BtnLogin_Clicked(object sender, System.EventArgs e)
         {
-            DependencyService.Get<IAccountKitService>().LoginWithAccountKit();
+            var result = DependencyService.Get<IAccountKitService>().LoginWithAccountKit(LoginType.Phone, ResponseType.AuthorizationCode);
+            if (result.IsCompleted)
+            {
+                string a = "";
+            };
         }
     }
 }

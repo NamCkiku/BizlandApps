@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Bizland.Core;
+﻿using Bizland.Core;
 using Bizland.iOS.DependencyService;
 using Bizland.iOS.FBAccountkit;
 using Facebook.Accountkit;
-using Foundation;
+using System.Threading.Tasks;
 using UIKit;
 using Xamarin.Forms;
+using NXLoginAccount = Bizland.Core.LoginAccount;
+using NXLoginResult = Bizland.Core.LoginResult;
+using NXLoginType = Bizland.Core.LoginType;
+using NXResponseType = Bizland.Core.ResponseType;
 
 [assembly: Dependency(typeof(AccountKitService))]
 namespace Bizland.iOS.DependencyService
@@ -29,11 +29,16 @@ namespace Bizland.iOS.DependencyService
             this.auth = new AccountKitAuth(theme);
 
         }
-        public void LoginWithAccountKit()
+
+        public Task<NXLoginAccount> GetCurrentAccount(NXResponseType responseType)
         {
+            return auth.GetCurrentAccount(responseType);
+        }
 
-            auth.LoginWithAccountKit(AKFLoginType.Phone, AKFResponseType.AuthorizationCode);
 
+        public Task<NXLoginResult> LoginWithAccountKit(NXLoginType loginType, NXResponseType responseType)
+        {
+            return auth.LoginWithAccountKit(loginType, responseType);
         }
     }
 }

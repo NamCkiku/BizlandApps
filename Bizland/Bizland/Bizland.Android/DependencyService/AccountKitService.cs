@@ -1,4 +1,5 @@
-﻿using Bizland.Core;
+﻿using System.Threading.Tasks;
+using Bizland.Core;
 using Bizland.Droid.DependencyService;
 using Bizland.Droid.FBAccountkit;
 using Xamarin.Forms;
@@ -16,10 +17,20 @@ namespace Bizland.Droid.DependencyService
             this.auth = new AccountKitAuth();
         }
 
+        public Task<LoginAccount> GetCurrentAccount(ResponseType responseType)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void LoginWithAccountKit()
         {
             //auth.LoginWithAccountKit(LoginType.Phone, AccountKitActivity.ResponseType.Code);
 
+        }
+
+        public Task<LoginResult> LoginWithAccountKit(LoginType loginType, ResponseType responseType)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
