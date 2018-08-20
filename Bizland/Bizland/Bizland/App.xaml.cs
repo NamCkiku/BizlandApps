@@ -56,7 +56,7 @@ namespace Bizland
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/HomePage");
+            await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/LoginPage");
         }
         protected async override void OnStart()
         {
