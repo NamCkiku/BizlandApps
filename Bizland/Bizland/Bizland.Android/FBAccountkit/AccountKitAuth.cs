@@ -1,10 +1,8 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.Support.V7.App;
-using Bizland.Droid.FBAccountkit;
 using System;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 using AKAccount = Com.Facebook.Accountkit.Account;
 using AKAccountKit = Com.Facebook.Accountkit.AccountKit;
 using AKAccountKitActivity = Com.Facebook.Accountkit.UI.AccountKitActivity;
@@ -12,18 +10,17 @@ using AKAccountKitConfiguration = Com.Facebook.Accountkit.UI.AccountKitConfigura
 using AKAccountKitError = Com.Facebook.Accountkit.AccountKitError;
 using AKAccountKitLoginResult = Com.Facebook.Accountkit.AccountKitLoginResult;
 using AKLoginType = Com.Facebook.Accountkit.UI.LoginType;
+using IAccountKitAuth = Bizland.Core.IAccountKitService;
 using IAKAccountKitCallback = Com.Facebook.Accountkit.IAccountKitCallback;
 using IAKAccountKitLoginResult = Com.Facebook.Accountkit.IAccountKitLoginResult;
-using INXAccountKitAuth = Bizland.Core.IAccountKitService;
-using NXLoginAccount = Bizland.Core.LoginAccount;
-using NXLoginResult = Bizland.Core.LoginResult;
-using NXLoginType = Bizland.Core.LoginType;
-using NXResponseType = Bizland.Core.ResponseType;
+using LoginAccount = Bizland.Core.LoginAccount;
+using LoginResult = Bizland.Core.LoginResult;
+using LoginType = Bizland.Core.LoginType;
+using ResponseType = Bizland.Core.ResponseType;
 
-[assembly: Dependency(typeof(AccountKitAuth))]
 namespace Bizland.Droid.FBAccountkit
 {
-    public class AccountKitAuth : INXAccountKitAuth
+    public class AccountKitAuth : IAccountKitAuth
     {
         readonly Func<Activity> activityInContext;
 
@@ -33,31 +30,31 @@ namespace Bizland.Droid.FBAccountkit
         }
 
 
-        public Task<NXLoginAccount> GetCurrentAccount(NXResponseType responseType)
+        public Task<LoginAccount> GetCurrentAccount(ResponseType responseType)
         {
-            var taskCompletionSource = new TaskCompletionSource<NXLoginAccount>();
+            var taskCompletionSource = new TaskCompletionSource<LoginAccount>();
 
             AKAccountKit.GetCurrentAccount(new InnerAccountKitCallback(taskCompletionSource));
 
             return taskCompletionSource.Task;
         }
 
-        public Task<NXLoginResult> LoginWithAccountKit(NXLoginType loginType, NXResponseType responseType)
+        public Task<LoginResult> LoginWithAccountKit(LoginType loginType, ResponseType responseType)
         {
-            var taskCompletionSource = new TaskCompletionSource<NXLoginResult>();
+            var taskCompletionSource = new TaskCompletionSource<LoginResult>();
 
             Action<IAKAccountKitLoginResult> onAKResult = (e) =>
             {
                 if (e == null)
                 {
-                    taskCompletionSource.SetResult(new NXLoginResult(false));
+                    taskCompletionSource.SetResult(new LoginResult(false));
                 }
                 else
                 {
-                    var tokenOrCode = responseType == NXResponseType.AccessToken
+                    var tokenOrCode = responseType == ResponseType.AccessToken
                                                                     ? e.AccessToken?.Token
                                                                     : e.AuthorizationCode;
-                    var result = new NXLoginResult(true, false, tokenOrCode);
+                    var result = new LoginResult(true, false, tokenOrCode);
                     taskCompletionSource.SetResult(result);
                 }
 
@@ -69,8 +66,8 @@ namespace Bizland.Droid.FBAccountkit
             var context = activityInContext?.Invoke();
             var intent = new Intent(context, typeof(HiddenAccountKitActivity));
 
-            intent.PutExtra(nameof(NXResponseType), (int)responseType);
-            intent.PutExtra(nameof(NXLoginType), (int)loginType);
+            intent.PutExtra(nameof(ResponseType), (int)responseType);
+            intent.PutExtra(nameof(LoginType), (int)loginType);
 
             context?.StartActivity(intent);
 
@@ -79,9 +76,9 @@ namespace Bizland.Droid.FBAccountkit
 
         class InnerAccountKitCallback : Java.Lang.Object, IAKAccountKitCallback
         {
-            readonly TaskCompletionSource<NXLoginAccount> taskCompleteionSource;
+            readonly TaskCompletionSource<LoginAccount> taskCompleteionSource;
 
-            public InnerAccountKitCallback(TaskCompletionSource<NXLoginAccount> taskCompleteionSource)
+            public InnerAccountKitCallback(TaskCompletionSource<LoginAccount> taskCompleteionSource)
             {
                 this.taskCompleteionSource = taskCompleteionSource;
             }
@@ -89,7 +86,7 @@ namespace Bizland.Droid.FBAccountkit
             public void OnError(AKAccountKitError p0)
             {
                 //TODO return exception
-                var result = new NXLoginAccount(true);
+                var result = new LoginAccount(true);
 
                 taskCompleteionSource.SetResult(result);
             }
@@ -98,7 +95,7 @@ namespace Bizland.Droid.FBAccountkit
             {
                 var account = p0 as AKAccount;
 
-                var result = new NXLoginAccount(phoneNumber: account.PhoneNumber.ToString(), email: account.Email);
+                var result = new LoginAccount(phoneNumber: account.PhoneNumber.ToString(), email: account.Email);
 
                 taskCompleteionSource.SetResult(result);
             }
@@ -108,21 +105,21 @@ namespace Bizland.Droid.FBAccountkit
     [Activity(Theme = "@style/MainTheme")]
     public class HiddenAccountKitActivity : AppCompatActivity
     {
-        const int APP_REQUEST_CODE = 99;
+        const int APP_REQUEST_CODE = 9999;
         internal static Action<IAKAccountKitLoginResult> Completed;
 
         protected override void OnCreate(Android.OS.Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            var responseType = (NXResponseType)Intent.Extras.GetInt(nameof(NXResponseType));
-            var loginType = (NXLoginType)Intent.Extras.GetInt(nameof(NXLoginType));
+            var responseType = (ResponseType)Intent.Extras.GetInt(nameof(ResponseType));
+            var loginType = (LoginType)Intent.Extras.GetInt(nameof(LoginType));
 
             var intent = new Intent(this, typeof(AKAccountKitActivity));
             var configurationBuilder =
                 new AKAccountKitConfiguration.AccountKitConfigurationBuilder(
-                    loginType == NXLoginType.Phone ? AKLoginType.Phone : AKLoginType.Email,
-                    responseType == NXResponseType.AuthorizationCode ? AKAccountKitActivity.ResponseType.Code : AKAccountKitActivity.ResponseType.Token);
+                    loginType == LoginType.Phone ? AKLoginType.Phone : AKLoginType.Email,
+                    responseType == ResponseType.AuthorizationCode ? AKAccountKitActivity.ResponseType.Code : AKAccountKitActivity.ResponseType.Token);
 
             intent.PutExtra(
                         AKAccountKitActivity.AccountKitActivityConfiguration,
@@ -134,19 +131,32 @@ namespace Bizland.Droid.FBAccountkit
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Android.Content.Intent data)
         {
+            base.OnActivityResult(requestCode, resultCode, data);
+
             if (requestCode != APP_REQUEST_CODE)
             {
-                base.OnActivityResult(requestCode, resultCode, data);
-
                 Finish();
                 return;
             }
 
-            var result = (IAKAccountKitLoginResult)data?.GetParcelableExtra(AKAccountKitLoginResult.ResultKey);
 
-            Completed?.Invoke(result);
+            var result = data?.GetParcelableExtra(AKAccountKitLoginResult.ResultKey).Cast<IAKAccountKitLoginResult>();
 
-            Finish();
+            if (result != null && (result.AccessToken != null || result.AuthorizationCode != null))
+            {
+                Completed?.Invoke(result);
+
+                Finish();
+            }
+        }
+    }
+
+    public static class ObjectTypeHelper
+    {
+        public static T Cast<T>(this Java.Lang.Object obj) where T : class
+        {
+            var propertyInfo = obj.GetType().GetProperty("Instance");
+            return propertyInfo == null ? null : propertyInfo.GetValue(obj, null) as T;
         }
     }
 }
