@@ -1,16 +1,16 @@
-﻿using Prism;
-using Prism.Ioc;
+﻿using Bizland.Core;
+using Bizland.Interfaces;
 using Bizland.ViewModels;
 using Bizland.Views;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using Prism.Unity;
 using BizlandApiService.IService;
 using BizlandApiService.Service;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
-using Bizland.Core;
-using Bizland.Interfaces;
+using Prism;
+using Prism.Ioc;
+using Prism.Unity;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Bizland
@@ -54,7 +54,7 @@ namespace Bizland
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/LoginPage");
+            await NavigationService.NavigateAsync("/LoginPage");
         }
         protected async override void OnStart()
         {
