@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Bizland.Views.LoginPage">
 
@@ -9,6 +10,15 @@
 
         <StackLayout>
             <Button Text="Login With Facebook" x:Name="btnLogin" BackgroundColor="Red" TextColor="White"/>
+
+            <controls:FloatingActionButton 
+                            HorizontalOptions="End"
+                            WidthRequest="40"
+                            HeightRequest="40"
+                            VerticalOptions="Start"
+                BackgroundColor="Transparent"
+                            Image="ic_Search.png"
+                            ButtonColor="Green"/>
 
         </StackLayout>
     </ContentPage.Content>

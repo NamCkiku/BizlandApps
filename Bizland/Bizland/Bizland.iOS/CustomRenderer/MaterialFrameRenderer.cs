@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using Bizland.CustomControl;
+﻿using Bizland.CustomControl;
 using Bizland.iOS.CustomRenderer;
 using CoreGraphics;
-using Foundation;
+using System.Drawing;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -16,10 +11,14 @@ namespace Bizland.iOS.CustomRenderer
 {
     public class MaterialFrameRenderer : FrameRenderer
     {
-        public override void Draw(CGRect rect)
+        protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Frame> e)
         {
-            base.Draw(rect);
+            base.OnElementChanged(e);
 
+            if (Element == null)
+            {
+                return;
+            }
             if (Element.HasShadow)
             {
                 // Update shadow to match better material design standards of elevation
@@ -33,6 +32,14 @@ namespace Bizland.iOS.CustomRenderer
                 Layer.ShadowOffset = new SizeF(width: 1, height: 1);
                 Layer.MasksToBounds = false;
                 Layer.ShadowPath = UIBezierPath.FromRect(Layer.Bounds).CGPath;
+            }
+            else
+            {
+                // Update shadow to match better material design standards of elevation
+                this.Layer.CornerRadius = 0f;
+                this.Layer.Bounds.Inset(0, 0);
+                Layer.BorderColor = Color.FromHex("#dcdde1").ToCGColor();
+                Layer.BorderWidth = 0.5f;
             }
         }
     }
