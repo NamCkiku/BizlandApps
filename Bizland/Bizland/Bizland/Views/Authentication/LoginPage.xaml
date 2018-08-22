@@ -20,6 +20,8 @@
                             Image="ic_Search.png"
                             ButtonColor="Green"/>
 
+            <Image x:Name="image" HorizontalOptions="Center" VerticalOptions="Center"/>
+
         </StackLayout>
     </ContentPage.Content>
 
