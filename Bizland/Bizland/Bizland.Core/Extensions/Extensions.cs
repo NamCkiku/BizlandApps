@@ -1,10 +1,10 @@
-﻿using Bizland.Core.Helpers;
+﻿using Bizland.Core;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace Bizland.Core.Extensions
+namespace Bizland.Core
 {
     public static class Extensions
     {

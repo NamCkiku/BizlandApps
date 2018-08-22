@@ -148,10 +148,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BindingLibrary\BindingLibrary.csproj">
-      <Project>{1b92c914-7e23-4347-bd99-0919abd2fac6}</Project>
-      <Name>BindingLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Bizland.Core\Bizland.Core.csproj">
       <Project>{512847c0-ad19-402b-938f-68b9a8202aeb}</Project>
       <Name>Bizland.Core</Name>

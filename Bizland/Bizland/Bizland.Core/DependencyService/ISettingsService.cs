@@ -10,7 +10,7 @@ namespace Bizland.Core
     /// </summary>
     /// <Modified>
     /// Name     Date         Comments
-    /// TrungTQ  12/4/2017   created
+    /// Namth  12/4/2017   created
     /// </Modified>
     public interface ISettingsService
     {
@@ -19,7 +19,7 @@ namespace Bizland.Core
         /// </summary>
         /// <Modified>
         /// Name     Date         Comments
-        /// TrungTQ  12/4/2017   created
+        /// Namth  12/4/2017   created
         /// </Modified>
         bool OpenLocationSettings();
 

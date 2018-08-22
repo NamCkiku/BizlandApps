@@ -1,15 +1,8 @@
-﻿using Bizland.Core.Extensions;
-using Bizland.Interfaces;
+﻿using Bizland.Interfaces;
 using Bizland.Model;
 using Bizland.Views;
-using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Timers;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bizland.Core.Helpers
+namespace Bizland.Core
 {
     public interface IToastNotifier
     {

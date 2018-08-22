@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Bizland.Core.Constant
+﻿namespace Bizland.Core
 {
     /// <summary>
     /// Thông tin cấu hình của server
@@ -10,7 +6,7 @@ namespace Bizland.Core.Constant
     /// </summary>
     /// <Modified>
     /// Name     Date         Comments
-    /// TrungTQ  16/1/2018   created
+    /// Namth  16/1/2018   created
     /// </Modified>
     public class ServerConfig
     {
@@ -20,17 +16,17 @@ namespace Bizland.Core.Constant
         /// </summary>
         /// <Modified>
         /// Name     Date         Comments
-        /// TrungTQ  16/1/2018   created
+        /// namth  16/1/2018   created
         /// </Modified>
-        public static string GoogleMapKeyiOS = "";
+        public const string GoogleMapKeyiOS = "AIzaSyDSdW_P8JRfGlL620LM3pL3umSnh0_lUjo";
 
         /// <summary>
         /// Key cho Google Map cho Android
         /// </summary>
         /// <Modified>
         /// Name     Date         Comments
-        /// TrungTQ  16/1/2018   created
+        /// Namth  16/1/2018   created
         /// </Modified>
-        public static string GoogleMapKeyAndroid = "";
+        public const string GoogleMapKeyAndroid = "AIzaSyDwhz_8SoIcFYMLVh3rcto1cWGbAPdQfGI";
     }
 }

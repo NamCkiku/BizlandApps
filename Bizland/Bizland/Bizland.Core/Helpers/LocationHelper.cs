@@ -1,12 +1,11 @@
 ﻿using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Reflection;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Bizland.Core.Helpers
+namespace Bizland.Core
 {
     /// <summary>
     /// Tiện ích dùng cho dịch vụ vị trí
@@ -14,7 +13,7 @@ namespace Bizland.Core.Helpers
     /// </summary>
     /// <Modified>
     /// Name     Date         Comments
-    /// TrungTQ  27/11/2017   created
+    /// Namth  27/11/2017   created
     /// </Modified>
     public class LocationHelper
     {
@@ -24,11 +23,11 @@ namespace Bizland.Core.Helpers
         /// <returns>namth/14/09/2017</returns>
         public static async Task<Position> GetGpsLocation()
         {
-            // trungtq:  Nếu không có quyền thì lấy mặc định là vị trí công ty Bình Anh
+            // Namth:  Nếu không có quyền thì lấy mặc định là vị trí công ty Bình Anh
             Position position = new Position(0, 0);
             try
             {
-                // trungtq: thêm đoạn check quyền location thì mới cho phép tiếp tục hoạt động.
+                // Namth: thêm đoạn check quyền location thì mới cho phép tiếp tục hoạt động.
                 var hasPermission = await PermissionHelper.CheckLocationPermissions();
 
                 if (hasPermission)
@@ -53,16 +52,16 @@ namespace Bizland.Core.Helpers
             }
             catch (GeolocationException geoEx)
             {
-                //XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, geoEx);
+                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, geoEx);
             }
             catch (TaskCanceledException ex)
             {
-                //XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
 
             catch (Exception ex)
             {
-                //XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
 
                 Application.Current?.MainPage?.DisplayAlert("Thông báo", "Vui lòng kiểm tra GPS của bạn đã bật chưa?", "Đồng ý");
             }
