@@ -3,9 +3,76 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
              x:Class="Bizland.App">
-	<Application.Resources>
+    <Application.Resources>
 
-		<!-- Application resource dictionary -->
+        <!-- Application resource dictionary -->
 
-	</Application.Resources>
+        <ResourceDictionary>
+
+            <OnPlatform x:Key="myfontsize-phone" x:TypeArguments="x:Double" iOS="13" Android="13"/>
+
+            <OnPlatform x:Key="myfontsize-tablet" x:TypeArguments="x:Double" iOS="26" Android="26"/>
+
+            <OnIdiom x:Key="MyFontSize" x:TypeArguments="x:Double"
+                     Phone="{StaticResource myfontsize-phone}"
+                     Tablet="{StaticResource myfontsize-tablet}"/>
+
+            <!-- Color -->
+            <Color x:Key="Color_Background">#FFFFFF</Color>
+            <Color x:Key="Color_Accent">#73C33A</Color>
+            <Color x:Key="Color_Navigation">#23CF5F</Color>
+
+            <Color x:Key="Color_Button">#FE9D1A</Color>
+
+            <Color x:Key="Color_Text">#333333</Color>
+
+            <Color x:Key="Color_SoftRed">#ED4337</Color>
+            
+        </ResourceDictionary>
+
+        <Style 
+            TargetType="Page"
+            ApplyToDerivedTypes="True">
+
+            <Setter 
+                Property="BackgroundColor" 
+                Value="{StaticResource Color_Background}" />
+        </Style>
+
+        <Style 
+            TargetType="NavigationPage"
+            ApplyToDerivedTypes="True">
+
+            <Setter 
+                Property="BarBackgroundColor" 
+                Value="{StaticResource Color_Navigation}" />
+
+            <Setter Property="BarTextColor" Value="White"/>
+        </Style>
+
+        <Style 
+            TargetType="Button"
+            ApplyToDerivedTypes="True">
+
+            <Setter 
+                Property="BackgroundColor" 
+                Value="{StaticResource Color_Button}" />
+            <Setter 
+                Property="TextColor" 
+                Value="White" />
+            <Setter 
+                Property="BorderRadius" 
+                Value="0" />
+
+        </Style>
+
+        <Style 
+            TargetType="Label"
+            ApplyToDerivedTypes="True">
+
+            <Setter 
+                Property="TextColor" 
+                Value="{StaticResource Color_Text}" />
+        </Style>
+    </Application.Resources>
 </prism:PrismApplication>

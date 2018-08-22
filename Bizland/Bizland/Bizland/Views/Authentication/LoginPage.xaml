@@ -4,25 +4,13 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              prism:ViewModelLocator.AutowireViewModel="True"
+             BackgroundImage="bg_login.png"
              x:Class="Bizland.Views.LoginPage">
 
     <ContentPage.Content>
+        <Grid>
 
-        <StackLayout>
-            <Button Text="Login With Facebook" x:Name="btnLogin" BackgroundColor="Red" TextColor="White"/>
-
-            <controls:FloatingActionButton 
-                            HorizontalOptions="End"
-                            WidthRequest="40"
-                            HeightRequest="40"
-                            VerticalOptions="Start"
-                BackgroundColor="Transparent"
-                            Image="ic_Search.png"
-                            ButtonColor="Green"/>
-
-            <Image x:Name="image" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 
 </ContentPage>

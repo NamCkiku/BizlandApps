@@ -5,7 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              Title="DemoMenu"
              Icon="hamburger.png"
-             BackgroundColor="#79b338"
+             BackgroundColor="{StaticResource Color_Navigation}"
              xmlns:CustomControl="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              x:Class="Bizland.Views.MenuPage">
     <ContentPage.Padding>
