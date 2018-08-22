@@ -4,12 +4,119 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              prism:ViewModelLocator.AutowireViewModel="True"
-             BackgroundImage="bg_login.png"
              x:Class="Bizland.Views.LoginPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>
+                0, 20, 0, 0
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+                0, 0, 0, 0
+            </OnPlatform.Android>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Resources>
+        <ResourceDictionary>
 
+            <OnIdiom x:Key="logoWidth" x:TypeArguments="x:Double" Phone="200" Tablet="300"/>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".3*" />
+                <RowDefinition Height=".3*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0">
+                <Image WidthRequest="{StaticResource logoWidth}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand">
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="logo_bizland.png"
+                                 Android="logo_bizland.png"          
+                                  />
+                    </Image.Source>
+                </Image>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" VerticalOptions="End" Spacing="10" Margin="0,0,0,10">
+
+                <Grid ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".4*" />
+                        <ColumnDefinition Width=".2*" />
+                        <ColumnDefinition Width=".4*" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView HeightRequest="0.5" VerticalOptions="Center"  Grid.Column="0" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+                    <Label  HorizontalOptions="Center" Grid.Column="1" Text="Hoặc"/>
+                    <BoxView HeightRequest="0.5" VerticalOptions="Center" Grid.Column="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+                </Grid>
+
+                <controls:MaterialFrame BackgroundColor="#3b5998"
+                                        CornerRadius="20"
+                                        Margin="20,0,20,0"
+                                        HasShadow="False"
+                                        Padding="10">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <Image Source="ic_facebook.png"
+                               Grid.Column="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="25"
+                               Margin="10,0,0,0"
+                               HeightRequest="25"/>
+
+                        <Label  HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               TextColor="White"
+                               FontSize="{StaticResource MyFontSize}"
+                               Text="FACEBOOK" />
+                    </Grid>
+
+                </controls:MaterialFrame>
+
+                <controls:MaterialFrame BackgroundColor="#da4453"
+                                        CornerRadius="20"
+                                        Margin="20,0,20,0"
+                                        HasShadow="False"
+                                        Padding="10">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="ic_facebook.png"
+                               Grid.Column="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="25"
+                               Margin="10,0,0,0"
+                               HeightRequest="25"/>
+
+                        <Label HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               TextColor="White"
+                               FontSize="{StaticResource MyFontSize}"
+                               Text="GOOGLE" />
+                    </Grid>
+
+                </controls:MaterialFrame>
+
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 
