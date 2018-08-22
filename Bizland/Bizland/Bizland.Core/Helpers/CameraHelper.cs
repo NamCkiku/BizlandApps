@@ -3,6 +3,7 @@ using Plugin.Media.Abstractions;
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Bizland.Core
 {
@@ -18,7 +19,7 @@ namespace Bizland.Core
                 {
                     if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                     {
-                        //await App.Current.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
+                        await Application.Current?.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
                         return null;
                     }
 
@@ -62,7 +63,7 @@ namespace Bizland.Core
                 {
                     if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                     {
-                        //await App.Current.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
+                        await Application.Current?.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
                         return null;
                     }
 
@@ -106,7 +107,7 @@ namespace Bizland.Core
                 {
                     if (!CrossMedia.Current.IsPickPhotoSupported)
                     {
-                        //await App.Current.MainPage.DisplayAlert("Photos Not Supported", ":( Permission not granted to photos.", "OK");
+                        await Application.Current?.MainPage.DisplayAlert("Photos Not Supported", ":( Permission not granted to photos.", "OK");
                         return null;
                     }
 
@@ -142,7 +143,7 @@ namespace Bizland.Core
                 {
                     if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                     {
-                        //await App.Current.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
+                        await Application.Current?.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
                         return null;
                     }
 
@@ -175,7 +176,7 @@ namespace Bizland.Core
         {
             if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakeVideoSupported)
             {
-                //await App.Current.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
+                await Application.Current?.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
                 return null;
             }
 
@@ -197,7 +198,7 @@ namespace Bizland.Core
         {
             if (!CrossMedia.Current.IsPickVideoSupported)
             {
-                //await App.Current.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
+                await Application.Current?.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
                 return null;
             }
 

@@ -147,8 +147,18 @@ namespace Bizland.Core
 
             if (request || permissionStatus != PermissionStatus.Granted)
             {
+                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Camera))
+                {
+                    await Application.Current?.MainPage.DisplayAlert("Camera Permission", "Allow SavR to access your camera", "OK");
+                }
+
                 var newStatus = await CrossPermissions.Current.RequestPermissionsAsync(permission);
-                if (newStatus.ContainsKey(permission) && newStatus[permission] != PermissionStatus.Granted)
+                permissionStatus = newStatus[permission];
+                if (permissionStatus == PermissionStatus.Granted)
+                {
+                    return true;
+                }
+                else
                 {
                     var task = Application.Current?.MainPage?.DisplayAlert(title, question, positive, negative);
                     if (task == null)
