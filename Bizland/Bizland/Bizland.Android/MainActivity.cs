@@ -3,12 +3,10 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
-using Android.Content;
-using Plugin.Permissions;
 
 namespace Bizland.Droid
 {
-    [Activity(Label = "Bizland", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Bizland", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)

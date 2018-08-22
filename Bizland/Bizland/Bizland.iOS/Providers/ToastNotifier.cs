@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Bizland.Core.Helpers;
+using Bizland.Core;
 using Bizland.iOS.Providers;
 using Foundation;
 using MessageBar;
