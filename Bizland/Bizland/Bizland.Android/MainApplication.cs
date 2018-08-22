@@ -109,7 +109,7 @@ namespace Bizland.Droid
             }
             catch (Exception)
             {
-                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
         }
     }

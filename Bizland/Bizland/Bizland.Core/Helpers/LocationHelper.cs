@@ -52,16 +52,16 @@ namespace Bizland.Core
             }
             catch (GeolocationException geoEx)
             {
-                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, geoEx);
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, geoEx);
             }
             catch (TaskCanceledException ex)
             {
-                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
 
             catch (Exception ex)
             {
-                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
 
                 Application.Current?.MainPage?.DisplayAlert("Thông báo", "Vui lòng kiểm tra GPS của bạn đã bật chưa?", "Đồng ý");
             }
