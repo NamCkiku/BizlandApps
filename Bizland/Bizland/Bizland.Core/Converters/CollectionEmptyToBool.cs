@@ -41,7 +41,7 @@ namespace Bizland.Core
         /// <remarks>To be added.</remarks>
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, new NotImplementedException());
+            Logger.WriteError(MethodInfo.GetCurrentMethod().Name, new NotImplementedException());
             throw new NotImplementedException();
         }
 

@@ -14,7 +14,7 @@ namespace Bizland.Core
     /// Name     Date         Comments
     /// Namth  21/10/2017   created
     /// </Modified>
-    public class XCVLogger
+    public class Logger
     {
         private static readonly object obj = true;
 

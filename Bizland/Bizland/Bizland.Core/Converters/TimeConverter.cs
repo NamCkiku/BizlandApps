@@ -16,7 +16,7 @@ namespace Bizland.Core
         {
             if (!(value is DateTime))
             {
-                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, "The target must be a DateTime");
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, "The target must be a DateTime");
             }
 
             var date = (DateTime)value;
