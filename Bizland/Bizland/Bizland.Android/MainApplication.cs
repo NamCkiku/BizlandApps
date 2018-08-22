@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
-using Android.Widget;
+using Bizland.Core;
 using Plugin.CurrentActivity;
+using System;
+using System.Reflection;
 
 namespace Bizland.Droid
 {
     [Application]
-    [MetaData("com.google.android.maps.v2.API_KEY", Value = "AIzaSyDwhz_8SoIcFYMLVh3rcto1cWGbAPdQfGI")]
+    [MetaData("com.google.android.maps.v2.API_KEY", Value = ServerConfig.GoogleMapKeyAndroid)]
     public class MainApplication : Application, Application.IActivityLifecycleCallbacks
     {
         public MainApplication(IntPtr handle, JniHandleOwnership transer)
@@ -68,7 +64,7 @@ namespace Bizland.Droid
         /// <param name="context">The context.</param>
         /// <Modified>
         /// Name     Date         Comments
-        /// TrungTQ  2/1/2018   created
+        /// Namth  2/1/2018   created
         /// </Modified>
         protected void TurnOnScreen()
         {
@@ -111,9 +107,9 @@ namespace Bizland.Droid
                     window.AddFlags(WindowManagerFlags.KeepScreenOn | WindowManagerFlags.DismissKeyguard | WindowManagerFlags.ShowWhenLocked | WindowManagerFlags.TurnScreenOn);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                //XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                XCVLogger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
         }
     }

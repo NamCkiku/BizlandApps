@@ -9,10 +9,8 @@ using BizlandApiService.IService;
 using BizlandApiService.Service;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
-using Bizland.Core.Extensions;
-using Bizland.Core.Helpers;
+using Bizland.Core;
 using Bizland.Interfaces;
-using Bizland.Helpers;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Bizland
