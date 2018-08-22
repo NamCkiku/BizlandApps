@@ -26,8 +26,8 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height=".3*" />
-                <RowDefinition Height=".3*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0">
@@ -41,6 +41,69 @@
                                   />
                     </Image.Source>
                 </Image>
+            </StackLayout>
+
+            <StackLayout  Grid.Row="1" 
+                          VerticalOptions="CenterAndExpand"
+                          Margin="20,10,20,0"
+                          Orientation="Vertical">
+
+                <controls:RoundedSearchEntry HeightRequest="40"
+                                         Image="ic_notification.png" ImageHeight="15" ImageWidth="15"
+                                         Placeholder="Tên đăng nhập" PlaceholderColor="#999"
+                                         BackgroundColor="#f6f6f6"
+                                         BorderColor="{StaticResource Color_Text}"
+                                         BorderRadius="5"
+                                         BorderWidth="1"
+                                         InputTransparent="False"
+                                         TextColor="{StaticResource Color_Text}" 
+                                         VerticalOptions="Center"
+                                         HorizontalOptions="FillAndExpand">
+                </controls:RoundedSearchEntry>
+
+                <controls:RoundedSearchEntry HeightRequest="40"
+                                         Image="ic_Search.png" ImageHeight="15" ImageWidth="15"
+                                         Placeholder="Mật khẩu" PlaceholderColor="#999"
+                                         BackgroundColor="#f6f6f6"
+                                         BorderColor="{StaticResource Color_Text}"
+                                         BorderRadius="5"
+                                         BorderWidth="1"
+                                         InputTransparent="False"
+                                         TextColor="{StaticResource Color_Text}" 
+                                         IsPassword="True"
+                                         VerticalOptions="Center"
+                                         HorizontalOptions="FillAndExpand">
+                </controls:RoundedSearchEntry>
+
+                <controls:MaterialFrame BackgroundColor="{StaticResource Color_Navigation}"
+                                        CornerRadius="0"
+                                        HasShadow="False"
+                                        Padding="10">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="ic_facebook.png"
+                               Grid.Column="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="25"
+                               Margin="10,0,0,0"
+                               HeightRequest="25"/>
+
+                        <Label HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               TextColor="White"
+                               FontSize="{StaticResource MyFontSize}"
+                               Text="ĐĂNG NHẬP" />
+                    </Grid>
+
+                </controls:MaterialFrame>
+
             </StackLayout>
 
             <StackLayout Grid.Row="2" VerticalOptions="End" Spacing="10" Margin="0,0,0,10">
@@ -57,7 +120,7 @@
                 </Grid>
 
                 <controls:MaterialFrame BackgroundColor="#3b5998"
-                                        CornerRadius="20"
+                                        CornerRadius="0"
                                         Margin="20,0,20,0"
                                         HasShadow="False"
                                         Padding="10">
@@ -66,7 +129,7 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        
+
                         <Image Source="ic_facebook.png"
                                Grid.Column="0"
                                VerticalOptions="Center"
@@ -87,7 +150,7 @@
                 </controls:MaterialFrame>
 
                 <controls:MaterialFrame BackgroundColor="#da4453"
-                                        CornerRadius="20"
+                                        CornerRadius="0"
                                         Margin="20,0,20,0"
                                         HasShadow="False"
                                         Padding="10">
