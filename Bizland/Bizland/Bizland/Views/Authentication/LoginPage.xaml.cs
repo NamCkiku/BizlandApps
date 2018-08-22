@@ -18,7 +18,7 @@ namespace Bizland.Views
             //{
             //};
 
-            var path = await CameraHelper.TakePhotoPathAsync();
+            var path = await CameraHelper.PickPhotoPathAsync();
 
             if (path != null)
             {
