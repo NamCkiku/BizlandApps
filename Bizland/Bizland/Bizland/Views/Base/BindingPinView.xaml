@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout  xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              WidthRequest="31" 
+             HeightRequest="41"
+             AnchorX="1.0"
+             AnchorY="1.0"
+             x:Class="Bizland.Views.BindingPinView">
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Image Source="{Binding ImagePin}"
+            AbsoluteLayout.LayoutBounds="0, 0, 31, 41"
+            AbsoluteLayout.LayoutFlags="None" />
+    </AbsoluteLayout>
+</StackLayout>

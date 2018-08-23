@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bizland.CustomControl;
+using Bizland.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +9,22 @@ using Xamarin.Forms;
 
 namespace Bizland.Views
 {
-	public partial class MainPage : ContentPage
-	{
-		public MainPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+        }
+    }
 }

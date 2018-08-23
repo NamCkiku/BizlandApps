@@ -1,6 +1,9 @@
 ﻿using Foundation;
+using Lottie.Forms.iOS.Renderers;
 using Prism;
 using Prism.Ioc;
+using SegmentedControl.FormsPlugin.iOS;
+using System;
 using UIKit;
 
 
@@ -22,7 +25,22 @@ namespace Bizland.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            //Xamarin.FormsMaps.Init();
+            Xamarin.FormsGoogleMaps.Init("AIzaSyDSdW_P8JRfGlL620LM3pL3umSnh0_lUjo");
+            Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
+            AnimationViewRenderer.Init();
+
             LoadApplication(new App(new iOSInitializer()));
+
+            //Init segment
+            SegmentedControlRenderer.Init();
+
+            UINavigationBar.Appearance.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
+            UINavigationBar.Appearance.ShadowImage = new UIImage();
+            UINavigationBar.Appearance.BackgroundColor = UIColor.Clear;
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+            UINavigationBar.Appearance.BarTintColor = UIColor.Clear;
+            UINavigationBar.Appearance.Translucent = true;
 
             return base.FinishedLaunching(app, options);
         }

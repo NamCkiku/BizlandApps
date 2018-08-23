@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:googleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+             Title="{Binding Title}"
+             x:Class="Bizland.Views.HomePage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Thông Báo" Priority="2" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_notification.png" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid>
+            <googleMaps:Map x:Name="map"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="FillAndExpand"
+                            IsShowingUser="True"
+                            HasRotationEnabled="True"
+                            MapType="Street"
+                            MyLocationEnabled="True"
+                            HasScrollEnabled="True"
+                            IsIndoorEnabled="True"
+                            IsTrafficEnabled="True"
+                            HasZoomEnabled="True">
+                <googleMaps:Map.Behaviors>
+                    <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                    <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
+                </googleMaps:Map.Behaviors>
+            </googleMaps:Map>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

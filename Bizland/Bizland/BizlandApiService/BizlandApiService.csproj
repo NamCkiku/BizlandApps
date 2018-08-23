@@ -4,4 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="3.9.0" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bizland.Core\Bizland.Core.csproj" />
+  </ItemGroup>
+
 </Project>
