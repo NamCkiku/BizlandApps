@@ -23,153 +23,69 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid Margin="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height=".3*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+        <Grid>
+            <Image Source="bg_login.png" Aspect="AspectFill" />
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
 
-            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0">
-                <Image WidthRequest="{StaticResource logoWidth}"
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0">
+                    <Image WidthRequest="{StaticResource logoWidth}"
                                HorizontalOptions="CenterAndExpand"
                                VerticalOptions="CenterAndExpand">
-                    <Image.Source>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Image.Source>
+                            <OnPlatform x:TypeArguments="FileImageSource"
                                  iOS="logo_bizland.png"
                                  Android="logo_bizland.png"          
                                   />
-                    </Image.Source>
-                </Image>
-            </StackLayout>
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
 
-            <StackLayout  Grid.Row="1" 
+                <StackLayout  Grid.RowSpan="3" 
                           VerticalOptions="CenterAndExpand"
                           Orientation="Vertical">
 
-                <controls:RoundedSearchEntry HeightRequest="40"
+                    <controls:RoundedSearchEntry HeightRequest="40"
                                          Image="ic_notification.png" ImageHeight="15" ImageWidth="15"
                                          Placeholder="Tên đăng nhập" PlaceholderColor="#999"
                                          BackgroundColor="#f6f6f6"
                                          BorderColor="{StaticResource Color_Text}"
-                                         BorderRadius="5"
+                                         BorderRadius="0"
                                          BorderWidth="1"
                                          InputTransparent="False"
                                          TextColor="{StaticResource Color_Text}" 
                                          VerticalOptions="Center"
                                          HorizontalOptions="FillAndExpand">
-                </controls:RoundedSearchEntry>
+                    </controls:RoundedSearchEntry>
 
-                <controls:RoundedSearchEntry HeightRequest="40"
+                    <controls:RoundedSearchEntry HeightRequest="40"
                                          Image="ic_Search.png" ImageHeight="15" ImageWidth="15"
                                          Placeholder="Mật khẩu" PlaceholderColor="#999"
                                          BackgroundColor="#f6f6f6"
                                          BorderColor="{StaticResource Color_Text}"
-                                         BorderRadius="5"
+                                         BorderRadius="0"
                                          BorderWidth="1"
                                          InputTransparent="False"
                                          TextColor="{StaticResource Color_Text}" 
                                          IsPassword="True"
                                          VerticalOptions="Center"
                                          HorizontalOptions="FillAndExpand">
-                </controls:RoundedSearchEntry>
+                    </controls:RoundedSearchEntry>
 
-                <controls:MaterialFrame BackgroundColor="{StaticResource Color_Button}"
-                                        CornerRadius="5"
+                    <controls:MaterialFrame BackgroundColor="{StaticResource Color_Button}"
+                                        CornerRadius="2"
                                         HasShadow="False"
-                                        Padding="5">
-                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-
-                        <Image Source="ic_facebook.png"
-                               Grid.Column="0"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Start"
-                               WidthRequest="20"
-                               Margin="10,0,0,0"
-                               HeightRequest="20"/>
-
-                        <Label HorizontalOptions="CenterAndExpand"
-                               VerticalOptions="Center"
-                               Grid.Column="0"
-                               Grid.ColumnSpan="2"
-                               TextColor="White"
-                               FontSize="{StaticResource MyFontSize}"
-                               Text="ĐĂNG NHẬP" />
-                    </Grid>
-
-                </controls:MaterialFrame>
-
-            </StackLayout>
-
-            <StackLayout Grid.Row="2" VerticalOptions="End" Spacing="10">
-
-                <Grid ColumnSpacing="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width=".4*" />
-                        <ColumnDefinition Width=".2*" />
-                        <ColumnDefinition Width=".4*" />
-                    </Grid.ColumnDefinitions>
-                    <BoxView HeightRequest="0.5" VerticalOptions="Center"  Grid.Column="0" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
-                    <Label  HorizontalOptions="Center" Grid.Column="1" Text="Hoặc"/>
-                    <BoxView HeightRequest="0.5" VerticalOptions="Center" Grid.Column="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
-                </Grid>
-                <Grid ColumnSpacing="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width=".5*" />
-                        <ColumnDefinition Width=".5*" />
-                    </Grid.ColumnDefinitions>
-                    <controls:MaterialFrame BackgroundColor="#3b5998"
-                                        CornerRadius="5"
-                                            Grid.Column="0"
-                                        HasShadow="False"
-                                        Padding="5">
+                                        Padding="10">
                         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-
-                            <Image Source="ic_facebook.png"
-                               Grid.Column="0"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Start"
-                               WidthRequest="20"
-                               Margin="10,0,0,0"
-                               HeightRequest="20"/>
-
-                            <Label  HorizontalOptions="CenterAndExpand"
-                                VerticalOptions="Center"
-                               Grid.Column="0"
-                               Grid.ColumnSpan="2"
-                               TextColor="White"
-                               FontSize="{StaticResource MyFontSize}"
-                               Text="FACEBOOK" />
-                        </Grid>
-
-                    </controls:MaterialFrame>
-
-                    <controls:MaterialFrame BackgroundColor="#da4453"
-                                        CornerRadius="5"
-                                            Grid.Column="1"
-                                        HasShadow="False"
-                                        Padding="5">
-                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
-                            <Image Source="ic_facebook.png"
-                               Grid.Column="0"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Start"
-                               WidthRequest="20"
-                               Margin="10,0,0,0"
-                               HeightRequest="20"/>
 
                             <Label HorizontalOptions="CenterAndExpand"
                                VerticalOptions="Center"
@@ -177,15 +93,106 @@
                                Grid.ColumnSpan="2"
                                TextColor="White"
                                FontSize="{StaticResource MyFontSize}"
-                               Text="GOOGLE" />
+                               Text="ĐĂNG NHẬP" />
                         </Grid>
 
                     </controls:MaterialFrame>
-                </Grid>
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" VerticalOptions="End" Spacing="10">
+
+                    <Grid ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".4*" />
+                            <ColumnDefinition Width=".2*" />
+                            <ColumnDefinition Width=".4*" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView HeightRequest="0.5" VerticalOptions="Center"  Grid.Column="0" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+                        <Label  HorizontalOptions="Center" Grid.Column="1" Text="hoặc" TextColor="White"/>
+                        <BoxView HeightRequest="0.5" VerticalOptions="Center" Grid.Column="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+                    </Grid>
+                    <Grid ColumnSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".5*" />
+                            <ColumnDefinition Width=".5*" />
+                        </Grid.ColumnDefinitions>
+                        <controls:MaterialFrame BackgroundColor="#3b5998"
+                                        CornerRadius="2"
+                                            Grid.Column="0"
+                                        HasShadow="False"
+                                        Padding="5">
+                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="ic_facebook.png"
+                               Grid.Column="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="20"
+                               Margin="10,0,0,0"
+                               HeightRequest="20"/>
+
+                                <Label  HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               TextColor="White"
+                               FontSize="{StaticResource MyFontSize}"
+                               Text="FACEBOOK" />
+                            </Grid>
+
+                        </controls:MaterialFrame>
+
+                        <controls:MaterialFrame BackgroundColor="#da4453"
+                                        CornerRadius="2"
+                                            Grid.Column="1"
+                                        HasShadow="False"
+                                        Padding="5">
+                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="ic_facebook.png"
+                               Grid.Column="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="20"
+                               Margin="10,0,0,0"
+                               HeightRequest="20"/>
+
+                                <Label HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               TextColor="White"
+                               FontSize="{StaticResource MyFontSize}"
+                               Text="GOOGLE" />
+                            </Grid>
+
+                        </controls:MaterialFrame>
+                    </Grid>
+
+                    <Label HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           TextColor="White"
+                           FontSize="{StaticResource MyFontSize}"
+                           Text="Quên mật khẩu" />
 
 
-            </StackLayout>
+                </StackLayout>
+            </Grid>
+
         </Grid>
+       
     </ContentPage.Content>
 
 </ContentPage>
