@@ -310,5 +310,14 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_facebook.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_googleplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_googleplus%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_googleplus%403x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
