@@ -22,7 +22,7 @@ namespace Bizland.iOS.CustomRenderer
             if (Element.HasShadow)
             {
                 // Update shadow to match better material design standards of elevation
-                this.Layer.CornerRadius = 0f;
+                this.Layer.CornerRadius = Element.CornerRadius;
                 this.Layer.Bounds.Inset(0, 0);
                 Layer.BorderColor = Color.FromHex("#dcdde1").ToCGColor();
                 Layer.BorderWidth = 0.5f;
@@ -36,7 +36,7 @@ namespace Bizland.iOS.CustomRenderer
             else
             {
                 // Update shadow to match better material design standards of elevation
-                this.Layer.CornerRadius = 0f;
+                this.Layer.CornerRadius = Element.CornerRadius;
                 this.Layer.Bounds.Inset(0, 0);
                 Layer.BorderColor = Color.FromHex("#dcdde1").ToCGColor();
                 Layer.BorderWidth = 0.5f;
