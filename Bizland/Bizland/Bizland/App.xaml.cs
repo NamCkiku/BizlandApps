@@ -56,9 +56,8 @@ namespace Bizland
 
             await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/HomePage");
         }
-        protected async override void OnStart()
+        protected override void OnStart()
         {
-            var mylocation = await LocationHelper.GetGpsLocation();
             // Handle when your app starts  
             CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
         }

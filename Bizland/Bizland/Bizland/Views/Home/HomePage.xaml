@@ -22,7 +22,7 @@
                             MyLocationEnabled="True"
                             HasScrollEnabled="True"
                             IsIndoorEnabled="True"
-                            IsTrafficEnabled="True"
+                            IsTrafficEnabled="False"
                             HasZoomEnabled="True">
                 <googleMaps:Map.Behaviors>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
