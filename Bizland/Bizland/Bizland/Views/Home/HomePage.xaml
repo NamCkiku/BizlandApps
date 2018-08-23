@@ -5,39 +5,14 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:googleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
-             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
-             xmlns:segmented="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
-             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              Title="{Binding Title}"
              x:Class="Bizland.Views.HomePage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="Thông Báo" Priority="2" x:Name="btnNotification"  Icon="ic_notification.png" />
+        <ToolbarItem Name="Thông Báo" Priority="2" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_notification.png" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="5">
-
-            <segmented:SegmentedControl x:Name="SegControl" TintColor="#007AFF" SelectedSegment="0">
-                <segmented:SegmentedControl.Children>
-                    <segmented:SegmentedControlOption Text="Tab 1" />
-                    <segmented:SegmentedControlOption Text="Tab 2" />
-                    <segmented:SegmentedControlOption Text="Tab 3" />
-                    <segmented:SegmentedControlOption Text="Tab 4" />
-                </segmented:SegmentedControl.Children>
-            </segmented:SegmentedControl>
-
-
-            <controls:RoundedSearchEntry Margin="10,10" HeightRequest="40"
-                                         Image="ic_Search.png" ImageHeight="15" ImageWidth="15"
-                                         Placeholder="Tìm kiếm" PlaceholderColor="Black"
-                                         BackgroundColor="White"
-                                         BorderColor="Black"
-                                         BorderRadius="5"
-                                         BorderWidth="1"
-                                         InputTransparent="False"
-                                         TextColor="#003975" 
-                                         VerticalOptions="Center" />
-
-
+        <Grid>
             <googleMaps:Map x:Name="map"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
@@ -51,23 +26,9 @@
                             HasZoomEnabled="True">
                 <googleMaps:Map.Behaviors>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
-                    <bindings:BindingVisibleRegionBehavior Value="{Binding VisibleRegion}"/>
-                    <bindings:MoveToRegionBehavior Request="{Binding Request}"/>
                     <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                 </googleMaps:Map.Behaviors>
             </googleMaps:Map>
-
-            <!--<lottie:AnimationView 
-            x:Name="animationView" 
-                WidthRequest="200"
-                HeightRequest="200"
-            Animation="animation.json" 
-            Loop="True" 
-            AutoPlay="True"
-            VerticalOptions="FillAndExpand" 
-            HorizontalOptions="FillAndExpand" />-->
-
-
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

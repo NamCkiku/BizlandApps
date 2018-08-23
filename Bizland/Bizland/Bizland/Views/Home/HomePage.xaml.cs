@@ -1,5 +1,4 @@
 ﻿using Bizland.Core;
-using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
@@ -11,10 +10,10 @@ namespace Bizland.Views
         public HomePage()
         {
             InitializeComponent();
-            map.UiSettings.MyLocationButtonEnabled = true;
-            map.UiSettings.ZoomControlsEnabled = true;
-            map.UiSettings.CompassEnabled = true;
-            map.UiSettings.ZoomControlsEnabled = true;
+            map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(Settings.Latitude, Settings.Longitude), 14d);
+            map.UiSettings.MapToolbarEnabled = true;
+            map.UiSettings.ZoomControlsEnabled = false;
+            map.UiSettings.MyLocationButtonEnabled = false;
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
         protected override void OnAppearing()
