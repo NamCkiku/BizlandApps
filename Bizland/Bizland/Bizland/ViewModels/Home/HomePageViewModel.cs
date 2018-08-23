@@ -16,7 +16,6 @@ namespace Bizland.ViewModels
         {
             Title = "Trang chủ";
             _dialogService = dialogService;
-            getMylocation.Execute(null);
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
