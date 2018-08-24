@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using Bizland.Core;
+using Foundation;
 using Lottie.Forms.iOS.Renderers;
 using Prism;
 using Prism.Ioc;
@@ -25,7 +26,7 @@ namespace Bizland.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             //Xamarin.FormsMaps.Init();
-            Xamarin.FormsGoogleMaps.Init("AIzaSyDSdW_P8JRfGlL620LM3pL3umSnh0_lUjo");
+            Xamarin.FormsGoogleMaps.Init(ServerConfig.GoogleMapKeyiOS);
             Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
             AnimationViewRenderer.Init();
 
