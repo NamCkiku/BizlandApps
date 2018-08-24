@@ -8,5 +8,10 @@ namespace Bizland.Views
         {
             InitializeComponent();
         }
+
+        private void lvMenuList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
     }
 }
