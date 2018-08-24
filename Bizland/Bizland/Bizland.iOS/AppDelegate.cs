@@ -3,7 +3,6 @@ using Lottie.Forms.iOS.Renderers;
 using Prism;
 using Prism.Ioc;
 using SegmentedControl.FormsPlugin.iOS;
-using System;
 using UIKit;
 
 
@@ -41,6 +40,8 @@ namespace Bizland.iOS
             UINavigationBar.Appearance.TintColor = UIColor.White;
             UINavigationBar.Appearance.BarTintColor = UIColor.Clear;
             UINavigationBar.Appearance.Translucent = true;
+            // Set the status bar to light
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
 
             return base.FinishedLaunching(app, options);
         }

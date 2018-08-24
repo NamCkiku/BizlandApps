@@ -19,7 +19,7 @@ namespace Bizland.iOS.CustomRenderer
             base.OnElementChanged(e);
 
             // Some basic navigationbar styling.
-            var color = Color.FromHex("#79b338");
+            //var color = Color.FromHex("#79b338");
 
             //UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes
             //{
@@ -27,11 +27,14 @@ namespace Bizland.iOS.CustomRenderer
             //    TextColor = UIColor.White
             //});
 
-            UINavigationBar.Appearance.ShadowImage = new UIImage();
-            UINavigationBar.Appearance.SetBackgroundImage(color.ToUIColor().ToUIImage(), UIBarMetrics.Default);
-            UINavigationBar.Appearance.BarTintColor = color.ToUIColor();
-            UINavigationBar.Appearance.TintColor = UIColor.White;
-            UINavigationBar.Appearance.BackgroundColor = color.ToUIColor();
+            //UINavigationBar.Appearance.ShadowImage = new UIImage();
+            //UINavigationBar.Appearance.SetBackgroundImage(color.ToUIColor().ToUIImage(), UIBarMetrics.Default);
+            //UINavigationBar.Appearance.BarTintColor = color.ToUIColor();
+            //UINavigationBar.Appearance.TintColor = UIColor.White;
+            //UINavigationBar.Appearance.BackgroundColor = color.ToUIColor();
+
+            // Set the status bar to light
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
         }
 
         public override void ViewWillAppear(bool animated)
@@ -81,7 +84,7 @@ namespace Bizland.iOS.CustomRenderer
             ModalPresentationCapturesStatusBarAppearance = true;
 
             // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
         }
 
         public override void ViewWillDisappear(bool animated)
@@ -89,7 +92,7 @@ namespace Bizland.iOS.CustomRenderer
             base.ViewWillDisappear(animated);
 
             // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
         }
     }
 }
