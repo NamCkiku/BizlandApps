@@ -7,6 +7,7 @@
              Icon="hamburger.png"
              BackgroundColor="{StaticResource Color_Background}"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
+             xmlns:behaviors="clr-namespace:Bizland.Core;assembly=Bizland.Core"
              x:Class="Bizland.Views.MenuPage">
     <ContentPage.Content>
         <Grid RowSpacing="10" ColumnSpacing="0">
@@ -41,7 +42,7 @@
                           BackgroundColor="Transparent"
                           SeparatorVisibility="None"
                           ItemsSource="{Binding MenuItems, Mode=OneWay}"
-                          ItemTapped="lvMenuList_ItemTapped">
+                          behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding NavigateCommand}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -56,9 +57,7 @@
                                      VerticalOptions="FillAndExpand"
                                      Padding="20,0,0,0"
                                      Spacing="25">
-                                    <controls:IconView
-                                            Foreground="{StaticResource Color_Text}"
-                                            Source="{Binding Icon}"
+                                    <Image Source="{Binding Icon}"
                                             WidthRequest="20"
                                             VerticalOptions="Center" HorizontalOptions="Start" />
                                     <Label
