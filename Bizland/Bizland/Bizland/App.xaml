@@ -20,7 +20,7 @@
             <!-- Color -->
             <Color x:Key="Color_Background">#FFFFFF</Color>
             <Color x:Key="Color_Accent">#73C33A</Color>
-            <Color x:Key="Color_Navigation">#23CF5F</Color>
+            <Color x:Key="Color_Navigation">#037cb3</Color>
 
             <Color x:Key="Color_Button">#FE9D1A</Color>
 
