@@ -35,7 +35,7 @@
                             HasZoomEnabled="True">
                 <googleMaps:Map.Behaviors>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
-                    <bindings:PinClickedToCommandBehavior Request="{Binding PinSelectedCommand}"/>
+                    <bindings:PinClickedToCommandBehavior Command="{Binding PinSelectedCommand}"/>
                     <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                 </googleMaps:Map.Behaviors>
             </googleMaps:Map>
@@ -46,6 +46,9 @@
                                     Margin="10"
                                     HasShadow="False"
                                     Padding="5">
+                <controls:MaterialFrame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding PushToSelectAddress}"/>
+                </controls:MaterialFrame.GestureRecognizers>
                 <Grid RowSpacing="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -61,7 +64,7 @@
                                         WidthRequest="15"
                                         Grid.RowSpan="2"
                                         Grid.Column="0" 
-                                        Source="ic_GPS.png"
+                                        Source="ic_location.png"
                                         HorizontalOptions="Center"
                                         VerticalOptions="Center" />
 

@@ -1,20 +1,23 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Xamarin.Forms;
 
 namespace Bizland.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class SelectAddressPageViewModel : ViewModelBase
     {
-        public MainPageViewModel(INavigationService navigationService)
+        public INavigationService _navigationService { get; }
+        public SelectAddressPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Nhập địa chỉ của bạn";
+            _navigationService = navigationService;
+
         }
 
         public Command ClosePageCommand
@@ -23,7 +26,7 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await NavigationService.GoBackAsync(useModalNavigation: true);
+                    await _navigationService.GoBackAsync(useModalNavigation: true);
                 });
             }
         }

@@ -56,8 +56,11 @@ namespace Bizland
 
             await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/HomePage");
         }
-        protected override void OnStart()
+        protected async override void OnStart()
         {
+            var mylocation = await LocationHelper.GetGpsLocation();
+            Settings.Latitude = (float)mylocation.Latitude;
+            Settings.Longitude = (float)mylocation.Longitude;
             // Handle when your app starts  
             CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
         }
@@ -88,10 +91,13 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");
             containerRegistry.RegisterForNavigation<BaseNavigationPage, BaseNavigationPageViewModel>("BaseNavigationPage");
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>("MainPage");
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>("LoginPage");
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>("HomePage");
             containerRegistry.RegisterForNavigation<ChatPage, ChatPageViewModel>("ChatPage");
+            containerRegistry.RegisterForNavigation<SelectAddressPage, SelectAddressPageViewModel>("SelectAddressPage");
+            containerRegistry.RegisterForNavigation<GoogleAutocomplete, GoogleAutocompleteViewModel>("GoogleAutocomplete");
+            containerRegistry.RegisterForNavigation<SelectAddressMapPage, SelectAddressMapPageViewModel>("SelectAddressMapPage");
+
         }
     }
 }
