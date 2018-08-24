@@ -1,6 +1,7 @@
 ﻿using Bizland.Core;
 using Foundation;
 using Lottie.Forms.iOS.Renderers;
+using Naxam.Controls.Platform.iOS;
 using Prism;
 using Prism.Ioc;
 using SegmentedControl.FormsPlugin.iOS;
@@ -34,6 +35,8 @@ namespace Bizland.iOS
 
             //Init segment
             SegmentedControlRenderer.Init();
+
+            TopTabbedRenderer.Init();
 
             UINavigationBar.Appearance.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
             UINavigationBar.Appearance.ShadowImage = new UIImage();

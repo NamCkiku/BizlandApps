@@ -109,5 +109,15 @@ namespace Bizland.ViewModels
                 });
             }
         }
+        public Command PushToSelectAddress
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await NavigationService.NavigateAsync("/BaseNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
+                });
+            }
+        }
     }
 }

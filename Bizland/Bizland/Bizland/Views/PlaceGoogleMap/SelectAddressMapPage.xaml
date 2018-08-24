@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             Title="{Binding Title}"
+              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             x:Class="Bizland.Views.SelectAddressMapPage">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+
+            <maps:Map x:Name="map" 
+                    IsShowingUser="True"
+                    MyLocationEnabled="True"
+                    IsIndoorEnabled="True"
+                    HasScrollEnabled="True"
+                    HasRotationEnabled="True"
+                    MapType="Street"
+                    VerticalOptions="FillAndExpand">
+                <maps:Map.Behaviors>
+                    <bindings:PinDragEndToCommandBehavior Command="{Binding PinDragEndToCommand}"/>
+                    <bindings:MyLocationButtonClickedToCommandBehavior Command="{Binding MyLocationButtonClickedToCommand}"/>
+                    <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedToCommand}"/>
+                    <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                </maps:Map.Behaviors>
+            </maps:Map>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
