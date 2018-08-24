@@ -29,7 +29,7 @@ namespace Bizland.ViewModels
         {
             get
             {
-                return new Command(async () =>
+                return new Command<MenuItem>(async (item) =>
                 {
                     await NavigationService.NavigateAsync("BaseNavigationPage/MainPage", null, useModalNavigation: true);
                 });
@@ -51,35 +51,35 @@ namespace Bizland.ViewModels
         {
             MenuItems.Add(new MenuItem
             {
-                Title = "Khách chờ đón",
-                Icon = "ic_Search.png"
+                Title = "Trang chủ",
+                Icon = "ic_house.png"
             });
 
             MenuItems.Add(new MenuItem
             {
-                Title = "Danh sách cuốc đăng",
-                Icon = "ic_user.png"
+                Title = "Tôi cho thuê",
+                Icon = "ic_create.png"
             });
             MenuItems.Add(new MenuItem
             {
-                Title = "Danh sách cuốc đăng",
-                Icon = "ic_pass.png"
+                Title = "Lịch sử",
+                Icon = "ic_time.png"
             });
             MenuItems.Add(new MenuItem
             {
-                Title = "Khách chờ đón",
-                Icon = "ic_Search.png"
+                Title = "Trang chủ",
+                Icon = "ic_house.png"
             });
 
             MenuItems.Add(new MenuItem
             {
-                Title = "Danh sách cuốc đăng",
-                Icon = "ic_user.png"
+                Title = "Tôi cho thuê",
+                Icon = "ic_create.png"
             });
             MenuItems.Add(new MenuItem
             {
-                Title = "Danh sách cuốc đăng",
-                Icon = "ic_pass.png"
+                Title = "Lịch sử",
+                Icon = "ic_time.png"
             });
         }
     }
