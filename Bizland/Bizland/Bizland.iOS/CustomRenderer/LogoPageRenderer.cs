@@ -1,59 +1,59 @@
-﻿using Bizland.CustomControl;
-using Bizland.iOS.CustomRenderer;
-using CoreGraphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UIKit;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.iOS;
+﻿//using Bizland.CustomControl;
+//using Bizland.iOS.CustomRenderer;
+//using CoreGraphics;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using UIKit;
+//using Xamarin.Forms;
+//using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(LogoPage), typeof(LogoPageRenderer))]
-namespace Bizland.iOS.CustomRenderer
-{
-    public class LogoPageRenderer : ContentPageRenderer
-    {
-        protected override void OnElementChanged(VisualElementChangedEventArgs e)
-        {
-            base.OnElementChanged(e);
-        }
+//[assembly: ExportRenderer(typeof(LogoPage), typeof(LogoPageRenderer))]
+//namespace Bizland.iOS.CustomRenderer
+//{
+//    public class LogoPageRenderer : ContentPageRenderer
+//    {
+//        protected override void OnElementChanged(VisualElementChangedEventArgs e)
+//        {
+//            base.OnElementChanged(e);
+//        }
 
-        public override void ViewDidLayoutSubviews()
-        {
-            base.ViewDidLayoutSubviews();
+//        public override void ViewDidLayoutSubviews()
+//        {
+//            base.ViewDidLayoutSubviews();
 
-            if (NavigationController != null)
-            {
-                NavigationController.NavigationBar.Frame = new CGRect(0, 0, this.View.Frame.Size.Width, 75.0);
+//            if (NavigationController != null)
+//            {
+//                NavigationController.NavigationBar.Frame = new CGRect(0, 0, this.View.Frame.Size.Width, 75.0);
 
-                // Move the title up a bit, it's not centered anymore due to our custom height.
-                NavigationController.NavigationBar.SetTitleVerticalPositionAdjustment(-5, UIBarMetrics.Default);
+//                // Move the title up a bit, it's not centered anymore due to our custom height.
+//                NavigationController.NavigationBar.SetTitleVerticalPositionAdjustment(-5, UIBarMetrics.Default);
 
-                // Move the toolbaritems up too.
-                var navigationItem = NavigationController.TopViewController.NavigationItem;
-                var leftNativeButtons = (navigationItem.LeftBarButtonItems ?? new UIBarButtonItem[] { }).ToList();
-                var rightNativeButtons = (navigationItem.RightBarButtonItems ?? new UIBarButtonItem[] { }).ToList();
+//                // Move the toolbaritems up too.
+//                var navigationItem = NavigationController.TopViewController.NavigationItem;
+//                var leftNativeButtons = (navigationItem.LeftBarButtonItems ?? new UIBarButtonItem[] { }).ToList();
+//                var rightNativeButtons = (navigationItem.RightBarButtonItems ?? new UIBarButtonItem[] { }).ToList();
 
-                leftNativeButtons.ForEach(x => x.ImageInsets = new UIEdgeInsets(-8, 0, 0, 0));
-                rightNativeButtons.ForEach(x => x.ImageInsets = new UIEdgeInsets(-8, 0, 0, 0));
-            }
-        }
+//                leftNativeButtons.ForEach(x => x.ImageInsets = new UIEdgeInsets(-8, 0, 0, 0));
+//                rightNativeButtons.ForEach(x => x.ImageInsets = new UIEdgeInsets(-8, 0, 0, 0));
+//            }
+//        }
 
-        public override void ViewWillAppear(bool animated)
-        {
-            base.ViewWillAppear(animated);
+//        public override void ViewWillAppear(bool animated)
+//        {
+//            base.ViewWillAppear(animated);
 
-            var image = UIImage.FromBundle("logo.png");
-            var imageView = new UIImageView(new CGRect(0, 0, 40, 40));
+//            var image = UIImage.FromBundle("logo.png");
+//            var imageView = new UIImageView(new CGRect(0, 0, 40, 40));
 
-            imageView.ContentMode = UIViewContentMode.ScaleAspectFit;
-            imageView.Image = image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
+//            imageView.ContentMode = UIViewContentMode.ScaleAspectFit;
+//            imageView.Image = image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
 
-            if (NavigationController != null)
-            {
-                NavigationController.TopViewController.NavigationItem.TitleView = imageView;
-            }
-        }
-    }
-}
+//            if (NavigationController != null)
+//            {
+//                NavigationController.TopViewController.NavigationItem.TitleView = imageView;
+//            }
+//        }
+//    }
+//}
