@@ -35,6 +35,7 @@
                             HasZoomEnabled="True">
                 <googleMaps:Map.Behaviors>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                    <bindings:PinClickedToCommandBehavior Request="{Binding PinSelectedCommand}"/>
                     <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                 </googleMaps:Map.Behaviors>
             </googleMaps:Map>

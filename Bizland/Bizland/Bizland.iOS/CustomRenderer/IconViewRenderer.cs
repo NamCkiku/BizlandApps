@@ -11,7 +11,7 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRendererAttribute(typeof(IconViewRenderer), typeof(IconViewRenderer))]
+[assembly: ExportRendererAttribute(typeof(IconView), typeof(IconViewRenderer))]
 namespace Bizland.iOS.CustomRenderer
 {
     public class IconViewRenderer : ViewRenderer<IconView, UIImageView>

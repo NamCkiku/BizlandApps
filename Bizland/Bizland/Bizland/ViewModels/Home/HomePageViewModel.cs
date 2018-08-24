@@ -64,12 +64,37 @@ namespace Bizland.ViewModels
                         Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
                     };
 
+                    var pin2 = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "Tokyo SKYTREE",
+                        Address = "Sumida-ku, Tokyo, Japan",
+                        Position = new Position(35.72d, 139.81d),
+                        Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+                    };
+                    var pin3 = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "Tokyo SKYTREE",
+                        Address = "Sumida-ku, Tokyo, Japan",
+                        Position = new Position(35.73d, 139.81d),
+                        Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+                    };
                     Pins?.Add(Pin);
 
+                    Pins?.Add(pin2);
+
+                    Pins?.Add(pin3);
                     await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(Pin.Position));
                 });
             }
         }
+
+        public Command<PinClickedEventArgs> PinSelectedCommand =>
+        new Command<PinClickedEventArgs>(async (args) =>
+        {
+            await _dialogService.DisplayAlertAsync("adasdasdasda", "đâsdasdasdasd", "Oke");
+        });
 
         public Command getMylocation
         {
