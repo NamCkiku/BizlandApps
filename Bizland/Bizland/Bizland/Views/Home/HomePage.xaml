@@ -15,7 +15,14 @@
 
     <ContentPage.Content>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
             <googleMaps:Map x:Name="map"
+                            Grid.RowSpan="3"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
                             IsShowingUser="True"
@@ -31,6 +38,59 @@
                     <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                 </googleMaps:Map.Behaviors>
             </googleMaps:Map>
+
+            <!--Control Filter EndAddress-->
+            <controls:MaterialFrame BackgroundColor="#ffffff"
+                                    Grid.Row="0"
+                                    Margin="10"
+                                    HasShadow="False"
+                                    Padding="5">
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+
+                    <controls:IconView  Foreground="{StaticResource Color_Navigation}"
+                                        WidthRequest="15"
+                                        Grid.RowSpan="2"
+                                        Grid.Column="0" 
+                                        Source="ic_GPS.png"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center" />
+
+                    <Label TextColor="{StaticResource Color_Navigation}"
+                           Grid.Column="1"
+                           Grid.Row="0"
+                           FontSize="12"
+                           LineBreakMode="TailTruncation"
+                           Text="Bạn cần tìm phòng ở đâu ?"              
+                           VerticalOptions="CenterAndExpand"             
+                           HorizontalOptions="FillAndExpand" />
+
+                    <Label TextColor="#404040"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           LineBreakMode="TailTruncation"
+                           Text="Ngọc Lịch Trưng Trắc Văn Lâm Hưng Yên"
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="FillAndExpand" />
+
+                    <controls:IconView Grid.Column="2"
+                                        Foreground="{StaticResource Color_Text}"
+                                        WidthRequest="15"
+                                        Grid.RowSpan="2"
+                                        Source="ic_Search.png"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center" />
+                </Grid>
+            </controls:MaterialFrame>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
