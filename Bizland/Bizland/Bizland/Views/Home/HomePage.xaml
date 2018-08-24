@@ -5,12 +5,26 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:googleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+             xmlns:segmented="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              Title="{Binding Title}"
              x:Class="Bizland.Views.HomePage">
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="Thông Báo" Priority="2" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_notification.png" />
     </ContentPage.ToolbarItems>
+    
+    <NavigationPage.TitleView>
+
+        <segmented:SegmentedControl x:Name="SegControl" WidthRequest="100" HorizontalOptions="Center" TintColor="#007AFF" SelectedSegment="0">
+            <segmented:SegmentedControl.Children>
+                <segmented:SegmentedControlOption  Text="Tab 1" />
+                <segmented:SegmentedControlOption  Text="Tab 2" />
+            </segmented:SegmentedControl.Children>
+        </segmented:SegmentedControl>
+
+    </NavigationPage.TitleView>
+    
     <ContentPage.Content>
         <Grid>
             <googleMaps:Map x:Name="map"
