@@ -16,6 +16,7 @@ namespace Bizland.ViewModels
         {
             Title = "Trang chủ";
             _dialogService = dialogService;
+
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -53,7 +54,19 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await _dialogService.DisplayAlertAsync("Alert", "You have been alerted", "OK");
+
+                    Pin = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "Tokyo SKYTREE",
+                        Address = "Sumida-ku, Tokyo, Japan",
+                        Position = new Position(35.71d, 139.81d),
+                        Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+                    };
+
+                    Pins?.Add(Pin);
+
+                    await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(Pin.Position));
                 });
             }
         }
