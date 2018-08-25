@@ -24,7 +24,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            getMylocation.Execute(null);
+            //getMylocation.Execute(null);
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
