@@ -97,7 +97,9 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<SelectAddressPage, SelectAddressPageViewModel>("SelectAddressPage");
             containerRegistry.RegisterForNavigation<GoogleAutocomplete, GoogleAutocompleteViewModel>("GoogleAutocomplete");
             containerRegistry.RegisterForNavigation<SelectAddressMapPage, SelectAddressMapPageViewModel>("SelectAddressMapPage");
-
+            containerRegistry.RegisterForNavigation<SelectAddressMapPage, SelectAddressMapPageViewModel>("SelectAddressMapPage");
+            containerRegistry.RegisterForNavigation<CreateRoomPage, CreateRoomPageViewModel>("CreateRoomPage");
+            containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>("ProfilePage");
         }
     }
 }
