@@ -19,16 +19,5 @@ namespace Bizland.ViewModels
             _navigationService = navigationService;
 
         }
-
-        public Command ClosePageCommand
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    await _navigationService.GoBackAsync(useModalNavigation: true);
-                });
-            }
-        }
     }
 }
