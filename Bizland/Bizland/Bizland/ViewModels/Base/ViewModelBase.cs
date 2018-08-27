@@ -1,9 +1,5 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
-using Prism.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Prism.Navigation;
+using Xamarin.Forms;
 
 namespace Bizland.ViewModels
 {
@@ -25,7 +21,7 @@ namespace Bizland.ViewModels
 
         public virtual void Destroy()
         {
-            
+
         }
         public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -37,6 +33,17 @@ namespace Bizland.ViewModels
 
         public virtual void OnNavigatingTo(INavigationParameters parameters)
         {
+        }
+
+        public Command ClosePageCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await NavigationService.GoBackAsync(useModalNavigation: true);
+                });
+            }
         }
     }
 }

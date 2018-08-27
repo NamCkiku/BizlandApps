@@ -4,8 +4,6 @@
                 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                 prism:ViewModelLocator.AutowireViewModel="True"
                 BarTextColor="White"
-                x:Class="Bizland.Views.BaseNavigationPage">
-    <NavigationPage.ToolbarItems>
-        <ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Icon="close_white.png" Order="Primary" Priority="0" />
-    </NavigationPage.ToolbarItems>
+                x:Class="Bizland.Views.MasterDetailNavigationPage">
+
 </NavigationPage>
