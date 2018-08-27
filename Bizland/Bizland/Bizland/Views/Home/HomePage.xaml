@@ -14,7 +14,7 @@
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <Grid>
+        <Grid RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
@@ -22,7 +22,7 @@
             </Grid.RowDefinitions>
 
             <googleMaps:Map x:Name="map"
-                            Grid.RowSpan="3"
+                            Grid.RowSpan="2"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
                             IsShowingUser="True"
@@ -95,6 +95,17 @@
                 </Grid>
             </controls:MaterialFrame>
 
+            <StackLayout  Grid.Row="2" VerticalOptions="End"  Orientation="Vertical">
+                <Button Text="{Binding ButtonSearchName}" 
+                        HeightRequest="50"
+                        Command="{Binding SearchVehicleFilterModel}">
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="ic_Search.png"        
+                                  />
+                    </Button.Image>
+                </Button>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

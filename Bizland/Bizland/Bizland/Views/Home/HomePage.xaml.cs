@@ -10,10 +10,18 @@ namespace Bizland.Views
         public HomePage()
         {
             InitializeComponent();
-            //map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(Settings.Latitude, Settings.Longitude), 14d);
-            //map.UiSettings.MapToolbarEnabled = true;
-            //map.UiSettings.ZoomControlsEnabled = false;
-            //map.UiSettings.MyLocationButtonEnabled = false;
+            map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(Settings.Latitude, Settings.Longitude), 14d);
+            map.UiSettings.MapToolbarEnabled = true;
+            map.UiSettings.ZoomControlsEnabled = false;
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                map.UiSettings.MyLocationButtonEnabled = false;
+            }
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                map.UiSettings.MyLocationButtonEnabled = true;
+            }
+
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
         protected override void OnAppearing()

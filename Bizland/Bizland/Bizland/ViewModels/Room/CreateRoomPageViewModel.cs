@@ -7,8 +7,7 @@ namespace Bizland.ViewModels
         public CreateRoomPageViewModel(INavigationService navigationService)
              : base(navigationService)
         {
-            Title = "Trang chủ";
-
+            Title = "Thêm phòng";
         }
     }
 }

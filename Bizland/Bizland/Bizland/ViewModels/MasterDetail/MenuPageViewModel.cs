@@ -31,7 +31,10 @@ namespace Bizland.ViewModels
             {
                 return new Command<MenuItem>(async (item) =>
                 {
-                    await NavigationService.NavigateAsync("BaseNavigationPage/MainPage", null, useModalNavigation: true);
+                    if (item != null)
+                    {
+                        await NavigationService.NavigateAsync(item.Url, null, useModalNavigation: item.UseModalNavigation);
+                    }
                 });
             }
         }
@@ -52,34 +55,46 @@ namespace Bizland.ViewModels
             MenuItems.Add(new MenuItem
             {
                 Title = "Trang chủ",
-                Icon = "ic_house.png"
+                Icon = "ic_house.png",
+                UseModalNavigation = true,
+                Url = "BaseNavigationPage/HomePage"
             });
 
             MenuItems.Add(new MenuItem
             {
                 Title = "Tôi cho thuê",
-                Icon = "ic_create.png"
+                Icon = "ic_create.png",
+                UseModalNavigation = true,
+                Url = "BaseNavigationPage/CreateRoomPage"
             });
             MenuItems.Add(new MenuItem
             {
                 Title = "Lịch sử",
-                Icon = "ic_time.png"
+                Icon = "ic_time.png",
+                UseModalNavigation = true,
+                Url = "BaseNavigationPage/HistoryPage"
             });
             MenuItems.Add(new MenuItem
             {
-                Title = "Trang chủ",
-                Icon = "ic_house.png"
+                Title = "Thông tin cá nhân",
+                Icon = "ic_house.png",
+                UseModalNavigation = true,
+                Url = "BaseNavigationPage/ProfilePage"
             });
 
             MenuItems.Add(new MenuItem
             {
                 Title = "Tôi cho thuê",
-                Icon = "ic_create.png"
+                Icon = "ic_create.png",
+                UseModalNavigation = true,
+                Url = ""
             });
             MenuItems.Add(new MenuItem
             {
                 Title = "Lịch sử",
-                Icon = "ic_time.png"
+                Icon = "ic_time.png",
+                UseModalNavigation = true,
+                Url = ""
             });
         }
     }
@@ -115,6 +130,36 @@ namespace Bizland.ViewModels
             {
                 _icon = value;
                 RaisePropertyChanged(() => Icon);
+            }
+        }
+
+        private string _Url;
+
+        public string Url
+        {
+            get
+            {
+                return _Url;
+            }
+
+            set
+            {
+                _Url = value;
+                RaisePropertyChanged(() => Url);
+            }
+        }
+        private bool useModalNavigation;
+        public bool UseModalNavigation
+        {
+            get
+            {
+                return useModalNavigation;
+            }
+
+            set
+            {
+                useModalNavigation = value;
+                RaisePropertyChanged(() => UseModalNavigation);
             }
         }
     }
