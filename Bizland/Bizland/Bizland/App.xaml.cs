@@ -54,7 +54,7 @@ namespace Bizland
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("/RootPage/BaseNavigationPage/HomePage");
+            await NavigationService.NavigateAsync("/RootPage/MasterDetailNavigationPage/HomePage");
         }
         protected async override void OnStart()
         {
@@ -100,7 +100,8 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<SelectAddressMapPage, SelectAddressMapPageViewModel>("SelectAddressMapPage");
             containerRegistry.RegisterForNavigation<CreateRoomPage, CreateRoomPageViewModel>("CreateRoomPage");
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>("ProfilePage");
-            containerRegistry.RegisterForNavigation<HistoryPage,HistoryPageViewModel>("HistoryPage");
+            containerRegistry.RegisterForNavigation<HistoryPage, HistoryPageViewModel>("HistoryPage");
+            containerRegistry.RegisterForNavigation<MasterDetailNavigationPage>();
         }
     }
 }

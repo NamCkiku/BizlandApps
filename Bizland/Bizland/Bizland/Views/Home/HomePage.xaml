@@ -96,8 +96,8 @@
             </controls:MaterialFrame>
 
             <StackLayout  Grid.Row="2" VerticalOptions="End"  Orientation="Vertical">
-                <Button Text="{Binding ButtonSearchName}" 
-                        HeightRequest="50"
+                <Button HeightRequest="50"
+                        Text="Tìm phòng"
                         Command="{Binding SearchVehicleFilterModel}">
                     <Button.Image>
                         <OnPlatform x:TypeArguments="FileImageSource"
