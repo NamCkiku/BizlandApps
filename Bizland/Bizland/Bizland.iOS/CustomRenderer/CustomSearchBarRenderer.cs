@@ -28,7 +28,7 @@ namespace Bizland.iOS.CustomRenderer
             bar.AutocapitalizationType = UITextAutocapitalizationType.AllCharacters;
             bar.AutocorrectionType = UITextAutocorrectionType.Yes;
             bar.BarStyle = (UIBarStyle)Enum.Parse(typeof(UIBarStyle), csb.BarStyle);
-            bar.BarTintColor = csb.BarTint.GetValueOrDefault().ToUIColor();
+            //bar.BarTintColor = csb.BarTint.GetValueOrDefault().ToUIColor();
             bar.KeyboardType = UIKeyboardType.ASCIICapable;
             bar.SearchBarStyle = (UISearchBarStyle)Enum.Parse(typeof(UISearchBarStyle), csb.BarStyle);
             bar.ShowsScopeBar = true;
