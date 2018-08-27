@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace Bizland.Views
 {
     public partial class BaseNavigationPage
-       : NavigationPage, INavigationPageOptions
+       : NavigationPage, INavigationPageOptions, IDestructible
     {
         public bool ClearNavigationStackOnNavigation
         {
@@ -21,6 +21,10 @@ namespace Bizland.Views
         public BaseNavigationPage()
         {
             InitializeComponent();
+        }
+
+        public void Destroy()
+        {
         }
     }
 }

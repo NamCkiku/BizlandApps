@@ -4,6 +4,6 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              Title="{Binding Title}"
-             x:Class="Bizland.Views.ProfilePage">
+             x:Class="Bizland.Views.HistoryPage">
   
 </ContentPage>

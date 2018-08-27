@@ -100,6 +100,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<SelectAddressMapPage, SelectAddressMapPageViewModel>("SelectAddressMapPage");
             containerRegistry.RegisterForNavigation<CreateRoomPage, CreateRoomPageViewModel>("CreateRoomPage");
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>("ProfilePage");
+            containerRegistry.RegisterForNavigation<HistoryPage,HistoryPageViewModel>("HistoryPage");
         }
     }
 }
