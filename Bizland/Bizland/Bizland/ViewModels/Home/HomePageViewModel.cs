@@ -115,7 +115,7 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await NavigationService.NavigateAsync("/BaseNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
+                    await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
                 });
             }
         }
