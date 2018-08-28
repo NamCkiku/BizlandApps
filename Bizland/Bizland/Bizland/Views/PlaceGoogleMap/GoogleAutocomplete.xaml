@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              BackgroundColor="#e4e4e4"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+             xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.GoogleAutocomplete">
     <ContentPage.Content>
@@ -26,6 +27,11 @@
                             <On Platform="Android" Value="false" />
                         </OnPlatform>
                     </controls:CustomSearchBar.IsVisible>
+                    <controls:CustomSearchBar.Behaviors>
+                        <b:EventToCommandBehavior EventName="TextChanged" 
+                                      Command="{Binding SearchLoactioniOSCommmand}"
+                                      CommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
+                    </controls:CustomSearchBar.Behaviors>
                 </controls:CustomSearchBar>
                 <StackLayout Grid.Row="0" Padding="10" BackgroundColor="{StaticResource Color_Text}">
                     <StackLayout.IsVisible>
@@ -48,216 +54,67 @@
                                              TextColor="{StaticResource Color_Text}" 
                                              Text="{Binding SearchText}"
                                              VerticalOptions="Center"
+                                                 x:Name="searchbarAndroid"
                                              HorizontalOptions="FillAndExpand">
+                        <controls:RoundedSearchEntry.Behaviors>
+                            <b:EventToCommandBehavior EventName="TextChanged" 
+                                      Command="{Binding SearchLoactionCommmand}"
+                                      CommandParameter="{Binding Text, Source={x:Reference searchbarAndroid}}" />
+                        </controls:RoundedSearchEntry.Behaviors>
                     </controls:RoundedSearchEntry>
 
                 </StackLayout>
 
 
                 <StackLayout Grid.Row="1" Spacing="0.5" Orientation="Vertical">
-                    <controls:MaterialFrame BackgroundColor="#ffffff"
-                                    Grid.Row="0"
-                                    HasShadow="False"
-                                    Padding="5">
-                        <Grid ColumnSpacing="5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Grid.Column="0" Padding="5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                <controls:IconView  Foreground="{StaticResource Color_Navigation}"
-                                                WidthRequest="15"
-                                                Grid.RowSpan="2"
-                                                Grid.Column="0" 
-                                                Source="ic_location.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                            </StackLayout>
 
-
-                            <StackLayout Grid.Column="1" VerticalOptions="CenterAndExpand" Spacing="0" HorizontalOptions="StartAndExpand">
-                                <Label TextColor="{StaticResource Color_Navigation}"
-                                   Grid.Column="1"
-                                   Grid.Row="0"
-                                   FontSize="12"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long bay"              
-                                   VerticalOptions="CenterAndExpand"             
-                                   HorizontalOptions="FillAndExpand" />
-
-                                <Label TextColor="#404040"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long , Quảng Ninh, Việt Nam"
-                                   VerticalOptions="CenterAndExpand" 
-                                   HorizontalOptions="FillAndExpand" />
-                            </StackLayout>
-                        </Grid>
-                    </controls:MaterialFrame>
-
-                    <controls:MaterialFrame BackgroundColor="#ffffff"
-                                    Grid.Row="0"
-                                    HasShadow="False"
-                                    Padding="5">
-                        <Grid ColumnSpacing="5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Grid.Column="0" Padding="5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                <controls:IconView  Foreground="{StaticResource Color_Navigation}"
-                                                WidthRequest="15"
-                                                Grid.RowSpan="2"
-                                                Grid.Column="0" 
-                                                Source="ic_location.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                            </StackLayout>
-
-
-                            <StackLayout Grid.Column="1" VerticalOptions="CenterAndExpand" Spacing="0"  HorizontalOptions="StartAndExpand">
-                                <Label TextColor="{StaticResource Color_Navigation}"
-                                   Grid.Column="1"
-                                   Grid.Row="0"
-                                   FontSize="12"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long bay"              
-                                   VerticalOptions="CenterAndExpand"             
-                                   HorizontalOptions="FillAndExpand" />
-
-                                <Label TextColor="#404040"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long , Quảng Ninh, Việt Nam"
-                                   VerticalOptions="CenterAndExpand" 
-                                   HorizontalOptions="FillAndExpand" />
-                            </StackLayout>
-                        </Grid>
-                    </controls:MaterialFrame>
-
-                    <controls:MaterialFrame BackgroundColor="#ffffff"
-                                    Grid.Row="0"
-                                    HasShadow="False"
-                                    Padding="5">
-                        <Grid ColumnSpacing="5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Grid.Column="0" Padding="5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                <controls:IconView  Foreground="{StaticResource Color_Navigation}"
-                                                WidthRequest="15"
-                                                Grid.RowSpan="2"
-                                                Grid.Column="0" 
-                                                Source="ic_location.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                            </StackLayout>
-
-
-                            <StackLayout Grid.Column="1" VerticalOptions="CenterAndExpand" Spacing="0"  HorizontalOptions="StartAndExpand">
-                                <Label TextColor="{StaticResource Color_Navigation}"
-                                   Grid.Column="1"
-                                   Grid.Row="0"
-                                   FontSize="12"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long bay"              
-                                   VerticalOptions="CenterAndExpand"             
-                                   HorizontalOptions="FillAndExpand" />
-
-                                <Label TextColor="#404040"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long , Quảng Ninh, Việt Nam"
-                                   VerticalOptions="CenterAndExpand" 
-                                   HorizontalOptions="FillAndExpand" />
-                            </StackLayout>
-                        </Grid>
-                    </controls:MaterialFrame>
-
-                    <controls:MaterialFrame BackgroundColor="#ffffff"
-                                    Grid.Row="0"
-                                    HasShadow="False"
-                                    Padding="5">
-                        <Grid ColumnSpacing="5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Grid.Column="0" Padding="5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                <controls:IconView  Foreground="{StaticResource Color_Navigation}"
-                                                WidthRequest="15"
-                                                Grid.RowSpan="2"
-                                                Grid.Column="0" 
-                                                Source="ic_location.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                            </StackLayout>
-
-
-                            <StackLayout Grid.Column="1" VerticalOptions="CenterAndExpand" Spacing="0" HorizontalOptions="StartAndExpand">
-                                <Label TextColor="{StaticResource Color_Navigation}"
-                                   Grid.Column="1"
-                                   Grid.Row="0"
-                                   FontSize="12"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long bay"              
-                                   VerticalOptions="CenterAndExpand"             
-                                   HorizontalOptions="FillAndExpand" />
-
-                                <Label TextColor="#404040"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long , Quảng Ninh, Việt Nam"
-                                   VerticalOptions="CenterAndExpand" 
-                                   HorizontalOptions="FillAndExpand" />
-                            </StackLayout>
-                        </Grid>
-                    </controls:MaterialFrame>
-
-                    <controls:MaterialFrame BackgroundColor="#ffffff"
-                                    Grid.Row="0"
-                                    HasShadow="False"
-                                    Padding="5">
-                        <Grid ColumnSpacing="5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Grid.Column="0" Padding="5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                <controls:IconView  Foreground="{StaticResource Color_Navigation}"
-                                                WidthRequest="15"
-                                                Grid.RowSpan="2"
-                                                Grid.Column="0" 
-                                                Source="ic_location.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                            </StackLayout>
-
-
-                            <StackLayout Grid.Column="1" VerticalOptions="CenterAndExpand" Spacing="0" HorizontalOptions="StartAndExpand">
-                                <Label TextColor="{StaticResource Color_Navigation}"
-                                   Grid.Column="1"
-                                   Grid.Row="0"
-                                   FontSize="12"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long bay"              
-                                   VerticalOptions="CenterAndExpand"             
-                                   HorizontalOptions="FillAndExpand" />
-
-                                <Label TextColor="#404040"
-                                   LineBreakMode="TailTruncation"
-                                   Text="Hạ long , Quảng Ninh, Việt Nam"
-                                   VerticalOptions="CenterAndExpand" 
-                                   HorizontalOptions="FillAndExpand" />
-                            </StackLayout>
-                        </Grid>
-                    </controls:MaterialFrame>
-                    <!--<controls:HorizontalList ListOrientation="Vertical" 
+                    <controls:HorizontalList ListOrientation="Vertical" 
                                          Spacing="1"
                                          SelectedCommand="{Binding PlaceSelectedCommand}"
                                          ItemsSource="{Binding LstPlace}">
-                    <controls:HorizontalList.ItemTemplate>
-                        <DataTemplate>
-                        </DataTemplate>
-                    </controls:HorizontalList.ItemTemplate>
-                </controls:HorizontalList>-->
+                        <controls:HorizontalList.ItemTemplate>
+                            <DataTemplate>
+                                <controls:MaterialFrame BackgroundColor="#ffffff"
+                                    Grid.Row="0"
+                                    HasShadow="False"
+                                    Padding="5">
+                                    <Grid ColumnSpacing="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Grid.Column="0" Padding="5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                                            <controls:IconView  Foreground="{StaticResource Color_Navigation}"
+                                                WidthRequest="15"
+                                                Grid.RowSpan="2"
+                                                Grid.Column="0" 
+                                                Source="ic_location.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                        </StackLayout>
+
+
+                                        <StackLayout Grid.Column="1" VerticalOptions="CenterAndExpand" Spacing="0" HorizontalOptions="StartAndExpand">
+                                            <Label TextColor="{StaticResource Color_Navigation}"
+                                                   Grid.Column="1"
+                                                   Grid.Row="0"
+                                                   FontSize="12"
+                                                   LineBreakMode="TailTruncation"
+                                                   Text="{Binding StructuredFormatting.MainText}"              
+                                                   VerticalOptions="CenterAndExpand"             
+                                                   HorizontalOptions="FillAndExpand" />
+
+                                            <Label TextColor="#404040"
+                                                   LineBreakMode="TailTruncation"
+                                                   Text="{Binding Description}"
+                                                   VerticalOptions="CenterAndExpand" 
+                                                   HorizontalOptions="FillAndExpand" />
+                                        </StackLayout>
+                                    </Grid>
+                                </controls:MaterialFrame>
+                            </DataTemplate>
+                        </controls:HorizontalList.ItemTemplate>
+                    </controls:HorizontalList>
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" VerticalOptions="End" Padding="20">

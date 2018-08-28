@@ -81,7 +81,7 @@
                            Grid.Column="1"
                            Grid.Row="1"
                            LineBreakMode="TailTruncation"
-                           Text="Ngọc Lịch Trưng Trắc Văn Lâm Hưng Yên"
+                           Text="{Binding MyAddress}"
                            VerticalOptions="CenterAndExpand" 
                            HorizontalOptions="FillAndExpand" />
 
@@ -97,7 +97,8 @@
 
             <StackLayout  Grid.Row="2" VerticalOptions="End"  Orientation="Vertical">
                 <Button HeightRequest="50"
-                        Text="Tìm phòng"
+                        Text="TÌM PHÒNG"
+                        FontAttributes="Bold"
                         Command="{Binding SearchVehicleFilterModel}">
                     <Button.Image>
                         <OnPlatform x:TypeArguments="FileImageSource"
