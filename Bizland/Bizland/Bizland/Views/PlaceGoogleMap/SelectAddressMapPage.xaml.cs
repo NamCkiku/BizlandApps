@@ -1,9 +1,4 @@
 ﻿using Bizland.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -19,8 +14,15 @@ namespace Bizland.Views
             InitializeComponent();
             map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(Settings.Latitude, Settings.Longitude), 14d);
             map.UiSettings.MapToolbarEnabled = true;
-            map.UiSettings.MyLocationButtonEnabled = true;
-            map.UiSettings.ZoomControlsEnabled = true;
+            map.UiSettings.ZoomControlsEnabled = false;
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                map.UiSettings.MyLocationButtonEnabled = false;
+            }
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                map.UiSettings.MyLocationButtonEnabled = true;
+            }
         }
     }
 }

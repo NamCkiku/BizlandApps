@@ -2,6 +2,7 @@
 using Prism.Navigation;
 using Prism.Services;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.GoogleMaps.Bindings;
@@ -132,10 +133,7 @@ namespace Bizland.ViewModels
                     Geocoder geoCoder = new Geocoder();
                     var position = new Position(Settings.Latitude, Settings.Longitude);
                     var possibleAddresses = await geoCoder.GetAddressesForPositionAsync(position);
-                    foreach (var address in possibleAddresses)
-                    {
-                        MyAddress = address + "\n";
-                    }
+                    MyAddress = possibleAddresses.ToList()[0] + "\n";
                 });
             }
         }

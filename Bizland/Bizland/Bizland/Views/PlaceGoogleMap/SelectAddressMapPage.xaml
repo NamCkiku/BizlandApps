@@ -6,25 +6,108 @@
              Title="{Binding Title}"
               xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              x:Class="Bizland.Views.SelectAddressMapPage">
     <ContentPage.Content>
         <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
             <maps:Map x:Name="map" 
-                    IsShowingUser="True"
-                    MyLocationEnabled="True"
-                    IsIndoorEnabled="True"
-                    HasScrollEnabled="True"
-                    HasRotationEnabled="True"
-                    MapType="Street"
-                    VerticalOptions="FillAndExpand">
+                      Grid.RowSpan="2"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="FillAndExpand"
+                      IsShowingUser="True"
+                      HasRotationEnabled="True"
+                      MapType="Street"
+                      MyLocationEnabled="True"
+                      HasScrollEnabled="True"
+                      IsIndoorEnabled="True"
+                      IsTrafficEnabled="False"
+                      HasZoomEnabled="True">
                 <maps:Map.Behaviors>
+                    <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                     <bindings:PinDragEndToCommandBehavior Command="{Binding PinDragEndToCommand}"/>
                     <bindings:MyLocationButtonClickedToCommandBehavior Command="{Binding MyLocationButtonClickedToCommand}"/>
                     <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedToCommand}"/>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                    <b:EventToCommandBehavior EventName="CameraChanged" 
+                                      Command="{Binding MapCameraChanged}" />
                 </maps:Map.Behaviors>
             </maps:Map>
+
+            <!--Control Filter EndAddress-->
+            <controls:MaterialFrame BackgroundColor="#ffffff"
+                                    Grid.Row="0"
+                                    Margin="10"
+                                    HasShadow="False"
+                                    Padding="5">
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <controls:IconView  Foreground="{StaticResource Color_Button}"
+                                        WidthRequest="15"
+                                        Grid.RowSpan="2"
+                                        Grid.Column="0" 
+                                        Source="ic_location.png"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center" />
+
+                    <Label TextColor="{StaticResource Color_Button}"
+                           Grid.Column="1"
+                           Grid.Row="0"
+                           FontSize="12"
+                           LineBreakMode="TailTruncation"
+                           Text="Bạn cần tìm phòng ở đâu ?"              
+                           VerticalOptions="CenterAndExpand"             
+                           HorizontalOptions="FillAndExpand" />
+
+                    <Label TextColor="#404040"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           LineBreakMode="TailTruncation"
+                           Text="{Binding MyAddress}"
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="FillAndExpand" />
+                </Grid>
+            </controls:MaterialFrame>
+
+            <StackLayout  Grid.Row="2" VerticalOptions="End"  Orientation="Vertical">
+                <Button HeightRequest="50"
+                        Command="{Binding SelectAddress}"
+                        Text="XÁC NHẬN ĐỊA CHỈ">
+                </Button>
+            </StackLayout>
+
+            <controls:FloatingActionButton 
+                            Grid.RowSpan="2"
+                            HorizontalOptions="End"
+                            WidthRequest="45"
+                            HeightRequest="45"
+                            VerticalOptions="End"
+                            Margin="10"
+                            Command="{Binding getMylocation}"
+                            Image="ic_maplocation.png"
+                            BackgroundColor="Transparent"
+                            ButtonColor="White">
+                <controls:FloatingActionButton.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="iOS" Value="false" />
+                        <On Platform="Android" Value="true" />
+                    </OnPlatform>
+                </controls:FloatingActionButton.IsVisible>
+            </controls:FloatingActionButton>
 
         </Grid>
     </ContentPage.Content>
