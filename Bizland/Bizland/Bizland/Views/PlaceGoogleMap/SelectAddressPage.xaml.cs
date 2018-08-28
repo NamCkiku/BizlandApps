@@ -16,9 +16,18 @@ namespace Bizland.Views
         public SelectAddressPage()
         {
             InitializeComponent();
+            btnClose.Clicked += CloseModal;
 
             //Children.Add(new GoogleAutocomplete());
             //Children.Add(new SelectAddressMapPage());
+        }
+
+        private async void CloseModal(object sender, EventArgs e)
+        {
+            if(Navigation.ModalStack.Count > 0)
+            {
+                await Navigation.PopModalAsync(true);
+            }  
         }
     }
 }
