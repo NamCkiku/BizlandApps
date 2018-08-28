@@ -57,19 +57,22 @@ namespace Bizland.ViewModels
                 {
                     try
                     {
-                        if (!string.IsNullOrEmpty(arg))
+                        if (Device.RuntimePlatform == Device.Android)
                         {
-                            var lst = new List<Prediction>();
-                            PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
-                            Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
-                            if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
+                            if (!string.IsNullOrEmpty(arg))
                             {
-                                foreach (var prediction in predictions.predictions)
+                                var lst = new List<Prediction>();
+                                PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
+                                Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
+                                if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
                                 {
-                                    lst.Add(prediction);
+                                    foreach (var prediction in predictions.predictions)
+                                    {
+                                        lst.Add(prediction);
+                                    }
                                 }
+                                LstPlace = new ObservableCollection<Prediction>(lst);
                             }
-                            LstPlace = new ObservableCollection<Prediction>(lst);
                         }
 
                     }
@@ -88,20 +91,24 @@ namespace Bizland.ViewModels
                 {
                     try
                     {
-                        if (!string.IsNullOrEmpty(arg))
+                        if (Device.RuntimePlatform == Device.iOS)
                         {
-                            var lst = new List<Prediction>();
-                            PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
-                            Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
-                            if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
+                            if (!string.IsNullOrEmpty(arg))
                             {
-                                foreach (var prediction in predictions.predictions)
+                                var lst = new List<Prediction>();
+                                PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
+                                Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
+                                if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
                                 {
-                                    lst.Add(prediction);
+                                    foreach (var prediction in predictions.predictions)
+                                    {
+                                        lst.Add(prediction);
+                                    }
                                 }
+                                LstPlace = new ObservableCollection<Prediction>(lst);
                             }
-                            LstPlace = new ObservableCollection<Prediction>(lst);
                         }
+
 
                     }
                     catch (Exception ex)

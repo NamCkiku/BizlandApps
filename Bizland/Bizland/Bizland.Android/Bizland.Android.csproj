@@ -411,5 +411,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_Search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ic_my_marker.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
