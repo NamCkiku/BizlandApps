@@ -10,4 +10,8 @@
                       Title="{Binding Title}"
                       x:Class="Bizland.Views.SelectAddressPage">
 
+    <forms:TopTabbedPage.ToolbarItems>
+        <ToolbarItem Text="Đóng" x:Name="btnClose" Icon="close_white.png" Order="Primary" Priority="1" />
+    </forms:TopTabbedPage.ToolbarItems>
+
 </forms:TopTabbedPage>

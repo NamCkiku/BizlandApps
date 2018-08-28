@@ -60,7 +60,7 @@
                         <ColumnDefinition Width="25"/>
                     </Grid.ColumnDefinitions>
 
-                    <controls:IconView  Foreground="{StaticResource Color_Navigation}"
+                    <controls:IconView  Foreground="{StaticResource Color_Button}"
                                         WidthRequest="15"
                                         Grid.RowSpan="2"
                                         Grid.Column="0" 
@@ -68,7 +68,7 @@
                                         HorizontalOptions="Center"
                                         VerticalOptions="Center" />
 
-                    <Label TextColor="{StaticResource Color_Navigation}"
+                    <Label TextColor="{StaticResource Color_Button}"
                            Grid.Column="1"
                            Grid.Row="0"
                            FontSize="12"
@@ -86,7 +86,7 @@
                            HorizontalOptions="FillAndExpand" />
 
                     <controls:IconView Grid.Column="2"
-                                        Foreground="{StaticResource Color_Text}"
+                                        Foreground="{StaticResource Color_Button}"
                                         WidthRequest="15"
                                         Grid.RowSpan="2"
                                         Source="ic_Search.png"
@@ -101,11 +101,31 @@
                         Command="{Binding SearchVehicleFilterModel}">
                     <Button.Image>
                         <OnPlatform x:TypeArguments="FileImageSource"
-                                 iOS="ic_Search.png"        
+                                 iOS="ic_search_home.png"        
                                   />
                     </Button.Image>
                 </Button>
             </StackLayout>
+
+
+            <controls:FloatingActionButton 
+                            Grid.RowSpan="2"
+                            HorizontalOptions="End"
+                            WidthRequest="45"
+                            HeightRequest="45"
+                            VerticalOptions="End"
+                            Margin="10"
+                            Command="{Binding getMylocation}"
+                            Image="ic_maplocation.png"
+                            BackgroundColor="Transparent"
+                            ButtonColor="White">
+                <controls:FloatingActionButton.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="iOS" Value="false" />
+                        <On Platform="Android" Value="true" />
+                    </OnPlatform>
+                </controls:FloatingActionButton.IsVisible>
+            </controls:FloatingActionButton>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
