@@ -11,7 +11,7 @@
                       x:Class="Bizland.Views.SelectAddressPage">
 
     <forms:TopTabbedPage.ToolbarItems>
-        <ToolbarItem Text="Đóng" x:Name="btnClose" Icon="close_white.png" Order="Primary" Priority="1" />
+        <ToolbarItem Text="Đóng" Command="{Binding ClosePageCommand}" Icon="close_white.png" Order="Primary" Priority="1" />
     </forms:TopTabbedPage.ToolbarItems>
 
 </forms:TopTabbedPage>

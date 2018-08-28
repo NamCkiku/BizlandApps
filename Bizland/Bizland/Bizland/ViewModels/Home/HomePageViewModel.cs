@@ -24,16 +24,17 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            //getMylocation.Execute(null);
+            GetAddressesForPositionCommand.Execute(null);
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
         {
 
         }
+
+        #region Property
         public AnimateCameraRequest AnimateCameraRequest { get; } = new AnimateCameraRequest();
         private ObservableCollection<Pin> _Pins;
-        private Pin _pin;
         public ObservableCollection<Pin> Pins
         {
             get { return _Pins; }
@@ -43,11 +44,21 @@ namespace Bizland.ViewModels
                 RaisePropertyChanged(() => Pins);
             }
         }
-        public Pin Pin
+
+        private string _myAddress;
+        public string MyAddress
         {
-            get => _pin;
-            set => SetProperty(ref _pin, value);
+            get { return _myAddress; }
+            set
+            {
+                _myAddress = value;
+                RaisePropertyChanged(() => MyAddress);
+            }
         }
+
+        #endregion
+
+        #region Command
         public Command clickaleart
         {
             get
@@ -55,14 +66,6 @@ namespace Bizland.ViewModels
                 return new Command(async () =>
                 {
 
-                    Pin = new Pin()
-                    {
-                        Type = PinType.Place,
-                        Label = "Tokyo SKYTREE",
-                        Address = "Sumida-ku, Tokyo, Japan",
-                        Position = new Position(35.71d, 139.81d),
-                        Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
-                    };
 
                     var pin2 = new Pin()
                     {
@@ -80,12 +83,11 @@ namespace Bizland.ViewModels
                         Position = new Position(35.73d, 139.81d),
                         Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
                     };
-                    Pins?.Add(Pin);
 
                     Pins?.Add(pin2);
 
                     Pins?.Add(pin3);
-                    await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(Pin.Position));
+                    await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(pin2.Position));
                 });
             }
         }
@@ -119,5 +121,25 @@ namespace Bizland.ViewModels
                 });
             }
         }
+
+
+        public Command GetAddressesForPositionCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    Geocoder geoCoder = new Geocoder();
+                    var position = new Position(Settings.Latitude, Settings.Longitude);
+                    var possibleAddresses = await geoCoder.GetAddressesForPositionAsync(position);
+                    foreach (var address in possibleAddresses)
+                    {
+                        MyAddress = address + "\n";
+                    }
+                });
+            }
+        }
+
+        #endregion
     }
 }
