@@ -24,14 +24,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform.Core", "Platform.Core", "{9361383F-95CA-4816-82D2-FE78BD4E1CDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{1B8DF4C1-E473-45F6-9276-BAA063747613}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Google.Maps.dll = C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Google.Maps.dll
-		C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\GoogleMapsUtility.dll = C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\GoogleMapsUtility.dll
-		C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\GoogleMapsUtils.iOS.dll = C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\GoogleMapsUtils.iOS.dll
-		C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Xamarin.Forms.GoogleMaps.Android.dll = C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Xamarin.Forms.GoogleMaps.Android.dll
-		C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Xamarin.Forms.GoogleMaps.dll = C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Xamarin.Forms.GoogleMaps.dll
-		C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Xamarin.Forms.GoogleMaps.iOS.dll = C:\Users\namth\Downloads\drive-download-20180828T050014Z-001\Xamarin.Forms.GoogleMaps.iOS.dll
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
