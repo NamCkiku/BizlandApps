@@ -69,7 +69,7 @@
                            Grid.Row="0"
                            FontSize="12"
                            LineBreakMode="TailTruncation"
-                           Text="Bạn cần tìm phòng ở đâu ?"              
+                           Text="Địa chỉ của bạn"              
                            VerticalOptions="CenterAndExpand"             
                            HorizontalOptions="FillAndExpand" />
 

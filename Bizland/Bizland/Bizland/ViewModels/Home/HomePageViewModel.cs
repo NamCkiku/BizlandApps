@@ -1,4 +1,7 @@
 ﻿using Bizland.Core;
+using Bizland.Events;
+using Bizland.Model;
+using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
 using System.Collections.ObjectModel;
@@ -12,12 +15,30 @@ namespace Bizland.ViewModels
     public class HomePageViewModel : ViewModelBase
     {
         private readonly IPageDialogService _dialogService;
-        public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService)
+        public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IEventAggregator eventAggregator)
             : base(navigationService)
         {
             Title = "Trang chủ";
             _dialogService = dialogService;
 
+            eventAggregator.GetEvent<SelectMapAddressEvent>().Subscribe(UpdateMyAddress);
+
+            GetAddressesForPositionCommand.Execute(null);
+        }
+
+        public void UpdateMyAddress(SelectAddress param)
+        {
+            MyAddress = param.Address;
+            Pins?.Clear();
+            var pin2 = new Pin()
+            {
+                Type = PinType.Place,
+                Label = param.Address,
+                Address = param.Address,
+                Position = param.Position,
+                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+            };
+            Pins?.Add(pin2);
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -25,7 +46,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            GetAddressesForPositionCommand.Execute(null);
+            
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -133,7 +154,22 @@ namespace Bizland.ViewModels
                     Geocoder geoCoder = new Geocoder();
                     var position = new Position(Settings.Latitude, Settings.Longitude);
                     var possibleAddresses = await geoCoder.GetAddressesForPositionAsync(position);
-                    MyAddress = possibleAddresses.ToList()[0] + "\n";
+                    if (possibleAddresses != null && possibleAddresses.ToList().Count > 0)
+                    {
+                        var bestItem = 0;
+                        foreach (var item in possibleAddresses)
+                        {
+                            if (item.Length > bestItem)
+                            {
+                                bestItem = item.Length;
+                                MyAddress = item;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        await _dialogService.DisplayAlertAsync("Thông báo !", "Không lấy được địa chỉ của bạn", "Đồng ý");
+                    }
                 });
             }
         }

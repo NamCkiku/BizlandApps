@@ -42,6 +42,8 @@ namespace Bizland.Core
                     if (isGeolocationEnabled)
                     {
                         position = await locator.GetPositionAsync(TimeSpan.FromSeconds(20), null, true);
+                        Settings.Latitude = (float)position.Latitude;
+                        Settings.Longitude = (float)position.Longitude;
                     }
                     // Chưa bật định vị
                     else
