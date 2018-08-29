@@ -1,22 +1,30 @@
 ﻿using Bizland.Core;
+using Bizland.Events;
+using Bizland.Model;
 using BizlandApiService.Service;
+using Prism.Events;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.GoogleMaps;
 
 namespace Bizland.ViewModels
 {
     public class GoogleAutocompleteViewModel : ViewModelBase
     {
-
-        public GoogleAutocompleteViewModel(INavigationService navigationService)
+        private readonly INavigationService _navigationService;
+        private readonly IEventAggregator _eventAggregator;
+        public GoogleAutocompleteViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
             : base(navigationService)
         {
             Title = "Google";
-
+            _eventAggregator = eventAggregator;
+            _navigationService = navigationService;
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
@@ -95,17 +103,13 @@ namespace Bizland.ViewModels
                         {
                             if (!string.IsNullOrEmpty(arg))
                             {
-                                var lst = new List<Prediction>();
                                 PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
                                 Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
                                 if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
                                 {
-                                    foreach (var prediction in predictions.predictions)
-                                    {
-                                        lst.Add(prediction);
-                                    }
+                                    LstPlace = new ObservableCollection<Prediction>(predictions.predictions);
                                 }
-                                LstPlace = new ObservableCollection<Prediction>(lst);
+
                             }
                         }
 
@@ -119,7 +123,33 @@ namespace Bizland.ViewModels
             }
         }
 
+        public async Task<Position> GetPositionsForAddress(string address)
+        {
+            var result = new Position();
+            try
+            {
+                if (!string.IsNullOrEmpty(address))
+                {
+                    Geocoder geoCoder = new Geocoder();
+                    var possibleAddresses = await geoCoder.GetPositionsForAddressAsync(address);
+                    if (possibleAddresses != null && possibleAddresses.ToList().Count > 0)
+                    {
+                        result = possibleAddresses.ToList()[0];
+                    }
+                    else
+                    {
+                        "Không tìm thấy địa chỉ của bạn".ToToast(ToastNotificationType.Info, null, 10);
+                    }
 
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+            }
+            return result;
+        }
         public Command PlaceSelectedCommand
         {
             get
@@ -130,8 +160,17 @@ namespace Bizland.ViewModels
                     {
                         if (item != null)
                         {
-                            //MessagingCenter.Send<GoogleAutocompleteViewModel, Prediction>(this, key, item);
-                            await NavigationService.GoBackAsync(useModalNavigation: true);
+                            var positon = await GetPositionsForAddress(item.Description);
+                            if (positon.Latitude > 0 && positon.Longitude > 0)
+                            {
+                                var data = new SelectAddress
+                                {
+                                    Address = item.Description,
+                                    Position = positon
+                                };
+                                _eventAggregator.GetEvent<SelectMapAddressEvent>().Publish(data);
+                                await _navigationService.GoBackAsync(useModalNavigation: true);
+                            }
                         }
                     }
                     catch (Exception ex)
