@@ -114,6 +114,7 @@
     <Compile Include="CustomRenderer\ImageCircleRenderer.cs" />
     <Compile Include="CustomRenderer\PullToRefreshViewRenderer.cs" />
     <Compile Include="CustomRenderer\RoundedSearchEntryRenderer.cs" />
+    <Compile Include="CustomRenderer\Scrollbardisabledrenderer.cs" />
     <Compile Include="DependencyService\AccountKitService.cs" />
     <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\LoadingPageServiceDroid.cs" />
