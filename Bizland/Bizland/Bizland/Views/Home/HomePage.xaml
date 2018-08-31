@@ -19,6 +19,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <googleMaps:Map x:Name="map"
@@ -133,20 +134,21 @@
                             </DataTemplate>
                         </controls:HorizontalList.ItemTemplate>
                     </controls:HorizontalList>
+                </StackLayout>
+            </controls:MaterialFrame>
 
-                    <!--<Button HeightRequest="50"
+            <StackLayout  Grid.Row="3" Margin="0" VerticalOptions="End"  Orientation="Vertical">
+                <Button HeightRequest="50"
                         Text="TÌM PHÒNG"
                         FontAttributes="Bold"
                         Command="{Binding SearchVehicleFilterModel}">
-                        <Button.Image>
-                            <OnPlatform x:TypeArguments="FileImageSource"
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource"
                                  iOS="ic_search_home.png"        
                                   />
-                        </Button.Image>
-                    </Button>-->
-
-                </StackLayout>
-            </controls:MaterialFrame>
+                    </Button.Image>
+                </Button>
+            </StackLayout>
 
             <controls:FloatingActionButton 
                             Grid.RowSpan="2"
