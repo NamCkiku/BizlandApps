@@ -4,6 +4,7 @@ using Bizland.Model;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
@@ -46,7 +47,49 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            
+            var listRoomType = new List<RoomType>() {
+                new RoomType()
+                {
+                    ImageIcon = "phongtro.png",
+                    RoomTypeName = "Nhà Trọ",
+                },
+                new RoomType()
+                {
+                    ImageIcon = "vanphong.png",
+                    RoomTypeName = "Văn Phòng",
+                },
+                new RoomType()
+                {
+                    ImageIcon = "chungcu.png",
+                    RoomTypeName = "Chung cư",
+                },
+                new RoomType()
+                {
+                    ImageIcon = "nhamatpho.png",
+                    RoomTypeName = "Nhà mặt phố",
+                },
+                new RoomType()
+                {
+                    ImageIcon = "phongtro.png",
+                    RoomTypeName = "Nhà Trọ",
+                },
+                new RoomType()
+                {
+                    ImageIcon = "vanphong.png",
+                    RoomTypeName = "Văn Phòng",
+                },
+                new RoomType()
+                {
+                    ImageIcon = "chungcu.png",
+                    RoomTypeName = "Chung cư",
+                },
+                new RoomType()
+                {
+                    ImageIcon = "nhamatpho.png",
+                    RoomTypeName = "Nhà mặt phố",
+                },
+            };
+            ListRoomType = new ObservableCollection<RoomType>(listRoomType);
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -75,6 +118,19 @@ namespace Bizland.ViewModels
             {
                 _myAddress = value;
                 RaisePropertyChanged(() => MyAddress);
+            }
+        }
+
+
+
+        private ObservableCollection<RoomType> _listRoomType;
+        public ObservableCollection<RoomType> ListRoomType
+        {
+            get { return _listRoomType; }
+            set
+            {
+                _listRoomType = value;
+                RaisePropertyChanged(() => ListRoomType);
             }
         }
 

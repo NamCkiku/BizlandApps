@@ -386,5 +386,17 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_my_marker%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\vanphong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chungcu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nhamatpho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\phongtro.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
