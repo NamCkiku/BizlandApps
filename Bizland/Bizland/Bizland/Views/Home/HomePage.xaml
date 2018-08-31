@@ -18,8 +18,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="90"/>
+                <!--<RowDefinition Height="Auto" />-->
             </Grid.RowDefinitions>
 
             <googleMaps:Map x:Name="map"
@@ -131,7 +131,7 @@
                 </controls:HorizontalList>
             </Grid>
 
-            <StackLayout  Grid.Row="3" Margin="0" VerticalOptions="End"  Orientation="Vertical">
+            <!--<StackLayout  Grid.Row="3" Margin="0" VerticalOptions="End"  Orientation="Vertical">
                 <Button HeightRequest="50"
                         Text="TÌM PHÒNG"
                         FontAttributes="Bold"
@@ -142,7 +142,7 @@
                                   />
                     </Button.Image>
                 </Button>
-            </StackLayout>
+            </StackLayout>-->
 
             <controls:FloatingActionButton 
                             Grid.RowSpan="2"
