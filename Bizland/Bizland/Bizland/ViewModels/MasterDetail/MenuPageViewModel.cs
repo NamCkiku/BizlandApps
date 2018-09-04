@@ -1,4 +1,5 @@
-﻿using Prism.Navigation;
+﻿using Bizland.Model;
+using Prism.Navigation;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
@@ -11,6 +12,7 @@ namespace Bizland.ViewModels
             : base(navigationService)
         {
             InitMenuItems();
+            UserToken = StaticSettings.User;
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -24,6 +26,24 @@ namespace Bizland.ViewModels
         public override void OnNavigatingTo(INavigationParameters parameters)
         {
 
+        }
+
+        private UserToken _userToken;
+        public UserToken UserToken
+        {
+            get
+            {
+                if (StaticSettings.User != null)
+                {
+                    _userToken = StaticSettings.User;
+                }
+                return _userToken;
+            }
+            set
+            {
+                _userToken = value;
+                RaisePropertyChanged(() => UserToken);
+            }
         }
         public Command NavigateCommand
         {

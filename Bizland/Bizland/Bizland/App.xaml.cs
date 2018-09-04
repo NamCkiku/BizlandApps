@@ -1,10 +1,12 @@
 ﻿using Bizland.ApiService;
 using Bizland.Core;
 using Bizland.Interfaces;
+using Bizland.Model;
 using Bizland.ViewModels;
 using Bizland.Views;
 using BizlandApiService.IService;
 using BizlandApiService.Service;
+using Newtonsoft.Json;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using Prism;
@@ -61,6 +63,7 @@ namespace Bizland
             }
             else
             {
+                StaticSettings.User = JsonConvert.DeserializeObject<UserToken>(Settings.UserInfomation);
                 url = "/RootPage/MasterDetailNavigationPage/HomePage";
             }
             await NavigationService.NavigateAsync(url);
