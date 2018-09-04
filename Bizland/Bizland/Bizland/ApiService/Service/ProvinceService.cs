@@ -24,9 +24,7 @@ namespace Bizland.ApiService
             {
                 using (new HUD(""))
                 {
-
-                    string uri = $"/api/management/getallprovince";
-                    var data = await _IRequestProvider.GetAsync<List<Province>>(uri, "");
+                    var data = await _IRequestProvider.GetAsync<List<Province>>(ApiUri.GET_PROVINCE);
                     if (data != null)
                     {
                         result = data;

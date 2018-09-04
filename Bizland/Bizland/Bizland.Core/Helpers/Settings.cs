@@ -19,6 +19,10 @@ namespace Bizland.Core
         private const string IdLongitude = "longitude";
         private static readonly float LongitudeDefault = 105.846421f;
 
+        private const string AccessToken = "access_token";
+        private static readonly string AccessTokenDefault = string.Empty;
+        private const string UserInfo = "user_info";
+        private static readonly string UserInfoDefault = string.Empty;
 
         public static float Latitude
         {
@@ -30,6 +34,18 @@ namespace Bizland.Core
         {
             get => AppSettings.GetValueOrDefault(IdLongitude, LongitudeDefault);
             set => AppSettings.AddOrUpdateValue(IdLongitude, value);
+        }
+
+        public static string AuthAccessToken
+        {
+            get => AppSettings.GetValueOrDefault(AccessToken, AccessTokenDefault);
+            set => AppSettings.AddOrUpdateValue(AccessToken, value);
+        }
+
+        public static string UserInfomation
+        {
+            get => AppSettings.GetValueOrDefault(UserInfo, UserInfoDefault);
+            set => AppSettings.AddOrUpdateValue(UserInfo, value);
         }
     }
 }
