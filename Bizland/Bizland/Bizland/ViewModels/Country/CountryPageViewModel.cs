@@ -1,6 +1,8 @@
 ﻿using Bizland.Core;
+using Bizland.Events;
 using Bizland.Helpers;
 using Bizland.Model;
+using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
 using System;
@@ -15,11 +17,15 @@ namespace Bizland.ViewModels
     public class CountryPageViewModel : ViewModelBase
     {
         private readonly IPageDialogService _dialogService;
-        public CountryPageViewModel(INavigationService navigationService, IPageDialogService dialogService)
+        private readonly INavigationService _navigationService;
+        private readonly IEventAggregator _eventAggregator;
+        public CountryPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IEventAggregator eventAggregator)
             : base(navigationService)
         {
-            Title = "Trang chủ";
+            Title = "Chọn mã quốc gia";
             _dialogService = dialogService;
+            _eventAggregator = eventAggregator;
+            _navigationService = navigationService;
             GetAllCountry.Execute(null);
         }
 
@@ -139,6 +145,29 @@ namespace Bizland.ViewModels
                         }
                     }
 
+                });
+            }
+        }
+
+
+        public Command SelectedCommand
+        {
+            get
+            {
+                return new Command<Country>(async (item) =>
+                {
+                    if (item != null)
+                    {
+                        try
+                        {
+                            _eventAggregator.GetEvent<SelectCountryEvent>().Publish(item);
+                            await _navigationService.GoBackAsync(useModalNavigation: true);
+                        }
+                        catch (Exception ex)
+                        {
+                            Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                        }
+                    }
                 });
             }
         }

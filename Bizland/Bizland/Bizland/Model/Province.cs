@@ -8,5 +8,19 @@
 
         public int CountryId { get; set; }
 
+        public string NameSort
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(Name))
+                {
+                    return Name[0].ToString().ToUpper();
+                }
+                else
+                {
+                    return string.Empty;
+                }
+            }
+        }
     }
 }

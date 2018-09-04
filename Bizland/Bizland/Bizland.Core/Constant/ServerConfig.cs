@@ -10,7 +10,7 @@
     /// </Modified>
     public class ServerConfig
     {
-        public const string ApiEndpoint = "http://api.bizland.vn";
+        public const string ApiEndpoint = "http://api.timviecnha.com/";
         /// <summary>
         /// Key cho Google Map cho iOS
         /// </summary>

@@ -3,6 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             Title="{Binding Title}"
+              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:behaviors="clr-namespace:Bizland.Core;assembly=Bizland.Core"
              x:Class="Bizland.Views.ProvincePage">
-  
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <SearchBar Grid.Row="0"
+                       x:Name="txtSearchProvince"
+                       Text="{Binding SearchText}"
+                       SearchCommand="{Binding SearchProvinceCommmand}"
+                       SearchCommandParameter="{Binding Text, Source={x:Reference txtSearchProvince}}"
+                       Placeholder="Nhập điểm cần tìm" >
+                <SearchBar.Behaviors>
+                    <b:EventToCommandBehavior EventName="TextChanged" 
+                                      Command="{Binding SearchProvinceCommmand}"
+                                      CommandParameter="{Binding Text, Source={x:Reference txtSearchProvince}}" />
+                </SearchBar.Behaviors>
+            </SearchBar>
+
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <ListView x:Name="listviewCountry" HasUnevenRows="False" SeparatorVisibility="Default"
+                          ItemsSource="{Binding ProvinceCollectionSearched}"
+                          IsGroupingEnabled = "true"
+                          GroupShortNameBinding = "{Binding Key}"
+                          GroupDisplayBinding = "{Binding Key}"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding SelectedCommand}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout
+                                Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="10" Padding="10">
+                                    <Label 
+                                        VerticalOptions="Center"
+                                        Text="{Binding Name}"  />
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>
