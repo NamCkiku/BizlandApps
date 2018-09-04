@@ -101,7 +101,9 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<CreateRoomPage, CreateRoomPageViewModel>("CreateRoomPage");
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>("ProfilePage");
             containerRegistry.RegisterForNavigation<HistoryPage, HistoryPageViewModel>("HistoryPage");
-            containerRegistry.RegisterForNavigation<MasterDetailNavigationPage>();
+            containerRegistry.RegisterForNavigation<MasterDetailNavigationPage, MasterDetailNavigationPageViewModel>("MasterDetailNavigationPage");
+            containerRegistry.RegisterForNavigation<ProvincePage, ProvincePageViewModel>("ProvincePage");
+            containerRegistry.RegisterForNavigation<CountryPage, CountryPageViewModel>("CountryPage");
         }
     }
 }

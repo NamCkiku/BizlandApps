@@ -84,10 +84,10 @@ namespace Bizland.ViewModels
 
             MenuItems.Add(new MenuItem
             {
-                Title = "Tôi cho thuê",
+                Title = "Quốc gia",
                 Icon = "ic_create.png",
                 UseModalNavigation = true,
-                Url = ""
+                Url = "BaseNavigationPage/CountryPage"
             });
             MenuItems.Add(new MenuItem
             {

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             x:Class="Bizland.Views.CountryPage">
+
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <SearchBar Grid.Row="0"
+                       x:Name="txtSearchCoutry"
+                       Text="{Binding SearchText}"
+                       SearchCommand="{Binding SearchCountryCommmand}"
+                       SearchCommandParameter="{Binding Text, Source={x:Reference txtSearchCoutry}}"
+                       Placeholder="Nhập điểm cần tìm" >
+                <SearchBar.Behaviors>
+                    <b:EventToCommandBehavior EventName="TextChanged" 
+                                      Command="{Binding SearchCountryCommmand}"
+                                      CommandParameter="{Binding Text, Source={x:Reference txtSearchCoutry}}" />
+                </SearchBar.Behaviors>
+            </SearchBar>
+
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <ListView x:Name="listviewCountry" HasUnevenRows="False" SeparatorVisibility="Default"
+                          ItemsSource="{Binding CountryCollectionSearched}"
+                          IsGroupingEnabled = "true"
+                          GroupShortNameBinding = "{Binding Key}"
+                          GroupDisplayBinding = "{Binding Key}"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout
+                                Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="10" Padding="10">
+
+                                    <Image 
+                                        Source="{Binding FlagPath}"
+                                        HeightRequest="20"
+                                        WidthRequest="20"/>
+
+                                    <Label 
+                                        VerticalOptions="Center"
+                                        Text="{Binding Name}" />
+
+                                    <Label 
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="End"
+                                        HorizontalTextAlignment="End"
+                                        Opacity="0.5"
+                                        Text="{Binding DialCode}" />
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>
