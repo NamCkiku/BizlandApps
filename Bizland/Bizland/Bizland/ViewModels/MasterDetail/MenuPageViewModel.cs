@@ -91,10 +91,10 @@ namespace Bizland.ViewModels
             });
             MenuItems.Add(new MenuItem
             {
-                Title = "Lịch sử",
+                Title = "Tỉnh thành",
                 Icon = "ic_time.png",
                 UseModalNavigation = true,
-                Url = ""
+                Url = "BaseNavigationPage/ProvincePage"
             });
         }
     }

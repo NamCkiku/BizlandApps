@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             Title="{Binding Title}"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:behaviors="clr-namespace:Bizland.Core;assembly=Bizland.Core"
              x:Class="Bizland.Views.CountryPage">
 
     <ContentPage.Content>
@@ -33,7 +35,8 @@
                           GroupShortNameBinding = "{Binding Key}"
                           GroupDisplayBinding = "{Binding Key}"
                           HorizontalOptions="FillAndExpand"
-                          VerticalOptions="FillAndExpand">
+                          VerticalOptions="FillAndExpand"
+                          behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding SelectedCommand}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -42,8 +45,8 @@
 
                                     <Image 
                                         Source="{Binding FlagPath}"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
+                                        HeightRequest="25"
+                                        WidthRequest="25"/>
 
                                     <Label 
                                         VerticalOptions="Center"

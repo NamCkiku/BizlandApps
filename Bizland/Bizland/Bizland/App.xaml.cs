@@ -1,4 +1,5 @@
-﻿using Bizland.Core;
+﻿using Bizland.ApiService;
+using Bizland.Core;
 using Bizland.Interfaces;
 using Bizland.ViewModels;
 using Bizland.Views;
@@ -85,8 +86,12 @@ namespace Bizland
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            //Đăng kí cho api service
             containerRegistry.Register<IRequestProvider, RequestProvider>();
             containerRegistry.Register<IChatServices, ChatServices>();
+            containerRegistry.Register<IProvinceService, ProvinceService>();
+
+            //Đăng kí cho viewmodel
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");
