@@ -399,5 +399,767 @@
   <ItemGroup>
     <BundleResource Include="Resources\phongtro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_zw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ae.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_af.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_al.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_am.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_an.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_aq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_at.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_au.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_aw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_az.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_be.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_br.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_by.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_bz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_co.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_cz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_de.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_dj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_dk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_dm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_do.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_dz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_eg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_eh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_er.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_es.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_et.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_fi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_fj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_fk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_fm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_fo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_fr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_fx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_gy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_hk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_hm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_hn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_hr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_hu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_il.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_im.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_io.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_iq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_is.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_it.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_je.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_jm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_jo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_jp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_kg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_kh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_km.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_kn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_kp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_kr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_kw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_kz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_la.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_lb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_lc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_li.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_lk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_lr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_lt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_lu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_lv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_me.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_my.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_mz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_na.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_nc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_nf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_nl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_np.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_nr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_nu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_nz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_om.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_pw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_py.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_qa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_re.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_rs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_rw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_se.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_si.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_so.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_st.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_sz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_td.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_to.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_tz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_um.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_uy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_uz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_va.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_vc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_vg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_vi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_vn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_vu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_wf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ws.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_xk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_ye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_yt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_yu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_za.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag_zm.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
