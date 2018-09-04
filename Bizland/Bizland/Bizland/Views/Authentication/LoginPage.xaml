@@ -3,12 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
+             xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
+             xmlns:behaviors="clr-namespace:Bizland.Core.Behaviors;assembly=Bizland.Core"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Bizland.Views.LoginPage">
     <ContentPage.Resources>
         <ResourceDictionary>
 
+            <converters:InvertBooleanConverter x:Key="invertBooleanConverter" />
             <OnIdiom x:Key="logoWidth" x:TypeArguments="x:Double" Phone="200" Tablet="300"/>
+
+            <Style TargetType="Label" x:Key="errorDescriptionStyle">
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+            </Style>
 
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -51,8 +60,17 @@
                                          InputTransparent="False"
                                          TextColor="{StaticResource Color_Text}" 
                                          VerticalOptions="Center"
+                                                 Text="{Binding UserName.Value}"
                                          HorizontalOptions="FillAndExpand">
+                        <controls:RoundedSearchEntry.Behaviors>
+                            <behaviors:EntryLengthValidatorBehavior MaxLength="20" />
+                        </controls:RoundedSearchEntry.Behaviors>
                     </controls:RoundedSearchEntry>
+
+                    <Label
+                        Style="{StaticResource errorDescriptionStyle}"
+                        Text="{Binding UserName.ValidationDescriptions}"
+                        IsVisible="{Binding UserName.IsValid, Converter={StaticResource invertBooleanConverter}}" />
 
                     <controls:RoundedSearchEntry HeightRequest="40"
                                          Image="ic_pass.png" ImageHeight="15" ImageWidth="15"
@@ -64,14 +82,26 @@
                                          InputTransparent="False"
                                          TextColor="{StaticResource Color_Text}" 
                                          IsPassword="True"
+                                                 Text="{Binding Password.Value}"
                                          VerticalOptions="Center"
                                          HorizontalOptions="FillAndExpand">
+                        <controls:RoundedSearchEntry.Behaviors>
+                            <behaviors:EntryLengthValidatorBehavior MaxLength="20" />
+                        </controls:RoundedSearchEntry.Behaviors>
                     </controls:RoundedSearchEntry>
+
+                    <Label
+                        Style="{StaticResource errorDescriptionStyle}"
+                        Text="{Binding Password.ValidationDescriptions}"
+                        IsVisible="{Binding Password.IsValid, Converter={StaticResource invertBooleanConverter}}" />
 
                     <controls:MaterialFrame BackgroundColor="{StaticResource Color_Button}"
                                         CornerRadius="2"
                                         HasShadow="False"
                                         Padding="10">
+                        <controls:MaterialFrame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding LoginCommand}" />
+                        </controls:MaterialFrame.GestureRecognizers>
                         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
@@ -79,15 +109,20 @@
                             </Grid.ColumnDefinitions>
 
                             <Label HorizontalOptions="CenterAndExpand"
-                               VerticalOptions="Center"
-                               Grid.Column="0"
-                               Grid.ColumnSpan="2"
-                               TextColor="White"
-                               FontSize="{StaticResource MyFontSize}"
-                               Text="ĐĂNG NHẬP" />
+                                   VerticalOptions="Center"
+                                   Grid.Column="0"
+                                   Grid.ColumnSpan="2"
+                                   TextColor="White"
+                                   FontSize="{StaticResource MyFontSize}"
+                                   Text="ĐĂNG NHẬP" />
                         </Grid>
 
                     </controls:MaterialFrame>
+
+                    <Label Style="{StaticResource errorDescriptionStyle}" LineBreakMode="WordWrap"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"
+                           Text="{Binding Message}"/>
 
                 </StackLayout>
 

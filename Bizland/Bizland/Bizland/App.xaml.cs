@@ -54,8 +54,16 @@ namespace Bizland
         protected override async void OnInitialized()
         {
             InitializeComponent();
-
-            await NavigationService.NavigateAsync("/RootPage/MasterDetailNavigationPage/HomePage");
+            var url = string.Empty;
+            if (string.IsNullOrEmpty(Settings.UserInfomation))
+            {
+                url = "LoginPage";
+            }
+            else
+            {
+                url = "/RootPage/MasterDetailNavigationPage/HomePage";
+            }
+            await NavigationService.NavigateAsync(url);
         }
         protected async override void OnStart()
         {
@@ -90,6 +98,7 @@ namespace Bizland
             containerRegistry.Register<IRequestProvider, RequestProvider>();
             containerRegistry.Register<IChatServices, ChatServices>();
             containerRegistry.Register<IProvinceService, ProvinceService>();
+            containerRegistry.Register<IAuthenticationService, AuthenticationService>();
 
             //Đăng kí cho viewmodel
             containerRegistry.RegisterForNavigation<NavigationPage>();

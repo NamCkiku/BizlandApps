@@ -14,6 +14,18 @@ namespace Bizland.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        private bool isBusy = false;
+
+        public bool IsBusy
+        {
+            get { return isBusy; }
+            set
+            {
+                isBusy = value;
+                RaisePropertyChanged(() => IsBusy);
+            }
+        }
+
         public ViewModelBase(INavigationService navigationService)
         {
             NavigationService = navigationService;
