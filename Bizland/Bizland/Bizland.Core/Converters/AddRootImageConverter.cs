@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace Bizland.Core
 {
-    public class AddRootAvatarConverter : IValueConverter
+    public class AddRootImageConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
@@ -18,13 +18,13 @@ namespace Bizland.Core
                 return string.Empty;
             else
                 if (!value.ToString().Contains("/"))
-                {
-                    return value.ToString();
-                }
-                else
-                {
-                    return $"{ServerConfig.ApiEndpoint}{value.ToString()}";
-                }
+            {
+                return value.ToString();
+            }
+            else
+            {
+                return $"{ServerConfig.ApiEndpoint}{value.ToString()}";
+            }
 
         }
 
