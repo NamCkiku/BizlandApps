@@ -11,6 +11,7 @@ using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using Prism;
 using Prism.Ioc;
+using Prism.Plugin.Popups;
 using Prism.Unity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -97,11 +98,16 @@ namespace Bizland
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            // This updates INavigationService and registers PopupNavigation.Instance
+            containerRegistry.RegisterPopupNavigationService();
+
             //Đăng kí cho api service
             containerRegistry.Register<IRequestProvider, RequestProvider>();
             containerRegistry.Register<IChatServices, ChatServices>();
             containerRegistry.Register<IProvinceService, ProvinceService>();
             containerRegistry.Register<IAuthenticationService, AuthenticationService>();
+            containerRegistry.Register<IRoomTypeService, RoomTypeService>();
+            
 
             //Đăng kí cho viewmodel
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -121,6 +127,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<MasterDetailNavigationPage, MasterDetailNavigationPageViewModel>("MasterDetailNavigationPage");
             containerRegistry.RegisterForNavigation<ProvincePage, ProvincePageViewModel>("ProvincePage");
             containerRegistry.RegisterForNavigation<CountryPage, CountryPageViewModel>("CountryPage");
+            containerRegistry.RegisterForNavigation<RoomTypePage, RoomTypePageViewModel>("RoomTypePage");
         }
     }
 }

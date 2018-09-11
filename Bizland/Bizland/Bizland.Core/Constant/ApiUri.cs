@@ -7,5 +7,7 @@
         public const string GET_TOKEN = "/api/oauth/token";
 
         public const string GET_PROVINCE = "/api/management/getallprovince";
+
+        public const string GET_ROOMTYPE = "/api/roomtype/getallroomtype";
     }
 }
