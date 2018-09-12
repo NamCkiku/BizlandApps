@@ -16,9 +16,14 @@ namespace Bizland.Views
             map.UiSettings.MyLocationButtonEnabled = false;
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
-        protected override void OnAppearing()
+        protected async override void OnAppearing()
         {
             base.OnAppearing();
+            Plugin.Geolocator.Abstractions.Position position = await LocationHelper.GetGpsLocation();
+            if (position != null)
+            {
+                map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMiles(10)).WithZoom(16));
+            }
 
         }
         protected override void OnDisappearing()

@@ -117,7 +117,7 @@
             </controls:FloatingActionButton>
 
 
-            <controls:MaterialFrame BackgroundColor="#ffffff"
+            <controls:MaterialFrame BackgroundColor="#e0e0e0"
                                     Margin="10,0,10,0"
                                     IsVisible="{Binding IsShowMoreInfomation}" 
                                    Grid.Row="2"
@@ -125,21 +125,51 @@
                                    CornerRadius="0"
                                    HasShadow="True">
                 <StackLayout Orientation="Vertical" Spacing="0">
-                    
-                    <Grid Padding="10" RowSpacing="3" Grid.Row="2">
+
+                    <Grid ColumnSpacing="1" RowSpacing="1">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
-                            <RowDefinition Height="1" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="1" />
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
+                        
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="5*" />
-                            <ColumnDefinition Width="5*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <!--Control Filter Loại phòng-->
+                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" HeightRequest="50" BackgroundColor="White">
+                            <Image Source="ic_house.png" VerticalOptions="Center" Margin="10,0,0,0" />
+                            <StackLayout VerticalOptions="Center" Spacing="0">
+                                <Label Text="Loại phòng" Opacity="0.5" FontSize="14"  />
+                                <Label Text="Văn phòng" FontSize="16" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" HeightRequest="50" BackgroundColor="White">
+                            <Image Source="ic_house.png" VerticalOptions="Center" Margin="10,0,0,0" />
+                            <StackLayout VerticalOptions="Center" Spacing="0">
+                                <Label Text="Gía tiền" Opacity="0.5" FontSize="14"  />
+                                <Label Text="500k -2Tr"  FontSize="16" />
+                            </StackLayout>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" HeightRequest="50" BackgroundColor="White">
+                            <Image Source="ic_house.png" VerticalOptions="Center" Margin="10,0,0,0" />
+                            <StackLayout VerticalOptions="Center" Spacing="0">
+                                <Label Text="Diện tích" Opacity="0.5" FontSize="14"  />
+                                <Label Text="300 m2" FontSize="16" />
+                            </StackLayout>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HeightRequest="50" BackgroundColor="White">
+                            <Image Source="ic_house.png" VerticalOptions="Center" Margin="10,0,0,0" />
+                            <StackLayout VerticalOptions="Center" Spacing="0">
+                                <Label Text="Số phòng" TextColor="#888888" FontSize="16"  />
+                                <Label Text="4 phòng" FontSize="16" />
+                            </StackLayout>
+                        </StackLayout>
+                        
+                        <!--Control Filter Loại phòng--><!--
                         <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
                             <Image WidthRequest="20" 
                                         Source="ic_house.png"
@@ -153,7 +183,7 @@
 
                         <BoxView Grid.Column="0" Grid.Row="1" BackgroundColor="#d9d9d9" HeightRequest=".5" HorizontalOptions="FillAndExpand" VerticalOptions="Start"></BoxView>
 
-                        <!--Control Filter khoảng tiền-->
+                        --><!--Control Filter khoảng tiền--><!--
                         <StackLayout Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
                             <Image WidthRequest="20" 
                                         Source="ic_house.png"
@@ -167,7 +197,7 @@
 
                         <BoxView Grid.Column="1" Grid.Row="1" BackgroundColor="#d9d9d9" HeightRequest=".5" HorizontalOptions="FillAndExpand" VerticalOptions="Start"></BoxView>
 
-                        <!--Control Filter Loại phòng-->
+                        --><!--Control Filter Loại phòng--><!--
                         <StackLayout Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
                             <Image WidthRequest="20" 
                                         Source="ic_house.png"
@@ -179,7 +209,7 @@
                                        HorizontalOptions="FillAndExpand" />
                         </StackLayout>
                         <BoxView Grid.Column="0" Grid.Row="3" BackgroundColor="#d9d9d9" HeightRequest=".5" HorizontalOptions="FillAndExpand" VerticalOptions="Start"></BoxView>
-                        <!--Control Filter khoảng tiền-->
+                        --><!--Control Filter khoảng tiền--><!--
                         <StackLayout Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
                             <Image WidthRequest="20" 
                                         Source="ic_house.png"
@@ -191,7 +221,7 @@
                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
 
-                        <BoxView Grid.Column="1" Grid.Row="3" BackgroundColor="#d9d9d9" HeightRequest=".5" HorizontalOptions="FillAndExpand" VerticalOptions="Start"></BoxView>
+                        <BoxView Grid.Column="1" Grid.Row="3" BackgroundColor="#d9d9d9" HeightRequest=".5" HorizontalOptions="FillAndExpand" VerticalOptions="Start"></BoxView>-->
 
                     </Grid>
                     
