@@ -23,7 +23,7 @@
             </Grid.RowDefinitions>
 
             <googleMaps:Map x:Name="map"
-                            Grid.RowSpan="2"
+                            Grid.RowSpan="4"
                             HorizontalOptions="Fill"
                             VerticalOptions="FillAndExpand"
                             IsShowingUser="True"
@@ -97,8 +97,28 @@
                 </Grid>
             </controls:MaterialFrame>
 
+            <controls:FloatingActionButton 
+                            Grid.Row="1"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Margin="10"
+                            Command="{Binding getMylocation}"
+                            Image="ic_maplocation.png"
+                            BackgroundColor="Transparent"
+                            ButtonColor="White">
+                <controls:FloatingActionButton.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                                    Android="45" iOS="35" />
+                </controls:FloatingActionButton.HeightRequest>
+                <controls:FloatingActionButton.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                                    Android="45" iOS="35" />
+                </controls:FloatingActionButton.WidthRequest>
+            </controls:FloatingActionButton>
+
 
             <controls:MaterialFrame BackgroundColor="#ffffff"
+                                    Margin="10,0,10,0"
                                     IsVisible="{Binding IsShowMoreInfomation}" 
                                    Grid.Row="2"
                                    Padding="0"
@@ -115,8 +135,8 @@
                 </StackLayout>
                 
             </controls:MaterialFrame>
-            
-            <StackLayout  Grid.Row="3" Margin="0" VerticalOptions="End"  Orientation="Vertical">
+
+            <StackLayout  Grid.Row="3" Margin="10" VerticalOptions="End"  Orientation="Vertical">
                 <Button HeightRequest="50"
                         Text="TÌM PHÒNG"
                         FontAttributes="Bold"
@@ -128,25 +148,6 @@
                     </Button.Image>
                 </Button>
             </StackLayout>
-
-            <controls:FloatingActionButton 
-                            Grid.RowSpan="2"
-                            HorizontalOptions="End"
-                            WidthRequest="45"
-                            HeightRequest="45"
-                            VerticalOptions="End"
-                            Margin="10"
-                            Command="{Binding getMylocation}"
-                            Image="ic_maplocation.png"
-                            BackgroundColor="Transparent"
-                            ButtonColor="White">
-                <controls:FloatingActionButton.IsVisible>
-                    <OnPlatform x:TypeArguments="x:Boolean">
-                        <On Platform="iOS" Value="false" />
-                        <On Platform="Android" Value="true" />
-                    </OnPlatform>
-                </controls:FloatingActionButton.IsVisible>
-            </controls:FloatingActionButton>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

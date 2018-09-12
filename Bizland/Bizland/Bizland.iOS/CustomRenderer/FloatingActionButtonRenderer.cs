@@ -25,7 +25,7 @@ namespace Bizland.iOS.CustomRenderer
 
             // remove text from button and set the width/height/radius
             Element.HeightRequest = Element.WidthRequest;
-            Element.CornerRadius = (int)Element.WidthRequest / 2;
+            Element.CornerRadius = 10;
             Element.BorderWidth = 0;
             Element.Text = null;
 
