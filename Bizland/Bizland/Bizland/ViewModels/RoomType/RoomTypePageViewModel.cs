@@ -1,6 +1,8 @@
 ﻿using Bizland.ApiService;
 using Bizland.Core;
+using Bizland.Events;
 using Bizland.Model;
+using Prism.Events;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
@@ -13,12 +15,14 @@ namespace Bizland.ViewModels
     {
         private readonly INavigationService _navigationService;
         private readonly IRoomTypeService _roomTypeService;
-        public RoomTypePageViewModel(INavigationService navigationService, IRoomTypeService roomTypeService)
+        private readonly IEventAggregator _eventAggregator;
+        public RoomTypePageViewModel(INavigationService navigationService, IRoomTypeService roomTypeService, IEventAggregator eventAggregator)
              : base(navigationService)
         {
             Title = "Thêm phòng";
             this._navigationService = navigationService;
             this._roomTypeService = roomTypeService;
+            this._eventAggregator = eventAggregator;
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -26,7 +30,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            GetRoomTypeCommand.Execute(null);
+            //GetRoomTypeCommand.Execute(null);
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -66,7 +70,7 @@ namespace Bizland.ViewModels
                 });
             }
         }
-        public Command ClosePageCommand
+        public Command ClosePagePopupCommand
         {
             get
             {
@@ -95,7 +99,7 @@ namespace Bizland.ViewModels
                     {
                         try
                         {
-                            //_eventAggregator.GetEvent<SelectProvinceEvent>().Publish(item);
+                            _eventAggregator.GetEvent<SelectRoomTypeEvent>().Publish(item);
                             await _navigationService.GoBackAsync();
                         }
                         catch (Exception ex)

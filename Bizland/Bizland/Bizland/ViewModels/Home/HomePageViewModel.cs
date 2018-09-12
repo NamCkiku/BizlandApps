@@ -26,6 +26,8 @@ namespace Bizland.ViewModels
 
             eventAggregator.GetEvent<SelectMapAddressEvent>().Subscribe(UpdateMyAddress);
 
+            eventAggregator.GetEvent<SelectRoomTypeEvent>().Subscribe(UpdateRoomType);
+
             GetAddressesForPositionCommand.Execute(null);
         }
 
@@ -42,6 +44,11 @@ namespace Bizland.ViewModels
                 Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
             };
             Pins?.Add(pin2);
+        }
+
+        public void UpdateRoomType(RoomType param)
+        {
+
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
