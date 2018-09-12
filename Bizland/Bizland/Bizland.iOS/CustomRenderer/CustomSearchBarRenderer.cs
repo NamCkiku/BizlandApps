@@ -26,10 +26,10 @@ namespace Bizland.iOS.CustomRenderer
             UISearchBar bar = (UISearchBar)this.Control;
 
             bar.AutocapitalizationType = UITextAutocapitalizationType.AllCharacters;
-            bar.AutocorrectionType = UITextAutocorrectionType.Yes;
+            bar.AutocorrectionType = UITextAutocorrectionType.Default;
             bar.BarStyle = (UIBarStyle)Enum.Parse(typeof(UIBarStyle), csb.BarStyle);
             //bar.BarTintColor = csb.BarTint.GetValueOrDefault().ToUIColor();
-            bar.KeyboardType = UIKeyboardType.ASCIICapable;
+            bar.KeyboardType = UIKeyboardType.Default;
             bar.SearchBarStyle = (UISearchBarStyle)Enum.Parse(typeof(UISearchBarStyle), csb.BarStyle);
             bar.ShowsScopeBar = true;
             bar.ShowsCancelButton = csb.CancelButtonIsVisible;

@@ -37,7 +37,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="1" />
-                        <RowDefinition Height="*" />
+                        <RowDefinition Height="300" />
                         <RowDefinition Height="50" />
                     </Grid.RowDefinitions>
 
@@ -84,7 +84,7 @@
 
                                             <controls:IconView
                                                     Grid.Column="2"
-                                                    Foreground="{StaticResource Color_Navigation}"
+                                                    Foreground="{StaticResource Color_Text}"
                                                     WidthRequest="20" 
                                                     Source="ic_next.png"
                                                     HorizontalOptions="Center"
