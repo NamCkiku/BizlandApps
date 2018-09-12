@@ -20,11 +20,20 @@ namespace Bizland.Views
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            var lstRoomType = await GetListRoomType();
-            if (lstRoomType != null && lstRoomType.Count > 0)
+            if (_listRoomTypeModel != null && _listRoomTypeModel.Count > 0)
             {
-                listviewRoomType.ItemsSource = lstRoomType;
+                listviewRoomType.ItemsSource = _listRoomTypeModel;
             }
+            else
+            {
+                var lstRoomType = await GetListRoomType();
+                if (lstRoomType != null && lstRoomType.Count > 0)
+                {
+                    _listRoomTypeModel = lstRoomType;
+                    listviewRoomType.ItemsSource = lstRoomType;
+                }
+            }
+
         }
         protected override bool OnBackButtonPressed()
         {
@@ -35,7 +44,22 @@ namespace Bizland.Views
             return false;
         }
 
+        static List<RoomType> _listRoomTypeModel { get; set; }
 
+        public static List<RoomType> ListRoomType
+        {
+            get
+            {
+                if (_listRoomTypeModel != null)
+                {
+                    return _listRoomTypeModel;
+                }
+                else
+                {
+                    return new List<RoomType>();
+                }
+            }
+        }
         public async Task<List<RoomType>> GetListRoomType()
         {
             List<RoomType> result = new List<RoomType>();
