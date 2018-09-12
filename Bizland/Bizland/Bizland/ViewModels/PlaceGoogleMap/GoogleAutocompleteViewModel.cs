@@ -69,20 +69,14 @@ namespace Bizland.ViewModels
                         {
                             if (!string.IsNullOrEmpty(arg))
                             {
-                                var lst = new List<Prediction>();
                                 PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
                                 Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
                                 if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
                                 {
-                                    foreach (var prediction in predictions.predictions)
-                                    {
-                                        lst.Add(prediction);
-                                    }
+                                    LstPlace = predictions.predictions.ToObservableCollection();
                                 }
-                                LstPlace = new ObservableCollection<Prediction>(lst);
                             }
                         }
-
                     }
                     catch (Exception ex)
                     {

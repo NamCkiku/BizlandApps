@@ -18,8 +18,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="90"/>
-                <!--<RowDefinition Height="Auto" />-->
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <googleMaps:Map x:Name="map"
@@ -98,40 +98,25 @@
             </controls:MaterialFrame>
 
 
-            <Grid Padding="10" ColumnSpacing="0" RowSpacing="3" BackgroundColor="#ffffff" Grid.Row="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <controls:HorizontalList ListOrientation="Horizontal" 
-                                             Padding="0"
-                                             Spacing="20"
-                                             ItemsSource="{Binding ListRoomType}"
-                                             HorizontalOptions="FillAndExpand"
-                                             VerticalOptions="FillAndExpand"
-                                             SelectedCommand="{Binding SelectedItemCommand}">
-                    <controls:HorizontalList.ItemTemplate>
-                        <DataTemplate>
-                            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" WidthRequest="100">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-                                <Image Source="{Binding ImageIcon}" Grid.Row="0" Opacity="{Binding Selected}" HorizontalOptions="Center" VerticalOptions="End" WidthRequest="40"/>
-                                <Label Text="{Binding RoomTypeName}"
-                                           Opacity="{Binding Selected}"
-                                           Grid.Row="1"
-                                           FontSize="10"
-                                           VerticalOptions="End"
-                                           VerticalTextAlignment="End"
-                                           HorizontalOptions="CenterAndExpand"
-                                           HorizontalTextAlignment="Center" />
-                            </Grid>
-                        </DataTemplate>
-                    </controls:HorizontalList.ItemTemplate>
-                </controls:HorizontalList>
-            </Grid>
-
-            <!--<StackLayout  Grid.Row="3" Margin="0" VerticalOptions="End"  Orientation="Vertical">
+            <controls:MaterialFrame BackgroundColor="#ffffff"
+                                    IsVisible="{Binding IsShowMoreInfomation}" 
+                                   Grid.Row="2"
+                                   Padding="0"
+                                   CornerRadius="0"
+                                   HasShadow="True">
+                <StackLayout Orientation="Vertical" Spacing="0">
+                    
+                    <Grid Padding="10" ColumnSpacing="0" Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                    </Grid>
+                    
+                </StackLayout>
+                
+            </controls:MaterialFrame>
+            
+            <StackLayout  Grid.Row="3" Margin="0" VerticalOptions="End"  Orientation="Vertical">
                 <Button HeightRequest="50"
                         Text="TÌM PHÒNG"
                         FontAttributes="Bold"
@@ -142,7 +127,7 @@
                                   />
                     </Button.Image>
                 </Button>
-            </StackLayout>-->
+            </StackLayout>
 
             <controls:FloatingActionButton 
                             Grid.RowSpan="2"
