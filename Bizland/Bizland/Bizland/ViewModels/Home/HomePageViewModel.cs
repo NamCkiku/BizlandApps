@@ -4,7 +4,6 @@ using Bizland.Model;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
@@ -48,7 +47,10 @@ namespace Bizland.ViewModels
 
         public void UpdateRoomType(RoomType param)
         {
-
+            if (param != null)
+            {
+                RoomType = param;
+            }
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -56,7 +58,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-          
+
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -74,6 +76,17 @@ namespace Bizland.ViewModels
             {
                 _Pins = value;
                 RaisePropertyChanged(() => Pins);
+            }
+        }
+
+        private RoomType _roomType;
+        public RoomType RoomType
+        {
+            get { return _roomType; }
+            set
+            {
+                _roomType = value;
+                RaisePropertyChanged(() => RoomType);
             }
         }
 
@@ -133,6 +146,16 @@ namespace Bizland.ViewModels
             }
         }
 
+        public Command PushModalRoomType
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await _navigationService.NavigateAsync("RoomTypePage");
+                });
+            }
+        }
 
         public Command GetAddressesForPositionCommand
         {
