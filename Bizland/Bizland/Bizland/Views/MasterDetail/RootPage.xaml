@@ -8,7 +8,7 @@
                   x:Class="Bizland.Views.RootPage">
 
     <MasterDetailPage.Master>
-        <page:MenuPage />
+        <page:MenuPage  Button_ClickedOnMenu="Menu_Button_ClickedOnMenu"/>
     </MasterDetailPage.Master>
     
 </MasterDetailPage>
