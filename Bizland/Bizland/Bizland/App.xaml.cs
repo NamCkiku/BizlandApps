@@ -103,11 +103,13 @@ namespace Bizland
 
             //Đăng kí cho api service
             containerRegistry.Register<IRequestProvider, RequestProvider>();
+            containerRegistry.Register<IPlacesAutocomplete, PlacesAutocomplete>();
+            containerRegistry.Register<IPlacesGeocode, PlacesGeocode>();
             containerRegistry.Register<IChatServices, ChatServices>();
             containerRegistry.Register<IProvinceService, ProvinceService>();
             containerRegistry.Register<IAuthenticationService, AuthenticationService>();
             containerRegistry.Register<IRoomTypeService, RoomTypeService>();
-            
+
 
             //Đăng kí cho viewmodel
             containerRegistry.RegisterForNavigation<NavigationPage>();
