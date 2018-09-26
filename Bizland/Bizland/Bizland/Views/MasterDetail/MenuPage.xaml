@@ -47,6 +47,7 @@
             <ListView x:Name="lvMenuList"
                       Grid.Row="1"
                       RowHeight="50"
+                      ItemTapped="lvMenuList_ItemTapped"
                           BackgroundColor="Transparent"
                           SeparatorVisibility="None"
                           ItemsSource="{Binding MenuItems, Mode=OneWay}"

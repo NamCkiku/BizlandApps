@@ -9,9 +9,11 @@ namespace Bizland.Views
         {
             InitializeComponent();
         }
-        public bool IsPresentedAfterNavigation
+        public bool IsPresentedAfterNavigation => Device.Idiom != TargetIdiom.Phone;
+
+        private void Menu_Button_ClickedOnMenu(object sender, System.EventArgs e)
         {
-            get { return false; }
+            IsPresented = false;
         }
     }
 }
