@@ -6,7 +6,7 @@ namespace BizlandApiService.Service
     /// <summary>
 	/// Retrieves autocomplete address predictions
 	/// </summary>
-	public class PlacesAutocomplete
+	public class PlacesAutocomplete : IPlacesAutocomplete
     {
         private readonly PlacesHttpProvider httpProvider;
         private readonly PlacesConfig authConfig;

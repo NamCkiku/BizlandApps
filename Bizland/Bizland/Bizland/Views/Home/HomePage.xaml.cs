@@ -16,15 +16,19 @@ namespace Bizland.Views
             map.UiSettings.MyLocationButtonEnabled = false;
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
+        static bool isShowPage = false;
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            Plugin.Geolocator.Abstractions.Position position = await LocationHelper.GetGpsLocation();
-            if (position != null)
+            if (!isShowPage)
             {
-                map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMiles(10)).WithZoom(16));
+                Plugin.Geolocator.Abstractions.Position position = await LocationHelper.GetGpsLocation();
+                if (position != null)
+                {
+                    isShowPage = true;
+                    map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMiles(10)).WithZoom(16));
+                }
             }
-
         }
         protected override void OnDisappearing()
         {

@@ -5,9 +5,7 @@ using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -19,12 +17,16 @@ namespace Bizland.ViewModels
     {
         private readonly INavigationService _navigationService;
         private readonly IEventAggregator _eventAggregator;
-        public GoogleAutocompleteViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
+        private readonly IPlacesGeocode _placesGeocode;
+        private readonly IPlacesAutocomplete _placesAutocomplete;
+        public GoogleAutocompleteViewModel(INavigationService navigationService, IEventAggregator eventAggregator, IPlacesGeocode placesGeocode, IPlacesAutocomplete placesAutocomplete)
             : base(navigationService)
         {
             Title = "Google";
             _eventAggregator = eventAggregator;
             _navigationService = navigationService;
+            _placesGeocode = placesGeocode;
+            _placesAutocomplete = placesAutocomplete;
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
@@ -69,8 +71,7 @@ namespace Bizland.ViewModels
                         {
                             if (!string.IsNullOrEmpty(arg))
                             {
-                                PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
-                                Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
+                                Predictions predictions = await _placesAutocomplete.GetAutocomplete(arg.Trim());
                                 if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
                                 {
                                     LstPlace = predictions.predictions.ToObservableCollection();
@@ -97,8 +98,7 @@ namespace Bizland.ViewModels
                         {
                             if (!string.IsNullOrEmpty(arg))
                             {
-                                PlacesAutocomplete autocompleteObject = new PlacesAutocomplete();
-                                Predictions predictions = await autocompleteObject.GetAutocomplete(arg.Trim());
+                                Predictions predictions = await _placesAutocomplete.GetAutocomplete(arg.Trim());
                                 if (predictions != null && predictions.predictions != null && predictions.predictions.Count > 0)
                                 {
                                     LstPlace = new ObservableCollection<Prediction>(predictions.predictions);
@@ -124,17 +124,20 @@ namespace Bizland.ViewModels
             {
                 if (!string.IsNullOrEmpty(address))
                 {
-                    Geocoder geoCoder = new Geocoder();
-                    var possibleAddresses = await geoCoder.GetPositionsForAddressAsync(address);
-                    if (possibleAddresses != null && possibleAddresses.ToList().Count > 0)
+
+                    Geocode response = await _placesGeocode.GetGeocode(address);
+                    if (response != null && response.results != null && response.results.Count > 0)
                     {
-                        result = possibleAddresses.ToList()[0];
+                        var location = response.results[0].geometry.location;
+                        if (location != null)
+                        {
+                            result = new Position(location.lat, location.lng);
+                        }
                     }
                     else
                     {
                         "Không tìm thấy địa chỉ của bạn".ToToast(ToastNotificationType.Info, null, 10);
                     }
-
                 }
 
             }

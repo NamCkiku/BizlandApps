@@ -1,11 +1,11 @@
 ﻿using Bizland.Core;
 using Bizland.Events;
 using Bizland.Model;
+using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
 using System.Collections.ObjectModel;
-using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.GoogleMaps.Bindings;
@@ -16,12 +16,14 @@ namespace Bizland.ViewModels
     {
         private readonly IPageDialogService _dialogService;
         private readonly INavigationService _navigationService;
-        public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IEventAggregator eventAggregator)
+        private readonly IPlacesGeocode _placesGeocode;
+        public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IPlacesGeocode placesGeocode, IEventAggregator eventAggregator)
             : base(navigationService)
         {
             Title = "Trang chủ";
             this._dialogService = dialogService;
             this._navigationService = navigationService;
+            this._placesGeocode = placesGeocode;
 
             eventAggregator.GetEvent<SelectMapAddressEvent>().Subscribe(UpdateMyAddress);
 
@@ -30,7 +32,7 @@ namespace Bizland.ViewModels
             GetAddressesForPositionCommand.Execute(null);
         }
 
-        public void UpdateMyAddress(SelectAddress param)
+        public async void UpdateMyAddress(SelectAddress param)
         {
             MyAddress = param.Address;
             Pins?.Clear();
@@ -43,6 +45,7 @@ namespace Bizland.ViewModels
                 Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
             };
             Pins?.Add(pin2);
+            await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(param.Position));
         }
 
         public void UpdateRoomType(RoomType param)
@@ -163,18 +166,16 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    Geocoder geoCoder = new Geocoder();
-                    var position = new Position(Settings.Latitude, Settings.Longitude);
-                    var possibleAddresses = await geoCoder.GetAddressesForPositionAsync(position);
-                    if (possibleAddresses != null && possibleAddresses.ToList().Count > 0)
+                    var possibleAddresses = await _placesGeocode.GetAddressesForPosition(Settings.Latitude.ToString(), Settings.Longitude.ToString());
+                    if (possibleAddresses != null && possibleAddresses.status == "OK")
                     {
                         var bestItem = 0;
-                        foreach (var item in possibleAddresses)
+                        foreach (var item in possibleAddresses.results)
                         {
-                            if (item.Length > bestItem)
+                            if (item.formatted_address.Length > bestItem)
                             {
-                                bestItem = item.Length;
-                                MyAddress = item;
+                                bestItem = item.formatted_address.Length;
+                                MyAddress = item.formatted_address;
                             }
                         }
                     }
