@@ -83,6 +83,9 @@
     <PackageReference Include="SegmentedControl.FormsPlugin">
       <Version>2.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker">
+      <Version>16.3.0.21</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugin.Connectivity">
       <Version>4.0.0.190-beta</Version>
     </PackageReference>

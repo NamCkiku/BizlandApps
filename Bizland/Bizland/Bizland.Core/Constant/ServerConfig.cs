@@ -37,5 +37,15 @@
         /// Namth  16/1/2018   created
         /// </Modified>
         public const string GoogleMapKeyWeb = "AIzaSyBeymYPFfPt2E0h-69g4-8QUQLrGz95LkQ";
+
+
+        /// <summary>
+        /// Key cho Google Map cho WEB
+        /// </summary>
+        /// <Modified>
+        /// Name     Date         Comments
+        /// Namth  16/1/2018   created
+        /// </Modified>
+        public const string SyncfusionKey = "Mjk2NzRAMzEzNjJlMzMyZTMwZ1VMeWJWeHF5Z1lYWGo1MnM0NG9WSUhqT3FJUm41MmFpTG50TjdXTHEzRT0=";
     }
 }

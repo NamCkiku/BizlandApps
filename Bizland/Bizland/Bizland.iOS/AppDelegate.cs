@@ -5,6 +5,7 @@ using Naxam.Controls.Platform.iOS;
 using Prism;
 using Prism.Ioc;
 using SegmentedControl.FormsPlugin.iOS;
+using Syncfusion.SfPicker.XForms.iOS;
 using UIKit;
 
 
@@ -31,6 +32,8 @@ namespace Bizland.iOS
             Xamarin.FormsGoogleMaps.Init(ServerConfig.GoogleMapKeyiOS);
             Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
             AnimationViewRenderer.Init();
+
+            SfPickerRenderer.Init();
 
             LoadApplication(new App(new iOSInitializer()));
 

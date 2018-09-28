@@ -56,6 +56,9 @@ namespace Bizland
 
         protected override async void OnInitialized()
         {
+            //Register Syncfusion license
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(ServerConfig.SyncfusionKey);
+
             InitializeComponent();
             var url = string.Empty;
             if (string.IsNullOrEmpty(Settings.UserInfomation))
@@ -130,6 +133,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<ProvincePage, ProvincePageViewModel>("ProvincePage");
             containerRegistry.RegisterForNavigation<CountryPage, CountryPageViewModel>("CountryPage");
             containerRegistry.RegisterForNavigation<RoomTypePage, RoomTypePageViewModel>("RoomTypePage");
+            containerRegistry.RegisterForNavigation<SelectDatetimePage>();
         }
     }
 }
