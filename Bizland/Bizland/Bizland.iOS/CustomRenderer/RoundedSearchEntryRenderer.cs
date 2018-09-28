@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using Bizland.CustomControl;
+﻿using Bizland.CustomControl;
 using Bizland.iOS.CustomRenderer;
 using CoreGraphics;
-using Foundation;
+using System.Drawing;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -25,7 +20,7 @@ namespace Bizland.iOS.CustomRenderer
 
             var element = (RoundedSearchEntry)Element;
             Control.Layer.CornerRadius = element.BorderRadius;
-            Control.Layer.BorderWidth = element.BorderWidth;
+            Control.Layer.BorderWidth = element.BorderWidth / 2;
             Control.Layer.BorderColor = element.BorderColor.ToCGColor();
             Control.Layer.BackgroundColor = element.Color.ToCGColor();
 

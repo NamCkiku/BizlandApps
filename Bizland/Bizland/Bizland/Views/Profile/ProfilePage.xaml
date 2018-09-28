@@ -10,9 +10,7 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-
             <converters:AddRootImageConverter x:Key="AddRootImageConverter" />
-
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
@@ -91,35 +89,85 @@
                                              VerticalOptions="Center"
                                              HorizontalOptions="FillAndExpand"/>
 
-                <controls:RoundedSearchEntry HeightRequest="40"
-                                             Image="ic_sex.png"
-                                             ImageAlignment="Right"
-                                             ImageHeight="20" ImageWidth="20"
-                                             Placeholder="Giới tính"
-                                             BackgroundColor="White"
-                                             BorderColor="{StaticResource Color_Navigation}"
-                                             BorderRadius="0"
-                                             BorderWidth="1"
-                                             x:Name="txtSex"
-                                             Text="{Binding Email.Value}"
-                                             VerticalOptions="Center"
-                                             HorizontalOptions="FillAndExpand"/>
+                <Grid>
+                    <controls:ShapeView ShapeType="Box"
+                                        CornerRadius="0"
+                                        StrokeColor="{StaticResource Color_Navigation}" 
+                                        StrokeWidth="1"
+                                        BackgroundColor="White"/>
+                    <StackLayout VerticalOptions="Center"  Padding="10,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
-                <controls:RoundedSearchEntry HeightRequest="40"
-                                             Image="ic_birthday.png"
-                                             ImageAlignment="Right"
-                                             ImageHeight="20" ImageWidth="20"
-                                             Placeholder="Nhập ngày sinh"
-                                             BackgroundColor="White"
-                                             BorderColor="{StaticResource Color_Navigation}"
-                                             BorderRadius="0"
-                                             BorderWidth="1"
-                                             x:Name="txtBirthday"
-                                             Text="{Binding Email.Value}"
-                                             VerticalOptions="Center"
-                                             HorizontalOptions="FillAndExpand"/>
+                        <Label Text="Giới tính" 
+                                   FontSize="14"
+                                   TextColor="#404040" 
+                                   LineBreakMode="TailTruncation"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="StartAndExpand"/>
+
+                        <Label FontSize="14"
+                                       TextColor="#404040"
+                                       LineBreakMode="TailTruncation"
+                                       Text="Nam"
+                                       VerticalOptions="CenterAndExpand" 
+                                       HorizontalOptions="End" />
+
+                        <Image
+                                        WidthRequest="20"
+                                        HeightRequest="20"
+                                        Source="ic_sex.png"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center" />
+
+                    </StackLayout>
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PushDistrictPage}">
+                        </TapGestureRecognizer>
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <Grid>
+                    <controls:ShapeView ShapeType="Box"
+                                        CornerRadius="0"
+                                        StrokeColor="{StaticResource Color_Navigation}" 
+                                        StrokeWidth="1"
+                                        BackgroundColor="White"/>
+
+                    <StackLayout VerticalOptions="Center"  Padding="10,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+
+                        <Label Text="Nhập ngày sinh" 
+                                   FontSize="14"
+                                   TextColor="#404040" 
+                                   LineBreakMode="TailTruncation"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="StartAndExpand"/>
+
+                        <Label FontSize="14"
+                                       TextColor="#404040"
+                                       LineBreakMode="TailTruncation"
+                                       Text="30/04/1995"
+                                       VerticalOptions="CenterAndExpand" 
+                                       HorizontalOptions="End" />
+
+                        <Image
+                                        WidthRequest="20"
+                                        HeightRequest="20"
+                                        Source="ic_birthday.png"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center" />
+
+                    </StackLayout>
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PushDistrictPage}">
+                        </TapGestureRecognizer>
+                    </Grid.GestureRecognizers>
+                </Grid>
 
             </StackLayout>
+
+            <Image Source="bg_footer.png"
+                       Grid.Row="2"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="Center" Aspect="AspectFit"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
