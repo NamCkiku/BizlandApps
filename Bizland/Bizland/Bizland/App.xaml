@@ -27,6 +27,8 @@
             <Color x:Key="Color_Text">#333333</Color>
 
             <Color x:Key="Color_SoftRed">#ED4337</Color>
+            <Color x:Key="Color_Placeholder">#999</Color>
+           
             
         </ResourceDictionary>
 
@@ -73,6 +75,21 @@
             <Setter 
                 Property="TextColor" 
                 Value="{StaticResource Color_Text}" />
+        </Style>
+
+        <Style 
+            TargetType="Entry"
+            ApplyToDerivedTypes="True">
+
+            <Setter 
+                Property="TextColor" 
+                Value="{StaticResource Color_Text}" />
+            <Setter 
+                Property="PlaceholderColor" 
+                Value="{StaticResource Color_Placeholder}" />
+            <Setter 
+                Property="InputTransparent" 
+                Value="False" />
         </Style>
     </Application.Resources>
 </prism:PrismApplication>

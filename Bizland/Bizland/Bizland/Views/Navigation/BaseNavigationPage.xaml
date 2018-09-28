@@ -6,6 +6,6 @@
                 BarTextColor="White"
                 x:Class="Bizland.Views.BaseNavigationPage">
     <NavigationPage.ToolbarItems>
-        <ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Icon="close_white.png" Order="Primary" Priority="0" />
+        <ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Order="Primary" Priority="0" />
     </NavigationPage.ToolbarItems>
 </NavigationPage>

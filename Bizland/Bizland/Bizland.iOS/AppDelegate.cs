@@ -44,7 +44,8 @@ namespace Bizland.iOS
             UINavigationBar.Appearance.BackgroundColor = UIColor.Clear;
             UINavigationBar.Appearance.TintColor = UIColor.White;
             UINavigationBar.Appearance.BarTintColor = UIColor.Clear;
-            UINavigationBar.Appearance.Translucent = true;
+            UINavigationBar.Appearance.Translucent = false;
+            UINavigationBar.Appearance.BarStyle = UIBarStyle.Black;
             // Set the status bar to light
             UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
 
