@@ -20,7 +20,7 @@ namespace Bizland.iOS.CustomRenderer
 
             var element = (RoundedSearchEntry)Element;
             Control.Layer.CornerRadius = element.BorderRadius;
-            Control.Layer.BorderWidth = element.BorderWidth / 2;
+            Control.Layer.BorderWidth = element.BorderWidth * 0.5f;
             Control.Layer.BorderColor = element.BorderColor.ToCGColor();
             Control.Layer.BackgroundColor = element.Color.ToCGColor();
 
