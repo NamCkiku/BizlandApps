@@ -31,7 +31,7 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <controls:CircleImage Source="{Binding UserToken.Avatar,Converter={StaticResource AddRootImageConverter}"
+                <controls:CircleImage Source="{Binding UserToken.Avatar}"
                                                BorderThickness="3"
                                                Aspect="Fill"
                                                FillColor="White"
@@ -39,10 +39,15 @@
                                                HeightRequest="100"
                                                VerticalOptions="Center"
                                                HorizontalOptions="Center"
-                                               BorderColor="White"/>
+                                               BorderColor="White">
+                    <controls:CircleImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ChangeAvatarCommand}">
+                        </TapGestureRecognizer>
+                    </controls:CircleImage.GestureRecognizers>
+                </controls:CircleImage>
             </Grid>
 
-            <StackLayout Grid.Row="1" Padding="5,10,5,10" Spacing="10" VerticalOptions="FillAndExpand">
+            <StackLayout Grid.Row="1" Padding="10" Spacing="10" VerticalOptions="FillAndExpand">
 
                 <controls:RoundedSearchEntry HeightRequest="40"
                                              Image="ic_fullname.png"
@@ -55,7 +60,7 @@
                                              BorderRadius="0"
                                              x:Name="txtFullname"
                                              BorderWidth="1"
-                                             Text="{Binding FullName.Value}"
+                                             Text="{Binding UserToken.UserName}"
                                              VerticalOptions="Center"
                                              HorizontalOptions="FillAndExpand"/>
 
@@ -70,7 +75,7 @@
                                              BorderRadius="0"
                                              x:Name="txtPhoneNumber"
                                              BorderWidth="1"
-                                             Text="{Binding FullName.Value}"
+                                             Text="{Binding UserToken.PhoneNumber}"
                                              VerticalOptions="Center"
                                              HorizontalOptions="FillAndExpand"/>
 
@@ -85,7 +90,7 @@
                                              BorderRadius="0"
                                              BorderWidth="1"
                                              x:Name="txtEmail"
-                                             Text="{Binding Email.Value}"
+                                             Text="{Binding UserToken.Email}"
                                              VerticalOptions="Center"
                                              HorizontalOptions="FillAndExpand"/>
 
@@ -95,17 +100,15 @@
                                         StrokeColor="{StaticResource Color_Navigation}" 
                                         StrokeWidth="1"
                                         BackgroundColor="White"/>
-                    <StackLayout VerticalOptions="Center"  Padding="10,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <StackLayout VerticalOptions="Center"  Padding="10,0,5,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
                         <Label Text="Giới tính" 
-                                   FontSize="14"
-                                   TextColor="#404040" 
+                                   TextColor="{Binding Color_Text}" 
                                    LineBreakMode="TailTruncation"
                                    VerticalOptions="Center"
                                    HorizontalOptions="StartAndExpand"/>
 
-                        <Label FontSize="14"
-                                       TextColor="#404040"
+                        <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
                                        Text="Nam"
                                        VerticalOptions="CenterAndExpand" 
@@ -119,10 +122,10 @@
                                         VerticalOptions="Center" />
 
                     </StackLayout>
-                    <Grid.GestureRecognizers>
+                    <!--<Grid.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding PushDistrictPage}">
                         </TapGestureRecognizer>
-                    </Grid.GestureRecognizers>
+                    </Grid.GestureRecognizers>-->
                 </Grid>
 
                 <Grid>
@@ -132,17 +135,15 @@
                                         StrokeWidth="1"
                                         BackgroundColor="White"/>
 
-                    <StackLayout VerticalOptions="Center"  Padding="10,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <StackLayout VerticalOptions="Center"  Padding="10,0,5,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
                         <Label Text="Nhập ngày sinh" 
-                                   FontSize="14"
-                                   TextColor="#404040" 
+                                   TextColor="{Binding Color_Text}" 
                                    LineBreakMode="TailTruncation"
                                    VerticalOptions="Center"
                                    HorizontalOptions="StartAndExpand"/>
 
-                        <Label FontSize="14"
-                                       TextColor="#404040"
+                        <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
                                        Text="30/04/1995"
                                        VerticalOptions="CenterAndExpand" 
@@ -156,10 +157,10 @@
                                         VerticalOptions="Center" />
 
                     </StackLayout>
-                    <Grid.GestureRecognizers>
+                    <!--<Grid.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding PushDistrictPage}">
                         </TapGestureRecognizer>
-                    </Grid.GestureRecognizers>
+                    </Grid.GestureRecognizers>-->
                 </Grid>
 
             </StackLayout>

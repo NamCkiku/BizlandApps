@@ -2,6 +2,7 @@
 using Plugin.Media.Abstractions;
 using System;
 using System.IO;
+using System.Reflection;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -44,8 +45,7 @@ namespace Bizland.Core
             }
             catch (Exception)
             {
-
-                throw;
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
 
 
@@ -86,10 +86,9 @@ namespace Bizland.Core
                     file.Dispose();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
 
 
@@ -124,10 +123,10 @@ namespace Bizland.Core
 
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
             return result;
         }
