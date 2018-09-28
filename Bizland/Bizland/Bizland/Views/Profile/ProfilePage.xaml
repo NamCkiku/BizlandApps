@@ -47,13 +47,13 @@
             <StackLayout Grid.Row="1" Padding="5,10,5,10" Spacing="10" VerticalOptions="FillAndExpand">
 
                 <controls:RoundedSearchEntry HeightRequest="40"
-                                             Image="ic_user.png"
-                                             ImageAlignment="Left"
+                                             Image="ic_fullname.png"
+                                             ImageAlignment="Right"
                                              ImageHeight="20" 
                                              ImageWidth="20"
                                              Placeholder="Nhập tên"
                                              BackgroundColor="White"
-                                             BorderColor="White"
+                                             BorderColor="{StaticResource Color_Navigation}"
                                              BorderRadius="0"
                                              x:Name="txtFullname"
                                              BorderWidth="1"
@@ -62,13 +62,13 @@
                                              HorizontalOptions="FillAndExpand"/>
 
                 <controls:RoundedSearchEntry HeightRequest="40"
-                                             Image="ic_user.png"
-                                             ImageAlignment="Left"
+                                             Image="ic_phone.png"
+                                             ImageAlignment="Right"
                                              ImageHeight="20" 
                                              ImageWidth="20"
                                              Placeholder="Nhập số điện thoại"
                                              BackgroundColor="White"
-                                             BorderColor="White"
+                                             BorderColor="{StaticResource Color_Navigation}"
                                              BorderRadius="0"
                                              x:Name="txtPhoneNumber"
                                              BorderWidth="1"
@@ -78,12 +78,12 @@
 
 
                 <controls:RoundedSearchEntry HeightRequest="40"
-                                             Image="ic_pass.png"
-                                             ImageAlignment="Left"
+                                             Image="ic_mail.png"
+                                             ImageAlignment="Right"
                                              ImageHeight="20" ImageWidth="20"
                                              Placeholder="Nhập email"
                                              BackgroundColor="White"
-                                             BorderColor="White"
+                                             BorderColor="{StaticResource Color_Navigation}"
                                              BorderRadius="0"
                                              BorderWidth="1"
                                              x:Name="txtEmail"
@@ -92,18 +92,33 @@
                                              HorizontalOptions="FillAndExpand"/>
 
                 <controls:RoundedSearchEntry HeightRequest="40"
-                                             Image="ic_pass.png"
-                                             ImageAlignment="Left"
+                                             Image="ic_sex.png"
+                                             ImageAlignment="Right"
                                              ImageHeight="20" ImageWidth="20"
                                              Placeholder="Giới tính"
                                              BackgroundColor="White"
-                                             BorderColor="White"
+                                             BorderColor="{StaticResource Color_Navigation}"
                                              BorderRadius="0"
                                              BorderWidth="1"
                                              x:Name="txtSex"
                                              Text="{Binding Email.Value}"
                                              VerticalOptions="Center"
                                              HorizontalOptions="FillAndExpand"/>
+
+                <controls:RoundedSearchEntry HeightRequest="40"
+                                             Image="ic_birthday.png"
+                                             ImageAlignment="Right"
+                                             ImageHeight="20" ImageWidth="20"
+                                             Placeholder="Nhập ngày sinh"
+                                             BackgroundColor="White"
+                                             BorderColor="{StaticResource Color_Navigation}"
+                                             BorderRadius="0"
+                                             BorderWidth="1"
+                                             x:Name="txtBirthday"
+                                             Text="{Binding Email.Value}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="FillAndExpand"/>
+
             </StackLayout>
         </Grid>
     </ContentPage.Content>
