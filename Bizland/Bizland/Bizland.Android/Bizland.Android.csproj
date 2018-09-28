@@ -121,6 +121,8 @@
     <Compile Include="CustomRenderer\PullToRefreshViewRenderer.cs" />
     <Compile Include="CustomRenderer\RoundedSearchEntryRenderer.cs" />
     <Compile Include="CustomRenderer\Scrollbardisabledrenderer.cs" />
+    <Compile Include="CustomRenderer\Shape.cs" />
+    <Compile Include="CustomRenderer\ShapeRenderer.cs" />
     <Compile Include="DependencyService\AccountKitService.cs" />
     <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\LoadingPageServiceDroid.cs" />
@@ -1314,6 +1316,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_birthday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bg_footer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
