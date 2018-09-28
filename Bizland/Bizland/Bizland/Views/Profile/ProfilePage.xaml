@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.ProfilePage">
 
@@ -32,6 +33,7 @@
                 </Grid.RowDefinitions>
 
                 <controls:CircleImage Source="{Binding UserToken.Avatar}"
+                                      x:Name="txtAvatar"
                                                BorderThickness="3"
                                                Aspect="Fill"
                                                FillColor="White"
@@ -41,7 +43,7 @@
                                                HorizontalOptions="Center"
                                                BorderColor="White">
                     <controls:CircleImage.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding ChangeAvatarCommand}">
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
                         </TapGestureRecognizer>
                     </controls:CircleImage.GestureRecognizers>
                 </controls:CircleImage>
@@ -108,6 +110,15 @@
                                    VerticalOptions="Center"
                                    HorizontalOptions="StartAndExpand"/>
 
+                        <syncfusion:SfPicker
+
+                            x:Name="pickerSex"
+                            PickerMode="Dialog"
+                            HeaderText="Chọn giới tính"
+                            IsOpen="False"
+                            ItemsSource="{Binding Sexs}" />
+
+
                         <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
                                        Text="Nam"
@@ -122,10 +133,10 @@
                                         VerticalOptions="Center" />
 
                     </StackLayout>
-                    <!--<Grid.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding PushDistrictPage}">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2">
                         </TapGestureRecognizer>
-                    </Grid.GestureRecognizers>-->
+                    </Grid.GestureRecognizers>
                 </Grid>
 
                 <Grid>
@@ -143,6 +154,15 @@
                                    VerticalOptions="Center"
                                    HorizontalOptions="StartAndExpand"/>
 
+                        <controls:CustomDatePicker
+                                x:Name="date"
+                                ColumnHeaderHeight="40"
+                                HorizontalOptions="Center"
+                                PickerHeight="400"
+                                PickerMode="Dialog"
+                                PickerWidth="400"
+                                VerticalOptions="Center" />
+
                         <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
                                        Text="30/04/1995"
@@ -157,10 +177,10 @@
                                         VerticalOptions="Center" />
 
                     </StackLayout>
-                    <!--<Grid.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding PushDistrictPage}">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1">
                         </TapGestureRecognizer>
-                    </Grid.GestureRecognizers>-->
+                    </Grid.GestureRecognizers>
                 </Grid>
 
             </StackLayout>

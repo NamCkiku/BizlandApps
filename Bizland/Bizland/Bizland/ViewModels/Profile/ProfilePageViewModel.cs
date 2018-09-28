@@ -1,10 +1,7 @@
 ﻿using Bizland.Core;
-using Bizland.Core.Helpers;
 using Bizland.Model;
 using Prism.Navigation;
-using System;
-using System.Reflection;
-using Xamarin.Forms;
+using System.Collections.ObjectModel;
 
 namespace Bizland.ViewModels
 {
@@ -14,10 +11,34 @@ namespace Bizland.ViewModels
             : base(navigationService)
         {
             Title = "Thông tin cá nhân";
-            UserToken = StaticSettings.User;
-            UserToken.Avatar = ServerConfig.ApiEndpoint + StaticSettings.User.Avatar;
+
+
+        }
+        public override void OnNavigatedFrom(INavigationParameters parameters)
+        {
         }
 
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            if (UserToken == null)
+            {
+                UserToken = StaticSettings.User;
+                UserToken.Avatar = ServerConfig.ApiEndpoint + StaticSettings.User.Avatar;
+            }
+            Sexs = new ObservableCollection<string>();
+
+            Sexs.Add("Nam");
+
+            Sexs.Add("Nữ");
+
+            Sexs.Add("Chưa xác định");
+
+        }
+
+        public override void OnNavigatingTo(INavigationParameters parameters)
+        {
+
+        }
         private UserToken _userToken;
         public UserToken UserToken
         {
@@ -37,25 +58,22 @@ namespace Bizland.ViewModels
         }
 
 
+        private ObservableCollection<string> _sex;
 
+        public ObservableCollection<string> Sexs
 
-        public Command ChangeAvatarCommand
         {
+
             get
             {
-                return new Command(async () =>
-                {
-                    try
-                    {
-                        string localPath = await UploadImageHelper.UploadImage(ImageType.Avatar);
-                        UserToken.Avatar = localPath;
-                    }
-                    catch (Exception ex)
-                    {
-                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
-                    }
-                });
+                return _sex;
             }
+            set
+            {
+                _sex = value;
+                RaisePropertyChanged(() => Sexs);
+            }
+
         }
     }
 }
