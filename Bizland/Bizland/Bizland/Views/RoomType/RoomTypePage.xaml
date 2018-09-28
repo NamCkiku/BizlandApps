@@ -23,7 +23,7 @@
 
     <ContentPage.Content>
         <Frame
-                Margin="15,60,15,60"
+                Margin="15,100,15,100"
                 CornerRadius="5"
                 Padding="0"
                 VerticalOptions="Center"
@@ -60,7 +60,7 @@
                     <StackLayout Grid.Row="2">
                         <ListView x:Name="listviewRoomType" RowHeight="60" HasUnevenRows="False" SeparatorVisibility="Default"
                                   HorizontalOptions="FillAndExpand"
-                                  VerticalOptions="CenterAndExpand"
+                                  VerticalOptions="FillAndExpand"
                                   behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding SelectedCommand}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
@@ -95,7 +95,7 @@
                             </ListView.ItemTemplate>
                         </ListView>
                     </StackLayout>
-                    
+
                     <Button BorderRadius="0"
                             BackgroundColor="#f7f6fb"
                             Grid.Row="3"

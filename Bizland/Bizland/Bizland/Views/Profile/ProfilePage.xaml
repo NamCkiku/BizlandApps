@@ -3,6 +3,124 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              Title="{Binding Title}"
              x:Class="Bizland.Views.ProfilePage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <converters:AddRootImageConverter x:Key="AddRootImageConverter" />
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnchangepass"
+                     Text="Sửa" Command="{Binding PushPopupChangePassWordPage}" 
+                     Priority="1" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Padding="10" ColumnSpacing="0" RowSpacing="0" BackgroundColor="{StaticResource Color_Navigation}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <controls:CircleImage Source="{Binding UserToken.Avatar,Converter={StaticResource AddRootImageConverter}"
+                                               BorderThickness="3"
+                                               Aspect="Fill"
+                                               FillColor="White"
+                                               WidthRequest="100"
+                                               HeightRequest="100"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"
+                                               BorderColor="White"/>
+            </Grid>
+
+            <StackLayout Grid.Row="1" Padding="5,10,5,10" VerticalOptions="FillAndExpand">
+
+                <controls:RoundedSearchEntry HeightRequest="40"
+                                             Image="ic_user.png"
+                                             ImageAlignment="Left"
+                                             ImageHeight="15" 
+                                             ImageWidth="15"
+                                             Placeholder="Nhập tên"
+                                             PlaceholderColor="#999"
+                                             BackgroundColor="White"
+                                             BorderColor="White"
+                                             BorderRadius="0"
+                                             x:Name="txtFullname"
+                                             BorderWidth="1"
+                                             InputTransparent="False"
+                                             FontSize="14" 
+                                             TextColor="#404040"
+                                             Text="{Binding FullName.Value}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="FillAndExpand"/>
+
+                <controls:RoundedSearchEntry HeightRequest="40"
+                                             Image="ic_user.png"
+                                             ImageAlignment="Left"
+                                             ImageHeight="15" 
+                                             ImageWidth="15"
+                                             Placeholder="Nhập số điện thoại"
+                                             PlaceholderColor="#999"
+                                             BackgroundColor="White"
+                                             BorderColor="White"
+                                             BorderRadius="0"
+                                             x:Name="txtPhoneNumber"
+                                             BorderWidth="1"
+                                             InputTransparent="False"
+                                             FontSize="14" 
+                                             TextColor="#404040"
+                                             Text="{Binding FullName.Value}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="FillAndExpand"/>
+
+
+                <controls:RoundedSearchEntry HeightRequest="40"
+                                             Image="ic_pass.png"
+                                             ImageAlignment="Left"
+                                             ImageHeight="15" ImageWidth="15"
+                                             Placeholder="Nhập email"
+                                             PlaceholderColor="#999"
+                                             BackgroundColor="White"
+                                             BorderColor="White"
+                                             BorderRadius="0"
+                                             BorderWidth="1"
+                                             x:Name="txtEmail"
+                                             InputTransparent="False"
+                                             FontSize="14" 
+                                             TextColor="#404040"
+                                             Text="{Binding Email.Value}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="FillAndExpand"/>
+
+                <controls:RoundedSearchEntry HeightRequest="40"
+                                             Image="ic_pass.png"
+                                             ImageAlignment="Left"
+                                             ImageHeight="15" ImageWidth="15"
+                                             Placeholder="Giới tính"
+                                             PlaceholderColor="#999"
+                                             BackgroundColor="White"
+                                             BorderColor="White"
+                                             BorderRadius="0"
+                                             BorderWidth="1"
+                                             x:Name="txtSex"
+                                             InputTransparent="False"
+                                             FontSize="14" 
+                                             TextColor="#404040"
+                                             Text="{Binding Email.Value}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

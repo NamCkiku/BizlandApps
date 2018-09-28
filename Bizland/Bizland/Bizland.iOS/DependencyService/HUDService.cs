@@ -40,5 +40,10 @@ namespace Bizland.iOS.DependencyService
         {
             BTProgressHUD.Dismiss();
         }
+
+        public void ShowToast(string message, double time)
+        {
+            BTProgressHUD.ShowToast(message, toastPosition: ProgressHUD.ToastPosition.Center, timeoutMs: time);
+        }
     }
 }

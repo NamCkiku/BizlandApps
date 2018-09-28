@@ -13,6 +13,8 @@ namespace Bizland.Interfaces
 
         void DisplayError(string message);
 
+        void ShowToast(string message, double time);
+
         void Dismiss();
     }
 

@@ -34,5 +34,30 @@ namespace Bizland.Views
         {
             base.OnDisappearing();
         }
+
+        /// <summary>
+        /// Bỏ qua khi nhấn nút Back cứng trên Android
+        /// </summary>
+        /// <Modified>
+        /// Name     Date         Comments
+        /// TrungTQ  23/11/2017   created
+        /// </Modified>
+        /// 
+        bool bExit = true;
+        protected override bool OnBackButtonPressed()
+        {
+            base.OnBackButtonPressed();
+            if (!bExit)
+                return false;
+
+            // don't exit the app when back button is pressed
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                bExit = await DisplayAlert("Đóng ứng dụng", "Bạn có thực sự muốn đóng ứng dụng không", "BỎ QUA", "ĐỒNG Ý");
+                if (!bExit)
+                    this.OnBackButtonPressed();
+            });
+            return bExit;
+        }
     }
 }
