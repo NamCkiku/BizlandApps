@@ -1,12 +1,12 @@
 ﻿using Bizland.Core;
 using Bizland.Events;
 using Bizland.Model;
+using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -20,13 +20,15 @@ namespace Bizland.ViewModels
         private readonly IPageDialogService _dialogService;
         private readonly IEventAggregator _eventAggregator;
         private readonly INavigationService _navigationService;
-        public SelectAddressMapPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IEventAggregator eventAggregator)
+        private readonly IPlacesGeocode _placesGeocode;
+        public SelectAddressMapPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IEventAggregator eventAggregator, IPlacesGeocode placesGeocode)
             : base(navigationService)
         {
             Title = "Bản đồ";
             _navigationService = navigationService;
             _dialogService = dialogService;
             _eventAggregator = eventAggregator;
+            this._placesGeocode = placesGeocode;
         }
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
@@ -90,17 +92,7 @@ namespace Bizland.ViewModels
                             var result = await GetAddressesForPosition(positon);
                             if (!string.IsNullOrEmpty(result))
                             {
-                                Pins?.Clear();
-                                var pin = new Pin()
-                                {
-                                    Type = PinType.Place,
-                                    Label = "",
-                                    Address = "",
-                                    IsDraggable = true,
-                                    Position = new Position(Settings.Latitude, Settings.Longitude),
-                                    Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
-                                };
-                                Pins?.Add(pin);
+                                SetPinMap(positon);
                             }
                             else
                             {
@@ -129,17 +121,7 @@ namespace Bizland.ViewModels
                         var result = await GetAddressesForPosition(args.Pin.Position);
                         if (!string.IsNullOrEmpty(result))
                         {
-                            Pins?.Clear();
-                            var pin = new Pin()
-                            {
-                                Type = PinType.Place,
-                                Label = "",
-                                Address = "",
-                                IsDraggable = true,
-                                Position = args.Pin.Position,
-                                Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
-                            };
-                            Pins?.Add(pin);
+                            SetPinMap(args.Pin.Position);
                         }
                         else
                         {
@@ -165,17 +147,7 @@ namespace Bizland.ViewModels
                         var result = await GetAddressesForPosition(args.Point);
                         if (!string.IsNullOrEmpty(result))
                         {
-                            Pins?.Clear();
-                            var pin = new Pin()
-                            {
-                                Type = PinType.Place,
-                                Label = "",
-                                Address = "",
-                                Position = args.Point,
-                                IsDraggable = true,
-                                Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
-                            };
-                            Pins?.Add(pin);
+                            SetPinMap(args.Point);
                         }
                         else
                         {
@@ -265,17 +237,17 @@ namespace Bizland.ViewModels
                 if (position.Latitude > 0 && position.Longitude > 0)
                 {
                     Geocoder geoCoder = new Geocoder();
-                    var possibleAddresses = await geoCoder.GetAddressesForPositionAsync(position);
-                    if (possibleAddresses != null && possibleAddresses.ToList().Count > 0)
+                    var possibleAddresses = await _placesGeocode.GetAddressesForPosition(position.Latitude.ToString(), position.Longitude.ToString());
+                    if (possibleAddresses != null && possibleAddresses.status == "OK")
                     {
                         var bestItem = 0;
-                        foreach (var item in possibleAddresses)
+                        foreach (var item in possibleAddresses.results)
                         {
-                            if (item.Length > bestItem)
+                            if (item.formatted_address.Length > bestItem)
                             {
-                                bestItem = item.Length;
-                                MyAddress = item;
-                                result = item;
+                                bestItem = item.formatted_address.Length;
+                                MyAddress = item.formatted_address;
+                                result = item.formatted_address;
                             }
                         }
                     }
@@ -292,6 +264,21 @@ namespace Bizland.ViewModels
                 Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
             return result;
+        }
+
+        private void SetPinMap(Position position)
+        {
+            Pins?.Clear();
+            var pin = new Pin()
+            {
+                Type = PinType.Place,
+                Label = "",
+                Address = "",
+                Position = position,
+                IsDraggable = true,
+                Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
+            };
+            Pins?.Add(pin);
         }
     }
 }

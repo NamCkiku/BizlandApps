@@ -28,7 +28,21 @@ namespace Bizland.ViewModels
             this._iProvinceService = iProvinceService;
             GetAllProvince.Execute(null);
         }
-
+        static List<Province> _listProvinceModel { get; set; }
+        public static List<Province> ListProvince
+        {
+            get
+            {
+                if (_listProvinceModel != null)
+                {
+                    return _listProvinceModel;
+                }
+                else
+                {
+                    return new List<Province>();
+                }
+            }
+        }
         private ObservableCollection<Province> provinceCollection;
         public ObservableCollection<Province> ProvinceCollection
         {
@@ -66,32 +80,47 @@ namespace Bizland.ViewModels
                 {
                     try
                     {
-                        if (ProvinceCollectionSearched == null
-                            || ProvinceCollection == null
-                            || ProvinceCollectionSearched.Count == 0
-                            || ProvinceCollection.Count == 0)
+                        if (_listProvinceModel != null && _listProvinceModel.Count > 0)
                         {
-                            var lst = await _iProvinceService.GetProvince();
-                            if (lst != null && lst.Count > 0)
-                            {
-                                var groupedData =
-                                   lst.OrderBy(p => p.Name)
+                            ProvinceCollection = new ObservableCollection<Province>(_listProvinceModel);
+
+                            var groupedData =
+                                   _listProvinceModel.OrderBy(p => p.Name)
                                        .GroupBy(p => p.NameSort)
                                        .Select(p => new Grouping<string, Province>(p))
                                        .ToList();
-
-                                ProvinceCollection = new ObservableCollection<Province>(lst);
-                                ProvinceCollectionSearched = new ObservableCollection<Grouping<string, Province>>(groupedData);
-                            }
+                            ProvinceCollectionSearched = new ObservableCollection<Grouping<string, Province>>(groupedData);
                         }
                         else
                         {
-                            var groupedData =
-                                  ProvinceCollection.OrderBy(p => p.Name)
-                                      .GroupBy(p => p.NameSort)
-                                      .Select(p => new Grouping<string, Province>(p))
-                                      .ToList();
-                            ProvinceCollectionSearched = new ObservableCollection<Grouping<string, Province>>(groupedData);
+                            if (ProvinceCollectionSearched == null
+                            || ProvinceCollection == null
+                            || ProvinceCollectionSearched.Count == 0
+                            || ProvinceCollection.Count == 0)
+                            {
+                                var lst = await _iProvinceService.GetProvince();
+                                if (lst != null && lst.Count > 0)
+                                {
+                                    _listProvinceModel = lst;
+                                    var groupedData =
+                                       lst.OrderBy(p => p.Name)
+                                           .GroupBy(p => p.NameSort)
+                                           .Select(p => new Grouping<string, Province>(p))
+                                           .ToList();
+
+                                    ProvinceCollection = new ObservableCollection<Province>(lst);
+                                    ProvinceCollectionSearched = new ObservableCollection<Grouping<string, Province>>(groupedData);
+                                }
+                            }
+                            else
+                            {
+                                var groupedData =
+                                      ProvinceCollection.OrderBy(p => p.Name)
+                                          .GroupBy(p => p.NameSort)
+                                          .Select(p => new Grouping<string, Province>(p))
+                                          .ToList();
+                                ProvinceCollectionSearched = new ObservableCollection<Grouping<string, Province>>(groupedData);
+                            }
                         }
                     }
                     catch (Exception ex)

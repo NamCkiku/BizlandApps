@@ -33,7 +33,7 @@
                                       CommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
                     </controls:CustomSearchBar.Behaviors>
                 </controls:CustomSearchBar>
-                <StackLayout Grid.Row="0" Padding="10" BackgroundColor="{StaticResource Color_Text}">
+                <StackLayout Grid.Row="0" Padding="10" BackgroundColor="{StaticResource Color_Navigation}">
                     <StackLayout.IsVisible>
                         <OnPlatform x:TypeArguments="x:Boolean">
                             <On Platform="iOS" Value="false" />
@@ -44,9 +44,9 @@
                                              Image="ic_Search.png"
                                              ImageHeight="15" ImageWidth="15"
                                              Placeholder="Nhập điểm cần tìm" PlaceholderColor="#999"
-                                             BackgroundColor="#f6f6f6"
+                                             BackgroundColor="{StaticResource Color_Navigation}"
                                              BorderColor="{StaticResource Color_Text}"
-                                             BorderRadius="3"
+                                             BorderRadius="0"
                                              BorderWidth="1"
                                              ReturnType="Search"
                                              ReturnCommand="{Binding SearchLoactionCommmand}"

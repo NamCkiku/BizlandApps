@@ -37,5 +37,10 @@ namespace Bizland.Droid.DependencyService
         {
             AndroidHUD.AndHUD.Shared.Dismiss(Forms.Context);
         }
+
+        public void ShowToast(string message, double time)
+        {
+            AndroidHUD.AndHUD.Shared.ShowToast(Forms.Context, message, maskType: AndroidHUD.MaskType.None, timeout: TimeSpan.FromMilliseconds(time));
+        }
     }
 }

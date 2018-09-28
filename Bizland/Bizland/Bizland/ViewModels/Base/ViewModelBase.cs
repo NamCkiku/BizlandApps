@@ -1,4 +1,5 @@
-﻿using Prism.Navigation;
+﻿using Bizland.Interfaces;
+using Prism.Navigation;
 using Xamarin.Forms;
 
 namespace Bizland.ViewModels
@@ -56,6 +57,20 @@ namespace Bizland.ViewModels
                     await NavigationService.GoBackAsync(useModalNavigation: true);
                 });
             }
+        }
+
+        /// <summary>
+        /// Shows the message.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        /// <param name="seconds">The seconds.</param>
+        /// <Modified>
+        /// Name     Date         Comments
+        /// TruongPV  6/25/2018   created
+        /// </Modified>
+        public void ShowMessage(string message = "No message!", double seconds = 3)
+        {
+            DependencyService.Get<IHUDProvider>().ShowToast(message, 1000 * seconds);
         }
     }
 }

@@ -5,7 +5,6 @@ using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using Plugin.Media.Abstractions;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -215,7 +214,7 @@ namespace BizlandApiService.Service
                 if (response.StatusCode == HttpStatusCode.Forbidden ||
                     response.StatusCode == HttpStatusCode.Unauthorized)
                 {
-                    //throw new ServiceAuthenticationException(content);
+                    Logger.WriteError($"status :{response.StatusCode} content:{content}");
                 }
                 var message = await Task.Run(() =>
                     JsonConvert.DeserializeObject<ResponeMessage>(content, _serializerSettings));
@@ -241,14 +240,14 @@ namespace BizlandApiService.Service
                     if (response.StatusCode == HttpStatusCode.Forbidden ||
                         response.StatusCode == HttpStatusCode.Unauthorized)
                     {
-                        //XCVLogger.WriteError($"status :{response.StatusCode} content:{content}");
+                        Logger.WriteError($"status :{response.StatusCode} content:{content}");
                     }
-                    //XCVLogger.WriteError($"status :{response.StatusCode} content:{content}");
+                    Logger.WriteError($"status :{response.StatusCode} content:{content}");
                 }
             }
             catch (Exception ex)
             {
-                //XCVLogger.WriteError($"HandleResponse-error:{e.Message}");
+                Logger.WriteError($"HandleResponse-error:{ex.Message}");
             }
         }
 
