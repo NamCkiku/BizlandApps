@@ -27,12 +27,13 @@ namespace Bizland.iOS.CustomRenderer
             //    TextColor = UIColor.White
             //});
 
-            //UINavigationBar.Appearance.ShadowImage = new UIImage();
-            //UINavigationBar.Appearance.SetBackgroundImage(color.ToUIColor().ToUIImage(), UIBarMetrics.Default);
-            //UINavigationBar.Appearance.BarTintColor = color.ToUIColor();
-            //UINavigationBar.Appearance.TintColor = UIColor.White;
-            //UINavigationBar.Appearance.BackgroundColor = color.ToUIColor();
-
+            UINavigationBar.Appearance.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
+            UINavigationBar.Appearance.ShadowImage = new UIImage();
+            UINavigationBar.Appearance.BackgroundColor = UIColor.Clear;
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+            UINavigationBar.Appearance.BarTintColor = UIColor.Clear;
+            UINavigationBar.Appearance.Translucent = false;
+            UINavigationBar.Appearance.BarStyle = UIBarStyle.Black;
             // Set the status bar to light
             UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
         }
