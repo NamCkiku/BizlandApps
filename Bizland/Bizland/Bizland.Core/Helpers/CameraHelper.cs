@@ -43,7 +43,7 @@ namespace Bizland.Core
                     file.Dispose();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
             }
