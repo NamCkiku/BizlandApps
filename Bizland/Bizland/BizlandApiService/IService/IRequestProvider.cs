@@ -22,6 +22,6 @@ namespace BizlandApiService.IService
 
         Task DeleteAsync(string uri, string token = "");
 
-        Task<bool> UploadImageAsync(Stream image, string fileName);
+        Task<bool> UploadImageAsync(string uri, Stream image, string fileName, string tocken = "", string header = "");
     }
 }

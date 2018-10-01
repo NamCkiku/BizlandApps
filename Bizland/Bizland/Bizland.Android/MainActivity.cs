@@ -5,6 +5,7 @@ using Bizland.Droid.Helper;
 using Plugin.Media;
 using Prism;
 using Prism.Ioc;
+using SupportWidgetXF.Droid;
 
 namespace Bizland.Droid
 {
@@ -21,6 +22,8 @@ namespace Bizland.Droid
             Rg.Plugins.Popup.Popup.Init(this, bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            SupportWidgetXFSetup.Initialize(this, bundle);
 
             BizlandSetup.Initialize(this, bundle);
 
