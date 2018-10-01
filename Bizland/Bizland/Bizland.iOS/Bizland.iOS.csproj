@@ -108,9 +108,11 @@
     <Compile Include="DependencyService\AccountKitService.cs" />
     <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\LoadingPageServiceiOS.cs" />
+    <Compile Include="DependencyService\PushLocalNotificationService.cs" />
     <Compile Include="DependencyService\SettingsService.cs" />
     <Compile Include="DependencyService\ToolbarItemBadgeService.cs" />
     <Compile Include="FBAccountkit\AccountKitAuth.cs" />
+    <Compile Include="Helpers\BizlandSetup.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />

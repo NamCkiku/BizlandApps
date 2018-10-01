@@ -1,7 +1,10 @@
 ﻿using Bizland.Core;
 using Bizland.Model;
 using Prism.Navigation;
+using System;
 using System.Collections.ObjectModel;
+using System.Reflection;
+using Xamarin.Forms;
 
 namespace Bizland.ViewModels
 {
@@ -74,6 +77,30 @@ namespace Bizland.ViewModels
                 RaisePropertyChanged(() => Sexs);
             }
 
+        }
+
+
+
+        public Command OkButtonClicked
+        {
+            get
+            {
+                return new Command<string>((arg) =>
+                {
+                    try
+                    {
+                        if (arg != null)
+                        {
+                           
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                });
+            }
         }
     }
 }

@@ -1,7 +1,5 @@
 ﻿using Plugin.Media.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace BizlandApiService.IService
@@ -23,5 +21,7 @@ namespace BizlandApiService.IService
         Task<TResult> GetHandleOutputAsync<TResult>(string uri, string token = "");
 
         Task DeleteAsync(string uri, string token = "");
+
+        Task<bool> UploadImageAsync(Stream image, string fileName);
     }
 }

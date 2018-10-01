@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Plugin.CurrentActivity;
+using Bizland.Droid.Helper;
 using Plugin.Media;
 using Prism;
 using Prism.Ioc;
@@ -19,8 +19,10 @@ namespace Bizland.Droid
             base.OnCreate(bundle);
 
             Rg.Plugins.Popup.Popup.Init(this, bundle);
-           
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            BizlandSetup.Initialize(this, bundle);
 
             Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
             Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
