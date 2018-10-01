@@ -5,6 +5,9 @@ using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
+using SupportWidgetXF.DependencyService;
+using SupportWidgetXF.Models;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -12,7 +15,7 @@ using Xamarin.Forms.GoogleMaps.Bindings;
 
 namespace Bizland.ViewModels
 {
-    public class HomePageViewModel : ViewModelBase
+    public class HomePageViewModel : ViewModelBase, IGalleryPickerResultListener
     {
         private readonly IPageDialogService _dialogService;
         private readonly INavigationService _navigationService;
@@ -112,9 +115,9 @@ namespace Bizland.ViewModels
         {
             get
             {
-                return new Command(async () =>
+                return new Command(() =>
                 {
-                    await _navigationService.NavigateAsync("RoomTypePage");
+                    Xamarin.Forms.DependencyService.Get<IGalleryPicker>().IF_OpenGallery(this, new SyncPhotoOptions());
                 });
             }
         }
@@ -184,6 +187,16 @@ namespace Bizland.ViewModels
                         await _dialogService.DisplayAlertAsync("Thông báo !", "Không lấy được địa chỉ của bạn", "Đồng ý");
                     }
                 });
+            }
+        }
+
+
+
+        public void IF_PickedResult(List<GalleryImageXF> result)
+        {
+            foreach (var item in result)
+            {
+                ShowMessage("Upload Image", 10);
             }
         }
 

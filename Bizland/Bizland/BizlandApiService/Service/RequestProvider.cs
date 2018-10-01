@@ -253,16 +253,24 @@ namespace BizlandApiService.Service
         }
 
 
-        public async Task<bool> UploadImageAsync(Stream image, string fileName)
+        public async Task<bool> UploadImageAsync(string uri, Stream image, string fileName, string tocken = "", string header = "")
         {
+            HttpClient httpClient = CreateHttpClient(tocken);
+            httpClient.BaseAddress = new Uri(ServerConfig.ApiEndpoint);
+            if (!string.IsNullOrEmpty(header))
+            {
+                AddHeaderParameter(httpClient, header);
+            }
             HttpContent fileStreamContent = new StreamContent(image);
             fileStreamContent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data") { Name = "file", FileName = fileName };
+
             fileStreamContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
-            using (var client = new System.Net.Http.HttpClient())
+
             using (var formData = new MultipartFormDataContent())
             {
                 formData.Add(fileStreamContent);
-                var response = await client.PostAsync("http://172.16.10.143:6591/api/v1/upload", formData);
+                var response = await httpClient.PostAsync(uri, formData);
+
                 return response.IsSuccessStatusCode;
             }
         }
