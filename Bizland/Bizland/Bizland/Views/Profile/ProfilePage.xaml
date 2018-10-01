@@ -6,6 +6,7 @@
              xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
+              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.ProfilePage">
 
@@ -116,7 +117,16 @@
                             PickerMode="Dialog"
                             HeaderText="Chọn giới tính"
                             IsOpen="False"
-                            ItemsSource="{Binding Sexs}" />
+                            ShowFooter="True"
+                            PickerWidth="300"
+                            PickerHeight="300"
+                            ColumnHeaderBackgroundColor="{StaticResource Color_Navigation}"
+                            ItemsSource="{Binding Sexs}" >
+                            <syncfusion:SfPicker.Behaviors>
+                                <b:EventToCommandBehavior EventName="OkButtonClicked" 
+                                      Command="{Binding OkButtonClicked}" CommandParameter="{Binding SelectedItem, Source={x:Reference pickerSex}}" />
+                            </syncfusion:SfPicker.Behaviors>
+                        </syncfusion:SfPicker>
 
 
                         <Label TextColor="{Binding Color_Text}" 
