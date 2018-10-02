@@ -98,27 +98,20 @@
                                              HorizontalOptions="FillAndExpand"/>
 
                 <Grid>
-                    <controls:ShapeView ShapeType="Box"
-                                        CornerRadius="0"
-                                        StrokeColor="{StaticResource Color_Navigation}" 
-                                        StrokeWidth="1"
-                                        BackgroundColor="White"/>
-                    <StackLayout VerticalOptions="Center"  Padding="10,0,5,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-
-                        <Label TextColor="{Binding Color_Text}" 
-                                       LineBreakMode="TailTruncation"
-                                       Text="{Binding Sex}"
-                                       VerticalOptions="CenterAndExpand" 
-                                       HorizontalOptions="StartAndExpand" />
-
-                        <Image
-                                        WidthRequest="20"
-                                        HeightRequest="20"
-                                        Source="ic_sex.png"
-                                        HorizontalOptions="End"
-                                        VerticalOptions="Center" />
-
-                    </StackLayout>
+                    <controls:RoundedSearchEntry HeightRequest="40"
+                                                 Image="ic_sex.png"
+                                                 ImageAlignment="Right"
+                                                 ImageHeight="20" ImageWidth="20"
+                                                 Placeholder="Nhập giới tính"
+                                                 BackgroundColor="White"
+                                                 BorderColor="{StaticResource Color_Navigation}"
+                                                 BorderRadius="0"
+                                                 BorderWidth="1"
+                                                 x:Name="txtSex"
+                                                 InputTransparent="True"
+                                                 Text="{Binding Sex}"
+                                                 VerticalOptions="Center"
+                                                 HorizontalOptions="FillAndExpand"/>
                     <Grid.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding PusuSelectSexCommand}">
                         </TapGestureRecognizer>
@@ -126,27 +119,20 @@
                 </Grid>
 
                 <Grid>
-                    <controls:ShapeView ShapeType="Box"
-                                        CornerRadius="0"
-                                        StrokeColor="{StaticResource Color_Navigation}" 
-                                        StrokeWidth="1"
-                                        BackgroundColor="White"/>
-
-                    <StackLayout VerticalOptions="Center"  Padding="10,0,5,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-                        <Label TextColor="{Binding Color_Text}" 
-                                       LineBreakMode="TailTruncation"
-                                       Text="{Binding BirthDay, StringFormat='{0:dd/MM/yyyy}'}"
-                                       VerticalOptions="CenterAndExpand" 
-                                       HorizontalOptions="StartAndExpand" />
-
-                        <Image
-                                        WidthRequest="20"
-                                        HeightRequest="20"
-                                        Source="ic_birthday.png"
-                                        HorizontalOptions="End"
-                                        VerticalOptions="Center" />
-
-                    </StackLayout>
+                    <controls:RoundedSearchEntry HeightRequest="40"
+                                                 Image="ic_birthday.png"
+                                                 ImageAlignment="Right"
+                                                 ImageHeight="20" ImageWidth="20"
+                                                 Placeholder="Nhập ngày sinh"
+                                                 BackgroundColor="White"
+                                                 BorderColor="{StaticResource Color_Navigation}"
+                                                 BorderRadius="0"
+                                                 BorderWidth="1"
+                                                 x:Name="txtBirthday"
+                                                 InputTransparent="True"
+                                                 Text="{Binding BirthDay, StringFormat='{0:dd/MM/yyyy}'}"
+                                                 VerticalOptions="Center"
+                                                 HorizontalOptions="FillAndExpand"/>
                     <Grid.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding PusuSelectDateCommand}">
                         </TapGestureRecognizer>

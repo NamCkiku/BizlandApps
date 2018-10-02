@@ -117,6 +117,8 @@ namespace Bizland
             containerRegistry.Register<IProvinceService, ProvinceService>();
             containerRegistry.Register<IAuthenticationService, AuthenticationService>();
             containerRegistry.Register<IRoomTypeService, RoomTypeService>();
+            containerRegistry.Register<IProfileService, ProfileService>();
+
 
 
             //Đăng kí cho viewmodel

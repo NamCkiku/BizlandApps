@@ -35,7 +35,7 @@ namespace Bizland.iOS.CustomRenderer
             UINavigationBar.Appearance.Translucent = false;
             UINavigationBar.Appearance.BarStyle = UIBarStyle.Black;
             // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.Default, true);
         }
 
         public override void ViewWillAppear(bool animated)
@@ -85,7 +85,7 @@ namespace Bizland.iOS.CustomRenderer
             ModalPresentationCapturesStatusBarAppearance = true;
 
             // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.Default, true);
         }
 
         public override void ViewWillDisappear(bool animated)
@@ -93,7 +93,7 @@ namespace Bizland.iOS.CustomRenderer
             base.ViewWillDisappear(animated);
 
             // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.Default, true);
         }
     }
 }
