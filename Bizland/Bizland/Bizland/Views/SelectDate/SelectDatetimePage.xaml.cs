@@ -8,5 +8,14 @@ namespace Bizland.Views
         {
             InitializeComponent();
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+        protected override bool OnBackgroundClicked()
+        {
+            return false;
+        }
     }
 }

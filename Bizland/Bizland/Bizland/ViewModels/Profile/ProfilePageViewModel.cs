@@ -1,5 +1,7 @@
 ﻿using Bizland.Core;
+using Bizland.Events;
 using Bizland.Model;
+using Prism.Events;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
@@ -11,11 +13,18 @@ namespace Bizland.ViewModels
     public class ProfilePageViewModel : ViewModelBase
     {
         private readonly INavigationService _navigationService;
-        public ProfilePageViewModel(INavigationService navigationService)
+        public ProfilePageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
             : base(navigationService)
         {
             this._navigationService = navigationService;
             Title = "Thông tin cá nhân";
+
+            eventAggregator.GetEvent<SelectDateTimeEvent>().Subscribe(UpdateBirthday);
+        }
+
+        public void UpdateBirthday(DateTime param)
+        {
+            BirthDay = param;
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -57,6 +66,21 @@ namespace Bizland.ViewModels
             {
                 _userToken = value;
                 RaisePropertyChanged(() => UserToken);
+            }
+        }
+
+        private DateTime _birthDay;
+        public DateTime BirthDay
+        {
+            get
+            {
+
+                return _birthDay;
+            }
+            set
+            {
+                _birthDay = value;
+                RaisePropertyChanged(() => BirthDay);
             }
         }
 
@@ -109,6 +133,11 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
+                    if (IsBusy)
+                    {
+                        return;
+                    }
+                    IsBusy = true;
                     try
                     {
                         await _navigationService.NavigateAsync("SelectDatetimePage");
@@ -116,6 +145,10 @@ namespace Bizland.ViewModels
                     catch (Exception ex)
                     {
                         Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                    finally
+                    {
+                        IsBusy = false;
                     }
                 });
             }

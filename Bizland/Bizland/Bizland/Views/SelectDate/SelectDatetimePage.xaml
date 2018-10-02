@@ -46,12 +46,14 @@
                                VerticalOptions="CenterAndExpand" 
                                HorizontalOptions="CenterAndExpand" />
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Margin="10">
+                    <StackLayout Grid.Row="1">
 
                         <controls:CustomDatePicker
                                 x:Name="date"
                                 ShowColumnHeader="True"
                                 ColumnHeaderFontSize="13"
+                                BorderColor="Transparent"
+                                SelectedItemTextColor="{StaticResource Color_Navigation}"
                                 ColumnHeaderTextColor="{StaticResource Color_Navigation}"
                                 HorizontalOptions="CenterAndExpand"
                                 ShowHeader="False"
@@ -62,7 +64,7 @@
 
                     </StackLayout>
 
-                    <Grid  Grid.Row="2" VerticalOptions="End" Padding="10,5,10,5" HorizontalOptions="FillAndExpand">
+                    <Grid  Grid.Row="2" VerticalOptions="End" Padding="5" HorizontalOptions="FillAndExpand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
@@ -85,7 +87,7 @@
                                 Grid.Column="1"
                                 BackgroundColor="{StaticResource Color_Navigation}"
                                 TextColor="White"
-                                Command="{Binding ClosePagePopupCommand}"
+                                Command="{Binding IgreeSelectedDateCommand}"
                                 FontAttributes="Bold"
                                 FontSize="12" 
                                 x:Name="btnIgree"

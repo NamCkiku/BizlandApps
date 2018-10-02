@@ -148,7 +148,7 @@
 
                         <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
-                                       Text="30/04/1995"
+                                       Text="{Binding BirthDay, StringFormat='{0:dd/MM/yyyy}'}"
                                        VerticalOptions="CenterAndExpand" 
                                        HorizontalOptions="End" />
 
