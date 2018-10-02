@@ -136,6 +136,7 @@
     <Compile Include="FBAccountkit\AccountKitAuth.cs" />
     <Compile Include="Helper\BadgeDrawable.cs" />
     <Compile Include="Helper\BizlandSetup.cs" />
+    <Compile Include="Helper\ImageHelpers.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Providers\ToastNotifier.cs" />
