@@ -111,24 +111,6 @@
                                    VerticalOptions="Center"
                                    HorizontalOptions="StartAndExpand"/>
 
-                        <syncfusion:SfPicker
-
-                            x:Name="pickerSex"
-                            PickerMode="Dialog"
-                            HeaderText="Chọn giới tính"
-                            IsOpen="False"
-                            ShowFooter="True"
-                            PickerWidth="300"
-                            PickerHeight="300"
-                            ColumnHeaderBackgroundColor="{StaticResource Color_Navigation}"
-                            ItemsSource="{Binding Sexs}" >
-                            <syncfusion:SfPicker.Behaviors>
-                                <b:EventToCommandBehavior EventName="OkButtonClicked" 
-                                      Command="{Binding OkButtonClicked}" CommandParameter="{Binding SelectedItem, Source={x:Reference pickerSex}}" />
-                            </syncfusion:SfPicker.Behaviors>
-                        </syncfusion:SfPicker>
-
-
                         <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
                                        Text="Nam"
@@ -144,7 +126,7 @@
 
                     </StackLayout>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2">
+                        <TapGestureRecognizer>
                         </TapGestureRecognizer>
                     </Grid.GestureRecognizers>
                 </Grid>
@@ -164,15 +146,6 @@
                                    VerticalOptions="Center"
                                    HorizontalOptions="StartAndExpand"/>
 
-                        <controls:CustomDatePicker
-                                x:Name="date"
-                                ColumnHeaderHeight="40"
-                                HorizontalOptions="Center"
-                                PickerHeight="400"
-                                PickerMode="Dialog"
-                                PickerWidth="400"
-                                VerticalOptions="Center" />
-
                         <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
                                        Text="30/04/1995"
@@ -188,7 +161,7 @@
 
                     </StackLayout>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1">
+                        <TapGestureRecognizer Command="{Binding PusuSelectDateCommand}">
                         </TapGestureRecognizer>
                     </Grid.GestureRecognizers>
                 </Grid>

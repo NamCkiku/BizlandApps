@@ -16,15 +16,5 @@ namespace Bizland.Views
 
             txtAvatar.Source = localPath;
         }
-
-        private void TapGestureRecognizer_Tapped_1(object sender, System.EventArgs e)
-        {
-            date.IsOpen = !date.IsOpen;
-        }
-
-        private void TapGestureRecognizer_Tapped_2(object sender, System.EventArgs e)
-        {
-            pickerSex.IsOpen = !pickerSex.IsOpen;
-        }
     }
 }

@@ -10,12 +10,12 @@ namespace Bizland.ViewModels
 {
     public class ProfilePageViewModel : ViewModelBase
     {
+        private readonly INavigationService _navigationService;
         public ProfilePageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
+            this._navigationService = navigationService;
             Title = "Thông tin cá nhân";
-
-
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -91,7 +91,7 @@ namespace Bizland.ViewModels
                     {
                         if (arg != null)
                         {
-                           
+
                         }
 
                     }
@@ -102,5 +102,24 @@ namespace Bizland.ViewModels
                 });
             }
         }
+
+        public Command PusuSelectDateCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    try
+                    {
+                        await _navigationService.NavigateAsync("SelectDatetimePage");
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                });
+            }
+        }
+
     }
 }
