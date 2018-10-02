@@ -8,6 +8,7 @@ using Android.Support.V7.App;
 namespace Bizland.Droid
 {
     [Activity(Label = "Bizland",
+         Icon = "@mipmap/ic_launcher",
          MainLauncher = true,
          NoHistory = true,
          Theme = "@style/Theme.Splash",

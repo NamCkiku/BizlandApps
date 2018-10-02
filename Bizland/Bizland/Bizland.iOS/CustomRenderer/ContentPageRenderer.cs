@@ -84,16 +84,11 @@ namespace Bizland.iOS.CustomRenderer
 
             ModalPresentationCapturesStatusBarAppearance = true;
 
-            // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.Default, true);
         }
 
         public override void ViewWillDisappear(bool animated)
         {
             base.ViewWillDisappear(animated);
-
-            // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.Default, true);
         }
     }
 }

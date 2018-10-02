@@ -114,6 +114,7 @@
     <Compile Include="FBAccountkit\AccountKitAuth.cs" />
     <Compile Include="Helpers\BizlandSetup.cs" />
     <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Providers\ToastNotifier.cs" />
