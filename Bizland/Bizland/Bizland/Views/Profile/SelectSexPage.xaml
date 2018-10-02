@@ -12,10 +12,10 @@
         <animations:MoveAnimation 
                   PositionIn="Center"
                   PositionOut="Center"
-                  DurationIn="300"
-                  DurationOut="300"
-                  EasingIn="SinOut"
-                  EasingOut="SinIn"
+                  DurationIn="100"
+                  DurationOut="100"
+                  EasingIn="BounceIn"
+                  EasingOut="BounceOut"
                   HasBackgroundAnimation="True"/>
     </popup:PopupPage.Animation>
 

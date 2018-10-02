@@ -19,6 +19,7 @@ namespace Bizland.ViewModels
             Title = "Thông tin cá nhân";
 
             eventAggregator.GetEvent<SelectDateTimeEvent>().Subscribe(UpdateBirthday);
+
             eventAggregator.GetEvent<SelectSexEvent>().Subscribe(UpdateSex);
         }
 
