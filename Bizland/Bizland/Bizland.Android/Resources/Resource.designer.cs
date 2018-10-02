@@ -2428,41 +2428,41 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f0100ab
 			public const int activityChooserViewStyle = 2130772139;
 			
-			// aapt resource value: 0x7f0101e6
-			public const int ahBarColor = 2130772454;
+			// aapt resource value: 0x7f0101e7
+			public const int ahBarColor = 2130772455;
+			
+			// aapt resource value: 0x7f0101ef
+			public const int ahBarLength = 2130772463;
 			
 			// aapt resource value: 0x7f0101ee
-			public const int ahBarLength = 2130772462;
-			
-			// aapt resource value: 0x7f0101ed
-			public const int ahBarWidth = 2130772461;
-			
-			// aapt resource value: 0x7f0101eb
-			public const int ahCircleColor = 2130772459;
-			
-			// aapt resource value: 0x7f0101ea
-			public const int ahDelayMillis = 2130772458;
+			public const int ahBarWidth = 2130772462;
 			
 			// aapt resource value: 0x7f0101ec
-			public const int ahRadius = 2130772460;
+			public const int ahCircleColor = 2130772460;
 			
-			// aapt resource value: 0x7f0101e7
-			public const int ahRimColor = 2130772455;
+			// aapt resource value: 0x7f0101eb
+			public const int ahDelayMillis = 2130772459;
+			
+			// aapt resource value: 0x7f0101ed
+			public const int ahRadius = 2130772461;
 			
 			// aapt resource value: 0x7f0101e8
-			public const int ahRimWidth = 2130772456;
+			public const int ahRimColor = 2130772456;
 			
 			// aapt resource value: 0x7f0101e9
-			public const int ahSpinSpeed = 2130772457;
+			public const int ahRimWidth = 2130772457;
 			
-			// aapt resource value: 0x7f0101e3
-			public const int ahText = 2130772451;
+			// aapt resource value: 0x7f0101ea
+			public const int ahSpinSpeed = 2130772458;
 			
 			// aapt resource value: 0x7f0101e4
-			public const int ahTextColor = 2130772452;
+			public const int ahText = 2130772452;
 			
 			// aapt resource value: 0x7f0101e5
-			public const int ahTextSize = 2130772453;
+			public const int ahTextColor = 2130772453;
+			
+			// aapt resource value: 0x7f0101e6
+			public const int ahTextSize = 2130772454;
 			
 			// aapt resource value: 0x7f0100d0
 			public const int alertDialogButtonGroupStyle = 2130772176;
@@ -3196,41 +3196,44 @@ namespace Bizland.Droid
 			// aapt resource value: 0x7f01012d
 			public const int logoDescription = 2130772269;
 			
-			// aapt resource value: 0x7f0101d9
-			public const int lottie_autoPlay = 2130772441;
-			
-			// aapt resource value: 0x7f0101e0
-			public const int lottie_cacheStrategy = 2130772448;
+			// aapt resource value: 0x7f0101da
+			public const int lottie_autoPlay = 2130772442;
 			
 			// aapt resource value: 0x7f0101e1
-			public const int lottie_colorFilter = 2130772449;
+			public const int lottie_cacheStrategy = 2130772449;
 			
-			// aapt resource value: 0x7f0101df
-			public const int lottie_enableMergePathsForKitKatAndAbove = 2130772447;
+			// aapt resource value: 0x7f0101e2
+			public const int lottie_colorFilter = 2130772450;
+			
+			// aapt resource value: 0x7f0101e0
+			public const int lottie_enableMergePathsForKitKatAndAbove = 2130772448;
 			
 			// aapt resource value: 0x7f0101d7
 			public const int lottie_fileName = 2130772439;
 			
-			// aapt resource value: 0x7f0101dd
-			public const int lottie_imageAssetsFolder = 2130772445;
-			
-			// aapt resource value: 0x7f0101da
-			public const int lottie_loop = 2130772442;
-			
 			// aapt resource value: 0x7f0101de
-			public const int lottie_progress = 2130772446;
+			public const int lottie_imageAssetsFolder = 2130772446;
+			
+			// aapt resource value: 0x7f0101db
+			public const int lottie_loop = 2130772443;
+			
+			// aapt resource value: 0x7f0101df
+			public const int lottie_progress = 2130772447;
 			
 			// aapt resource value: 0x7f0101d8
 			public const int lottie_rawRes = 2130772440;
 			
+			// aapt resource value: 0x7f0101dd
+			public const int lottie_repeatCount = 2130772445;
+			
 			// aapt resource value: 0x7f0101dc
-			public const int lottie_repeatCount = 2130772444;
+			public const int lottie_repeatMode = 2130772444;
 			
-			// aapt resource value: 0x7f0101db
-			public const int lottie_repeatMode = 2130772443;
+			// aapt resource value: 0x7f0101e3
+			public const int lottie_scale = 2130772451;
 			
-			// aapt resource value: 0x7f0101e2
-			public const int lottie_scale = 2130772450;
+			// aapt resource value: 0x7f0101d9
+			public const int lottie_url = 2130772441;
 			
 			// aapt resource value: 0x7f010000
 			public const int mapType = 2130771968;
@@ -11086,43 +11089,47 @@ namespace Bizland.Droid
 					2130772447,
 					2130772448,
 					2130772449,
-					2130772450};
+					2130772450,
+					2130772451};
 			
-			// aapt resource value: 2
-			public const int LottieAnimationView_lottie_autoPlay = 2;
-			
-			// aapt resource value: 9
-			public const int LottieAnimationView_lottie_cacheStrategy = 9;
+			// aapt resource value: 3
+			public const int LottieAnimationView_lottie_autoPlay = 3;
 			
 			// aapt resource value: 10
-			public const int LottieAnimationView_lottie_colorFilter = 10;
+			public const int LottieAnimationView_lottie_cacheStrategy = 10;
 			
-			// aapt resource value: 8
-			public const int LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove = 8;
+			// aapt resource value: 11
+			public const int LottieAnimationView_lottie_colorFilter = 11;
+			
+			// aapt resource value: 9
+			public const int LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove = 9;
 			
 			// aapt resource value: 0
 			public const int LottieAnimationView_lottie_fileName = 0;
 			
-			// aapt resource value: 6
-			public const int LottieAnimationView_lottie_imageAssetsFolder = 6;
-			
-			// aapt resource value: 3
-			public const int LottieAnimationView_lottie_loop = 3;
-			
 			// aapt resource value: 7
-			public const int LottieAnimationView_lottie_progress = 7;
+			public const int LottieAnimationView_lottie_imageAssetsFolder = 7;
+			
+			// aapt resource value: 4
+			public const int LottieAnimationView_lottie_loop = 4;
+			
+			// aapt resource value: 8
+			public const int LottieAnimationView_lottie_progress = 8;
 			
 			// aapt resource value: 1
 			public const int LottieAnimationView_lottie_rawRes = 1;
 			
+			// aapt resource value: 6
+			public const int LottieAnimationView_lottie_repeatCount = 6;
+			
 			// aapt resource value: 5
-			public const int LottieAnimationView_lottie_repeatCount = 5;
+			public const int LottieAnimationView_lottie_repeatMode = 5;
 			
-			// aapt resource value: 4
-			public const int LottieAnimationView_lottie_repeatMode = 4;
+			// aapt resource value: 12
+			public const int LottieAnimationView_lottie_scale = 12;
 			
-			// aapt resource value: 11
-			public const int LottieAnimationView_lottie_scale = 11;
+			// aapt resource value: 2
+			public const int LottieAnimationView_lottie_url = 2;
 			
 			public static int[] MapAttrs = new int[] {
 					2130771968,
@@ -11457,7 +11464,6 @@ namespace Bizland.Droid
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] ProgressWheel = new int[] {
-					2130772451,
 					2130772452,
 					2130772453,
 					2130772454,
@@ -11468,7 +11474,8 @@ namespace Bizland.Droid
 					2130772459,
 					2130772460,
 					2130772461,
-					2130772462};
+					2130772462,
+					2130772463};
 			
 			// aapt resource value: 3
 			public const int ProgressWheel_ahBarColor = 3;
