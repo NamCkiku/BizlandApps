@@ -133,7 +133,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<ProvincePage, ProvincePageViewModel>("ProvincePage");
             containerRegistry.RegisterForNavigation<CountryPage, CountryPageViewModel>("CountryPage");
             containerRegistry.RegisterForNavigation<RoomTypePage, RoomTypePageViewModel>("RoomTypePage");
-            containerRegistry.RegisterForNavigation<SelectDatetimePage>();
+            containerRegistry.RegisterForNavigation<SelectDatetimePage, SelectDatetimePageViewModel>("SelectDatetimePage");
         }
     }
 }
