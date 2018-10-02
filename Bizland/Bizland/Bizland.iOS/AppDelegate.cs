@@ -50,7 +50,7 @@ namespace Bizland.iOS
             UINavigationBar.Appearance.Translucent = false;
             UINavigationBar.Appearance.BarStyle = UIBarStyle.Black;
             // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.Default, true);
 
             return base.FinishedLaunching(app, options);
         }

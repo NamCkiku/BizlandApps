@@ -116,6 +116,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acitivity\SplashScreenActivity.cs" />
     <Compile Include="CustomRenderer\ExtendedViewCellRenderer.cs" />
     <Compile Include="CustomRenderer\FloatingActionButtonRenderer.cs" />
     <Compile Include="CustomRenderer\HtmlFormattedLabelRenderer.cs" />
@@ -1327,6 +1328,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\xml\file_paths.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bg_bizlandScreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
