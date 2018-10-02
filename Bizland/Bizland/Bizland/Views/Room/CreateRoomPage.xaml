@@ -3,6 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.CreateRoomPage">
+
+    <ContentPage.Content>
+        <range:SfRangeSlider x:Name="rangeslider"
+                             RangeStart="1"
+                             RangeEnd="30"
+                             TickFrequency="5"
+                             ToolTipTextColor="White"
+                             ToolTipBackgroundColor="{StaticResource Color_Navigation}"
+                             Minimum="0"  Maximum="30"
+                             Orientation="Horizontal"
+                             HeightRequest="90"
+                             LabelColor="{StaticResource Color_Navigation}"/>
+    </ContentPage.Content>
 </ContentPage>
