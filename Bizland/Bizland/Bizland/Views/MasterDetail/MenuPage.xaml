@@ -35,7 +35,11 @@
                                                HeightRequest="80"
                                                VerticalOptions="Center"
                                                HorizontalOptions="Center"
-                                               BorderColor="{StaticResource Color_Navigation}"/>
+                                               BorderColor="{StaticResource Color_Navigation}">
+                    <controls:CircleImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PushToProfileCommand}" Tapped="TapGestureRecognizer_Tapped"/>
+                    </controls:CircleImage.GestureRecognizers>
+                </controls:CircleImage>
 
                 <Label Text="{Binding UserToken.FullName}"
                            HorizontalTextAlignment="Center"

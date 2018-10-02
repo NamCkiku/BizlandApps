@@ -5,7 +5,9 @@ using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
+using System;
 using System.Collections.ObjectModel;
+using System.Reflection;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.GoogleMaps.Bindings;
@@ -143,7 +145,24 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
+                    if (IsBusy)
+                    {
+                        return;
+                    }
+                    IsBusy = true;
+                    try
+                    {
+                        await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                    finally
+                    {
+                        IsBusy = false;
+                    }
+                   
                 });
             }
         }
@@ -154,7 +173,24 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await _navigationService.NavigateAsync("RoomTypePage");
+                    if (IsBusy)
+                    {
+                        return;
+                    }
+                    IsBusy = true;
+                    try
+                    {
+                        await _navigationService.NavigateAsync("RoomTypePage");
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                    finally
+                    {
+                        IsBusy = false;
+                    }
+                   
                 });
             }
         }
@@ -165,7 +201,10 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    var possibleAddresses = await _placesGeocode.GetAddressesForPosition(Settings.Latitude.ToString(), Settings.Longitude.ToString());
+                    var mylocation = await LocationHelper.GetGpsLocation();
+                    Settings.Latitude = (float)mylocation.Latitude;
+                    Settings.Longitude = (float)mylocation.Longitude;
+                    var possibleAddresses = await _placesGeocode.GetAddressesForPosition(mylocation.Latitude.ToString(), mylocation.Longitude.ToString());
                     if (possibleAddresses != null && possibleAddresses.status == "OK")
                     {
                         var bestItem = 0;
