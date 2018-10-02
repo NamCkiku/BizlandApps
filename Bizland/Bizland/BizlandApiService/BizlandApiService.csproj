@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IdentityModel" Version="3.9.0" />
+    <PackageReference Include="IdentityModel" Version="3.10.0-arran" />
     <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
   </ItemGroup>
 
