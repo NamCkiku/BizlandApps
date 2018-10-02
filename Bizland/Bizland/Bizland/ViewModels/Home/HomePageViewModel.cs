@@ -5,9 +5,6 @@ using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
-using SupportWidgetXF.DependencyService;
-using SupportWidgetXF.Models;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -15,7 +12,7 @@ using Xamarin.Forms.GoogleMaps.Bindings;
 
 namespace Bizland.ViewModels
 {
-    public class HomePageViewModel : ViewModelBase, IGalleryPickerResultListener
+    public class HomePageViewModel : ViewModelBase
     {
         private readonly IPageDialogService _dialogService;
         private readonly INavigationService _navigationService;
@@ -117,7 +114,6 @@ namespace Bizland.ViewModels
             {
                 return new Command(() =>
                 {
-                    Xamarin.Forms.DependencyService.Get<IGalleryPicker>().IF_OpenGallery(this, new SyncPhotoOptions());
                 });
             }
         }
@@ -189,17 +185,6 @@ namespace Bizland.ViewModels
                 });
             }
         }
-
-
-
-        public void IF_PickedResult(List<GalleryImageXF> result)
-        {
-            foreach (var item in result)
-            {
-                ShowMessage("Upload Image", 10);
-            }
-        }
-
         #endregion
     }
 }
