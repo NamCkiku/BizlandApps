@@ -25,7 +25,7 @@ namespace Bizland.ViewModels
 
         public void UpdateBirthday(DateTime param)
         {
-            BirthDay = param;
+            BirthDay = param.ToString("dd/MM/yyyy");
         }
         public void UpdateSex(string param)
         {
@@ -66,8 +66,8 @@ namespace Bizland.ViewModels
             }
         }
 
-        private DateTime _birthDay;
-        public DateTime BirthDay
+        private string _birthDay;
+        public string BirthDay
         {
             get
             {

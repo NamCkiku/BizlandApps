@@ -5,8 +5,6 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
-              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.ProfilePage">
 
@@ -33,7 +31,7 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <controls:CircleImage Source="{Binding UserToken.Avatar}"
+                <controls:CircleImage Source="{Binding UserToken.Avatar,Converter={StaticResource AddRootImageConverter}"
                                       x:Name="txtAvatar"
                                                BorderThickness="3"
                                                Aspect="Fill"
@@ -130,7 +128,7 @@
                                                  BorderWidth="1"
                                                  x:Name="txtBirthday"
                                                  InputTransparent="True"
-                                                 Text="{Binding BirthDay, StringFormat='{0:dd/MM/yyyy}'}"
+                                                 Text="{Binding BirthDay}"
                                                  VerticalOptions="Center"
                                                  HorizontalOptions="FillAndExpand"/>
                     <Grid.GestureRecognizers>

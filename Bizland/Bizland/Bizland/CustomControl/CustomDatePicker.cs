@@ -48,10 +48,10 @@ namespace Bizland.CustomControl
             Month = new ObservableCollection<object>();
             Year = new ObservableCollection<object>();
             Headers = new ObservableCollection<string>();
-            Headers.Add("Month");
-            Headers.Add("Day");
-            Headers.Add("Year");
-            HeaderText = "Date Picker";
+            Headers.Add("Tháng");
+            Headers.Add("Ngày");
+            Headers.Add("Năm");
+            HeaderText = "Chọn ngày tháng";
             PopulateDateCollection();
             this.ItemsSource = Date;
             this.ColumnHeaderText = Headers;

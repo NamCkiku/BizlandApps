@@ -42,7 +42,7 @@
                         <Label FontSize="16"
                                FontAttributes="Bold"
                                TextColor="White"
-                               Text="Chọn ngày sinh"
+                               Text="Chọn ngày tháng"
                                VerticalOptions="CenterAndExpand" 
                                HorizontalOptions="CenterAndExpand" />
                     </StackLayout>
