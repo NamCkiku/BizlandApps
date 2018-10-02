@@ -15,5 +15,10 @@ namespace Bizland.Views
         {
             Button_ClickedOnMenu?.Invoke(sender, EventArgs.Empty);
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Button_ClickedOnMenu?.Invoke(sender, EventArgs.Empty);
+        }
     }
 }

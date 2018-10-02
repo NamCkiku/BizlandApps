@@ -1,6 +1,9 @@
-﻿using Bizland.Model;
+﻿using Bizland.Core;
+using Bizland.Model;
 using Prism.Navigation;
+using System;
 using System.Collections.ObjectModel;
+using System.Reflection;
 using Xamarin.Forms;
 
 namespace Bizland.ViewModels
@@ -58,6 +61,33 @@ namespace Bizland.ViewModels
                 });
             }
         }
+        public Command PushToProfileCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    if (IsBusy)
+                    {
+                        return;
+                    }
+                    IsBusy = true;
+                    try
+                    {
+                        await NavigationService.NavigateAsync("BaseNavigationPage/ProfilePage", null, useModalNavigation: true);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                    finally
+                    {
+                        IsBusy = false;
+                    }
+                });
+            }
+        }
+
         public ObservableCollection<MenuItem> MenuItems
         {
             get
@@ -94,14 +124,6 @@ namespace Bizland.ViewModels
                 UseModalNavigation = true,
                 Url = "BaseNavigationPage/HistoryPage"
             });
-            MenuItems.Add(new MenuItem
-            {
-                Title = "Thông tin cá nhân",
-                Icon = "ic_house.png",
-                UseModalNavigation = true,
-                Url = "BaseNavigationPage/ProfilePage"
-            });
-
             MenuItems.Add(new MenuItem
             {
                 Title = "Quốc gia",
