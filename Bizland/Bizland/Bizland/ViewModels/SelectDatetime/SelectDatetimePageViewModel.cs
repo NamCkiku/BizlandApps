@@ -94,7 +94,7 @@ namespace Bizland.ViewModels
                     {
                         if (StartDate != null)
                         {
-                            int month = DateTime.ParseExact(StartDate[0].ToString(), "MMMM", CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("vi-VN")).Month;
+                            int month = DateTime.ParseExact(StartDate[0].ToString(), "MMMM", CultureInfo.DefaultThreadCurrentCulture).Month;
                             var day = StartDate[1];
                             var year = StartDate[2];
                             var date = day + "/" + month + "/" + year;
