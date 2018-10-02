@@ -13,6 +13,7 @@ using Prism;
 using Prism.Ioc;
 using Prism.Plugin.Popups;
 using Prism.Unity;
+using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -56,6 +57,10 @@ namespace Bizland
 
         protected override async void OnInitialized()
         {
+            // Khởi tạo Culture mặc định là Viet Nam
+            CultureInfo vietnamCulture = new CultureInfo("vi-VN");
+            CultureInfo.DefaultThreadCurrentCulture = vietnamCulture;
+
             //Register Syncfusion license
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(ServerConfig.SyncfusionKey);
 
@@ -134,6 +139,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<CountryPage, CountryPageViewModel>("CountryPage");
             containerRegistry.RegisterForNavigation<RoomTypePage, RoomTypePageViewModel>("RoomTypePage");
             containerRegistry.RegisterForNavigation<SelectDatetimePage, SelectDatetimePageViewModel>("SelectDatetimePage");
+            containerRegistry.RegisterForNavigation<SelectSexPage, SelectSexPageViewModel>("SelectSexPage");
         }
     }
 }

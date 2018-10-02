@@ -105,17 +105,11 @@
                                         BackgroundColor="White"/>
                     <StackLayout VerticalOptions="Center"  Padding="10,0,5,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
-                        <Label Text="Giới tính" 
-                                   TextColor="{Binding Color_Text}" 
-                                   LineBreakMode="TailTruncation"
-                                   VerticalOptions="Center"
-                                   HorizontalOptions="StartAndExpand"/>
-
                         <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
-                                       Text="Nam"
+                                       Text="{Binding Sex}"
                                        VerticalOptions="CenterAndExpand" 
-                                       HorizontalOptions="End" />
+                                       HorizontalOptions="StartAndExpand" />
 
                         <Image
                                         WidthRequest="20"
@@ -126,7 +120,7 @@
 
                     </StackLayout>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer>
+                        <TapGestureRecognizer Command="{Binding PusuSelectSexCommand}">
                         </TapGestureRecognizer>
                     </Grid.GestureRecognizers>
                 </Grid>
@@ -139,18 +133,11 @@
                                         BackgroundColor="White"/>
 
                     <StackLayout VerticalOptions="Center"  Padding="10,0,5,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-
-                        <Label Text="Nhập ngày sinh" 
-                                   TextColor="{Binding Color_Text}" 
-                                   LineBreakMode="TailTruncation"
-                                   VerticalOptions="Center"
-                                   HorizontalOptions="StartAndExpand"/>
-
                         <Label TextColor="{Binding Color_Text}" 
                                        LineBreakMode="TailTruncation"
                                        Text="{Binding BirthDay, StringFormat='{0:dd/MM/yyyy}'}"
                                        VerticalOptions="CenterAndExpand" 
-                                       HorizontalOptions="End" />
+                                       HorizontalOptions="StartAndExpand" />
 
                         <Image
                                         WidthRequest="20"

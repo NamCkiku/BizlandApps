@@ -4,7 +4,6 @@ using Bizland.Model;
 using Prism.Events;
 using Prism.Navigation;
 using System;
-using System.Collections.ObjectModel;
 using System.Reflection;
 using Xamarin.Forms;
 
@@ -20,11 +19,16 @@ namespace Bizland.ViewModels
             Title = "Thông tin cá nhân";
 
             eventAggregator.GetEvent<SelectDateTimeEvent>().Subscribe(UpdateBirthday);
+            eventAggregator.GetEvent<SelectSexEvent>().Subscribe(UpdateSex);
         }
 
         public void UpdateBirthday(DateTime param)
         {
             BirthDay = param;
+        }
+        public void UpdateSex(string param)
+        {
+            Sex = param;
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -35,16 +39,8 @@ namespace Bizland.ViewModels
             if (UserToken == null)
             {
                 UserToken = StaticSettings.User;
-                UserToken.Avatar = ServerConfig.ApiEndpoint + StaticSettings.User.Avatar;
+                //UserToken.Avatar = ServerConfig.ApiEndpoint + StaticSettings.User.Avatar;
             }
-            Sexs = new ObservableCollection<string>();
-
-            Sexs.Add("Nam");
-
-            Sexs.Add("Nữ");
-
-            Sexs.Add("Chưa xác định");
-
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -84,27 +80,20 @@ namespace Bizland.ViewModels
             }
         }
 
-
-        private ObservableCollection<string> _sex;
-
-        public ObservableCollection<string> Sexs
-
+        private string _sex;
+        public string Sex
         {
-
             get
             {
+
                 return _sex;
             }
             set
             {
                 _sex = value;
-                RaisePropertyChanged(() => Sexs);
+                RaisePropertyChanged(() => Sex);
             }
-
         }
-
-
-
         public Command OkButtonClicked
         {
             get
@@ -141,6 +130,33 @@ namespace Bizland.ViewModels
                     try
                     {
                         await _navigationService.NavigateAsync("SelectDatetimePage");
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                    finally
+                    {
+                        IsBusy = false;
+                    }
+                });
+            }
+        }
+
+        public Command PusuSelectSexCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    if (IsBusy)
+                    {
+                        return;
+                    }
+                    IsBusy = true;
+                    try
+                    {
+                        await _navigationService.NavigateAsync("SelectSexPage");
                     }
                     catch (Exception ex)
                     {
