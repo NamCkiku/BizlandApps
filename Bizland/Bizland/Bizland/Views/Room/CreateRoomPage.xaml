@@ -3,27 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             xmlns:rangeslider="clr-namespace:Xamarin.RangeSlider.Forms;assembly=Xamarin.RangeSlider.Forms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.CreateRoomPage">
 
     <ContentPage.Content>
         <StackLayout>
-
-            <rangeslider:RangeSlider x:Name="RangeSlider"
-                                     MinimumValue="0"
-                                     MaximumValue="300"
-                                     LowerValue="0"
-                                     UpperValue="300"
-                                     StepValue="0.5"
-                                     StepValueContinuously="True"
-                                     ShowTextAboveThumbs="True"
-                                     BarHeight="5"
-                                     ActiveColor="{StaticResource Color_Navigation}"
-                                     TextColor="{StaticResource Color_Navigation}"
-                                     VerticalOptions="Center"
-                                     TextSize="15" />
-
         </StackLayout>
 
     </ContentPage.Content>

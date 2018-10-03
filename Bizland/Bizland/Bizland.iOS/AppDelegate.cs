@@ -6,8 +6,6 @@ using Prism;
 using Prism.Ioc;
 using SegmentedControl.FormsPlugin.iOS;
 using Syncfusion.SfPicker.XForms.iOS;
-using Syncfusion.SfPicker.XForms.iOS;
-using Syncfusion.SfRangeSlider.XForms.iOS;
 using UIKit;
 
 
@@ -36,8 +34,6 @@ namespace Bizland.iOS
             AnimationViewRenderer.Init();
 
             SfPickerRenderer.Init();
-
-            SfRangeSliderRenderer.Init();
 
             LoadApplication(new App(new iOSInitializer()));
 
