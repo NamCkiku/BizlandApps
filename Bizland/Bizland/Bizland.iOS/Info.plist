@@ -61,5 +61,7 @@
 	<string>Media.xcassets/LaunchImages.launchimage</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.2</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 </dict>
 </plist>
