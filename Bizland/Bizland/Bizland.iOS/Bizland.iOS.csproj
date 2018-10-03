@@ -36,6 +36,7 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -209,7 +210,7 @@
       <Name>BizlandApiService</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bizland\Bizland.csproj">
-      <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
+      <Project>{17690EE7-1A53-4A26-95EA-78B48869E8A4}</Project>
       <Name>Bizland</Name>
     </ProjectReference>
   </ItemGroup>
@@ -325,6 +326,7 @@
     <ImageAsset Include="Media.xcassets\LaunchImages.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Media.xcassets\LaunchImages.launchimage\bg_bizlandScreen1125.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bg_login.png" />
