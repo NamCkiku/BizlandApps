@@ -36,7 +36,9 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Distribution\Bizland_Distribution.mobileprovision" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="MessageBarLib\MessageBarManager.cs" />
     <Compile Include="MessageBarLib\MessageBarMessageType.cs" />
