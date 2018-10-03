@@ -32,6 +32,9 @@
 	<string>This app needs microphone for video</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Ứng dụng cần truy cập quyền Thư viện ảnh của bạn.</string>
+  <key>NSCalendarsUsageDescription</key>
+  <string>Bizland cần bạn cho phép truy cập lịch của bạn để chọn thời gian, bạn có cho phép ứng dụng truy cập lịch của bạn không?</string>
+  
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
