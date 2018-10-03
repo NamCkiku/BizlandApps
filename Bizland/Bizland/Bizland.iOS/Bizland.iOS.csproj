@@ -128,9 +128,6 @@
     <BundleResource Include="Resources\animation.json" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -326,7 +323,6 @@
     <ImageAsset Include="Media.xcassets\LaunchImages.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Media.xcassets\LaunchImages.launchimage\bg_bizlandScreen1125.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bg_login.png" />
@@ -1281,9 +1277,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bg_footer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\bg_bizlandScreen1125.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
