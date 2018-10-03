@@ -61,7 +61,7 @@
 		<string>Icon-Small@3x</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>(not set)</string>
 	<key>FacebookAppID</key>
 	<string>2202506213306972</string>
 	<key>AccountKitClientToken</key>
