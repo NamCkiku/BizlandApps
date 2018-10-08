@@ -33,7 +33,37 @@ namespace Bizland.ViewModels
 
             eventAggregator.GetEvent<SelectRoomTypeEvent>().Subscribe(UpdateRoomType);
 
-            GetAddressesForPositionCommand.Execute(null);
+            //GetAddressesForPositionCommand.Execute(null);
+
+            Pins?.Clear();
+            var pin1 = new Pin()
+            {
+                Type = PinType.Place,
+                Position = new Position(Settings.Latitude, Settings.Longitude),
+                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+            };
+            var pin2 = new Pin()
+            {
+                Type = PinType.Place,
+                Position = new Position(20.980283, 105.846792),
+                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+            };
+            var pin3 = new Pin()
+            {
+                Type = PinType.Place,
+                Position = new Position(20.984891, 105.835033),
+                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+            };
+            var pin4 = new Pin()
+            {
+                Type = PinType.Place,
+                Position = new Position(20.992104, 105.839238),
+                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
+            };
+            Pins?.Add(pin1);
+            Pins?.Add(pin2);
+            Pins?.Add(pin3);
+            Pins?.Add(pin4);
         }
 
         public async void UpdateMyAddress(SelectAddress param)
@@ -68,7 +98,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-
+           
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -119,8 +149,9 @@ namespace Bizland.ViewModels
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
+                    await _navigationService.NavigateAsync("TransparentNavigation/RoomDetailPage", null, useModalNavigation: true);
                 });
             }
         }
@@ -137,10 +168,7 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    var mylocation = await LocationHelper.GetGpsLocation();
-                    Settings.Latitude = (float)mylocation.Latitude;
-                    Settings.Longitude = (float)mylocation.Longitude;
-                    await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(new Position(mylocation.Latitude, mylocation.Longitude)));
+                    await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(new Position(Settings.Latitude, Settings.Longitude)));
                 });
             }
         }

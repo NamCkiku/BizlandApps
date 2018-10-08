@@ -20,7 +20,7 @@
                 <controls:CustomSearchBar Grid.Row="0" CancelButtonIsVisible="False"  SearchCommand="{Binding SearchLoactionCommmand}"
                        Text="{Binding SearchText}" 
                        x:Name="searchBar"
-                       Placeholder="Nhập điểm cần tìm">
+                       Placeholder="Gõ để bắt đầu tìm kiếm">
                     <controls:CustomSearchBar.IsVisible>
                         <OnPlatform x:TypeArguments="x:Boolean">
                             <On Platform="iOS" Value="true" />
@@ -43,7 +43,7 @@
                     <controls:RoundedSearchEntry HeightRequest="40"
                                              Image="ic_Search.png"
                                              ImageHeight="15" ImageWidth="15"
-                                             Placeholder="Nhập điểm cần tìm" PlaceholderColor="#999"
+                                             Placeholder="Gõ để bắt đầu tìm kiếm" PlaceholderColor="#999"
                                              BackgroundColor="{StaticResource Color_Navigation}"
                                              BorderColor="{StaticResource Color_Text}"
                                              BorderRadius="0"
