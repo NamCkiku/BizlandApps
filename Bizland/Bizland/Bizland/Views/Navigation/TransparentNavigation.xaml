@@ -5,7 +5,7 @@
                 prism:ViewModelLocator.AutowireViewModel="True"
                 xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
                 iOS:NavigationPage.IsNavigationBarTranslucent="True"
-                BarTextColor="White"
+                BarTextColor="Black"
                 x:Class="Bizland.Views.TransparentNavigation">
     
     <NavigationPage.BarBackgroundColor>

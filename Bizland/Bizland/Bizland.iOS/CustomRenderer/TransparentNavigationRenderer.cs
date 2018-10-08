@@ -17,7 +17,7 @@ namespace Bizland.iOS.CustomRenderer
             UINavigationBar.Appearance.ShadowImage = new UIImage();
             UINavigationBar.Appearance.BackgroundColor = UIColor.Clear;
             UINavigationBar.Appearance.TintColor = UIColor.White;
-            UINavigationBar.Appearance.BarTintColor = UIColor.Clear;
+            UINavigationBar.Appearance.BarTintColor = UIColor.Black;
             UINavigationBar.Appearance.Translucent = true;
         }
 
