@@ -9,7 +9,7 @@
              x:Class="Bizland.Views.HomePage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="Thông Báo" Priority="2" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_notification.png" />
+        <ToolbarItem Name="Thông Báo" Priority="2" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_filter.png" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

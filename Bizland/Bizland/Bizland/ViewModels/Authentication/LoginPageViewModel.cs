@@ -113,7 +113,7 @@ namespace Bizland.ViewModels
                                 Settings.AuthAccessToken = token.AccessToken;
                                 Settings.UserInfomation = JsonConvert.SerializeObject(token);
                                 StaticSettings.User = token;
-                                await _navigationService.NavigateAsync("/RootPage/MasterDetailNavigationPage/HomePage");
+                                await _navigationService.NavigateAsync("/RootPage/TransparentNavigation/HomePage");
                             }
                             else
                             {
