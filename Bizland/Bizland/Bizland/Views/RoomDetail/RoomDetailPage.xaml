@@ -54,6 +54,73 @@
                             SelectedIndicator="ic_Indicator.png"
                             Position="{Binding Position}" 
                             ItemsSource="{Binding ImageSlider}" />
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="1" Grid.Row="1"  VerticalOptions="FillAndExpand" BackgroundColor="#e0e0e0">
+                        <Grid RowSpacing="0" Padding="10,20,10,20" BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".2*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <controls:CircleImage
+                                    HorizontalOptions="Center" 
+                                    VerticalOptions="Center"
+                                    BorderColor="{StaticResource Color_Navigation}"
+                                    BorderThickness="1"
+                                    HeightRequest="60"
+                                    WidthRequest="60"
+                                    Aspect="Fill"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Source="avatar.png" />
+
+                            <StackLayout Grid.Column="1" Spacing="3" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start">
+
+                                <Label Text="Trần Hoàng Nam"
+                                       HorizontalOptions="Start"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center"/>
+
+                                <StackLayout Grid.ColumnSpan="2"
+                                     Grid.Row="2"
+                                     Spacing="0"
+                                     Orientation="Horizontal">
+                                    <Image Source="ic_location.png" WidthRequest="10" HeightRequest="10"/>
+                                    <Label Text="Trưng trắc-Văn Lâm-Hưng Yên"
+                                           FontSize="12"
+                                           Opacity="0.5"
+                                           VerticalOptions="Center"/>
+                                </StackLayout>
+
+                                <controls:RatingControl
+                                    ImageFullStar="ic_star_active.png"
+                                    ImageEmptyStar="ic_star_normal.png"
+                                    Precision="Full"
+                                    WidthRequest="100"
+                                    HorizontalOptions="Start" 
+                                    Rating="4"/>
+
+                            </StackLayout>
+
+                            <controls:IconView Foreground="{StaticResource Color_Navigation}"
+                                           Grid.Column="1"
+                                           Grid.Row="0"
+                                           WidthRequest="20"
+                                           Source="ic_next.png"
+                                           VerticalOptions="Center" 
+                                           HorizontalOptions="End" >
+                                <controls:IconView.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding CallDriver}" CommandParameter="{Binding CustomerTripDriverInfo.DriverPhoneNumber}"/>
+                                </controls:IconView.GestureRecognizers>
+                            </controls:IconView>
+                        </Grid>
+                        <StackLayout BackgroundColor="White" HeightRequest="700">
+                            
+                        </StackLayout>
+                    </StackLayout>
                 </Grid>
             </ScrollView>
 
@@ -68,7 +135,7 @@
                     <Label Opacity="0.5" FontSize="12" Text="17 người đã xem phòng này "/>
                 </StackLayout>
 
-                <Button Text="Thuê ngay" Grid.Column="1" BorderRadius="5"/>
+                <Button Text="Thuê ngay" HeightRequest="40" FontSize="13" Grid.Column="1" BorderRadius="5"/>
             </Grid>
         </Grid>
     </ContentPage.Content>
