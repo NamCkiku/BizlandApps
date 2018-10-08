@@ -9,8 +9,8 @@
              x:Class="Bizland.Views.RoomDetailPage">
 
     <ContentPage.ToolbarItems>
-        <!--<ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Order="Primary" Priority="0" />-->
-        <ToolbarItem Name="Thông Báo" Priority="1" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_filter.png" />
+        <ToolbarItem Text="Yêu thích" Icon="ic_favorite.png" Order="Primary" Priority="2" />
+        <ToolbarItem Name="Chia sẻ" Priority="1" Command="{Binding clickaleart}"  Icon="ic_share.png" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
