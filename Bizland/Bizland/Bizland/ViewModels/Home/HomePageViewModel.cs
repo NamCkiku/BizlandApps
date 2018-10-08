@@ -19,6 +19,7 @@ namespace Bizland.ViewModels
         private readonly IPageDialogService _dialogService;
         private readonly INavigationService _navigationService;
         private readonly IPlacesGeocode _placesGeocode;
+        private readonly IEventAggregator _eventAggregator;
         public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IPlacesGeocode placesGeocode, IEventAggregator eventAggregator)
             : base(navigationService)
         {
@@ -26,6 +27,7 @@ namespace Bizland.ViewModels
             this._dialogService = dialogService;
             this._navigationService = navigationService;
             this._placesGeocode = placesGeocode;
+            this._eventAggregator = eventAggregator;
 
             eventAggregator.GetEvent<SelectMapAddressEvent>().Subscribe(UpdateMyAddress);
 
@@ -59,6 +61,9 @@ namespace Bizland.ViewModels
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
+            _eventAggregator.GetEvent<SelectRoomTypeEvent>().Unsubscribe(null);
+
+            _eventAggregator.GetEvent<SelectMapAddressEvent>().Unsubscribe(null);
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
@@ -162,7 +167,7 @@ namespace Bizland.ViewModels
                     {
                         IsBusy = false;
                     }
-                   
+
                 });
             }
         }
@@ -190,7 +195,7 @@ namespace Bizland.ViewModels
                     {
                         IsBusy = false;
                     }
-                   
+
                 });
             }
         }
