@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             BackgroundColor="#e0e0e0"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+             x:Class="Bizland.Views.RoomDetailPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Order="Primary" Priority="0" />
+        <ToolbarItem Name="Thông Báo" Priority="1" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_filter.png" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <Grid RowSpacing="1">
+            <Grid.Margin>
+                <OnPlatform x:TypeArguments="Thickness"
+                                                    Android="0,0,0,0" iOS="0,-65,0,0" />
+            </Grid.Margin>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="0" BackgroundColor="White">
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="6*" />
+                    </Grid.RowDefinitions>
+
+                    <cv:CarouselView HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"
+                                     Grid.Row="0"
+                                     ItemsSource="{Binding ImageSlider}"
+                                     Position="{Binding Position}">
+                        <cv:CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <Image  Source="{Binding .}" Aspect="Fill"/>
+                            </DataTemplate>
+                        </cv:CarouselView.ItemTemplate>
+                    </cv:CarouselView>
+
+                    <controls:CarouselIndicators 
+                            VerticalOptions="End"
+                            HorizontalOptions="Start"
+                            IndicatorHeight="10"
+                            IndicatorWidth="10"
+                            Margin="10"
+                            Grid.Row="0"
+                            UnselectedIndicator="ic_unIndicator.png"
+                            SelectedIndicator="ic_Indicator.png"
+                            Position="{Binding Position}" 
+                            ItemsSource="{Binding ImageSlider}" />
+                </Grid>
+            </ScrollView>
+
+
+            <Grid Grid.Row="1" ColumnSpacing="0" BackgroundColor="White" VerticalOptions="End" Padding="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="4*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout VerticalOptions="CenterAndExpand" Margin="15,0,0,0" Grid.Column="0" HorizontalOptions="StartAndExpand">
+                    <Label TextColor="Red" Text="2,000,000 VNĐ /người "/>
+                    <Label Opacity="0.5" FontSize="12" Text="17 người đã xem phòng này "/>
+                </StackLayout>
+
+                <Button Text="Thuê ngay" Grid.Column="1" BorderRadius="5"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -143,6 +143,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<RoomTypePage, RoomTypePageViewModel>("RoomTypePage");
             containerRegistry.RegisterForNavigation<SelectDatetimePage, SelectDatetimePageViewModel>("SelectDatetimePage");
             containerRegistry.RegisterForNavigation<SelectSexPage, SelectSexPageViewModel>("SelectSexPage");
+            containerRegistry.RegisterForNavigation<RoomDetailPage,RoomDetailPageViewModel>("RoomDetailPage");
         }
     }
 }
