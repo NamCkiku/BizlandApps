@@ -9,16 +9,16 @@
              x:Class="Bizland.Views.RoomDetailPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Order="Primary" Priority="0" />
+        <!--<ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Order="Primary" Priority="0" />-->
         <ToolbarItem Name="Thông Báo" Priority="1" x:Name="btnNotification" Command="{Binding clickaleart}"  Icon="ic_filter.png" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
         <Grid RowSpacing="1">
-            <Grid.Margin>
+            <!--<Grid.Margin>
                 <OnPlatform x:TypeArguments="Thickness"
                                                     Android="0,0,0,0" iOS="0,-65,0,0" />
-            </Grid.Margin>
+            </Grid.Margin>-->
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -27,8 +27,8 @@
             <ScrollView Grid.Row="0" BackgroundColor="White">
                 <Grid RowSpacing="0">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="4*"/>
-                        <RowDefinition Height="6*" />
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
 
                     <cv:CarouselView HorizontalOptions="FillAndExpand"
@@ -56,7 +56,8 @@
                             ItemsSource="{Binding ImageSlider}" />
 
                     <StackLayout HorizontalOptions="FillAndExpand" Spacing="1" Grid.Row="1"  VerticalOptions="FillAndExpand" BackgroundColor="#e0e0e0">
-                        <Grid RowSpacing="0" Padding="10,20,10,20" BackgroundColor="White">
+
+                        <Grid RowSpacing="0" BackgroundColor="White" Padding="15">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
@@ -70,8 +71,8 @@
                                     VerticalOptions="Center"
                                     BorderColor="{StaticResource Color_Navigation}"
                                     BorderThickness="1"
-                                    HeightRequest="60"
-                                    WidthRequest="60"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
                                     Aspect="Fill"
                                     Grid.Row="0"
                                     Grid.Column="0"
@@ -84,16 +85,16 @@
                                        FontAttributes="Bold"
                                        VerticalOptions="Center"/>
 
-                                <StackLayout Grid.ColumnSpan="2"
+                                <!--<StackLayout Grid.ColumnSpan="2"
                                      Grid.Row="2"
                                      Spacing="0"
                                      Orientation="Horizontal">
-                                    <Image Source="ic_location.png" WidthRequest="10" HeightRequest="10"/>
+                                    <Image Source="ic_location.png" WidthRequest="15" HeightRequest="15"/>
                                     <Label Text="Trưng trắc-Văn Lâm-Hưng Yên"
                                            FontSize="12"
                                            Opacity="0.5"
                                            VerticalOptions="Center"/>
-                                </StackLayout>
+                                </StackLayout>-->
 
                                 <controls:RatingControl
                                     ImageFullStar="ic_star_active.png"
@@ -117,8 +118,46 @@
                                 </controls:IconView.GestureRecognizers>
                             </controls:IconView>
                         </Grid>
-                        <StackLayout BackgroundColor="White" HeightRequest="700">
-                            
+
+                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
+
+                            <Label FontAttributes="Bold" FontSize="20" Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap"/>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="ic_home.png" WidthRequest="15" HeightRequest="15"/>
+                                <Label Text="Văn Phòng"
+                                           FontSize="16"
+                                           Opacity="0.5"
+                                           VerticalOptions="Center"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="ic_location.png" WidthRequest="15" HeightRequest="15"/>
+                                <Label Text="Trưng trắc-Văn Lâm-Hưng Yên"
+                                           FontSize="16"
+                                           Opacity="0.5"
+                                           VerticalOptions="Center"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="ic_size.png" WidthRequest="15" HeightRequest="15"/>
+                                <Label Text="Diện tích : 28 m2"
+                                           FontSize="16"
+                                           Opacity="0.5"
+                                           VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                            <Label FontAttributes="Bold" Text="Tiện ích" LineBreakMode="WordWrap"/>
+                        </StackLayout>
+
+                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                            <Label FontAttributes="Bold" Text="Mô tả" LineBreakMode="WordWrap"/>
+                        </StackLayout>
+
+                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                            <Label FontAttributes="Bold" Text="Phòng gợi ý" LineBreakMode="WordWrap"/>
                         </StackLayout>
                     </StackLayout>
                 </Grid>
@@ -130,7 +169,7 @@
                     <ColumnDefinition Width="6*"/>
                     <ColumnDefinition Width="4*" />
                 </Grid.ColumnDefinitions>
-                <StackLayout VerticalOptions="CenterAndExpand" Margin="15,0,0,0" Grid.Column="0" HorizontalOptions="StartAndExpand">
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="0" HorizontalOptions="StartAndExpand">
                     <Label TextColor="Red" Text="2,000,000 VNĐ /người "/>
                     <Label Opacity="0.5" FontSize="12" Text="17 người đã xem phòng này "/>
                 </StackLayout>

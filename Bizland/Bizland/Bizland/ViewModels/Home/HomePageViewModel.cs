@@ -151,7 +151,7 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await _navigationService.NavigateAsync("TransparentNavigation/RoomDetailPage", null, useModalNavigation: true);
+                    await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
                 });
             }
         }
