@@ -45,7 +45,7 @@
             </googleMaps:Map>
 
             <!--Control Filter EndAddress-->
-            <controls:MaterialFrame BackgroundColor="#ffffff"
+            <!--<controls:MaterialFrame BackgroundColor="#ffffff"
                                     Grid.Row="0"
                                     Margin="10,75,10,10"
                                     VerticalOptions="Start"
@@ -98,12 +98,12 @@
                                         HorizontalOptions="Center"
                                         VerticalOptions="Center" />
                 </Grid>
-            </controls:MaterialFrame>
+            </controls:MaterialFrame>-->
 
             <controls:FloatingActionButton 
                             Grid.Row="1"
                             HorizontalOptions="End"
-                            VerticalOptions="Start"
+                            VerticalOptions="End"
                             Margin="10"
                             Command="{Binding getMylocation}"
                             Image="ic_maplocation.png"
