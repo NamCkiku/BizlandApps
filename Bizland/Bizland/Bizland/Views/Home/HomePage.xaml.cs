@@ -14,6 +14,29 @@ namespace Bizland.Views
             map.UiSettings.MapToolbarEnabled = true;
             map.UiSettings.ZoomControlsEnabled = false;
             map.UiSettings.MyLocationButtonEnabled = false;
+
+            string a = "[\n" +
+                "  {\n" +
+                "    \"elementType\": \"labels\",\n" +
+                "    \"stylers\": [\n" +
+                "      {\n" +
+                "        \"visibility\": \"on\"\n" +
+                "      }\n" +
+                "    ]\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"featureType\": \"water\",\n" +
+                "    \"elementType\": \"geometry.fill\",\n" +
+                "    \"stylers\": [\n" +
+                "      {\n" +
+                "        \"color\": \"#037cb3\"\n" +
+                "      }\n" +
+                "    ]\n" +
+                "  }" +
+                "]";
+
+            map.MapStyle = MapStyle.FromJson(a);
+
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
         static bool isShowPage = false;
