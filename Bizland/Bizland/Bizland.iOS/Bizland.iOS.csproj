@@ -1282,5 +1282,8 @@
   <ItemGroup>
     <BundleResource Include="Resources\bg_footer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hamburger%403x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
