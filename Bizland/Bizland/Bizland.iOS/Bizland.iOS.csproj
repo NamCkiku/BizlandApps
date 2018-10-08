@@ -213,10 +213,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\hamburger%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\hamburger%402x.png" />
+    <BundleResource Include="Resources\hamburger%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_notification.png" />
@@ -1283,16 +1283,16 @@
     <BundleResource Include="Resources\bg_footer.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\hamburger%403x.png" />
+    <BundleResource Include="Resources\ic_filter%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_filter%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_filter.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_filter%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\ic_filter%403x.png" />
+    <BundleResource Include="Resources\hamburger.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
