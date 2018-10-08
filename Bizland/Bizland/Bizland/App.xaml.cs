@@ -73,7 +73,7 @@ namespace Bizland
             else
             {
                 StaticSettings.User = JsonConvert.DeserializeObject<UserToken>(Settings.UserInfomation);
-                url = "/RootPage/MasterDetailNavigationPage/HomePage";
+                url = "/RootPage/TransparentNavigation/HomePage";
             }
             await NavigationService.NavigateAsync(url);
         }
@@ -126,6 +126,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");
             containerRegistry.RegisterForNavigation<BaseNavigationPage, BaseNavigationPageViewModel>("BaseNavigationPage");
+            containerRegistry.RegisterForNavigation<TransparentNavigation, TransparentNavigationViewModel>("TransparentNavigation");
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>("LoginPage");
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>("HomePage");
             containerRegistry.RegisterForNavigation<ChatPage, ChatPageViewModel>("ChatPage");
