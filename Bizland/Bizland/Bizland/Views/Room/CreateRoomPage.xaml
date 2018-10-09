@@ -3,12 +3,437 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             BackgroundColor="#e0e0e0"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              Title="{Binding Title}"
              x:Class="Bizland.Views.CreateRoomPage">
 
     <ContentPage.Content>
-        <StackLayout>
-        </StackLayout>
+        <Grid RowSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <ScrollView Grid.Row="0" BackgroundColor="White">
+                <StackLayout>
+
+                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
+                        <Label FontAttributes="Bold" Text="Kiểu phòng" LineBreakMode="WordWrap"/>
+
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0">
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Label Grid.Column="0"
+                                               FontSize="12"
+                                               LineBreakMode="TailTruncation"
+                                               Text="Phòng trọ"   
+                                               HorizontalTextAlignment="Center"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="CenterAndExpand" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                         BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Label Grid.Column="0"
+                                               FontSize="12"
+                                               LineBreakMode="TailTruncation"
+                                               Text="Ở ghép"   
+                                               HorizontalTextAlignment="Center"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="CenterAndExpand" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                            </StackLayout>
+
+
+                            <StackLayout Grid.Column="1">
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                         BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Label Grid.Column="0"
+                                               FontSize="12"
+                                               LineBreakMode="TailTruncation"
+                                               Text="Văn Phòng"   
+                                               HorizontalTextAlignment="Center"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="CenterAndExpand" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                         BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Label Grid.Column="0"
+                                               FontSize="12"
+                                               LineBreakMode="TailTruncation"
+                                               Text="Chung cư"   
+                                               HorizontalTextAlignment="Center"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="CenterAndExpand" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                            </StackLayout>
+                        </Grid>
+
+                       
+
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Spacing="15" Padding="15">
+                        <Label FontAttributes="Bold" Text="Thông tin phòng"/>
+                        
+                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
+                            <Label Text="Tên phòng" FontSize="12"/>
+                            
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <controls:RoundedSearchEntry HeightRequest="35"
+                                                             Placeholder="Tối đa 50 kí tự"
+                                                             BackgroundColor="#FFFFFF"
+                                                             BorderRadius="0"
+                                                             BorderWidth="0"
+                                                             Grid.Column="0"
+                                                             VerticalOptions="Center"
+                                                             HorizontalOptions="FillAndExpand"/>
+                            </Grid>
+                            
+
+                            <BoxView HeightRequest="1" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
+                            <Label Text="Giá phòng (/tháng)" FontSize="12"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <controls:RoundedSearchEntry HeightRequest="35"
+                                                             Placeholder="1,000,000"
+                                                             BackgroundColor="#FFFFFF"
+                                                             BorderRadius="0"
+                                                             BorderWidth="0"
+                                                             HorizontalOptions="FillAndExpand"
+                                                             Grid.Column="0"
+                                                             VerticalOptions="Center"/>
+
+                                <Label Text="VNĐ" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1"/>
+                            </Grid>
+
+
+                            <BoxView HeightRequest="1" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
+                            <Label Text="Diện tích phòng" FontSize="12"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <controls:RoundedSearchEntry HeightRequest="35"
+                                                             Placeholder="25"
+                                                             BackgroundColor="#FFFFFF"
+                                                             BorderRadius="0"
+                                                             BorderWidth="0"
+                                                             HorizontalOptions="FillAndExpand"
+                                                             Grid.Column="0"
+                                                             VerticalOptions="Center"/>
+
+                                <Label Text="m2" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1"/>
+                            </Grid>
+
+
+                            <BoxView HeightRequest="1" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
+                            <Label Text="Địa chỉ" FontSize="12"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0"/>
+                                </Grid.ColumnDefinitions>
+
+                                <controls:RoundedSearchEntry HeightRequest="35"
+                                                             Placeholder="Số nhà, tên đường, tên phường"
+                                                             BackgroundColor="#FFFFFF"
+                                                             BorderRadius="0"
+                                                             BorderWidth="0"
+                                                             HorizontalOptions="FillAndExpand"
+                                                             Grid.Column="0"
+                                                             VerticalOptions="Center"/>
+
+                            </Grid>
+
+
+                            <BoxView HeightRequest="1" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
+                            <Label Text="Số điện thoại" FontSize="12"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0"/>
+                                </Grid.ColumnDefinitions>
+
+                                <controls:RoundedSearchEntry HeightRequest="35"
+                                                             Placeholder="Số di động của bạn"
+                                                             BackgroundColor="#FFFFFF"
+                                                             BorderRadius="0"
+                                                             BorderWidth="0"
+                                                             HorizontalOptions="FillAndExpand"
+                                                             Grid.Column="0"
+                                                             VerticalOptions="Center"/>
+
+                            </Grid>
+
+
+                            <BoxView HeightRequest="1" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                        <Label FontAttributes="Bold" Text="Tiện ích" LineBreakMode="WordWrap"/>
+
+
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0">
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Máy lạnh"   
+                                               FontSize="12"
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                               LineBreakMode="TailTruncation"
+                                               Text="Chỗ để xe"   
+                                               FontSize="12"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Máy giặt"      
+                                               FontSize="12"
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                            </StackLayout>
+
+
+                            <StackLayout Grid.Column="1">
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="WC riêng"   
+                                               FontSize="12"
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Wifi"  
+                                               FontSize="12"
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                               LineBreakMode="TailTruncation"
+                                               Text="Tủ lạnh"    
+                                               FontSize="12"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                            </StackLayout>
+                        </Grid>
+                        
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                        <Label FontAttributes="Bold" Text="Thêm mô tả" LineBreakMode="WordWrap"/>
+
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                        <Label FontAttributes="Bold" Text="Đăng ảnh phòng" LineBreakMode="WordWrap"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+
+            </ScrollView>
+            <StackLayout Grid.Row="1" BackgroundColor="White" VerticalOptions="End" Padding="10">
+
+                <Label Text="Tặng thưởng ngay 5 Point cho mỗi upload được duyệt" 
+                           FontSize="12"
+                           TextColor="{StaticResource Color_Button}"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+
+                <Button Text="ĐĂNG PHÒNG NGAY" FontAttributes="Bold" BorderRadius="15"/>
+
+            </StackLayout>
+        </Grid>
 
     </ContentPage.Content>
 </ContentPage>

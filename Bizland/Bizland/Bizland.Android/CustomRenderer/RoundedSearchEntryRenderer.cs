@@ -16,6 +16,7 @@ using Bizland.CustomControl;
 using Bizland.Droid.CustomRenderer;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using Color = Xamarin.Forms.Color;
 
 [assembly: ExportRenderer(typeof(RoundedSearchEntry), typeof(RoundedSearchEntryRenderer))]
 namespace Bizland.Droid.CustomRenderer
@@ -40,7 +41,7 @@ namespace Bizland.Droid.CustomRenderer
             var gradientDrawable = new GradientDrawable();
             gradientDrawable.SetCornerRadius(_element.BorderRadius);
             gradientDrawable.SetStroke(_element.BorderWidth, _element.BorderColor.ToAndroid());
-            gradientDrawable.SetColor(_element.Color.ToAndroid());
+            gradientDrawable.SetColor(Color.White.ToAndroid());
 
             Control.SetBackground(gradientDrawable);
 
