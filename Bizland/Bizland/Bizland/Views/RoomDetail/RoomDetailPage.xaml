@@ -131,7 +131,7 @@
                             <Label FontAttributes="Bold" FontSize="20" Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap"/>
 
                             <StackLayout Orientation="Horizontal">
-                                <Image Source="ic_home.png" WidthRequest="15" HeightRequest="15"/>
+                                <Image Source="ic_home.png" WidthRequest="20"/>
                                 <Label Text="Văn Phòng"
                                            FontSize="16"
                                            Opacity="0.5"
@@ -139,7 +139,7 @@
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Image Source="ic_location.png" WidthRequest="15" HeightRequest="15"/>
+                                <Image Source="ic_location.png" WidthRequest="20"/>
                                 <Label Text="Trưng trắc-Văn Lâm-Hưng Yên"
                                            FontSize="16"
                                            Opacity="0.5"
@@ -147,12 +147,29 @@
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Image Source="ic_size.png" WidthRequest="15" HeightRequest="15"/>
+                                <Image Source="ic_size.png" WidthRequest="20"/>
                                 <Label Text="Diện tích : 28 m2"
                                            FontSize="16"
                                            Opacity="0.5"
                                            VerticalOptions="Center"/>
                             </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="ic_bed.png" WidthRequest="20"/>
+                                <Label Text="Phòng vệ sinh : 3 phòng"
+                                           FontSize="16"
+                                           Opacity="0.5"
+                                           VerticalOptions="Center"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="ic_bed.png" WidthRequest="20"/>
+                                <Label Text="Phòng ngủ : 3 phòng"
+                                           FontSize="16"
+                                           Opacity="0.5"
+                                           VerticalOptions="Center"/>
+                            </StackLayout>
+
                         </StackLayout>
 
                         <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
@@ -166,10 +183,10 @@
 
                                 <StackLayout Grid.Column="0">
                                     <controls:MaterialFrame BackgroundColor="#e0e0e0"
-                                                        CornerRadius="10"
+                                                        CornerRadius="15"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
-                                                        Padding="10">
+                                                        Padding="7">
                                         <Grid RowSpacing="0">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
@@ -191,10 +208,10 @@
                                         </Grid>
                                     </controls:MaterialFrame>
                                     <controls:MaterialFrame BackgroundColor="#e0e0e0"
-                                                        CornerRadius="10"
+                                                        CornerRadius="15"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
-                                                        Padding="10">
+                                                        Padding="7">
                                         <Grid RowSpacing="0">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
@@ -216,10 +233,10 @@
                                         </Grid>
                                     </controls:MaterialFrame>
                                     <controls:MaterialFrame BackgroundColor="#e0e0e0"
-                                                        CornerRadius="10"
+                                                        CornerRadius="15"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
-                                                        Padding="10">
+                                                        Padding="7">
                                         <Grid RowSpacing="0">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
@@ -245,10 +262,10 @@
 
                                 <StackLayout Grid.Column="1">
                                     <controls:MaterialFrame BackgroundColor="#e0e0e0"
-                                                        CornerRadius="10"
+                                                        CornerRadius="15"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
-                                                        Padding="10">
+                                                        Padding="7">
                                         <Grid RowSpacing="0">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
@@ -270,10 +287,10 @@
                                         </Grid>
                                     </controls:MaterialFrame>
                                     <controls:MaterialFrame BackgroundColor="#e0e0e0"
-                                                        CornerRadius="10"
+                                                        CornerRadius="15"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
-                                                        Padding="10">
+                                                        Padding="7">
                                         <Grid RowSpacing="0">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
@@ -295,10 +312,10 @@
                                         </Grid>
                                     </controls:MaterialFrame>
                                     <controls:MaterialFrame BackgroundColor="#e0e0e0"
-                                                        CornerRadius="10"
+                                                        CornerRadius="15"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
-                                                        Padding="10">
+                                                        Padding="7">
                                         <Grid RowSpacing="0">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
@@ -335,8 +352,183 @@
                                  HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
 
-                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
                             <Label FontAttributes="Bold" Text="Phòng gợi ý" LineBreakMode="WordWrap"/>
+
+                            <Grid ColumnSpacing="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0" Spacing="10">
+                                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="3" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <controls:MaterialFrame CornerRadius="5"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="0">
+                                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                                    <Image Source="http://media.phongtot.vn/xc5tx4cj/chung-cu-my-son-tower-thumb-2pvfc.jpg" HeightRequest="120" Aspect="Fill"/>
+                                                </StackLayout>
+                                            </controls:MaterialFrame>
+
+                                            <controls:IconView Source="ic_unfavorite" Foreground="White" Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="20"/>
+                                        </Grid>
+                                       
+                                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="3">
+                                            <Label Text="Văn phòng" Opacity="0.5" FontSize="11" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap" FontAttributes="Bold" FontSize="12" HorizontalTextAlignment="Start"/>
+
+                                            <Label TextColor="Red" FontSize="10" Text="2,000,000 VNĐ /người "/>
+
+                                            <Label Text="Trưng trắc-Văn Lâm-Hưng Yên" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Quận Hoàng Mai" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="3" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <controls:MaterialFrame CornerRadius="5"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="0">
+                                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                                    <Image Source="http://media.phongtot.vn/xc5tx4cj/chung-cu-my-son-tower-thumb-2pvfc.jpg" HeightRequest="120" Aspect="Fill"/>
+                                                </StackLayout>
+                                            </controls:MaterialFrame>
+
+                                            <controls:IconView Source="ic_unfavorite" Foreground="White" Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="20"/>
+                                        </Grid>
+
+                                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="3">
+                                            <Label Text="Văn phòng" Opacity="0.5" FontSize="11" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap" FontAttributes="Bold" FontSize="12" HorizontalTextAlignment="Start"/>
+
+                                            <Label TextColor="Red" FontSize="10" Text="2,000,000 VNĐ /người "/>
+
+                                            <Label Text="Trưng trắc-Văn Lâm-Hưng Yên" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Quận Hoàng Mai" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    
+                                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="3" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <controls:MaterialFrame CornerRadius="5"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="0">
+                                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                                    <Image Source="http://media.phongtot.vn/xc5tx4cj/chung-cu-my-son-tower-thumb-2pvfc.jpg" HeightRequest="120" Aspect="Fill"/>
+                                                </StackLayout>
+                                            </controls:MaterialFrame>
+
+                                            <controls:IconView Source="ic_unfavorite" Foreground="White" Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="20"/>
+                                        </Grid>
+
+                                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="3">
+                                            <Label Text="Văn phòng" Opacity="0.5" FontSize="11" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap" FontAttributes="Bold" FontSize="12" HorizontalTextAlignment="Start"/>
+
+                                            <Label TextColor="Red" FontSize="10" Text="2,000,000 VNĐ /người "/>
+
+                                            <Label Text="Trưng trắc-Văn Lâm-Hưng Yên" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Quận Hoàng Mai" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+
+
+                                <StackLayout Grid.Column="1" Spacing="10">
+
+                                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="3" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <controls:MaterialFrame CornerRadius="5"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="0">
+                                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                                    <Image Source="http://media.phongtot.vn/xc5tx4cj/chung-cu-my-son-tower-thumb-2pvfc.jpg" HeightRequest="120" Aspect="Fill"/>
+                                                </StackLayout>
+                                            </controls:MaterialFrame>
+
+                                            <controls:IconView Source="ic_unfavorite" Foreground="White" Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="20"/>
+                                        </Grid>
+                                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="3">
+                                            <Label Text="Văn phòng" Opacity="0.5" FontSize="11" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap" FontAttributes="Bold" FontSize="12" HorizontalTextAlignment="Start"/>
+
+                                            <Label TextColor="Red" FontSize="10" Text="2,000,000 VNĐ /người "/>
+
+                                            <Label Text="Trưng trắc-Văn Lâm-Hưng Yên" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Quận Hoàng Mai" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="3" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <controls:MaterialFrame CornerRadius="5"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="0">
+                                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                                    <Image Source="http://media.phongtot.vn/xc5tx4cj/chung-cu-my-son-tower-thumb-2pvfc.jpg" HeightRequest="120" Aspect="Fill"/>
+                                                </StackLayout>
+                                            </controls:MaterialFrame>
+
+                                            <controls:IconView Source="ic_unfavorite" Foreground="White" Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="20"/>
+                                        </Grid>
+
+                                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="3">
+                                            <Label Text="Văn phòng" Opacity="0.5" FontSize="11" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap" FontAttributes="Bold" FontSize="12" HorizontalTextAlignment="Start"/>
+
+                                            <Label TextColor="Red" FontSize="10" Text="2,000,000 VNĐ /người "/>
+
+                                            <Label Text="Trưng trắc-Văn Lâm-Hưng Yên" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Quận Hoàng Mai" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="3" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <controls:MaterialFrame CornerRadius="5"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="0">
+                                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                                    <Image Source="http://media.phongtot.vn/xc5tx4cj/chung-cu-my-son-tower-thumb-2pvfc.jpg" HeightRequest="120" Aspect="Fill"/>
+                                                </StackLayout>
+                                            </controls:MaterialFrame>
+
+                                            <controls:IconView Source="ic_unfavorite" Foreground="White" Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="20"/>
+                                        </Grid>
+
+                                        <StackLayout HorizontalOptions="FillAndExpand" Spacing="3">
+                                            <Label Text="Văn phòng" Opacity="0.5" FontSize="11" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Chính chủ - Cho thuê nhà tại Tầng 3 C5 Tập thể Nghĩa Tân" LineBreakMode="WordWrap" FontAttributes="Bold" FontSize="12" HorizontalTextAlignment="Start"/>
+
+                                            <Label TextColor="Red" FontSize="10" Text="2,000,000 VNĐ /người "/>
+
+                                            <Label Text="Trưng trắc-Văn Lâm-Hưng Yên" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+
+                                            <Label Text="Quận Hoàng Mai" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </Grid>
                         </StackLayout>
                     </StackLayout>
                 </Grid>
