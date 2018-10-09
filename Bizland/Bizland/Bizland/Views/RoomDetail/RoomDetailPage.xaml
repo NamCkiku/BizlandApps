@@ -6,8 +6,15 @@
              BackgroundColor="#e0e0e0"
              xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+             xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
              x:Class="Bizland.Views.RoomDetailPage">
 
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:HtmlSourceConverter x:Key="HtmlSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Yêu thích" Icon="ic_favorite.png" Order="Primary" Priority="2" />
         <ToolbarItem Name="Chia sẻ" Priority="1" Command="{Binding clickaleart}"  Icon="ic_share.png" />
@@ -148,12 +155,184 @@
                             </StackLayout>
                         </StackLayout>
 
-                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
                             <Label FontAttributes="Bold" Text="Tiện ích" LineBreakMode="WordWrap"/>
+
+                            <Grid ColumnSpacing="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0">
+                                    <controls:MaterialFrame BackgroundColor="#e0e0e0"
+                                                        CornerRadius="10"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="10">
+                                        <Grid RowSpacing="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+
+                                            <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Giường ngủ"              
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                            <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                        </Grid>
+                                    </controls:MaterialFrame>
+                                    <controls:MaterialFrame BackgroundColor="#e0e0e0"
+                                                        CornerRadius="10"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="10">
+                                        <Grid RowSpacing="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+
+                                            <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Giường ngủ"              
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                            <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                        </Grid>
+                                    </controls:MaterialFrame>
+                                    <controls:MaterialFrame BackgroundColor="#e0e0e0"
+                                                        CornerRadius="10"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="10">
+                                        <Grid RowSpacing="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+
+                                            <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Giường ngủ"              
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                            <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                        </Grid>
+                                    </controls:MaterialFrame>
+                                </StackLayout>
+
+
+                                <StackLayout Grid.Column="1">
+                                    <controls:MaterialFrame BackgroundColor="#e0e0e0"
+                                                        CornerRadius="10"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="10">
+                                        <Grid RowSpacing="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+
+                                            <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Giường ngủ"              
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                            <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                        </Grid>
+                                    </controls:MaterialFrame>
+                                    <controls:MaterialFrame BackgroundColor="#e0e0e0"
+                                                        CornerRadius="10"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="10">
+                                        <Grid RowSpacing="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+
+                                            <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Giường ngủ"              
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                            <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                        </Grid>
+                                    </controls:MaterialFrame>
+                                    <controls:MaterialFrame BackgroundColor="#e0e0e0"
+                                                        CornerRadius="10"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="10">
+                                        <Grid RowSpacing="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+
+                                            <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Giường ngủ"              
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                            <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                        </Grid>
+                                    </controls:MaterialFrame>
+                                </StackLayout>
+                            </Grid>
+
                         </StackLayout>
 
-                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                        <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
                             <Label FontAttributes="Bold" Text="Mô tả" LineBreakMode="WordWrap"/>
+
+                            <WebView
+                                 Source="{Binding CurrentHtml,Converter={StaticResource HtmlSourceConverter}}" 
+                                 WidthRequest="200"
+                                 HeightRequest="500"
+                                 VerticalOptions="FillAndExpand"
+                                 HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
 
                         <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
