@@ -23,6 +23,7 @@ namespace Bizland.iOS.CustomRenderer
             Control.Layer.BorderWidth = element.BorderWidth * 0.5f;
             Control.Layer.BorderColor = element.BorderColor.ToCGColor();
             Control.Layer.BackgroundColor = element.Color.ToCGColor();
+            Control.Layer.MasksToBounds = true;
 
             Control.LeftView = new UIKit.UIView(new CGRect(0, 0, 10, 0));
             Control.LeftViewMode = UIKit.UITextFieldViewMode.Always;
