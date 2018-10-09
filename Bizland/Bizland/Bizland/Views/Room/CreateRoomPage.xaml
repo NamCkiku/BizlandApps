@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              BackgroundColor="#e0e0e0"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+             xmlns:behaviors="clr-namespace:Bizland.Core.Behaviors;assembly=Bizland.Core"
              Title="{Binding Title}"
              x:Class="Bizland.Views.CreateRoomPage">
 
@@ -43,6 +44,10 @@
                                                VerticalOptions="CenterAndExpand"             
                                                HorizontalOptions="CenterAndExpand" />
                                     </Grid>
+
+                                    <controls:MaterialFrame.Behaviors>
+                                        <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
+                                    </controls:MaterialFrame.Behaviors>
                                 </controls:MaterialFrame>
 
                                 <controls:MaterialFrame BackgroundColor="White"
@@ -60,6 +65,9 @@
                                                VerticalOptions="CenterAndExpand"             
                                                HorizontalOptions="CenterAndExpand" />
                                     </Grid>
+                                    <controls:MaterialFrame.Behaviors>
+                                        <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
+                                    </controls:MaterialFrame.Behaviors>
                                 </controls:MaterialFrame>
                             </StackLayout>
 
@@ -124,7 +132,11 @@
                                                              BorderWidth="0"
                                                              Grid.Column="0"
                                                              VerticalOptions="Center"
-                                                             HorizontalOptions="FillAndExpand"/>
+                                                             HorizontalOptions="FillAndExpand">
+                                    <controls:RoundedSearchEntry.Behaviors>
+                                        <behaviors:EntryLengthValidatorBehavior MaxLength="50" />
+                                    </controls:RoundedSearchEntry.Behaviors>
+                                </controls:RoundedSearchEntry>
                             </Grid>
 
 
@@ -147,7 +159,11 @@
                                                              Keyboard="Numeric"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
-                                                             VerticalOptions="Center"/>
+                                                             VerticalOptions="Center">
+                                    <controls:RoundedSearchEntry.Behaviors>
+                                        <behaviors:EntryLengthValidatorBehavior MaxLength="11" />
+                                    </controls:RoundedSearchEntry.Behaviors>
+                                </controls:RoundedSearchEntry>
 
                                 <Label Text="VNĐ" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1"/>
                             </Grid>
@@ -172,7 +188,11 @@
                                                              Keyboard="Numeric"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
-                                                             VerticalOptions="Center"/>
+                                                             VerticalOptions="Center">
+                                    <controls:RoundedSearchEntry.Behaviors>
+                                        <behaviors:EntryLengthValidatorBehavior MaxLength="5" />
+                                    </controls:RoundedSearchEntry.Behaviors>
+                                </controls:RoundedSearchEntry>
 
                                 <Label Text="m2" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1"/>
                             </Grid>
@@ -197,7 +217,11 @@
                                                              Keyboard="Telephone"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
-                                                             VerticalOptions="Center"/>
+                                                             VerticalOptions="Center">
+                                    <controls:RoundedSearchEntry.Behaviors>
+                                        <behaviors:EntryLengthValidatorBehavior MaxLength="13" />
+                                    </controls:RoundedSearchEntry.Behaviors>
+                                </controls:RoundedSearchEntry>
 
                             </Grid>
 
@@ -220,7 +244,11 @@
                                                              BorderWidth="0"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
-                                                             VerticalOptions="Center"/>
+                                                             VerticalOptions="Center">
+                                    <controls:RoundedSearchEntry.Behaviors>
+                                        <behaviors:EntryLengthValidatorBehavior MaxLength="50" />
+                                    </controls:RoundedSearchEntry.Behaviors>
+                                </controls:RoundedSearchEntry>
 
                             </Grid>
 
@@ -229,6 +257,10 @@
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PushToProvincePage}"/>
+                            </StackLayout.GestureRecognizers>
+
                             <Label Text="Thành phố" FontSize="12"/>
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -241,6 +273,7 @@
                                                              BackgroundColor="#FFFFFF"
                                                              BorderRadius="0"
                                                              BorderWidth="0"
+                                                             InputTransparent="True"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
                                                              VerticalOptions="Center"/>
@@ -269,6 +302,7 @@
                                                              BackgroundColor="#FFFFFF"
                                                              BorderRadius="0"
                                                              BorderWidth="0"
+                                                             InputTransparent="True"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
                                                              VerticalOptions="Center"/>
@@ -298,6 +332,7 @@
                                                              BackgroundColor="#FFFFFF"
                                                              BorderRadius="0"
                                                              BorderWidth="0"
+                                                             InputTransparent="True"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
                                                              VerticalOptions="Center"/>
@@ -518,6 +553,7 @@
                                     BorderWidth="1"
                                     Image="ic_bed.png"
                                     BorderColor="{StaticResource Color_Placeholder}"
+                                    Command="{Binding UploadImageRoom}"
                                     BorderRadius="15"/>
 
                         </StackLayout>
