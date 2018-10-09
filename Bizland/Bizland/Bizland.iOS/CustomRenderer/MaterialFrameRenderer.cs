@@ -30,7 +30,7 @@ namespace Bizland.iOS.CustomRenderer
                 Layer.ShadowColor = Color.FromHex("#dcdde1").ToCGColor();
                 Layer.ShadowOpacity = 0.6f;
                 Layer.ShadowOffset = new SizeF(width: 1, height: 1);
-                Layer.MasksToBounds = false;
+                Layer.MasksToBounds = true;
                 Layer.ShadowPath = UIBezierPath.FromRect(Layer.Bounds).CGPath;
             }
             else
@@ -40,6 +40,7 @@ namespace Bizland.iOS.CustomRenderer
                 this.Layer.Bounds.Inset(0, 0);
                 Layer.BorderColor = Color.FromHex("#dcdde1").ToCGColor();
                 Layer.BorderWidth = 0.5f;
+                Layer.MasksToBounds = true;
             }
         }
     }
