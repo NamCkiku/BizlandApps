@@ -67,6 +67,7 @@ namespace Bizland.Core.Helpers
     }
     public enum ImageType
     {
-        Avatar = 0
+        Avatar = 0,
+        Room=1,
     }
 }
