@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+              Title="{Binding Title}"
+             xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+              xmlns:behaviors="clr-namespace:Bizland.Core;assembly=Bizland.Core"
+             x:Class="Bizland.Views.DistrictPage">
+
+    <ContentPage.Content>
+        <StackLayout Grid.Row="1" Orientation="Vertical">
+            <ListView x:Name="listviewCountry" HasUnevenRows="False" SeparatorVisibility="Default"
+                          ItemsSource="{Binding DistrictCollection}"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding SelectedCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="10" Padding="10">
+                                <Label 
+                                        VerticalOptions="Center"
+                                        Text="{Binding Name}"  />
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

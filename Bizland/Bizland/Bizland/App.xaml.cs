@@ -144,6 +144,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<SelectDatetimePage, SelectDatetimePageViewModel>("SelectDatetimePage");
             containerRegistry.RegisterForNavigation<SelectSexPage, SelectSexPageViewModel>("SelectSexPage");
             containerRegistry.RegisterForNavigation<RoomDetailPage,RoomDetailPageViewModel>("RoomDetailPage");
+            containerRegistry.RegisterForNavigation<DistrictPage, DistrictPageViewModel>("DistrictPage");
         }
     }
 }
