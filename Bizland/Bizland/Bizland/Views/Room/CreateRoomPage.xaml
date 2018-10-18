@@ -6,6 +6,7 @@
              BackgroundColor="#e0e0e0"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              xmlns:behaviors="clr-namespace:Bizland.Core.Behaviors;assembly=Bizland.Core"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.CreateRoomPage">
 
@@ -22,7 +23,38 @@
                     <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
                         <Label FontAttributes="Bold" Text="Kiểu phòng" LineBreakMode="WordWrap"/>
 
-                        <Grid ColumnSpacing="10">
+                        <syncfusion:SfListView x:Name="listView" 
+                                ItemsSource="{Binding ListRoomType}" RowSpacing="5" ColumnSpacing="10" SelectionBackgroundColor="Transparent">
+                            <syncfusion:SfListView.LayoutManager>
+                                <syncfusion:GridLayout SpanCount="2" />
+                            </syncfusion:SfListView.LayoutManager>
+                            <syncfusion:SfListView.ItemTemplate>
+                                <DataTemplate>
+                                    <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                        <Grid RowSpacing="0">
+                                            <Label Grid.Column="0"
+                                               FontSize="12"
+                                               LineBreakMode="TailTruncation"
+                                               Text="{Binding RoomTypeName}"   
+                                               HorizontalTextAlignment="Center"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="CenterAndExpand" />
+                                        </Grid>
+
+                                        <controls:MaterialFrame.Behaviors>
+                                            <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
+                                        </controls:MaterialFrame.Behaviors>
+                                    </controls:MaterialFrame>
+                                </DataTemplate>
+                            </syncfusion:SfListView.ItemTemplate>
+                        </syncfusion:SfListView>
+
+                        <!--<Grid ColumnSpacing="10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="5*"/>
                                 <ColumnDefinition Width="5*"/>
@@ -107,7 +139,7 @@
                                     </Grid>
                                 </controls:MaterialFrame>
                             </StackLayout>
-                        </Grid>
+                        </Grid>-->
 
 
 
@@ -290,6 +322,11 @@
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
+
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PushToDistrictPage}"/>
+                            </StackLayout.GestureRecognizers>
+
                             <Label Text="Quận" FontSize="12"/>
                             <Grid>
                                 <Grid.ColumnDefinitions>
