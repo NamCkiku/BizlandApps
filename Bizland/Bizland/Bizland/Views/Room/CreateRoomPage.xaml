@@ -20,11 +20,15 @@
             <ScrollView Grid.Row="0" BackgroundColor="White">
                 <StackLayout>
 
-                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
+                    <StackLayout BackgroundColor="White" Spacing="10" HeightRequest="150" Padding="15">
                         <Label FontAttributes="Bold" Text="Kiểu phòng" LineBreakMode="WordWrap"/>
 
                         <syncfusion:SfListView x:Name="listView" 
-                                ItemsSource="{Binding ListRoomType}" RowSpacing="5" ColumnSpacing="10" SelectionBackgroundColor="Transparent">
+                                ItemsSource="{Binding ListRoomType}"
+                                               ItemSpacing="5,5,5,0"
+                                               HorizontalOptions="Fill"
+                                               VerticalOptions="Start"
+                                               SelectionBackgroundColor="Transparent">
                             <syncfusion:SfListView.LayoutManager>
                                 <syncfusion:GridLayout SpanCount="2" />
                             </syncfusion:SfListView.LayoutManager>
@@ -54,95 +58,6 @@
                             </syncfusion:SfListView.ItemTemplate>
                         </syncfusion:SfListView>
 
-                        <!--<Grid ColumnSpacing="10">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="5*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <StackLayout Grid.Column="0">
-                                <controls:MaterialFrame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Label Grid.Column="0"
-                                               FontSize="12"
-                                               LineBreakMode="TailTruncation"
-                                               Text="Phòng trọ"   
-                                               HorizontalTextAlignment="Center"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="CenterAndExpand" />
-                                    </Grid>
-
-                                    <controls:MaterialFrame.Behaviors>
-                                        <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
-                                    </controls:MaterialFrame.Behaviors>
-                                </controls:MaterialFrame>
-
-                                <controls:MaterialFrame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                         BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Label Grid.Column="0"
-                                               FontSize="12"
-                                               LineBreakMode="TailTruncation"
-                                               Text="Ở ghép"   
-                                               HorizontalTextAlignment="Center"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="CenterAndExpand" />
-                                    </Grid>
-                                    <controls:MaterialFrame.Behaviors>
-                                        <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
-                                    </controls:MaterialFrame.Behaviors>
-                                </controls:MaterialFrame>
-                            </StackLayout>
-
-
-                            <StackLayout Grid.Column="1">
-                                <controls:MaterialFrame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                         BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Label Grid.Column="0"
-                                               FontSize="12"
-                                               LineBreakMode="TailTruncation"
-                                               Text="Văn Phòng"   
-                                               HorizontalTextAlignment="Center"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="CenterAndExpand" />
-                                    </Grid>
-                                </controls:MaterialFrame>
-
-                                <controls:MaterialFrame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                         BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Label Grid.Column="0"
-                                               FontSize="12"
-                                               LineBreakMode="TailTruncation"
-                                               Text="Chung cư"   
-                                               HorizontalTextAlignment="Center"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="CenterAndExpand" />
-                                    </Grid>
-                                </controls:MaterialFrame>
-                            </StackLayout>
-                        </Grid>-->
-
-
-
                     </StackLayout>
 
                     <StackLayout BackgroundColor="White" Spacing="15" Padding="15">
@@ -150,7 +65,7 @@
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
                             <Label Text="Tên phòng" FontSize="12"/>
-
+                            
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -572,7 +487,7 @@
 
                     <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
                         <Label FontAttributes="Bold" Text="Thêm mô tả" LineBreakMode="WordWrap"/>
-
+                        <Editor HorizontalOptions="Fill" AutoSize="TextChanges"/>
                     </StackLayout>
 
                     <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
