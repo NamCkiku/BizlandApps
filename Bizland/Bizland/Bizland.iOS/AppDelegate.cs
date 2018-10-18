@@ -5,6 +5,7 @@ using Naxam.Controls.Platform.iOS;
 using Prism;
 using Prism.Ioc;
 using SegmentedControl.FormsPlugin.iOS;
+using Syncfusion.ListView.XForms.iOS;
 using Syncfusion.SfPicker.XForms.iOS;
 using UIKit;
 
@@ -34,6 +35,8 @@ namespace Bizland.iOS
             AnimationViewRenderer.Init();
 
             SfPickerRenderer.Init();
+
+            SfListViewRenderer.Init();
 
             LoadApplication(new App(new iOSInitializer()));
 

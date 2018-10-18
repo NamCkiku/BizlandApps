@@ -44,7 +44,7 @@ namespace Bizland.Views
             return false;
         }
 
-        static List<RoomType> _listRoomTypeModel { get; set; }
+        public static List<RoomType> _listRoomTypeModel { get; set; }
 
         public static List<RoomType> ListRoomType
         {
