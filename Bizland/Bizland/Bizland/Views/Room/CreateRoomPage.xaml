@@ -34,7 +34,7 @@
                             </syncfusion:SfListView.LayoutManager>
                             <syncfusion:SfListView.ItemTemplate>
                                 <DataTemplate>
-                                    <controls:MaterialFrame BackgroundColor="White"
+                                    <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -50,10 +50,10 @@
                                                HorizontalOptions="CenterAndExpand" />
                                         </Grid>
 
-                                        <controls:MaterialFrame.Behaviors>
+                                        <Frame.Behaviors>
                                             <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
-                                        </controls:MaterialFrame.Behaviors>
-                                    </controls:MaterialFrame>
+                                        </Frame.Behaviors>
+                                    </Frame>
                                 </DataTemplate>
                             </syncfusion:SfListView.ItemTemplate>
                         </syncfusion:SfListView>
@@ -314,7 +314,7 @@
                             </Grid.ColumnDefinitions>
 
                             <StackLayout Grid.Column="0">
-                                <controls:MaterialFrame BackgroundColor="White"
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -340,8 +340,8 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
-                                <controls:MaterialFrame BackgroundColor="White"
+                                </Frame>
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -367,8 +367,8 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
-                                <controls:MaterialFrame BackgroundColor="White"
+                                </Frame>
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -394,8 +394,8 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
-                                <controls:MaterialFrame BackgroundColor="White"
+                                </Frame>
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -421,12 +421,39 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
+                                </Frame>
+                                <Frame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Giường"      
+                                               FontSize="12"
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_bed.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </Frame>
                             </StackLayout>
 
 
                             <StackLayout Grid.Column="1">
-                                <controls:MaterialFrame BackgroundColor="White"
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -452,8 +479,8 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
-                                <controls:MaterialFrame BackgroundColor="White"
+                                </Frame>
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -479,8 +506,8 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
-                                <controls:MaterialFrame BackgroundColor="White"
+                                </Frame>
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -506,8 +533,8 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
-                                <controls:MaterialFrame BackgroundColor="White"
+                                </Frame>
+                                <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
@@ -533,7 +560,34 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
-                                </controls:MaterialFrame>
+                                </Frame>
+                                <Frame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                               LineBreakMode="TailTruncation"
+                                               Text="An ninh"    
+                                               FontSize="12"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_security.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </Frame>
                                 
                             </StackLayout>
                         </Grid>
