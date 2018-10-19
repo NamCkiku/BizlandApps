@@ -65,7 +65,7 @@
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
                             <Label Text="Tên phòng" FontSize="12"/>
-                            
+
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -336,7 +336,7 @@
 
                                         <Image Grid.Column="1"
                                                 WidthRequest="20"
-                                                Source="ic_bed.png"
+                                                Source="ic_airconditioner.png"
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
@@ -363,7 +363,7 @@
 
                                         <Image Grid.Column="1"
                                                 WidthRequest="20"
-                                                Source="ic_bed.png"
+                                                Source="ic_garage.png"
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
@@ -390,7 +390,34 @@
 
                                         <Image Grid.Column="1"
                                                 WidthRequest="20"
-                                                Source="ic_bed.png"
+                                                Source="ic_washingmachine.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                           LineBreakMode="TailTruncation"
+                                           Text="Tivi"      
+                                               FontSize="12"
+                                           VerticalOptions="CenterAndExpand"             
+                                           HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_tv.png"
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
@@ -421,7 +448,7 @@
 
                                         <Image Grid.Column="1"
                                                 WidthRequest="20"
-                                                Source="ic_bed.png"
+                                                Source="ic_wc.png"
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
@@ -448,7 +475,7 @@
 
                                         <Image Grid.Column="1"
                                                 WidthRequest="20"
-                                                Source="ic_bed.png"
+                                                Source="ic_wifi.png"
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
@@ -475,11 +502,39 @@
 
                                         <Image Grid.Column="1"
                                                 WidthRequest="20"
-                                                Source="ic_bed.png"
+                                                Source="ic_fridge.png"
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
                                     </Grid>
                                 </controls:MaterialFrame>
+                                <controls:MaterialFrame BackgroundColor="White"
+                                                        CornerRadius="15"
+                                                        BorderColor="{StaticResource Color_Placeholder}"
+                                                        VerticalOptions="Start"
+                                                        HasShadow="False"
+                                                        Padding="7">
+                                    <Grid RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <Label Grid.Column="0"
+                                               LineBreakMode="TailTruncation"
+                                               Text="Nhà bếp"    
+                                               FontSize="12"
+                                               VerticalOptions="CenterAndExpand"             
+                                               HorizontalOptions="FillAndExpand" />
+
+                                        <Image Grid.Column="1"
+                                                WidthRequest="20"
+                                                Source="ic_kitchen.png"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center" />
+                                    </Grid>
+                                </controls:MaterialFrame>
+                                
                             </StackLayout>
                         </Grid>
 
@@ -488,6 +543,11 @@
                     <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
                         <Label FontAttributes="Bold" Text="Thêm mô tả" LineBreakMode="WordWrap"/>
                         <Editor HorizontalOptions="Fill" AutoSize="TextChanges"/>
+                        <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <BoxView.IsVisible>
+                                <OnPlatform iOS="true" Android="False"/>
+                            </BoxView.IsVisible>
+                        </BoxView>
                     </StackLayout>
 
                     <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
