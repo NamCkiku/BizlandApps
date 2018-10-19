@@ -6,10 +6,15 @@
              BackgroundColor="#e0e0e0"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              xmlns:behaviors="clr-namespace:Bizland.Core.Behaviors;assembly=Bizland.Core"
+             xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core"
              xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              Title="{Binding Title}"
              x:Class="Bizland.Views.CreateRoomPage">
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:FirstValidationErrorConverter x:Key="FirstValidationErrorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid RowSpacing="1">
             <Grid.RowDefinitions>
@@ -78,11 +83,21 @@
                                                              BorderRadius="0"
                                                              BorderWidth="0"
                                                              Grid.Column="0"
+                                                             Text="{Binding RoomName.Value}"
                                                              VerticalOptions="Center"
                                                              HorizontalOptions="FillAndExpand">
                                     <controls:RoundedSearchEntry.Behaviors>
                                         <behaviors:EntryLengthValidatorBehavior MaxLength="50" />
                                     </controls:RoundedSearchEntry.Behaviors>
+                                    <controls:RoundedSearchEntry.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Entry"
+                                                Binding="{Binding RoomName.IsValid}"
+                                                Value="False">
+                                            <Setter Property="PlaceholderColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </controls:RoundedSearchEntry.Triggers>
                                 </controls:RoundedSearchEntry>
                             </Grid>
 
@@ -104,12 +119,22 @@
                                                              BorderRadius="0"
                                                              BorderWidth="0"
                                                              Keyboard="Numeric"
+                                                             Text="{Binding PriceRoom.Value}"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
                                                              VerticalOptions="Center">
                                     <controls:RoundedSearchEntry.Behaviors>
                                         <behaviors:EntryLengthValidatorBehavior MaxLength="11" />
                                     </controls:RoundedSearchEntry.Behaviors>
+                                    <controls:RoundedSearchEntry.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Entry"
+                                                Binding="{Binding PriceRoom.IsValid}"
+                                                Value="False">
+                                            <Setter Property="PlaceholderColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </controls:RoundedSearchEntry.Triggers>
                                 </controls:RoundedSearchEntry>
 
                                 <Label Text="VNĐ" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1"/>
@@ -223,6 +248,7 @@
                                                              InputTransparent="True"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
+                                                             Text="{Binding Province.Name}"
                                                              VerticalOptions="Center"/>
                                 <Image Grid.Column="1"
                                                 WidthRequest="10"
@@ -256,6 +282,7 @@
                                                              BorderWidth="0"
                                                              InputTransparent="True"
                                                              HorizontalOptions="FillAndExpand"
+                                                             Text="{Binding District.Name}"
                                                              Grid.Column="0"
                                                              VerticalOptions="Center"/>
 
@@ -588,7 +615,7 @@
                                                 VerticalOptions="Center" />
                                     </Grid>
                                 </Frame>
-                                
+
                             </StackLayout>
                         </Grid>
 
@@ -637,7 +664,7 @@
                            VerticalOptions="Center"
                            HorizontalTextAlignment="Center"/>
 
-                <Button Text="ĐĂNG PHÒNG NGAY" FontAttributes="Bold" BorderRadius="15"/>
+                <Button Text="ĐĂNG PHÒNG NGAY" Command="{Binding CreateRoom}" FontAttributes="Bold" BorderRadius="15"/>
 
             </StackLayout>
         </Grid>
