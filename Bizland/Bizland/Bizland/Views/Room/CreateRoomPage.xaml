@@ -47,15 +47,6 @@
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
                                                         Padding="7">
-                                        <Frame.Triggers>
-                                            <DataTrigger 
-                                                TargetType="Frame"
-                                                Binding="{Binding RoomType.IsValid}"
-                                                Value="False">
-                                                <Setter Property="BorderColor" 
-                                                    Value="Red" />
-                                            </DataTrigger>
-                                        </Frame.Triggers>
                                         <Grid RowSpacing="0">
                                             <Label Grid.Column="0"
                                                FontSize="12"
@@ -76,6 +67,15 @@
                                             </Label>
                                         </Grid>
 
+                                        <Frame.Triggers>
+                                            <DataTrigger 
+                                                TargetType="Frame"
+                                                Binding="{Binding RoomType.IsValid}"
+                                                Value="False">
+                                                <Setter Property="BorderColor" 
+                                                    Value="Red" />
+                                            </DataTrigger>
+                                        </Frame.Triggers>
                                         <Frame.Behaviors>
                                             <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
                                         </Frame.Behaviors>
@@ -90,7 +90,17 @@
                         <Label FontAttributes="Bold" Text="Thông tin phòng"/>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
-                            <Label Text="Tên phòng" FontSize="12"/>
+                            <Label Text="Tên phòng" FontSize="12">
+                                <Label.Triggers>
+                                    <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding RoomName.IsValid}"
+                                                Value="False">
+                                        <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
 
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -110,6 +120,7 @@
                                     <controls:RoundedSearchEntry.Behaviors>
                                         <behaviors:EntryLengthValidatorBehavior MaxLength="50" />
                                     </controls:RoundedSearchEntry.Behaviors>
+
                                     <controls:RoundedSearchEntry.Triggers>
                                         <DataTrigger 
                                                 TargetType="Entry"
@@ -123,11 +134,31 @@
                             </Grid>
 
 
-                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <BoxView.Triggers>
+                                    <DataTrigger 
+                                                TargetType="BoxView"
+                                                Binding="{Binding RoomName.IsValid}"
+                                                Value="False">
+                                        <Setter Property="BackgroundColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </BoxView.Triggers>
+                            </BoxView>
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
-                            <Label Text="Giá phòng (/tháng)" FontSize="12"/>
+                            <Label Text="Giá phòng (/tháng)" FontSize="12">
+                                <Label.Triggers>
+                                    <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding PriceRoom.IsValid}"
+                                                Value="False">
+                                        <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -158,11 +189,31 @@
                                     </controls:RoundedSearchEntry.Triggers>
                                 </controls:RoundedSearchEntry>
 
-                                <Label Text="VNĐ" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1"/>
+                                <Label Text="VNĐ" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1">
+                                    <Label.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding PriceRoom.IsValid}"
+                                                Value="False">
+                                            <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
                             </Grid>
 
 
-                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <BoxView.Triggers>
+                                    <DataTrigger 
+                                                TargetType="BoxView"
+                                                Binding="{Binding PriceRoom.IsValid}"
+                                                Value="False">
+                                        <Setter Property="BackgroundColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </BoxView.Triggers>
+                            </BoxView>
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">

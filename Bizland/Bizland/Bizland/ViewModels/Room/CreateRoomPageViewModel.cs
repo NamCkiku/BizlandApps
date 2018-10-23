@@ -331,8 +331,8 @@ namespace Bizland.ViewModels
                                     item.Selected = Color.White;
                                 }
                             }
-                            RoomType.Value = eventArgs;
                             eventArgs.Selected = Color.FromHex("#FE9D1A");
+                            RoomType.Value = eventArgs;
                         }
                         catch (Exception ex)
                         {
