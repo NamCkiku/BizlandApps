@@ -50,6 +50,7 @@ namespace Bizland.ViewModels
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
             GetRoomTypeCommand.Execute(null);
+            GetConvenientCommand.Execute(null);
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -138,6 +139,16 @@ namespace Bizland.ViewModels
             }
         }
 
+        private ObservableCollection<Convenient> _listConvenient = new ObservableCollection<Convenient>();
+        public ObservableCollection<Convenient> ListConvenient
+        {
+            get { return _listConvenient; }
+            set
+            {
+                _listConvenient = value;
+                RaisePropertyChanged(() => ListConvenient);
+            }
+        }
 
         private ValidatableObject<RoomType> _roomType = null;
         public ValidatableObject<RoomType> RoomType
@@ -232,6 +243,20 @@ namespace Bizland.ViewModels
             }
         }
 
+        private ObservableCollection<string> _convenient;
+        public ObservableCollection<string> ConvenientObject
+        {
+            get
+            {
+                return _convenient;
+            }
+            set
+            {
+                _convenient = value;
+                RaisePropertyChanged(() => ConvenientObject);
+            }
+        }
+
         #endregion
 
         #region Command
@@ -256,6 +281,28 @@ namespace Bizland.ViewModels
                                 RoomTypePage._listRoomTypeModel = listData;
                                 ListRoomType = listData.ToObservableCollection();
                             }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                    }
+                });
+            }
+        }
+
+        public Command GetConvenientCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    try
+                    {
+                        var lstConvenient = Convenient.All;
+                        if (lstConvenient != null && lstConvenient.Count > 0)
+                        {
+                            ListConvenient = lstConvenient.ToObservableCollection();
                         }
                     }
                     catch (Exception ex)
@@ -428,6 +475,54 @@ namespace Bizland.ViewModels
                 });
             }
         }
+
+        public Command SelectItemConvenientCommand
+        {
+            get
+            {
+                return new Command<object>((args) =>
+                {
+                    if (args != null)
+                    {
+                        if (IsBusy)
+                        {
+                            return;
+                        }
+                        IsBusy = true;
+                        try
+                        {
+                            var eventArgs = (args as Syncfusion.ListView.XForms.ItemTappedEventArgs).ItemData as Convenient;
+                            if (ConvenientObject != null && ConvenientObject.Count > 0)
+                            {
+                                if (ConvenientObject.Contains(eventArgs.Name))
+                                {
+                                    ConvenientObject.Remove(eventArgs.Name);
+                                }
+                                else
+                                {
+                                    ConvenientObject.Add(eventArgs.Name);
+                                }
+                            }
+                            else
+                            {
+                                ConvenientObject = new ObservableCollection<string>();
+                                ConvenientObject.Add(eventArgs.Name);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                        }
+                        finally
+                        {
+                            IsBusy = false;
+                        }
+                    }
+                });
+            }
+        }
+
+
 
         #endregion
 
