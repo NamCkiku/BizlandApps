@@ -217,7 +217,17 @@
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
-                            <Label Text="Diện tích phòng" FontSize="12"/>
+                            <Label Text="Diện tích phòng" FontSize="12">
+                                <Label.Triggers>
+                                    <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding Acreage.IsValid}"
+                                                Value="False">
+                                        <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -232,21 +242,61 @@
                                                              Keyboard="Numeric"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
+                                                             Text="{Binding Acreage.Value}"
                                                              VerticalOptions="Center">
                                     <controls:RoundedSearchEntry.Behaviors>
                                         <behaviors:EntryLengthValidatorBehavior MaxLength="5" />
                                     </controls:RoundedSearchEntry.Behaviors>
+                                    <controls:RoundedSearchEntry.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Entry"
+                                                Binding="{Binding Acreage.IsValid}"
+                                                Value="False">
+                                            <Setter Property="PlaceholderColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </controls:RoundedSearchEntry.Triggers>
                                 </controls:RoundedSearchEntry>
 
-                                <Label Text="m2" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1"/>
+                                <Label Text="m2" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1">
+                                    <Label.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding Acreage.IsValid}"
+                                                Value="False">
+                                            <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
                             </Grid>
 
 
-                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <BoxView.Triggers>
+                                    <DataTrigger 
+                                                TargetType="BoxView"
+                                                Binding="{Binding Acreage.IsValid}"
+                                                Value="False">
+                                        <Setter Property="BackgroundColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </BoxView.Triggers>
+                            </BoxView>
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
-                            <Label Text="Số điện thoại" FontSize="12"/>
+                            <Label Text="Số điện thoại" FontSize="12">
+                                <Label.Triggers>
+                                    <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding PhoneNumber.IsValid}"
+                                                Value="False">
+                                        <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -261,20 +311,50 @@
                                                              Keyboard="Telephone"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
+                                                             Text="{Binding PhoneNumber.Value}"
                                                              VerticalOptions="Center">
                                     <controls:RoundedSearchEntry.Behaviors>
                                         <behaviors:EntryLengthValidatorBehavior MaxLength="13" />
                                     </controls:RoundedSearchEntry.Behaviors>
+                                    <controls:RoundedSearchEntry.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Entry"
+                                                Binding="{Binding PhoneNumber.IsValid}"
+                                                Value="False">
+                                            <Setter Property="PlaceholderColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </controls:RoundedSearchEntry.Triggers>
                                 </controls:RoundedSearchEntry>
 
                             </Grid>
 
 
-                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <BoxView.Triggers>
+                                    <DataTrigger 
+                                                TargetType="BoxView"
+                                                Binding="{Binding PhoneNumber.IsValid}"
+                                                Value="False">
+                                        <Setter Property="BackgroundColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </BoxView.Triggers>
+                            </BoxView>
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
-                            <Label Text="Địa chỉ" FontSize="12"/>
+                            <Label Text="Địa chỉ" FontSize="12">
+                                <Label.Triggers>
+                                    <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding Address.IsValid}"
+                                                Value="False">
+                                        <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -286,18 +366,38 @@
                                                              BackgroundColor="#FFFFFF"
                                                              BorderRadius="0"
                                                              BorderWidth="0"
+                                                             Text="{Binding Address.Value}"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
                                                              VerticalOptions="Center">
                                     <controls:RoundedSearchEntry.Behaviors>
                                         <behaviors:EntryLengthValidatorBehavior MaxLength="50" />
                                     </controls:RoundedSearchEntry.Behaviors>
+                                    <controls:RoundedSearchEntry.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Entry"
+                                                Binding="{Binding Address.IsValid}"
+                                                Value="False">
+                                            <Setter Property="PlaceholderColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </controls:RoundedSearchEntry.Triggers>
                                 </controls:RoundedSearchEntry>
 
                             </Grid>
 
 
-                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <BoxView.Triggers>
+                                    <DataTrigger 
+                                                TargetType="BoxView"
+                                                Binding="{Binding Address.IsValid}"
+                                                Value="False">
+                                        <Setter Property="BackgroundColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </BoxView.Triggers>
+                            </BoxView>
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
@@ -305,7 +405,17 @@
                                 <TapGestureRecognizer Command="{Binding PushToProvincePage}"/>
                             </StackLayout.GestureRecognizers>
 
-                            <Label Text="Thành phố" FontSize="12"/>
+                            <Label Text="Thành phố" FontSize="12">
+                                <Label.Triggers>
+                                    <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding Province.IsValid}"
+                                                Value="False">
+                                        <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -321,7 +431,17 @@
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
                                                              Text="{Binding Province.Name}"
-                                                             VerticalOptions="Center"/>
+                                                             VerticalOptions="Center">
+                                    <controls:RoundedSearchEntry.Triggers>
+                                        <DataTrigger 
+                                                TargetType="Entry"
+                                                Binding="{Binding Province.IsValid}"
+                                                Value="False">
+                                            <Setter Property="PlaceholderColor" 
+                                                    Value="Red" />
+                                        </DataTrigger>
+                                    </controls:RoundedSearchEntry.Triggers>
+                                </controls:RoundedSearchEntry>
                                 <Image Grid.Column="1"
                                                 WidthRequest="10"
                                                 Source="ic_sort.png"
@@ -331,7 +451,17 @@
                             </Grid>
 
 
-                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <BoxView.Triggers>
+                                    <DataTrigger 
+                                                TargetType="BoxView"
+                                                Binding="{Binding Province.IsValid}"
+                                                Value="False">
+                                        <Setter Property="BackgroundColor" 
+                                                    Value="Red" />
+                                    </DataTrigger>
+                                </BoxView.Triggers>
+                            </BoxView>
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="FillAndExpand">
@@ -694,12 +824,31 @@
                     </StackLayout>
 
                     <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
-                        <Label FontAttributes="Bold" Text="Thêm mô tả" LineBreakMode="WordWrap"/>
-                        <Editor HorizontalOptions="Fill" AutoSize="TextChanges"/>
+                        <Label FontAttributes="Bold" Text="Thêm mô tả" LineBreakMode="WordWrap">
+                            <Label.Triggers>
+                                <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding RoomName.IsValid}"
+                                                Value="False">
+                                    <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                        <Editor HorizontalOptions="Fill" Text="{Binding Note.Value}" AutoSize="TextChanges"/>
                         <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                             <BoxView.IsVisible>
                                 <OnPlatform iOS="true" Android="False"/>
                             </BoxView.IsVisible>
+                            <BoxView.Triggers>
+                                <DataTrigger 
+                                                TargetType="BoxView"
+                                                Binding="{Binding Note.IsValid}"
+                                                Value="False">
+                                    <Setter Property="BackgroundColor" 
+                                                    Value="Red" />
+                                </DataTrigger>
+                            </BoxView.Triggers>
                         </BoxView>
                     </StackLayout>
 
