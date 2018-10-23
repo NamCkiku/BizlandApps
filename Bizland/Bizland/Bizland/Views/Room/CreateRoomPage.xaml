@@ -30,21 +30,32 @@
 
                         <syncfusion:SfListView x:Name="listView" 
                                 ItemsSource="{Binding ListRoomType}"
-                                               ItemSpacing="5,5,5,0"
+                                               ItemSpacing="5,0,5,0"
+                                               RowSpacing="0"
                                                HorizontalOptions="Fill"
-                                               VerticalOptions="Start"
-                                               SelectionBackgroundColor="Transparent">
+                                               SelectionBackgroundColor="Transparent"
+                                               TapCommand="{Binding SelectItemRoomTypeCommand}"
+                                               VerticalOptions="Start">
                             <syncfusion:SfListView.LayoutManager>
                                 <syncfusion:GridLayout SpanCount="2" />
                             </syncfusion:SfListView.LayoutManager>
                             <syncfusion:SfListView.ItemTemplate>
                                 <DataTemplate>
-                                    <Frame BackgroundColor="White"
+                                    <Frame BackgroundColor="{Binding Selected}"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
                                                         Padding="7">
+                                        <Frame.Triggers>
+                                            <DataTrigger 
+                                                TargetType="Frame"
+                                                Binding="{Binding RoomType.IsValid}"
+                                                Value="False">
+                                                <Setter Property="BorderColor" 
+                                                    Value="Red" />
+                                            </DataTrigger>
+                                        </Frame.Triggers>
                                         <Grid RowSpacing="0">
                                             <Label Grid.Column="0"
                                                FontSize="12"
@@ -52,7 +63,17 @@
                                                Text="{Binding RoomTypeName}"   
                                                HorizontalTextAlignment="Center"
                                                VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="CenterAndExpand" />
+                                               HorizontalOptions="CenterAndExpand" >
+                                                <Label.Triggers>
+                                                    <DataTrigger 
+                                                TargetType="Label"
+                                                Binding="{Binding RoomType.IsValid}"
+                                                Value="False">
+                                                        <Setter Property="TextColor" 
+                                                    Value="Red" />
+                                                    </DataTrigger>
+                                                </Label.Triggers>
+                                            </Label>
                                         </Grid>
 
                                         <Frame.Behaviors>

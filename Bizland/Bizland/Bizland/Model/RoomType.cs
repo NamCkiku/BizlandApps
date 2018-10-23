@@ -1,5 +1,6 @@
 ﻿using Bizland.ViewModels;
 using System;
+using Xamarin.Forms;
 
 namespace Bizland.Model
 {
@@ -37,8 +38,8 @@ namespace Bizland.Model
 
         public bool Status { get; set; }
 
-        private double _Selected = 0.5;
-        public double Selected
+        private Color _Selected = Color.White;
+        public Color Selected
         {
             get
             {
