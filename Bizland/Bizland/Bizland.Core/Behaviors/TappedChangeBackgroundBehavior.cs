@@ -32,14 +32,14 @@ namespace Bizland.Core.Behaviors
             var frame = (Frame)sender;
             if (frame != null)
             {
-                if(frame.BackgroundColor == Color.White)
-                {
-                    frame.BackgroundColor = Background;
-                }
-                else
-                {
-                    frame.BackgroundColor = Color.White;
-                }
+                //if(frame.BackgroundColor == Color.White)
+                //{
+                //    frame.BackgroundColor = Background;
+                //}
+                //else
+                //{
+                //    frame.BackgroundColor = Color.White;
+                //}
 
                 await frame.ScaleTo(0.9, 50, Easing.Linear);
                 await Task.Delay(100);

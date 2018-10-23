@@ -31,6 +31,7 @@ namespace Bizland.ViewModels
 
             _roomName = new ValidatableObject<string>();
             _priceRoom = new ValidatableObject<int>();
+            _roomType = new ValidatableObject<RoomType>();
             AddValidations();
         }
         #region private Method
@@ -61,6 +62,7 @@ namespace Bizland.ViewModels
         {
             _roomName.Validations.Add(new IsNotNullOrEmptyRule<string> { ValidationMessage = "Điền đầy đủ các thông tin để đăng phòng" });
             _priceRoom.Validations.Add(new IsNotNullOrEmptyRule<int> { ValidationMessage = "Điền đầy đủ các thông tin để đăng phòng" });
+            _roomType.Validations.Add(new IsNotNullOrEmptyRule<RoomType> { ValidationMessage = "Điền đầy đủ các thông tin để đăng phòng" });
         }
 
         private bool Validate()
@@ -68,8 +70,9 @@ namespace Bizland.ViewModels
 
             bool isValidRoomName = _roomName.Validate();
             bool isValidPrice = _priceRoom.Validate();
+            bool isValidRoomType = _roomType.Validate();
 
-            return isValidRoomName && isValidPrice;
+            return isValidRoomName && isValidPrice && isValidRoomType;
         }
         #endregion
 
@@ -116,6 +119,17 @@ namespace Bizland.ViewModels
             }
         }
 
+
+        private ValidatableObject<RoomType> _roomType = null;
+        public ValidatableObject<RoomType> RoomType
+        {
+            get { return _roomType; }
+            set
+            {
+                _roomType = value;
+                RaisePropertyChanged(() => RoomType);
+            }
+        }
 
         private ValidatableObject<string> _roomName;
         public ValidatableObject<string> RoomName
@@ -293,6 +307,45 @@ namespace Bizland.ViewModels
             }
         }
 
+
+        public Command SelectItemRoomTypeCommand
+        {
+            get
+            {
+                return new Command<object>((args) =>
+                {
+                    if (args != null)
+                    {
+                        if (IsBusy)
+                        {
+                            return;
+                        }
+                        IsBusy = true;
+                        try
+                        {
+                            var eventArgs = (args as Syncfusion.ListView.XForms.ItemTappedEventArgs).ItemData as RoomType;
+                            foreach (var item in ListRoomType)
+                            {
+                                if (item.Selected == Color.FromHex("#FE9D1A"))
+                                {
+                                    item.Selected = Color.White;
+                                }
+                            }
+                            RoomType.Value = eventArgs;
+                            eventArgs.Selected = Color.FromHex("#FE9D1A");
+                        }
+                        catch (Exception ex)
+                        {
+                            Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+                        }
+                        finally
+                        {
+                            IsBusy = false;
+                        }
+                    }
+                });
+            }
+        }
 
         #endregion
 
