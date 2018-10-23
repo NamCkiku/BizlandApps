@@ -12,12 +12,23 @@ namespace Bizland.Core.Behaviors
               declaringType: typeof(TappedChangeBackgroundBehavior),
               defaultValue: Color.White);
 
+        public static readonly BindableProperty IsChangeBackgroundProperty =
+          BindableProperty.Create(propertyName: nameof(IsChangeBackground),
+              returnType: typeof(bool),
+              declaringType: typeof(TappedChangeBackgroundBehavior),
+              defaultValue: true);
+
         public Color Background
         {
             get { return (Color)GetValue(BackgroundProperty); }
             set { SetValue(BackgroundProperty, value); }
         }
 
+        public bool IsChangeBackground
+        {
+            get { return (bool)GetValue(IsChangeBackgroundProperty); }
+            set { SetValue(IsChangeBackgroundProperty, value); }
+        }
         protected override void OnAttachedTo(Frame bindable)
         {
             base.OnAttachedTo(bindable);
@@ -32,14 +43,18 @@ namespace Bizland.Core.Behaviors
             var frame = (Frame)sender;
             if (frame != null)
             {
-                //if(frame.BackgroundColor == Color.White)
-                //{
-                //    frame.BackgroundColor = Background;
-                //}
-                //else
-                //{
-                //    frame.BackgroundColor = Color.White;
-                //}
+                if (IsChangeBackground)
+                {
+                    if (frame.BackgroundColor == Color.White)
+                    {
+                        frame.BackgroundColor = Background;
+                    }
+                    else
+                    {
+                        frame.BackgroundColor = Color.White;
+                    }
+                }
+
 
                 await frame.ScaleTo(0.9, 50, Easing.Linear);
                 await Task.Delay(100);

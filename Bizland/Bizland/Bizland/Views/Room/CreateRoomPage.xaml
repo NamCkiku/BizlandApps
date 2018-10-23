@@ -28,8 +28,7 @@
                     <StackLayout BackgroundColor="White" Spacing="10" HeightRequest="150" Padding="15">
                         <Label FontAttributes="Bold" Text="Kiểu phòng" LineBreakMode="WordWrap"/>
 
-                        <syncfusion:SfListView x:Name="listView" 
-                                ItemsSource="{Binding ListRoomType}"
+                        <syncfusion:SfListView ItemsSource="{Binding ListRoomType}"
                                                ItemSpacing="5,0,5,0"
                                                RowSpacing="0"
                                                HorizontalOptions="Fill"
@@ -77,7 +76,7 @@
                                             </DataTrigger>
                                         </Frame.Triggers>
                                         <Frame.Behaviors>
-                                            <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
+                                            <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" IsChangeBackground="False" />
                                         </Frame.Behaviors>
                                     </Frame>
                                 </DataTemplate>
@@ -430,7 +429,7 @@
                                                              InputTransparent="True"
                                                              HorizontalOptions="FillAndExpand"
                                                              Grid.Column="0"
-                                                             Text="{Binding Province.Name}"
+                                                             Text="{Binding Province.Value.Name}"
                                                              VerticalOptions="Center">
                                     <controls:RoundedSearchEntry.Triggers>
                                         <DataTrigger 
@@ -532,309 +531,59 @@
 
                     </StackLayout>
 
-                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
+                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15"  HeightRequest="300" >
                         <Label FontAttributes="Bold" Text="Tiện ích" LineBreakMode="WordWrap"/>
 
-
-                        <Grid ColumnSpacing="10">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="5*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <StackLayout Grid.Column="0">
-                                <Frame BackgroundColor="White"
+                        <syncfusion:SfListView ItemsSource="{Binding ListConvenient}"
+                                               ItemSpacing="5,0,5,0"
+                                               RowSpacing="0"
+                                               HorizontalOptions="Fill"
+                                               SelectionBackgroundColor="Transparent"
+                                               TapCommand="{Binding SelectItemConvenientCommand}"
+                                               VerticalOptions="Start">
+                            <syncfusion:SfListView.LayoutManager>
+                                <syncfusion:GridLayout SpanCount="2" />
+                            </syncfusion:SfListView.LayoutManager>
+                            <syncfusion:SfListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame BackgroundColor="White"
                                                         CornerRadius="15"
                                                         BorderColor="{StaticResource Color_Placeholder}"
                                                         VerticalOptions="Start"
                                                         HasShadow="False"
                                                         Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
+                                        <Grid RowSpacing="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
 
 
-                                        <Label Grid.Column="0"
+                                            <Label Grid.Column="0"
                                            LineBreakMode="TailTruncation"
-                                           Text="Máy lạnh"   
+                                           Text="{Binding Name}"   
                                                FontSize="12"
                                            VerticalOptions="CenterAndExpand"             
                                            HorizontalOptions="FillAndExpand" />
 
-                                        <Image Grid.Column="1"
+                                            <Image Grid.Column="1"
                                                 WidthRequest="20"
-                                                Source="ic_airconditioner.png"
+                                                Source="{Binding Icon}"
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                               LineBreakMode="TailTruncation"
-                                               Text="Chỗ để xe"   
-                                               FontSize="12"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_garage.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                           LineBreakMode="TailTruncation"
-                                           Text="Máy giặt"      
-                                               FontSize="12"
-                                           VerticalOptions="CenterAndExpand"             
-                                           HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_washingmachine.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                           LineBreakMode="TailTruncation"
-                                           Text="Tivi"      
-                                               FontSize="12"
-                                           VerticalOptions="CenterAndExpand"             
-                                           HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_tv.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                           LineBreakMode="TailTruncation"
-                                           Text="Giường"      
-                                               FontSize="12"
-                                           VerticalOptions="CenterAndExpand"             
-                                           HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_bed.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                            </StackLayout>
-
-
-                            <StackLayout Grid.Column="1">
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                           LineBreakMode="TailTruncation"
-                                           Text="WC riêng"   
-                                               FontSize="12"
-                                           VerticalOptions="CenterAndExpand"             
-                                           HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_wc.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                           LineBreakMode="TailTruncation"
-                                           Text="Wifi"  
-                                               FontSize="12"
-                                           VerticalOptions="CenterAndExpand"             
-                                           HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_wifi.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                               LineBreakMode="TailTruncation"
-                                               Text="Tủ lạnh"    
-                                               FontSize="12"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_fridge.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                               LineBreakMode="TailTruncation"
-                                               Text="Nhà bếp"    
-                                               FontSize="12"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_kitchen.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-                                <Frame BackgroundColor="White"
-                                                        CornerRadius="15"
-                                                        BorderColor="{StaticResource Color_Placeholder}"
-                                                        VerticalOptions="Start"
-                                                        HasShadow="False"
-                                                        Padding="7">
-                                    <Grid RowSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-
-                                        <Label Grid.Column="0"
-                                               LineBreakMode="TailTruncation"
-                                               Text="An ninh"    
-                                               FontSize="12"
-                                               VerticalOptions="CenterAndExpand"             
-                                               HorizontalOptions="FillAndExpand" />
-
-                                        <Image Grid.Column="1"
-                                                WidthRequest="20"
-                                                Source="ic_security.png"
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
-
-                            </StackLayout>
-                        </Grid>
+                                        </Grid>
+                                        <Frame.Behaviors>
+                                            <behaviors:TappedChangeBackgroundBehavior Background="{StaticResource Color_Button}" />
+                                        </Frame.Behaviors>
+                                    </Frame>
+                                </DataTemplate>
+                            </syncfusion:SfListView.ItemTemplate>
+                        </syncfusion:SfListView>
 
                     </StackLayout>
 
                     <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
-                        <Label FontAttributes="Bold" Text="Thêm mô tả" LineBreakMode="WordWrap">
-                            <Label.Triggers>
-                                <DataTrigger 
-                                                TargetType="Label"
-                                                Binding="{Binding RoomName.IsValid}"
-                                                Value="False">
-                                    <Setter Property="TextColor" 
-                                                    Value="Red" />
-                                </DataTrigger>
-                            </Label.Triggers>
-                        </Label>
+                        <Label FontAttributes="Bold" Text="Thêm mô tả" LineBreakMode="WordWrap"/>
                         <Editor HorizontalOptions="Fill" Text="{Binding Note.Value}" AutoSize="TextChanges"/>
                         <BoxView HeightRequest="0.5" BackgroundColor="Gray" Opacity="0.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                             <BoxView.IsVisible>
