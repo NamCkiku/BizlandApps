@@ -116,11 +116,11 @@ namespace Bizland.iOS.DependencyService
             }
         }
 
-        private ImageSource _pickAsyncResult;
+        private List<ImageSource> _pickAsyncResult;
         private readonly EventWaitHandle _waitHandle = new AutoResetEvent(false);
-        public Task<ImageSource> PickImageAsync()
+        public Task<List<ImageSource>> PickImageAsync()
         {
-            _pickAsyncResult = null;
+            _pickAsyncResult = new List<ImageSource>();
 
             var picker = new GMImagePickerController
             {
@@ -143,13 +143,10 @@ namespace Bizland.iOS.DependencyService
                 NavigationBarTextColor = UIColor.Blue,
                 NavigationBarTintColor = UIColor.White,
                 PickerBackgroundColor = UIColor.White,
-                ToolbarBackgroundColor = UIColor.White,
-                ToolbarBarTintColor = UIColor.Blue,
+                ToolbarBarTintColor = UIColor.White,
                 ToolbarTextColor = UIColor.Blue,
                 PickerStatusBarStyle = UIStatusBarStyle.Default,
-                GridSortOrder = SortOrder.Descending,
-                AdditionalToolbarItems = new UIBarButtonItem[] { new UIBarButtonItem(UIBarButtonSystemItem.Bookmarks), new UIBarButtonItem("Custom", UIBarButtonItemStyle.Bordered, (s, e) => { Console.WriteLine("test"); }) },
-
+                GridSortOrder = SortOrder.Descending
             };
 
             if (_preselectedAssets != null)
@@ -173,10 +170,11 @@ namespace Bizland.iOS.DependencyService
                     null,
                     (image, info) =>
                     {
-                        _pickAsyncResult = ImageSource.FromStream(() => image.AsPNG().AsStream());
-                        _waitHandle.Set();
+                        var imagesource = ImageSource.FromStream(() => image.AsPNG().AsStream());
+                        _pickAsyncResult.Add(imagesource);
                     });
                 }
+                _waitHandle.Set();
             };
 
 

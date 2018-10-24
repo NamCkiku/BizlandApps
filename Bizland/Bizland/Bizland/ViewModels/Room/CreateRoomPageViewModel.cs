@@ -1,6 +1,5 @@
 ﻿using Bizland.ApiService;
 using Bizland.Core;
-using Bizland.Core.Helpers;
 using Bizland.Events;
 using Bizland.Model;
 using Bizland.Views;
@@ -257,6 +256,17 @@ namespace Bizland.ViewModels
             }
         }
 
+        private ObservableCollection<Xamarin.Forms.ImageSource> _imageSource;
+
+        public ObservableCollection<Xamarin.Forms.ImageSource> ImageSource
+        {
+            get { return _imageSource; }
+            set
+            {
+                _imageSource = value;
+                RaisePropertyChanged(() => ImageSource);
+            }
+        }
         #endregion
 
         #region Command
@@ -378,6 +388,8 @@ namespace Bizland.ViewModels
             }
         }
 
+
+
         public Command UploadImageRoom
         {
             get
@@ -391,7 +403,12 @@ namespace Bizland.ViewModels
                     IsBusy = true;
                     try
                     {
-                        string localPath = await Core.Helpers.UploadImageHelper.UploadImage(ImageType.Room);
+                        var lstSource = await Xamarin.Forms.DependencyService.Get<IMediaService>().PickImageAsync();
+                        if (lstSource != null && lstSource.Count > 0)
+                        {
+                            ImageSource = lstSource.ToObservableCollection();
+                        }
+
                     }
                     catch (Exception ex)
                     {

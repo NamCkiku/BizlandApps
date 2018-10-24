@@ -98,7 +98,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-
+           
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -141,17 +141,7 @@ namespace Bizland.ViewModels
             }
         }
 
-        private Xamarin.Forms.ImageSource _imageSource;
 
-        public Xamarin.Forms.ImageSource ImageSource
-        {
-            get { return _imageSource; }
-            set
-            {
-                _imageSource = value;
-                RaisePropertyChanged(() => ImageSource);
-            }
-        }
         #endregion
 
         #region Command
@@ -161,9 +151,7 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    //await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
-
-                    ImageSource = await Xamarin.Forms.DependencyService.Get<IMediaService>().PickImageAsync();
+                    await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
                 });
             }
         }
