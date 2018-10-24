@@ -153,7 +153,7 @@ namespace Bizland.ViewModels
                 {
                     //await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
 
-                    Xamarin.Forms.DependencyService.Get<IMediaService>().OpenGallery();
+                    var source = Xamarin.Forms.DependencyService.Get<IMediaService>().PickImageAsync();
                 });
             }
         }
