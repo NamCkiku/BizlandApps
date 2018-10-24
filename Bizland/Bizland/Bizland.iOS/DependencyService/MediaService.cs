@@ -19,7 +19,7 @@ namespace Bizland.iOS.DependencyService
         {
             throw new System.NotImplementedException();
         }
-        private PHAsset[] _preselectedAssets;
+        private readonly PHAsset[] _preselectedAssets;
         public void OpenGallery()
         {
             var picker = new GMImagePickerController
@@ -82,45 +82,30 @@ namespace Bizland.iOS.DependencyService
             Console.WriteLine("User canceled picking image.");
         }
 
-        async void Picker_FinishedPickingAssets(object sender, MultiAssetEventArgs args)
+        private void Picker_FinishedPickingAssets(object sender, MultiAssetEventArgs args)
         {
+            _pickAsyncResult = new List<ImageSource>();
             PHImageManager imageManager = new PHImageManager();
-
-            _preselectedAssets = args.Assets;
-
-            PHImageRequestOptions options = new PHImageRequestOptions();
-            options.DeliveryMode = PHImageRequestOptionsDeliveryMode.HighQualityFormat;
-            options.ResizeMode = PHImageRequestOptionsResizeMode.Exact;
-            options.Synchronous = true;
-            options.NetworkAccessAllowed = true;
-
             // For demo purposes: just show all chosen pictures in order every second
             foreach (var asset in args.Assets)
             {
-
-                // Get information about the asset, e.g. file patch
-                asset.RequestContentEditingInput(new PHContentEditingInputRequestOptions(),
-                    (input, _) =>
-                    {
-                        Console.WriteLine(input.FullSizeImageUrl);
-                    });
-
                 imageManager.RequestImageForAsset(asset,
-                    new CGSize(asset.PixelWidth, asset.PixelHeight),
-                    PHImageContentMode.Default,
-                    null,
-                    (image, info) =>
-                    {
-                    });
-                await Task.Delay(1000);
+                new CGSize(asset.PixelWidth, asset.PixelHeight),
+                PHImageContentMode.Default,
+                null,
+                (image, info) =>
+                {
+                    var imagesource = ImageSource.FromStream(() => image.AsPNG().AsStream());
+                    _pickAsyncResult.Add(imagesource);
+                });
             }
+            _waitHandle.Set();
         }
 
         private List<ImageSource> _pickAsyncResult;
         private readonly EventWaitHandle _waitHandle = new AutoResetEvent(false);
         public Task<List<ImageSource>> PickImageAsync()
         {
-            _pickAsyncResult = new List<ImageSource>();
 
             var picker = new GMImagePickerController
             {
@@ -158,33 +143,16 @@ namespace Bizland.iOS.DependencyService
             }
             picker.Canceled += Picker_Canceled;
             // Event handling
-            picker.FinishedPickingAssets += (s, e) =>
-            {
-                PHImageManager imageManager = new PHImageManager();
-                // For demo purposes: just show all chosen pictures in order every second
-                foreach (var asset in e.Assets)
-                {
-                    imageManager.RequestImageForAsset(asset,
-                    new CGSize(asset.PixelWidth, asset.PixelHeight),
-                    PHImageContentMode.Default,
-                    null,
-                    (image, info) =>
-                    {
-                        var imagesource = ImageSource.FromStream(() => image.AsPNG().AsStream());
-                        _pickAsyncResult.Add(imagesource);
-                    });
-                }
-                _waitHandle.Set();
-            };
+            picker.FinishedPickingAssets += Picker_FinishedPickingAssets;
 
 
             // GMImagePicker can be treated as a PopOver as well:
             var popPC = picker.PopoverPresentationController;
             popPC.PermittedArrowDirections = UIPopoverArrowDirection.Any;
 
-            UIWindow window = UIApplication.SharedApplication.KeyWindow;
-            var viewController = window.RootViewController;
-            viewController.PresentModalViewController(picker, true);
+
+            var viewController = GetTheMostPresentedViewController();
+            viewController.PresentViewController(picker, true, null);
 
             return Task.Run(() =>
             {
@@ -194,6 +162,21 @@ namespace Bizland.iOS.DependencyService
 
                 return result;
             });
+        }
+
+
+
+        private UIViewController GetTheMostPresentedViewController()
+        {
+            var window = UIApplication.SharedApplication.KeyWindow;
+            var theMostPresentedViewController = window.RootViewController;
+
+            while (theMostPresentedViewController.PresentedViewController != null)
+            {
+                theMostPresentedViewController = theMostPresentedViewController.PresentedViewController;
+            }
+
+            return theMostPresentedViewController;
         }
     }
 }

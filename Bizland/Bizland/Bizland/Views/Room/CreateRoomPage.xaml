@@ -601,7 +601,7 @@
                         </BoxView>
                     </StackLayout>
 
-                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15">
+                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
                         <Label FontAttributes="Bold" Text="Đăng ảnh phòng" LineBreakMode="WordWrap"/>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="10" VerticalOptions="FillAndExpand">
