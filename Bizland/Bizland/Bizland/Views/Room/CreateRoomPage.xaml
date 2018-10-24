@@ -601,7 +601,7 @@
                         </BoxView>
                     </StackLayout>
 
-                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="200">
+                    <StackLayout BackgroundColor="White" Spacing="10" Padding="15" HeightRequest="300">
                         <Label FontAttributes="Bold" Text="Đăng ảnh phòng" LineBreakMode="WordWrap"/>
 
                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="10" VerticalOptions="FillAndExpand">
@@ -620,21 +620,20 @@
                                     BorderRadius="15"/>
 
 
-                            <syncfusion:SfListView ItemsSource="{Binding ImageSource}"
-                                                   ItemSpacing="5,0,5,0"
-                                                   RowSpacing="0"
-                                                   HorizontalOptions="Fill"
-                                                   SelectionBackgroundColor="Transparent"
-                                                   VerticalOptions="Start">
-                                <syncfusion:SfListView.LayoutManager>
-                                    <syncfusion:GridLayout SpanCount="4" />
-                                </syncfusion:SfListView.LayoutManager>
-                                <syncfusion:SfListView.ItemTemplate>
+                            <controls:HorizontalList ItemsSource="{Binding ImageSource}"
+                                                     HorizontalOptions="Fill"
+                                                     Spacing="5"
+                                                     ListOrientation="Horizontal"
+                                                     VerticalOptions="Start">
+                                <controls:HorizontalList.ItemTemplate>
                                     <DataTemplate>
-                                        <Image Source="{Binding .}" WidthRequest="100" HeightRequest="100"/>
+                                        <Grid>
+                                            <Image Source="{Binding .}" HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="CenterAndExpand" Aspect="AspectFit" WidthRequest="100" HeightRequest="100"/>
+                                        </Grid>
                                     </DataTemplate>
-                                </syncfusion:SfListView.ItemTemplate>
-                            </syncfusion:SfListView>
+                                </controls:HorizontalList.ItemTemplate>
+                            </controls:HorizontalList>
 
                         </StackLayout>
 
