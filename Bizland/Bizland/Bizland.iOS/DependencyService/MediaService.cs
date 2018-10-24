@@ -5,6 +5,7 @@ using GMImagePicker;
 using Photos;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using UIKit;
 using Xamarin.Forms;
@@ -27,15 +28,27 @@ namespace Bizland.iOS.DependencyService
                 CustomDoneButtonTitle = "Hoàn thành",
                 CustomCancelButtonTitle = "Đóng",
                 CustomNavigationBarPrompt = "Chụp ảnh mới hoặc chọn ảnh hiện có",
+                ColsInPortrait = 3,
+                ColsInLandscape = 4,
+                MinimumInteritemSpacing = 2.0f,
+                DisplaySelectionInfoToolbar = true,
                 AllowsMultipleSelection = true,
                 ShowCameraButton = true,
                 AutoSelectCameraImages = true,
                 AllowsEditingCameraImages = true,
-                ModalPresentationStyle = UIModalPresentationStyle.None,
-                ColsInPortrait = 3,
-                ColsInLandscape = 5,
-                MinimumInteritemSpacing = 2.0f,
+                ModalPresentationStyle = UIModalPresentationStyle.Popover,
                 MediaTypes = new[] { PHAssetMediaType.Image },
+                CustomSmartCollections = new[] { PHAssetCollectionSubtype.AlbumRegular, PHAssetCollectionSubtype.AlbumImported },
+                NavigationBarBackgroundColor = UIColor.White,
+                NavigationBarTextColor = UIColor.Blue,
+                NavigationBarTintColor = UIColor.White,
+                PickerBackgroundColor = UIColor.White,
+                ToolbarBackgroundColor = UIColor.White,
+                ToolbarBarTintColor = UIColor.Blue,
+                ToolbarTextColor = UIColor.Blue,
+                PickerStatusBarStyle = UIStatusBarStyle.Default,
+                GridSortOrder = SortOrder.Descending,
+                AdditionalToolbarItems = new UIBarButtonItem[] { new UIBarButtonItem(UIBarButtonSystemItem.Bookmarks), new UIBarButtonItem("Custom", UIBarButtonItemStyle.Bordered, (s, e) => { Console.WriteLine("test"); }) },
 
             };
 
@@ -53,7 +66,6 @@ namespace Bizland.iOS.DependencyService
             // GMImagePicker can be treated as a PopOver as well:
             var popPC = picker.PopoverPresentationController;
             popPC.PermittedArrowDirections = UIPopoverArrowDirection.Any;
-            //popPC.BackgroundColor = UIColor.Black;
 
             UIWindow window = UIApplication.SharedApplication.KeyWindow;
             var viewController = window.RootViewController;
@@ -104,9 +116,77 @@ namespace Bizland.iOS.DependencyService
             }
         }
 
-        public void PickedResult(List<ImageSource> result)
+        private ImageSource _pickAsyncResult;
+        private readonly EventWaitHandle _waitHandle = new AutoResetEvent(false);
+        public Task<ImageSource> PickImageAsync()
         {
-            throw new NotImplementedException();
+            _pickAsyncResult = null;
+
+            var picker = new GMImagePickerController
+            {
+                Title = "Đăng ảnh",
+                CustomDoneButtonTitle = "Hoàn thành",
+                CustomCancelButtonTitle = "Đóng",
+                CustomNavigationBarPrompt = "Chụp ảnh mới hoặc chọn ảnh hiện có",
+                ColsInPortrait = 3,
+                ColsInLandscape = 4,
+                MinimumInteritemSpacing = 2.0f,
+                DisplaySelectionInfoToolbar = true,
+                AllowsMultipleSelection = true,
+                ShowCameraButton = true,
+                AutoSelectCameraImages = true,
+                AllowsEditingCameraImages = true,
+                ModalPresentationStyle = UIModalPresentationStyle.Popover,
+                MediaTypes = new[] { PHAssetMediaType.Image },
+                CustomSmartCollections = new[] { PHAssetCollectionSubtype.AlbumRegular, PHAssetCollectionSubtype.AlbumImported },
+                NavigationBarBackgroundColor = UIColor.White,
+                NavigationBarTextColor = UIColor.Blue,
+                NavigationBarTintColor = UIColor.White,
+                PickerBackgroundColor = UIColor.White,
+                ToolbarBackgroundColor = UIColor.White,
+                ToolbarBarTintColor = UIColor.Blue,
+                ToolbarTextColor = UIColor.Blue,
+                PickerStatusBarStyle = UIStatusBarStyle.Default,
+                GridSortOrder = SortOrder.Descending,
+                AdditionalToolbarItems = new UIBarButtonItem[] { new UIBarButtonItem(UIBarButtonSystemItem.Bookmarks), new UIBarButtonItem("Custom", UIBarButtonItemStyle.Bordered, (s, e) => { Console.WriteLine("test"); }) },
+
+            };
+
+            if (_preselectedAssets != null)
+            {
+                foreach (var asset in _preselectedAssets)
+                {
+                    picker.SelectedAssets.Add(asset);
+                }
+            }
+            picker.Canceled += Picker_Canceled;
+            // Event handling
+            picker.FinishedPickingAssets += (s, e) =>
+            {
+                PHImageManager imageManager = new PHImageManager();
+                // For demo purposes: just show all chosen pictures in order every second
+                foreach (var asset in e.Assets)
+                {
+                    imageManager.RequestImageForAsset(asset,
+                    new CGSize(asset.PixelWidth, asset.PixelHeight),
+                    PHImageContentMode.Default,
+                    null,
+                    (image, info) =>
+                    {
+                        _pickAsyncResult = ImageSource.FromStream(() => image.AsPNG().AsStream());
+                        _waitHandle.Set();
+                    });
+                }
+            };
+
+            return Task.Run(() =>
+            {
+                _waitHandle.WaitOne();
+                var result = _pickAsyncResult;
+                _pickAsyncResult = null;
+
+                return result;
+            });
         }
     }
 }
