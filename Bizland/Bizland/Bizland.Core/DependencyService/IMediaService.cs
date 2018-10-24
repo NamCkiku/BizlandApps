@@ -11,6 +11,6 @@ namespace Bizland.Core
         void ClearFiles(List<string> filePaths);
 
 
-        Task<ImageSource> PickImageAsync();
+        Task<List<ImageSource>> PickImageAsync();
     }
 }

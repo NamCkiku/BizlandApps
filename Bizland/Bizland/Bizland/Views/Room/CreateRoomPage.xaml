@@ -619,6 +619,23 @@
                                     Command="{Binding UploadImageRoom}"
                                     BorderRadius="15"/>
 
+
+                            <syncfusion:SfListView ItemsSource="{Binding ImageSource}"
+                                                   ItemSpacing="5,0,5,0"
+                                                   RowSpacing="0"
+                                                   HorizontalOptions="Fill"
+                                                   SelectionBackgroundColor="Transparent"
+                                                   VerticalOptions="Start">
+                                <syncfusion:SfListView.LayoutManager>
+                                    <syncfusion:GridLayout SpanCount="4" />
+                                </syncfusion:SfListView.LayoutManager>
+                                <syncfusion:SfListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Image Source="{Binding .}" WidthRequest="100" HeightRequest="100"/>
+                                    </DataTemplate>
+                                </syncfusion:SfListView.ItemTemplate>
+                            </syncfusion:SfListView>
+
                         </StackLayout>
 
                     </StackLayout>
