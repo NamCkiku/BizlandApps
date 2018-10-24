@@ -111,6 +111,7 @@
     <Compile Include="DependencyService\AccountKitService.cs" />
     <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\LoadingPageServiceiOS.cs" />
+    <Compile Include="DependencyService\MediaService.cs" />
     <Compile Include="DependencyService\PushLocalNotificationService.cs" />
     <Compile Include="DependencyService\SettingsService.cs" />
     <Compile Include="DependencyService\ToolbarItemBadgeService.cs" />
@@ -144,6 +145,9 @@
     </PackageReference>
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
       <Version>2.6.3</Version>
+    </PackageReference>
+    <PackageReference Include="GMImagePicker.Xamarin">
+      <Version>2.3.1</Version>
     </PackageReference>
     <PackageReference Include="IdentityModel">
       <Version>3.10.0-arran</Version>

@@ -95,6 +95,49 @@ namespace Bizland.Core
             return path;
         }
 
+        public static async Task<string> TakeMultiplePhotoPathAsync()
+        {
+            var path = string.Empty;
+
+            try
+            {
+                var permisstion = await PermissionHelper.CheckCameraPermissions();
+                if (permisstion)
+                {
+                    if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+                    {
+                        await Application.Current?.MainPage.DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
+                        return null;
+                    }
+
+                    var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                    {
+                        PhotoSize = Plugin.Media.Abstractions.PhotoSize.MaxWidthHeight,
+                        MaxWidthHeight = 2000,
+                        DefaultCamera = CameraDevice.Front,
+                        CustomPhotoSize = 50,
+                        SaveToAlbum = true,
+                        CompressionQuality = 75,
+                        Directory = "Sample",
+                        Name = "test.jpg"
+                    });
+
+                    if (file == null)
+                        return null;
+
+                    path = file.Path;
+                    file.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
+            }
+
+
+            return path;
+        }
+
 
         public static async Task<Stream> PickPhotoSteamAsync()
         {
