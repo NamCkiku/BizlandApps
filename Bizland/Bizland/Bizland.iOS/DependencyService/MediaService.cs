@@ -179,6 +179,15 @@ namespace Bizland.iOS.DependencyService
                 }
             };
 
+
+            // GMImagePicker can be treated as a PopOver as well:
+            var popPC = picker.PopoverPresentationController;
+            popPC.PermittedArrowDirections = UIPopoverArrowDirection.Any;
+
+            UIWindow window = UIApplication.SharedApplication.KeyWindow;
+            var viewController = window.RootViewController;
+            viewController.PresentModalViewController(picker, true);
+
             return Task.Run(() =>
             {
                 _waitHandle.WaitOne();

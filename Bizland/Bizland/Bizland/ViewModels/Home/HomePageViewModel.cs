@@ -141,7 +141,17 @@ namespace Bizland.ViewModels
             }
         }
 
+        private Xamarin.Forms.ImageSource _imageSource;
 
+        public Xamarin.Forms.ImageSource ImageSource
+        {
+            get { return _imageSource; }
+            set
+            {
+                _imageSource = value;
+                RaisePropertyChanged(() => ImageSource);
+            }
+        }
         #endregion
 
         #region Command
@@ -149,11 +159,11 @@ namespace Bizland.ViewModels
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
                     //await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
 
-                    var source = Xamarin.Forms.DependencyService.Get<IMediaService>().PickImageAsync();
+                    ImageSource = await Xamarin.Forms.DependencyService.Get<IMediaService>().PickImageAsync();
                 });
             }
         }

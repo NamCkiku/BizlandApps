@@ -177,7 +177,7 @@
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer  Command="{Binding PushModalSelectAddress}"/>
                             </StackLayout.GestureRecognizers>
-                            <Image Source="ic_bed.png" VerticalOptions="Center" Margin="10,0,0,0" />
+                            <Image Source="{Binding ImageSource}" VerticalOptions="Center" Margin="10,0,0,0" />
                             <StackLayout VerticalOptions="Center" Spacing="0">
                                 <Label Text="Số phòng" Opacity="0.5" FontSize="12" />
                                 <Label Text="4 phòng" LineBreakMode="TailTruncation" FontSize="16" />
