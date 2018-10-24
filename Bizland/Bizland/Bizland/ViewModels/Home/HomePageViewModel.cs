@@ -98,7 +98,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-           
+
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -151,7 +151,9 @@ namespace Bizland.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
+                    //await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
+
+                    Xamarin.Forms.DependencyService.Get<IMediaService>().OpenGallery();
                 });
             }
         }
