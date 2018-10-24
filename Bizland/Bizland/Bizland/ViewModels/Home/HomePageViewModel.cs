@@ -149,7 +149,7 @@ namespace Bizland.ViewModels
         {
             get
             {
-                return new Command(async () =>
+                return new Command(() =>
                 {
                     //await _navigationService.NavigateAsync("BaseNavigationPage/RoomDetailPage", null, useModalNavigation: true);
 
