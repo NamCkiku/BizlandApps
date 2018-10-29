@@ -46,6 +46,6 @@
         /// Name     Date         Comments
         /// Namth  16/1/2018   created
         /// </Modified>
-        public const string SyncfusionKey = "Mjk2NzRAMzEzNjJlMzMyZTMwZ1VMeWJWeHF5Z1lYWGo1MnM0NG9WSUhqT3FJUm41MmFpTG50TjdXTHEzRT0=";
+        public const string SyncfusionKey = "MzgwNjhAMzEzNjJlMzMyZTMwWUhBVmZncjlIdkNNZmJIMFptMkhyazlkUUVGakNrVy9TTzJwNGhRbjRuND0=";
     }
 }
