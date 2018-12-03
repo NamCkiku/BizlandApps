@@ -98,7 +98,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-           
+
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -256,6 +256,103 @@ namespace Bizland.ViewModels
                     }
                 });
             }
+        }
+
+
+
+
+
+        /** thời gian di chuyển mặc định của marker*/
+        public double MARKER_MOVE_TIME = 2000;
+
+        /** số lượng quay mặc định */
+        public double MAX_ROTATE_STEP = 10;
+
+        /**thời gian mỗi lần quay */
+        public double MARKER_ROTATE_TIME_STEP = 50;
+
+        //gán lại vòng quay
+        private double mRotateIndex = 0;
+
+        private void Rotate(double latitude,
+         double longitude,
+         Pin _pin,
+         Action callback)
+        {
+
+            //gán lại vòng quay
+            this.mRotateIndex = 0;
+
+            // * tính góc quay giữa 2 điểm location
+            var angle = GeoHelper.ComputeHeading(_pin.Position.Latitude, _pin.Position.Longitude, latitude, longitude);
+            if (angle == 0)
+            {
+                callback();
+                return;
+            }
+
+            //tính lại độ lệch góc
+            var deltaAngle = GeoHelper.GetRotaion(_pin.Rotation, angle);
+
+            var startRotaion = _pin.Rotation;
+
+            Device.StartTimer(TimeSpan.FromMilliseconds(this.MARKER_ROTATE_TIME_STEP), () =>
+            {
+                //góc quay tiếp theo
+                var fractionAngle = GeoHelper.ComputeRotation(
+                  this.mRotateIndex / this.MAX_ROTATE_STEP,
+                  startRotaion,
+                  deltaAngle);
+                this.mRotateIndex = mRotateIndex + 1;
+
+                _pin.Rotation = (float)fractionAngle;
+                //gán giá trị quay xe
+                //SetRotateState(fractionAngle);
+
+                if (this.mRotateIndex > this.MAX_ROTATE_STEP)
+                {
+                    callback();
+                    return false;
+                }
+
+                return true;
+            });
+        }
+
+        private void MarkerAnimation(double latitude, double longitude, Pin _pin, Action callback)
+        {
+
+            //gán lại vòng quay
+            double mMoveIndex = 0;
+            double MAX_MOVE_STEP = 20;
+            var startPosition = _pin.Position;
+
+            var finalPosition = new Position(latitude, longitude);
+            double elapsed = 0;
+            double t;
+            double v;
+
+            Device.StartTimer(TimeSpan.FromMilliseconds(100), () =>
+            {
+                // Calculate progress using interpolator
+                elapsed = elapsed + 100;
+                t = elapsed / 2000;
+                v = GeoHelper.GetetInterpolation(t);
+
+                var postionnew = GeoHelper.Interpolate(v,
+                    new Plugin.Geolocator.Abstractions.Position(startPosition.Latitude, startPosition.Longitude),
+                    new Plugin.Geolocator.Abstractions.Position(latitude, longitude));
+
+                mMoveIndex = mMoveIndex + 1;
+                _pin.Position = new Position(postionnew.Latitude, postionnew.Longitude);
+                if (mMoveIndex > MAX_MOVE_STEP)
+                {
+                    callback();
+                    return false;
+                }
+
+                return true;
+            });
         }
         #endregion
     }

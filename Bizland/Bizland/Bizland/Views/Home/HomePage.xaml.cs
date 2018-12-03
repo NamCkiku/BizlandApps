@@ -37,6 +37,8 @@ namespace Bizland.Views
 
             map.MapStyle = MapStyle.FromJson(a);
 
+            map.Padding = new Thickness(0, 0, 0, 170);
+
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
         static bool isShowPage = false;
