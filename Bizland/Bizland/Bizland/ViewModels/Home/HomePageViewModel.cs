@@ -259,7 +259,17 @@ namespace Bizland.ViewModels
         }
 
 
+        public Command FindRoomCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    ShowMessage("Xin chào NamCkiku", 5000);
 
+                });
+            }
+        }
 
 
         /** thời gian di chuyển mặc định của marker*/

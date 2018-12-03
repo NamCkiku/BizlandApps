@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using BigTed;
+﻿using BigTed;
 using Bizland.Interfaces;
 using Bizland.iOS.DependencyService;
+using CRToast;
 using Foundation;
 using UIKit;
 using Xamarin.Forms;
@@ -43,7 +40,51 @@ namespace Bizland.iOS.DependencyService
 
         public void ShowToast(string message, double time)
         {
-            BTProgressHUD.ShowToast(message, toastPosition: ProgressHUD.ToastPosition.Center, timeoutMs: time);
+            //BTProgressHUD.ShowToast(message, toastPosition: ProgressHUD.ToastPosition.Center, timeoutMs: time);
+            CRToastManager.ShowNotificationWithOptions(
+               Options(message, time),
+               () =>
+               {
+               }, () =>
+               {
+               }
+           );
         }
+
+        NSDictionary Options(string message, double time)
+        {
+            var keys = new NSString[] {
+                Constants.kCRToastNotificationTypeKey,
+                Constants.kCRToastNotificationPresentationTypeKey,
+                Constants.kCRToastUnderStatusBarKey,
+                Constants.kCRToastTextKey,
+                Constants.kCRToastTextAlignmentKey,
+                Constants.kCRToastTimeIntervalKey,
+                Constants.kCRToastAnimationInTypeKey,
+                Constants.kCRToastAnimationOutTypeKey,
+                Constants.kCRToastAnimationInDirectionKey,
+                Constants.kCRToastAnimationOutDirectionKey,
+                Constants.kCRToastNotificationPreferredPaddingKey
+            };
+
+            var objects = new NSObject[] {
+                NSNumber.FromInt64((long) (CRToastType.StatusBar)),
+                NSNumber.FromInt64((long) (CRToastPresentationType.Push)),
+                NSNumber.FromBoolean(true),
+                (NSString) message,
+                NSNumber.FromInt64((long)UITextAlignment.Center),
+                NSNumber.FromDouble(time),
+                NSNumber.FromInt64(1),
+                NSNumber.FromInt64(1),
+                NSNumber.FromInt64(2),
+                NSNumber.FromInt64(2),
+                NSNumber.FromDouble(0)
+            };
+
+            var options = NSMutableDictionary.FromObjectsAndKeys(objects, keys);
+
+            return NSDictionary.FromDictionary(options);
+        }
+
     }
 }
