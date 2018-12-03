@@ -27,7 +27,7 @@ namespace Bizland.Droid.CustomRenderer
             {
                 for (var i = 0; i < toolbar.ChildCount; i++)
                 {
-                    var imageButton = toolbar.GetChildAt(i) as ImageButton;
+                    var imageButton = toolbar.GetChildAt(i) as Android.Widget.ImageButton;
 
                     var drawerArrow = imageButton?.Drawable as DrawerArrowDrawable;
                     if (drawerArrow == null)
