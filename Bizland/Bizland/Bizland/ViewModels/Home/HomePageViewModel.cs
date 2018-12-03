@@ -265,7 +265,7 @@ namespace Bizland.ViewModels
             {
                 return new Command(() =>
                 {
-                    ShowMessage("Xin chào NamCkiku", 5000);
+                    ShowMessage("Xin chào NamCkiku", 5);
 
                 });
             }

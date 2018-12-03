@@ -3,7 +3,6 @@ using Bizland.Interfaces;
 using Bizland.iOS.DependencyService;
 using CRToast;
 using Foundation;
-using UIKit;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(HUDService))]
@@ -42,10 +41,8 @@ namespace Bizland.iOS.DependencyService
         {
             //BTProgressHUD.ShowToast(message, toastPosition: ProgressHUD.ToastPosition.Center, timeoutMs: time);
             CRToastManager.ShowNotificationWithOptions(
-               Options(message, time),
+              Options(message, time),
                () =>
-               {
-               }, () =>
                {
                }
            );
@@ -54,31 +51,13 @@ namespace Bizland.iOS.DependencyService
         NSDictionary Options(string message, double time)
         {
             var keys = new NSString[] {
-                Constants.kCRToastNotificationTypeKey,
-                Constants.kCRToastNotificationPresentationTypeKey,
-                Constants.kCRToastUnderStatusBarKey,
                 Constants.kCRToastTextKey,
-                Constants.kCRToastTextAlignmentKey,
                 Constants.kCRToastTimeIntervalKey,
-                Constants.kCRToastAnimationInTypeKey,
-                Constants.kCRToastAnimationOutTypeKey,
-                Constants.kCRToastAnimationInDirectionKey,
-                Constants.kCRToastAnimationOutDirectionKey,
-                Constants.kCRToastNotificationPreferredPaddingKey
             };
 
             var objects = new NSObject[] {
-                NSNumber.FromInt64((long) (CRToastType.StatusBar)),
-                NSNumber.FromInt64((long) (CRToastPresentationType.Push)),
-                NSNumber.FromBoolean(true),
                 (NSString) message,
-                NSNumber.FromInt64((long)UITextAlignment.Center),
-                NSNumber.FromDouble(time),
-                NSNumber.FromInt64(1),
-                NSNumber.FromInt64(1),
-                NSNumber.FromInt64(2),
-                NSNumber.FromInt64(2),
-                NSNumber.FromDouble(0)
+                NSNumber.FromDouble(time/1000),
             };
 
             var options = NSMutableDictionary.FromObjectsAndKeys(objects, keys);
