@@ -194,7 +194,7 @@
                 <Button HeightRequest="50"
                         Text="TÌM PHÒNG"
                         FontAttributes="Bold"
-                        Command="{Binding SearchVehicleFilterModel}">
+                        Command="{Binding FindRoomCommand}">
                     <Button.Image>
                         <OnPlatform x:TypeArguments="FileImageSource"
                                  iOS="ic_search_home.png"        
