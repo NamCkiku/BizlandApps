@@ -115,6 +115,7 @@
     <Compile Include="DependencyService\PushLocalNotificationService.cs" />
     <Compile Include="DependencyService\SettingsService.cs" />
     <Compile Include="DependencyService\ToolbarItemBadgeService.cs" />
+    <Compile Include="DependencyService\TooltipService.cs" />
     <Compile Include="FBAccountkit\AccountKitAuth.cs" />
     <Compile Include="Helpers\BizlandSetup.cs" />
     <Compile Include="Helpers\Extensions.cs" />
@@ -145,6 +146,9 @@
     </PackageReference>
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
       <Version>2.6.3</Version>
+    </PackageReference>
+    <PackageReference Include="EasyTipView">
+      <Version>1.0.1</Version>
     </PackageReference>
     <PackageReference Include="GMImagePicker.Xamarin">
       <Version>2.3.2</Version>
