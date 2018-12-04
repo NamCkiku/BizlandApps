@@ -2,7 +2,56 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              prism:ViewModelLocator.AutowireViewModel="True"
              Title="{Binding Title}"
              x:Class="Bizland.Views.HistoryPage">
+    <ContentPage.Content>
+        <tabView:SfTabView BackgroundColor="{StaticResource Color_Navigation}" VisibleHeaderCount="3" DisplayMode="Text" EnableSwiping="True">
+            <tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SelectionIndicatorSettings
+	                    Color="White" 
+	                    Position="Fill" 
+	                    StrokeThickness="10"
+	                    />
+            </tabView:SfTabView.SelectionIndicatorSettings>
+            <tabView:SfTabItem Title="Google" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Bản đồ" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
+                <tabView:SfTabItem.Content>
+                    <maps:Map x:Name="map" 
+                      Grid.RowSpan="2"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="FillAndExpand"
+                      IsShowingUser="True"
+                      HasRotationEnabled="True"
+                      MapType="Street"
+                      MyLocationEnabled="True"
+                      HasScrollEnabled="True"
+                      IsIndoorEnabled="True"
+                      IsTrafficEnabled="False"
+                      HasZoomEnabled="True">
+                        <maps:Map.Behaviors>
+                            <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
+                            <bindings:PinDragEndToCommandBehavior Command="{Binding PinDragEndToCommand}"/>
+                            <bindings:MyLocationButtonClickedToCommandBehavior Command="{Binding MyLocationButtonClickedToCommand}"/>
+                            <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedToCommand}"/>
+                            <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                        </maps:Map.Behaviors>
+                    </maps:Map>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Điểm dừng" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
 </ContentPage>
