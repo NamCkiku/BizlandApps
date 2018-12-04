@@ -38,6 +38,8 @@ namespace Bizland.iOS
 
             SfListViewRenderer.Init();
 
+            Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init();
+
             LoadApplication(new App(new iOSInitializer()));
 
             //Init segment
