@@ -175,7 +175,7 @@
 
                         <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HeightRequest="50" BackgroundColor="White">
                             <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer  Command="{Binding PushModalSelectAddress}"/>
+                                <TapGestureRecognizer  Command="{Binding PushToSelectAddress}"/>
                             </StackLayout.GestureRecognizers>
                             <Image Source="ic_bed.png" VerticalOptions="Center" Margin="10,0,0,0" />
                             <StackLayout VerticalOptions="Center" Spacing="0">

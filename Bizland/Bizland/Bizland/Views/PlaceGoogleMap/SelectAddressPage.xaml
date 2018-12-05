@@ -1,17 +1,155 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<forms:TopTabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                       xmlns:forms="clr-namespace:Naxam.Controls.Forms;assembly=Naxam.TopTabbedPage.Forms"
                       xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                       prism:ViewModelLocator.AutowireViewModel="True"
-                      BarTextColor="White"
-                      BarIndicatorColor="{StaticResource Color_Button}"
-                      BarBackgroundColor="{StaticResource Color_Navigation}"
+                      xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+                      xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+                      xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+                      xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
+                    xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
                       Title="{Binding Title}"
                       x:Class="Bizland.Views.SelectAddressPage">
 
-    <forms:TopTabbedPage.ToolbarItems>
-        <ToolbarItem Text="Đóng" Command="{Binding ClosePageCommand}" Icon="close_white.png" Order="Primary" Priority="1" />
-    </forms:TopTabbedPage.ToolbarItems>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Đóng" Command="{Binding ClosePageCommand}" Icon="close_white.png" Order="Primary" Priority="0" />
+    </ContentPage.ToolbarItems>
 
-</forms:TopTabbedPage>
+    <ContentPage.Content>
+        <tabView:SfTabView BackgroundColor="{StaticResource Color_Navigation}" VisibleHeaderCount="3" DisplayMode="Text">
+            <tabView:SfTabView.EnableSwiping>
+                <OnPlatform x:TypeArguments="x:Boolean">
+                    <On Platform="iOS" Value="true" />
+                    <On Platform="Android" Value="false" />
+                </OnPlatform>
+            </tabView:SfTabView.EnableSwiping>
+            <tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SelectionIndicatorSettings
+	                    Color="White" 
+	                    Position="Fill" 
+	                    StrokeThickness="10"
+	                    />
+            </tabView:SfTabView.SelectionIndicatorSettings>
+            <tabView:SfTabItem Title="Google" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Bản đồ" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
+                <tabView:SfTabItem.Content>
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <maps:Map x:Name="map" 
+                                  Grid.RowSpan="2"
+                                  HorizontalOptions="Fill"
+                                  VerticalOptions="FillAndExpand"
+                                  IsShowingUser="True"
+                                  HasRotationEnabled="True"
+                                  MapType="Street"
+                                  MyLocationEnabled="True"
+                                  HasScrollEnabled="True"
+                                  IsIndoorEnabled="True"
+                                  IsTrafficEnabled="False"
+                                  HasZoomEnabled="True">
+                            <maps:Map.Behaviors>
+                                <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
+                                <bindings:PinDragEndToCommandBehavior Command="{Binding PinDragEndToCommand}"/>
+                                <bindings:MyLocationButtonClickedToCommandBehavior Command="{Binding MyLocationButtonClickedToCommand}"/>
+                                <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedToCommand}"/>
+                                <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                                <b:EventToCommandBehavior EventName="CameraChanged" 
+                                      Command="{Binding MapCameraChanged}" />
+                                <b:EventToCommandBehavior EventName="CameraMoving" 
+                                      Command="{Binding MapCameraMoving}" />
+                            </maps:Map.Behaviors>
+                        </maps:Map>
+
+                        <!--Control Filter EndAddress-->
+                        <controls:MaterialFrame BackgroundColor="#ffffff"
+                                                Grid.Row="0"
+                                                Margin="10"
+                                                VerticalOptions="Start"
+                                                HasShadow="True"
+                                                CornerRadius="0"
+                                                Padding="5">
+                            <Grid RowSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <controls:IconView  Foreground="{StaticResource Color_Button}"
+                                        WidthRequest="15"
+                                        Grid.RowSpan="2"
+                                        Grid.Column="0" 
+                                        Source="ic_location.png"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center" />
+
+                                <Label TextColor="{StaticResource Color_Button}"
+                                       Grid.Column="1"
+                                       Grid.Row="0"
+                                       FontSize="12"
+                                       LineBreakMode="TailTruncation"
+                                       Text="Địa chỉ của bạn"              
+                                       VerticalOptions="CenterAndExpand"             
+                                       HorizontalOptions="FillAndExpand" />
+
+                                <Label TextColor="#404040"
+                                       Grid.Column="1"
+                                       Grid.Row="1"
+                                       LineBreakMode="TailTruncation"
+                                       Text="{Binding MyAddress}"
+                                       VerticalOptions="CenterAndExpand" 
+                                       HorizontalOptions="FillAndExpand" />
+                            </Grid>
+                        </controls:MaterialFrame>
+
+                        <StackLayout  Grid.Row="1" Margin="10" VerticalOptions="End"  Orientation="Vertical">
+                            <Button HeightRequest="50"
+                                    x:Name="btnSelectAddressMap"
+                                    Command="{Binding SelectAddressMap}"
+                                    Text="XÁC NHẬN ĐỊA CHỈ">
+                            </Button>
+                        </StackLayout>
+
+                        <controls:FloatingActionButton 
+                            Grid.Row="0"
+                            HorizontalOptions="End"
+                            WidthRequest="45"
+                            HeightRequest="45"
+                            VerticalOptions="End"
+                            Margin="10"
+                            Command="{Binding getMylocation}"
+                            Image="ic_maplocation.png"
+                            BackgroundColor="Transparent"
+                            ButtonColor="White">
+                            <controls:FloatingActionButton.IsVisible>
+                                <OnPlatform x:TypeArguments="x:Boolean">
+                                    <On Platform="iOS" Value="false" />
+                                    <On Platform="Android" Value="true" />
+                                </OnPlatform>
+                            </controls:FloatingActionButton.IsVisible>
+                        </controls:FloatingActionButton>
+
+                    </Grid>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Điểm dừng" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+
+</ContentPage>
