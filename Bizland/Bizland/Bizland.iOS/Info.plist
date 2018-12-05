@@ -64,5 +64,12 @@
 	<string>Media.xcassets/LaunchImages.launchimage</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.5</string>
+
+  <key>UIAppFonts</key>
+  <array>
+    <string>iconize-fontawesome-regular.ttf</string>
+    <string>iconize-fontawesome-solid.ttf</string>
+    <string>iconize-fontawesome-brands.ttf</string>
+  </array>
 </dict>
 </plist>
