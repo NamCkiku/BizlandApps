@@ -59,13 +59,10 @@
                             <maps:Map.Behaviors>
                                 <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                                 <bindings:PinDragEndToCommandBehavior Command="{Binding PinDragEndToCommand}"/>
+                                <bindings:PinDraggingToCommandBehavior Command="{Binding PinDraggingToCommand}"/>
                                 <bindings:MyLocationButtonClickedToCommandBehavior Command="{Binding MyLocationButtonClickedToCommand}"/>
                                 <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedToCommand}"/>
                                 <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
-                                <b:EventToCommandBehavior EventName="CameraChanged" 
-                                      Command="{Binding MapCameraChanged}" />
-                                <b:EventToCommandBehavior EventName="CameraMoving" 
-                                      Command="{Binding MapCameraMoving}" />
                             </maps:Map.Behaviors>
                         </maps:Map>
 
@@ -128,7 +125,7 @@
                             WidthRequest="45"
                             HeightRequest="45"
                             VerticalOptions="End"
-                            Margin="10"
+                            Margin="0,0,10,0"
                             Command="{Binding getMylocation}"
                             Image="ic_maplocation.png"
                             BackgroundColor="Transparent"

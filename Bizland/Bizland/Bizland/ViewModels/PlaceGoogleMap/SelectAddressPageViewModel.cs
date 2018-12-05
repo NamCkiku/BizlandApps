@@ -39,17 +39,17 @@ namespace Bizland.ViewModels
         {
             base.OnNavigatingTo(parameters);
             Pins?.Clear();
-            var pin = new Pin()
+            MyPin = new Pin()
             {
                 Type = PinType.Place,
-                Label = "",
-                Address = "",
+                Label = "Địa chỉ của bạn",
+                Address = MyAddress,
                 IsDraggable = true,
                 Position = new Position(Settings.Latitude, Settings.Longitude),
                 Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
             };
-            Pins?.Add(pin);
-            var result = GetAddressesForPosition(pin.Position);
+            Pins?.Add(MyPin);
+            var result = GetAddressesForPosition(MyPin.Position);
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -68,6 +68,17 @@ namespace Bizland.ViewModels
             }
         }
 
+        private Pin _myPin;
+        public Pin MyPin
+        {
+            get { return _myPin; }
+            set
+            {
+                _myPin = value;
+                RaisePropertyChanged(() => MyPin);
+            }
+        }
+
         private string _myAddress;
         public string MyAddress
         {
@@ -79,47 +90,15 @@ namespace Bizland.ViewModels
             }
         }
 
-        public Command<CameraChangedEventArgs> MapCameraChanged
+        public Command<PinDragEventArgs> PinDraggingToCommand
         {
             get
             {
-                return new Command<CameraChangedEventArgs>(async (arg) =>
-                {
-                    try
-                    {
-                        if (arg != null)
-                        {
-                            var positon = new Xamarin.Forms.GoogleMaps.Position(arg.Position.Target.Latitude, arg.Position.Target.Longitude);
-                            var result = await GetAddressesForPosition(positon);
-                            if (!string.IsNullOrEmpty(result))
-                            {
-                                SetPinMap(positon);
-                            }
-                            else
-                            {
-                                "Không tìm thấy địa chỉ của bạn".ToToast(ToastNotificationType.Info, null, 10);
-                            }
-                        }
-
-                    }
-                    catch (Exception ex)
-                    {
-                        Logger.WriteError(MethodInfo.GetCurrentMethod().Name, ex);
-                    }
-                });
-            }
-        }
-
-        public Command<CameraMovingEventArgs> MapCameraMoving
-        {
-            get
-            {
-                return new Command<CameraMovingEventArgs>((arg) =>
+                return new Command<PinDragEventArgs>((arg) =>
                 {
                     try
                     {
                         MyAddress = "Đang xác định địa chỉ.....";
-
                     }
                     catch (Exception ex)
                     {
@@ -212,19 +191,19 @@ namespace Bizland.ViewModels
                 return new Command(async () =>
                 {
                     var mylocation = await LocationHelper.GetGpsLocation();
-                    Pins?.Clear();
-                    var pin = new Pin()
+                    var result = await GetAddressesForPosition(new Position(mylocation.Latitude, mylocation.Longitude));
+                    if (!string.IsNullOrEmpty(result))
                     {
-                        Type = PinType.Place,
-                        Label = "",
-                        Address = "",
-                        IsDraggable = true,
-                        Position = new Position(Settings.Latitude, Settings.Longitude),
-                        Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
-                    };
-                    Pins?.Add(pin);
-                    var result = await GetAddressesForPosition(pin.Position);
-                    await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(new Position(mylocation.Latitude, mylocation.Longitude)));
+                        SetPinMap(new Position(mylocation.Latitude, mylocation.Longitude));
+                        if (Device.RuntimePlatform == Device.Android)
+                        {
+                            await AnimateCameraRequest.AnimateCamera(CameraUpdateFactory.NewPosition(new Position(mylocation.Latitude, mylocation.Longitude)));
+                        }
+                    }
+                    else
+                    {
+                        "Không tìm thấy địa chỉ của bạn".ToToast(ToastNotificationType.Info, null, 10);
+                    }
                 });
             }
         }
@@ -286,17 +265,8 @@ namespace Bizland.ViewModels
 
         private void SetPinMap(Position position)
         {
-            Pins?.Clear();
-            var pin = new Pin()
-            {
-                Type = PinType.Place,
-                Label = "",
-                Address = "",
-                Position = position,
-                IsDraggable = true,
-                Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
-            };
-            Pins?.Add(pin);
+            MyPin.Address = MyAddress;
+            MyPin.Position = position;
         }
     }
 }
