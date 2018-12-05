@@ -24,17 +24,18 @@ namespace Bizland.Views
             {
                 map.UiSettings.MyLocationButtonEnabled = true;
             }
-            map.Padding = new Thickness(0, 0, 0, 70);
-            map.CameraMoving += Map_CameraMoving;
-            map.CameraIdled += Map_CameraIdled;
+            map.Padding = new Thickness(0, 0, 0, 60);
+
+            map.PinDragging += Map_PinDragging;
+            map.PinDragEnd += Map_PinDragEnd;
         }
 
-        private void Map_CameraIdled(object sender, CameraIdledEventArgs e)
+        private void Map_PinDragEnd(object sender, PinDragEventArgs e)
         {
-            btnSelectAddressMap.BackgroundColor = (Color)App.Current.Resources["Color_Button"];
+            btnSelectAddressMap.BackgroundColor = (Color)App.Current.Resources["Color_Text"];
         }
 
-        private void Map_CameraMoving(object sender, CameraMovingEventArgs e)
+        private void Map_PinDragging(object sender, PinDragEventArgs e)
         {
             btnSelectAddressMap.BackgroundColor = (Color)App.Current.Resources["Color_Text"];
         }
