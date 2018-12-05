@@ -10,7 +10,13 @@
              Title="{Binding Title}"
              x:Class="Bizland.Views.HistoryPage">
     <ContentPage.Content>
-        <tabView:SfTabView BackgroundColor="{StaticResource Color_Navigation}" VisibleHeaderCount="3" DisplayMode="Text" EnableSwiping="True">
+        <tabView:SfTabView BackgroundColor="{StaticResource Color_Navigation}" VisibleHeaderCount="3" DisplayMode="Text">
+            <tabView:SfTabView.EnableSwiping>
+                <OnPlatform x:TypeArguments="x:Boolean">
+                    <On Platform="iOS" Value="true" />
+                    <On Platform="Android" Value="false" />
+                </OnPlatform>
+            </tabView:SfTabView.EnableSwiping>
             <tabView:SfTabView.SelectionIndicatorSettings>
                 <tabView:SelectionIndicatorSettings
 	                    Color="White" 

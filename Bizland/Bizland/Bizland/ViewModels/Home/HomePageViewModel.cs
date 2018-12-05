@@ -185,7 +185,8 @@ namespace Bizland.ViewModels
                     IsBusy = true;
                     try
                     {
-                        await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
+                        //await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
+                        await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage", useModalNavigation: true);
                     }
                     catch (Exception ex)
                     {
