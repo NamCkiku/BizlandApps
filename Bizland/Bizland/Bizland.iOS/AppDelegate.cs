@@ -1,4 +1,5 @@
 ﻿using Bizland.Core;
+using ButtonCircle.FormsPlugin.iOS;
 using Foundation;
 using Lottie.Forms.iOS.Renderers;
 using Naxam.Controls.Platform.iOS;
@@ -46,6 +47,8 @@ namespace Bizland.iOS
             SegmentedControlRenderer.Init();
 
             TopTabbedRenderer.Init();
+
+            ButtonCircleRenderer.Init();
 
             UINavigationBar.Appearance.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
             UINavigationBar.Appearance.ShadowImage = new UIImage();

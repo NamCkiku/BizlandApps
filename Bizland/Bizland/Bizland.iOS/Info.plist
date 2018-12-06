@@ -67,6 +67,8 @@
 
   <key>UIAppFonts</key>
   <array>
+    <string>materialicons.ttf</string>
+    <string>fontawesome.ttf</string>
     <string>iconize-fontawesome-regular.ttf</string>
     <string>iconize-fontawesome-solid.ttf</string>
     <string>iconize-fontawesome-brands.ttf</string>

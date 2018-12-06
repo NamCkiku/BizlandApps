@@ -2,6 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 using Bizland.Droid.Helper;
+using ButtonCircle.FormsPlugin.Droid;
 using Plugin.Media;
 using Prism;
 using Prism.Ioc;
@@ -31,6 +32,8 @@ namespace Bizland.Droid
             Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
             Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
             await CrossMedia.Current.Initialize();
+
+            ButtonCircleRenderer.Init();
 
             Plugin.Iconize.Iconize.Init(Resource.Id.toolbar, Resource.Id.sliding_tabs);
 
