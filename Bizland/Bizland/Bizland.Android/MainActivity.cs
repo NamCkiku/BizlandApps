@@ -32,6 +32,8 @@ namespace Bizland.Droid
             Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
             await CrossMedia.Current.Initialize();
 
+            Plugin.Iconize.Iconize.Init(Resource.Id.toolbar, Resource.Id.sliding_tabs);
+
             LoadApplication(new App(new AndroidInitializer()));
         }
     }

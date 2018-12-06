@@ -8,12 +8,16 @@
                       xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
                       xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
                       xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
+              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
                     xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
                       Title="{Binding Title}"
                       x:Class="Bizland.Views.SelectAddressPage">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Đóng" Command="{Binding ClosePageCommand}" Icon="close_white.png" Order="Primary" Priority="0" />
+        <iconize:IconToolbarItem
+            Icon="fa-500px"
+            IconColor="Red" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
@@ -33,7 +37,30 @@
             </tabView:SfTabView.SelectionIndicatorSettings>
             <tabView:SfTabItem Title="Google" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <iconize:IconImage
+                            HeightRequest="20"
+                            Icon="fas-address-book"
+                            IconColor="Blue"
+                            WidthRequest="20" />
+                        <iconize:IconImage
+                            BackgroundColor="Blue"
+                            HeightRequest="20"
+                            Icon="fas-address-book"
+                            IconColor="Yellow"
+                            IconSize="10"
+                            WidthRequest="20" />
+                        <iconize:IconButton
+                            FontSize="20"
+                            Text="fas-address-book"
+                            TextColor="Red"
+                            WidthRequest="48" />
+                        <iconize:IconLabel
+                            FontSize="20"
+                            Text="fas-address-book"
+                            TextColor="Green"
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
             <tabView:SfTabItem Title="Bản đồ" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">

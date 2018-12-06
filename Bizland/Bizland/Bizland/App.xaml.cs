@@ -9,6 +9,7 @@ using BizlandApiService.Service;
 using Newtonsoft.Json;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
+using Plugin.Iconize;
 using Prism;
 using Prism.Ioc;
 using Prism.Plugin.Popups;
@@ -60,6 +61,12 @@ namespace Bizland
             // Khởi tạo Culture mặc định là Viet Nam
             CultureInfo vietnamCulture = new CultureInfo("vi-VN");
             CultureInfo.DefaultThreadCurrentCulture = vietnamCulture;
+
+
+            Plugin.Iconize.Iconize
+               .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
+               .With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
+               .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
 
             //Register Syncfusion license
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(ServerConfig.SyncfusionKey);
@@ -123,6 +130,7 @@ namespace Bizland
 
             //Đăng kí cho viewmodel
             containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<IconNavigationPage>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");
             containerRegistry.RegisterForNavigation<BaseNavigationPage, BaseNavigationPageViewModel>("BaseNavigationPage");
