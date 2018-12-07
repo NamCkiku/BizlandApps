@@ -268,6 +268,8 @@ namespace Bizland.ViewModels
                 {
                     ShowMessage("Xin chào NamCkiku", 5);
 
+                    ShowMessageInfo("Xin chào NamCkiku", 5);
+
                 });
             }
         }
