@@ -19,6 +19,11 @@ namespace Bizland.iOS.CustomRenderer
             UINavigationBar.Appearance.TintColor = UIColor.White;
             UINavigationBar.Appearance.BarTintColor = Color.FromHex("#037cb3").ToUIColor();
             UINavigationBar.Appearance.Translucent = true;
+
+            var item = this.NavigationBar?.TopItem?.LeftBarButtonItem;
+
+            if (item != null)
+                item.Image = item.Image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
         }
 
         protected override void Dispose(bool disposing)

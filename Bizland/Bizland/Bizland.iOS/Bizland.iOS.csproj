@@ -109,6 +109,7 @@
     <Compile Include="CustomRenderer\Scrollbardisabledrenderer.cs" />
     <Compile Include="CustomRenderer\ShapeRenderer.cs" />
     <Compile Include="CustomRenderer\TransparentNavigationRenderer.cs" />
+    <Compile Include="CustomRenderer\UntintedNavigationPageRenderer.cs" />
     <Compile Include="DependencyService\AccountKitService.cs" />
     <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\LoadingPageServiceiOS.cs" />
