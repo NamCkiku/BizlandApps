@@ -78,9 +78,6 @@
     <PackageReference Include="Plugin.Permissions">
       <Version>3.0.0.12</Version>
     </PackageReference>
-    <PackageReference Include="Plugins.Forms.ButtonCircle">
-      <Version>2.0.2.1</Version>
-    </PackageReference>
     <PackageReference Include="Prism.Plugin.Popups">
       <Version>2.2.0.293</Version>
     </PackageReference>
