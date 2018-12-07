@@ -9,7 +9,6 @@
                       xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
                       xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
                       xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
-              xmlns:buttoncircle="clr-namespace:ButtonCircle.FormsPlugin.Abstractions;assembly=ButtonCircle.FormsPlugin.Abstractions"
                       xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
                       Title="{Binding Title}"
                       x:Class="Bizland.Views.SelectAddressPage">
@@ -53,29 +52,17 @@
                             WidthRequest="20" />
                         <iconize:IconButton
                             FontSize="20"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
                             Text="fas-address-book"
                             TextColor="Red"
-                            WidthRequest="48" />
+                            WidthRequest="30" />
                         <iconize:IconLabel
                             FontSize="20"
                             Text="fas-address-book"
                             TextColor="Green"
                             VerticalTextAlignment="Center" />
-
-
-                        <buttoncircle:CircleButton
-                            FontIcon="FontAwesome"
-                            Icon="fa-location"
-                            FontSize="25"
-                            TextColor="White"
-                            HorizontalOptions="End"
-                            VerticalOptions="End"
-                            Margin="0,0,10,0"
-                            HeightRequest="45"
-                            WidthRequest="45"
-                            BorderRadius="50"
-                            BackgroundColor="#99E758" Command="{Binding getMylocation}" >
-                        </buttoncircle:CircleButton>
                     </StackLayout>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
@@ -162,29 +149,7 @@
                             </Button>
                         </StackLayout>
 
-                        <buttoncircle:CircleButton
-                            FontIcon="FontAwesome"
-                            Icon="fa-location"
-                            FontSize="20"
-                            TextColor="{StaticResource Color_Text}"
-                            Grid.Row="0"
-                            BorderWidth="0"
-                            HorizontalOptions="End"
-                            VerticalOptions="End"
-                            Margin="0,0,10,0"
-                            HeightRequest="40"
-                            WidthRequest="40"
-                            BorderRadius="50"
-                            BackgroundColor="White" Command="{Binding getMylocation}" >
-                            <buttoncircle:CircleButton.IsVisible>
-                                <OnPlatform x:TypeArguments="x:Boolean">
-                                    <On Platform="iOS" Value="false" />
-                                    <On Platform="Android" Value="true" />
-                                </OnPlatform>
-                            </buttoncircle:CircleButton.IsVisible>
-                        </buttoncircle:CircleButton>
-
-                        <!--<controls:FloatingActionButton 
+                        <controls:FloatingActionButton 
                             Grid.Row="0"
                             HorizontalOptions="End"
                             WidthRequest="45"
@@ -201,7 +166,7 @@
                                     <On Platform="Android" Value="true" />
                                 </OnPlatform>
                             </controls:FloatingActionButton.IsVisible>
-                        </controls:FloatingActionButton>-->
+                        </controls:FloatingActionButton>
 
                     </Grid>
                 </tabView:SfTabItem.Content>
