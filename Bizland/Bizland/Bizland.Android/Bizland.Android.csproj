@@ -133,6 +133,9 @@
     <PackageReference Include="Xamarin.GooglePlayServices.Base">
       <Version>60.1142.1</Version>
     </PackageReference>
+    <PackageReference Include="XamEffects">
+      <Version>1.5.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acitivity\SplashScreenActivity.cs" />
@@ -149,6 +152,7 @@
     <Compile Include="CustomRenderer\ShapeRenderer.cs" />
     <Compile Include="CustomRenderer\TransparentNavigationRenderer.cs" />
     <Compile Include="DependencyService\AccountKitService.cs" />
+    <Compile Include="DependencyService\BadgeService.cs" />
     <Compile Include="DependencyService\HUDService.cs" />
     <Compile Include="DependencyService\MediaService.cs" />
     <Compile Include="DependencyService\PushLocalNotificationService.cs" />

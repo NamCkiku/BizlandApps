@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:googleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+             xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              x:Class="Bizland.Views.HomePage">
 
@@ -140,10 +141,13 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" HeightRequest="50" BackgroundColor="White">
-                            <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding PushModalRoomType}"/>
-                            </StackLayout.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Row="0"
+                                     Grid.Column="0"
+                                     HeightRequest="50"
+                                     BackgroundColor="White"
+                                      xe:TouchEffect.Color="Red"
+                                     xe:Commands.Tap="{Binding PushModalRoomType}">
                             <Image Source="ic_home.png" VerticalOptions="Center" Margin="10,0,0,0" />
                             <StackLayout VerticalOptions="Center" Spacing="0">
                                 <Label Text="Loại phòng" Opacity="0.5" FontSize="12" />
@@ -151,10 +155,13 @@
                             </StackLayout>
                         </StackLayout>
 
-                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" HeightRequest="50" BackgroundColor="White">
-                            <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding PushModalMoney}"/>
-                            </StackLayout.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Row="0"
+                                     Grid.Column="1"
+                                     HeightRequest="50"
+                                     BackgroundColor="White"
+                                     xe:TouchEffect.Color="Red"
+                                     xe:Commands.Tap="{Binding PushModalMoney}">
                             <Image Source="ic_money.png" VerticalOptions="Center" Margin="10,0,0,0" />
                             <StackLayout VerticalOptions="Center" Spacing="0">
                                 <Label Text="Khoảng giá" Opacity="0.5" FontSize="12" />
@@ -162,10 +169,13 @@
                             </StackLayout>
                         </StackLayout>
 
-                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" HeightRequest="50" BackgroundColor="White">
-                            <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding PushModalSelectAcreage}"/>
-                            </StackLayout.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Row="1"
+                                     Grid.Column="0"
+                                     HeightRequest="50"
+                                     BackgroundColor="White"
+                                     xe:TouchEffect.Color="Red"
+                                     xe:Commands.Tap="{Binding PushModalSelectAcreage}">
                             <Image Source="ic_size.png" VerticalOptions="Center" Margin="10,0,0,0" />
                             <StackLayout VerticalOptions="Center" Spacing="0">
                                 <Label Text="Diện tích" Opacity="0.5" FontSize="12" />
@@ -173,10 +183,13 @@
                             </StackLayout>
                         </StackLayout>
 
-                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HeightRequest="50" BackgroundColor="White">
-                            <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer  Command="{Binding PushToSelectAddress}"/>
-                            </StackLayout.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Row="1"
+                                     Grid.Column="1"
+                                     HeightRequest="50"
+                                     BackgroundColor="White"
+                                     xe:TouchEffect.Color="Red"
+                                     xe:Commands.Tap="{Binding PushToSelectAddress}">
                             <Image Source="ic_bed.png" VerticalOptions="Center" Margin="10,0,0,0" />
                             <StackLayout VerticalOptions="Center" Spacing="0">
                                 <Label Text="Số phòng" Opacity="0.5" FontSize="12" />

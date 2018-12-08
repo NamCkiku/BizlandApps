@@ -87,12 +87,12 @@
                                   IsTrafficEnabled="False"
                                   HasZoomEnabled="True">
                             <maps:Map.Behaviors>
+                                <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
                                 <bindings:AnimateCameraBehavior Request="{Binding AnimateCameraRequest}"/>
                                 <bindings:PinDragEndToCommandBehavior Command="{Binding PinDragEndToCommand}"/>
                                 <bindings:PinDraggingToCommandBehavior Command="{Binding PinDraggingToCommand}"/>
                                 <bindings:MyLocationButtonClickedToCommandBehavior Command="{Binding MyLocationButtonClickedToCommand}"/>
                                 <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedToCommand}"/>
-                                <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
                             </maps:Map.Behaviors>
                         </maps:Map>
 
