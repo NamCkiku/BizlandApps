@@ -7,6 +7,7 @@
              xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
              xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
+              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Bizland.Views.RoomDetailPage">
 
 
@@ -45,7 +46,16 @@
                                      Position="{Binding Position}">
                         <cv:CarouselView.ItemTemplate>
                             <DataTemplate>
-                                <Image  Source="{Binding .}" Aspect="Fill"/>
+                                <Grid>
+                                    <ffimageloading:CachedImage HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+			                                                DownsampleToViewSize="true"
+                                                            Aspect="Fill"
+                                                            LoadingPlaceholder="avatar.png"
+			                                                Source ="{Binding .}">
+                                    </ffimageloading:CachedImage>
+                                </Grid>
+
+                                <!--<Image  Source="{Binding .}" Aspect="Fill"/>-->
                             </DataTemplate>
                         </cv:CarouselView.ItemTemplate>
                     </cv:CarouselView>
@@ -375,7 +385,7 @@
 
                                             <controls:IconView Source="ic_unfavorite" Foreground="White" Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="20"/>
                                         </Grid>
-                                       
+
                                         <StackLayout HorizontalOptions="FillAndExpand" Spacing="3">
                                             <Label Text="Văn phòng" Opacity="0.5" FontSize="11" HorizontalTextAlignment="Start"/>
 
@@ -415,7 +425,7 @@
                                             <Label Text="Quận Hoàng Mai" Opacity="0.5" FontSize="10" HorizontalTextAlignment="Start"/>
                                         </StackLayout>
                                     </StackLayout>
-                                    
+
                                     <StackLayout HorizontalOptions="FillAndExpand" Spacing="3" VerticalOptions="FillAndExpand">
                                         <Grid>
                                             <controls:MaterialFrame CornerRadius="5"
