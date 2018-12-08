@@ -47,12 +47,17 @@
                         <cv:CarouselView.ItemTemplate>
                             <DataTemplate>
                                 <Grid>
-                                    <ffimageloading:CachedImage HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                    <controls:PinchToZoomContainer>
+                                        <controls:PinchToZoomContainer.Content>
+                                            <ffimageloading:CachedImage HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
 			                                                DownsampleToViewSize="true"
                                                             Aspect="Fill"
                                                             LoadingPlaceholder="avatar.png"
 			                                                Source ="{Binding .}">
-                                    </ffimageloading:CachedImage>
+                                            </ffimageloading:CachedImage>
+                                        </controls:PinchToZoomContainer.Content>
+                                    </controls:PinchToZoomContainer>
+
                                 </Grid>
 
                                 <!--<Image  Source="{Binding .}" Aspect="Fill"/>-->
