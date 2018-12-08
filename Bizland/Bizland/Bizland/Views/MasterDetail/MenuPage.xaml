@@ -9,6 +9,7 @@
              xmlns:converters="clr-namespace:Bizland.Core;assembly=Bizland.Core" 
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland"
              xmlns:behaviors="clr-namespace:Bizland.Core;assembly=Bizland.Core"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Bizland.Views.MenuPage">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -24,7 +25,13 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Image Source="menu_bg.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Aspect="AspectFill" Grid.Row="0"/>
+            <ffimageloading:CachedImage HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+			                            DownsampleToViewSize="true"
+                                        Aspect="AspectFill"
+                                        Grid.Row="0"
+			                            Source = "menu_bg.png">
+            </ffimageloading:CachedImage>
+            <!--<Image Source="menu_bg.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Aspect="AspectFill" Grid.Row="0"/>-->
 
             <StackLayout Grid.Row="0" Spacing="10" Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <controls:CircleImage Source="{Binding UserToken.Avatar,Converter={StaticResource AddRootImageConverter}"

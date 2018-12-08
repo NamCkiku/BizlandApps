@@ -38,7 +38,10 @@ namespace Bizland.iOS
             SfListViewRenderer.Init();
 
             Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init();
+
             XamEffects.iOS.Effects.Init(); //write here
+
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
 
             LoadApplication(new App(new iOSInitializer()));
 
