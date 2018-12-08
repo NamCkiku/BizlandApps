@@ -144,6 +144,7 @@
     <Compile Include="Acitivity\SplashScreenActivity.cs" />
     <Compile Include="CustomRenderer\ExtendedViewCellRenderer.cs" />
     <Compile Include="CustomRenderer\FloatingActionButtonRenderer.cs" />
+    <Compile Include="CustomRenderer\HorizontalScrollViewRenderer.cs" />
     <Compile Include="CustomRenderer\HtmlFormattedLabelRenderer.cs" />
     <Compile Include="CustomRenderer\IconNavigationPageRenderer.cs" />
     <Compile Include="CustomRenderer\IconViewRenderer.cs" />
