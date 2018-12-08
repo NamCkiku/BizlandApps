@@ -32,7 +32,7 @@ namespace Bizland.Views
 
         private void Map_PinDragEnd(object sender, PinDragEventArgs e)
         {
-            btnSelectAddressMap.BackgroundColor = (Color)App.Current.Resources["Color_Text"];
+            btnSelectAddressMap.BackgroundColor = (Color)App.Current.Resources["Color_Button"];
         }
 
         private void Map_PinDragging(object sender, PinDragEventArgs e)

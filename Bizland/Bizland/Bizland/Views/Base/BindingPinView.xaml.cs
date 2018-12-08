@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace Bizland.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BindingPinView : StackLayout
+    public partial class BindingPinView : Grid
     {
         private string _imagePin;
         public BindingPinView(string image)

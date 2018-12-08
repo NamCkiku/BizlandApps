@@ -270,6 +270,8 @@ namespace Bizland.ViewModels
 
                     ShowMessageInfo("Xin chào NamCkiku", 5);
 
+                    Xamarin.Forms.DependencyService.Get<IBadge>().SetBadge(1,"đâsdasdasdas");
+
                 });
             }
         }

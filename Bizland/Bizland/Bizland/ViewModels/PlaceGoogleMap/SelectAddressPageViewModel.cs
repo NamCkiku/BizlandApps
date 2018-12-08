@@ -1,6 +1,7 @@
 ﻿using Bizland.Core;
 using Bizland.Events;
 using Bizland.Model;
+using Bizland.Views;
 using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
@@ -33,27 +34,18 @@ namespace Bizland.ViewModels
         }
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            base.OnNavigatedTo(parameters);
         }
         public override void OnNavigatingTo(INavigationParameters parameters)
         {
-            base.OnNavigatingTo(parameters);
-            Pins?.Clear();
-            MyPin = new Pin()
+
+            Device.BeginInvokeOnMainThread(() =>
             {
-                Type = PinType.Place,
-                Label = "Địa chỉ của bạn",
-                Address = MyAddress,
-                IsDraggable = true,
-                Position = new Position(Settings.Latitude, Settings.Longitude),
-                Icon = BitmapDescriptorFactory.FromBundle("ic_my_marker.png")
-            };
-            Pins?.Add(MyPin);
-            var result = GetAddressesForPosition(MyPin.Position);
+                InitPinMap.Execute(null);
+            });
+
         }
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
-            base.OnNavigatedFrom(parameters);
         }
 
         public AnimateCameraRequest AnimateCameraRequest { get; } = new AnimateCameraRequest();
@@ -90,6 +82,27 @@ namespace Bizland.ViewModels
             }
         }
 
+        public Command InitPinMap
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    MyPin = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "89L11372",
+                        Address = MyAddress,
+                        IsDraggable = true,
+                        Position = new Position(Settings.Latitude, Settings.Longitude),
+                        Icon = BitmapDescriptorFactory.FromView(new BindingPinView("ic_marker.png"))
+                    };
+                    Pins?.Add(MyPin);
+
+                    var result = GetAddressesForPosition(MyPin.Position);
+                });
+            }
+        }
         public Command<PinDragEventArgs> PinDraggingToCommand
         {
             get

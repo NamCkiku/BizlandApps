@@ -23,6 +23,7 @@ namespace Bizland.Droid
             base.OnCreate(bundle);
 
             Rg.Plugins.Popup.Popup.Init(this, bundle);
+            XamEffects.Droid.Effects.Init();
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 

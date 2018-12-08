@@ -130,7 +130,7 @@ namespace Bizland
 
             //Đăng kí cho viewmodel
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<IconNavigationPage>();
+            containerRegistry.RegisterForNavigation<IconNavigationPage, IconNavigationPageViewModel>("IconNavigationPage");
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>("RootPage");
             containerRegistry.RegisterForNavigation<BaseNavigationPage, BaseNavigationPageViewModel>("BaseNavigationPage");
@@ -151,7 +151,7 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<RoomTypePage, RoomTypePageViewModel>("RoomTypePage");
             containerRegistry.RegisterForNavigation<SelectDatetimePage, SelectDatetimePageViewModel>("SelectDatetimePage");
             containerRegistry.RegisterForNavigation<SelectSexPage, SelectSexPageViewModel>("SelectSexPage");
-            containerRegistry.RegisterForNavigation<RoomDetailPage,RoomDetailPageViewModel>("RoomDetailPage");
+            containerRegistry.RegisterForNavigation<RoomDetailPage, RoomDetailPageViewModel>("RoomDetailPage");
             containerRegistry.RegisterForNavigation<DistrictPage, DistrictPageViewModel>("DistrictPage");
         }
     }
