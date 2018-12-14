@@ -11,7 +11,7 @@ namespace Bizland.Views
         {
             InitializeComponent();
             map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(Settings.Latitude, Settings.Longitude), 14d);
-            map.UiSettings.MapToolbarEnabled = true;
+            map.UiSettings.MapToolbarEnabled = false;
             map.UiSettings.ZoomControlsEnabled = false;
             map.UiSettings.MyLocationButtonEnabled = false;
 
