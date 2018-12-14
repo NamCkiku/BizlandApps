@@ -1,13 +1,8 @@
-﻿using Bizland.Core;
+﻿using Bizland.iOS.Helpers;
 using Foundation;
-using Lottie.Forms.iOS.Renderers;
 using Prism;
 using Prism.Ioc;
-using SegmentedControl.FormsPlugin.iOS;
-using Syncfusion.ListView.XForms.iOS;
-using Syncfusion.SfPicker.XForms.iOS;
 using UIKit;
-
 
 namespace Bizland.iOS
 {
@@ -26,28 +21,13 @@ namespace Bizland.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            Rg.Plugins.Popup.Popup.Init();
+
             global::Xamarin.Forms.Forms.Init();
-            //Xamarin.FormsMaps.Init();
-            Xamarin.FormsGoogleMaps.Init(ServerConfig.GoogleMapKeyiOS);
-            Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
-            AnimationViewRenderer.Init();
 
-            SfPickerRenderer.Init();
+            BizlandSetup.Initialize(this);
 
-            SfListViewRenderer.Init();
-
-            Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init();
-
-            XamEffects.iOS.Effects.Init(); //write here
-
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
 
             LoadApplication(new App(new iOSInitializer()));
-
-            //Init segment
-            SegmentedControlRenderer.Init();
-
 
             UINavigationBar.Appearance.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
             UINavigationBar.Appearance.ShadowImage = new UIImage();
@@ -57,7 +37,7 @@ namespace Bizland.iOS
             UINavigationBar.Appearance.Translucent = false;
             UINavigationBar.Appearance.BarStyle = UIBarStyle.Black;
             // Set the status bar to light
-            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.Default, true);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
 
             return base.FinishedLaunching(app, options);
         }

@@ -123,6 +123,7 @@
     <Compile Include="DependencyService\TooltipService.cs" />
     <Compile Include="FBAccountkit\AccountKitAuth.cs" />
     <Compile Include="Helpers\BizlandSetup.cs" />
+    <Compile Include="Helpers\CachingImageFactory.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Main.cs" />

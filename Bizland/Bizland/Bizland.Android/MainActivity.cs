@@ -2,7 +2,6 @@
 using Android.Content.PM;
 using Android.OS;
 using Bizland.Droid.Helper;
-using Plugin.Media;
 using Prism;
 using Prism.Ioc;
 
@@ -15,29 +14,16 @@ namespace Bizland.Droid
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        protected async override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
 
-            Rg.Plugins.Popup.Popup.Init(this, bundle);
-            XamEffects.Droid.Effects.Init();
-
-
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(enableFastRenderer: true);
-
-
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             BizlandSetup.Initialize(this, bundle);
-
-            Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
-            Xamarin.FormsGoogleMapsBindings.Init(); // Add this line
-            await CrossMedia.Current.Initialize();
-
-            Plugin.Iconize.Iconize.Init(Resource.Id.toolbar, Resource.Id.sliding_tabs);
 
             LoadApplication(new App(new AndroidInitializer()));
         }
