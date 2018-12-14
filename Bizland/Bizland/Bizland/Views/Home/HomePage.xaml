@@ -7,6 +7,7 @@
              xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
              xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
+              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Bizland.Views.HomePage">
 
     <ContentPage.ToolbarItems>
@@ -119,6 +120,17 @@
                                                     Android="45" iOS="35" />
                 </controls:FloatingActionButton.WidthRequest>
             </controls:FloatingActionButton>
+
+
+            <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+			                            DownsampleToViewSize="true"
+                                        Aspect="Fill"
+                                        Grid.RowSpan="4"
+                                        WidthRequest="30"
+                                        HeightRequest="40"
+                                        LoadingPlaceholder="avatar.png"
+			                            Source ="ic_my_marker.png">
+            </ffimageloading:CachedImage>
 
 
             <controls:MaterialFrame BackgroundColor="#e0e0e0"

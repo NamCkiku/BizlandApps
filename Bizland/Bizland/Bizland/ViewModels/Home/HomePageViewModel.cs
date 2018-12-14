@@ -1,6 +1,7 @@
 ﻿using Bizland.Core;
 using Bizland.Events;
 using Bizland.Model;
+using Bizland.Views;
 using BizlandApiService.Service;
 using Prism.Events;
 using Prism.Navigation;
@@ -35,35 +36,7 @@ namespace Bizland.ViewModels
 
             //GetAddressesForPositionCommand.Execute(null);
 
-            Pins?.Clear();
-            var pin1 = new Pin()
-            {
-                Type = PinType.Place,
-                Position = new Position(Settings.Latitude, Settings.Longitude),
-                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
-            };
-            var pin2 = new Pin()
-            {
-                Type = PinType.Place,
-                Position = new Position(20.980283, 105.846792),
-                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
-            };
-            var pin3 = new Pin()
-            {
-                Type = PinType.Place,
-                Position = new Position(20.984891, 105.835033),
-                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
-            };
-            var pin4 = new Pin()
-            {
-                Type = PinType.Place,
-                Position = new Position(20.992104, 105.839238),
-                Icon = BitmapDescriptorFactory.FromBundle("ic_marker.png")
-            };
-            Pins?.Add(pin1);
-            Pins?.Add(pin2);
-            Pins?.Add(pin3);
-            Pins?.Add(pin4);
+
         }
 
         public async void UpdateMyAddress(SelectAddress param)
@@ -98,7 +71,7 @@ namespace Bizland.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-
+            InitPinMap.Execute(null);
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -270,8 +243,62 @@ namespace Bizland.ViewModels
 
                     ShowMessageInfo("Xin chào NamCkiku", 5);
 
-                    Xamarin.Forms.DependencyService.Get<IBadge>().SetBadge(1,"đâsdasdasdas");
+                    Xamarin.Forms.DependencyService.Get<IBadge>().SetBadge(1, "đâsdasdasdas");
 
+                });
+            }
+        }
+
+
+
+
+        public Command InitPinMap
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    var pin1 = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "89L11372",
+                        Address = MyAddress,
+                        IsDraggable = false,
+                        Position = new Position(Settings.Latitude, Settings.Longitude),
+                        Icon = BitmapDescriptorFactory.FromView(new BindingPinView("ic_marker.png"))
+                    };
+
+                    var pin2 = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "89L11373",
+                        Address = MyAddress,
+                        IsDraggable = false,
+                        Position = new Position(20.980283, 105.846792),
+                        Icon = BitmapDescriptorFactory.FromView(new BindingPinView("ic_marker.png"))
+                    };
+                    var pin3 = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "89L11374",
+                        Address = MyAddress,
+                        IsDraggable = false,
+                        Position = new Position(20.984891, 105.835033),
+                        Icon = BitmapDescriptorFactory.FromView(new BindingPinView("ic_marker.png"))
+                    };
+                    var pin4 = new Pin()
+                    {
+                        Type = PinType.Place,
+                        Label = "89L11373",
+                        Address = MyAddress,
+                        IsDraggable = false,
+                        Position = new Position(20.992104, 105.839238),
+                        Icon = BitmapDescriptorFactory.FromView(new BindingPinView("ic_marker.png"))
+                    };
+                    Pins?.Add(pin1);
+                    Pins?.Add(pin2);
+                    Pins?.Add(pin3);
+                    Pins?.Add(pin4);
                 });
             }
         }

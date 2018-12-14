@@ -75,7 +75,7 @@ namespace Bizland
             var url = string.Empty;
             if (string.IsNullOrEmpty(Settings.UserInfomation))
             {
-                url = "LoginPage";
+                url = "/RootPage/TransparentNavigation/HomePage";
             }
             else
             {
