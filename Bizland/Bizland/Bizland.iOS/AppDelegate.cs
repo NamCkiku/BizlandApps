@@ -1,4 +1,7 @@
-﻿using Bizland.iOS.Helpers;
+﻿using Bizland.Core;
+using Bizland.Interfaces;
+using Bizland.iOS.DependencyService;
+using Bizland.iOS.Helpers;
 using Foundation;
 using Prism;
 using Prism.Ioc;
@@ -12,6 +15,16 @@ namespace Bizland.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+
+        static readonly HUDService hUDService = new HUDService();
+        static readonly DisplayMessageService displayMessageService = new DisplayMessageService();
+        static readonly TooltipService tooltipService = new TooltipService();
+
+        static readonly BadgeService badgeService = new BadgeService();
+        static readonly MediaService mediaService = new MediaService();
+        static readonly PushLocalNotificationService pushLocalNotificationService = new PushLocalNotificationService();
+
+
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -41,13 +54,19 @@ namespace Bizland.iOS
 
             return base.FinishedLaunching(app, options);
         }
-    }
-
-    public class iOSInitializer : IPlatformInitializer
-    {
-        public void RegisterTypes(IContainerRegistry container)
+        public class iOSInitializer : IPlatformInitializer
         {
-
+            public void RegisterTypes(IContainerRegistry container)
+            {
+                container.RegisterInstance<IHUDProvider>(hUDService);
+                container.RegisterInstance<IDisplayMessage>(displayMessageService);
+                container.RegisterInstance<ITooltipService>(tooltipService);
+                container.RegisterInstance<IBadge>(badgeService);
+                container.RegisterInstance<IMediaService>(mediaService);
+                container.RegisterInstance<IPushLocalNotification>(pushLocalNotificationService);
+            }
         }
     }
+
+
 }
