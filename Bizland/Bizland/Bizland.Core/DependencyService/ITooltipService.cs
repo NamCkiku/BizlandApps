@@ -6,6 +6,6 @@ namespace Bizland.Core
 {
     public interface ITooltipService
     {
-        void ShowToast(string message, Xamarin.Forms.View view = null);
+        void ShowToast(string message, Xamarin.Forms.Point point);
     }
 }

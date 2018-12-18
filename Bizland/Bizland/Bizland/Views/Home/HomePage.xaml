@@ -107,6 +107,7 @@
                             HorizontalOptions="End"
                             VerticalOptions="End"
                             Margin="10"
+                x:Name="btnMylocation"
                             Command="{Binding getMylocation}"
                             Image="ic_maplocation.png"
                             BackgroundColor="Transparent"
@@ -218,6 +219,8 @@
             <StackLayout  Grid.Row="3" Margin="10,5,10,10" VerticalOptions="End"  Orientation="Vertical">
                 <Button HeightRequest="50"
                         Text="TÌM PHÒNG"
+                        x:Name="btnFindRoom"
+                        Clicked="Button_Clicked"
                         FontAttributes="Bold"
                         Command="{Binding FindRoomCommand}">
                     <Button.Image>

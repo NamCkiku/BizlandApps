@@ -84,5 +84,10 @@ namespace Bizland.Views
             });
             return bExit;
         }
+
+        private void Button_Clicked(object sender, System.EventArgs e)
+        {
+            DependencyService.Get<ITooltipService>().ShowToast("Xin chào tôi là Trần Hoàng Nam Xin chào tôi là Trần Hoàng Nam Xin chào tôi là Trần Hoàng Nam", btnFindRoom.GetAbsoluteLocation());
+        }
     }
 }
