@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bizland.Styles.Colors">
+
+    <!-- Color -->
+    <Color x:Key="Color_Background">#FFFFFF</Color>
+    <Color x:Key="Color_Accent">#73C33A</Color>
+    <Color x:Key="Color_Navigation">#037cb3</Color>
+
+    <Color x:Key="Color_Button">#FE9D1A</Color>
+
+    <Color x:Key="Color_Text">#333333</Color>
+
+    <Color x:Key="Color_SoftRed">#ED4337</Color>
+    <Color x:Key="Color_Placeholder">#999</Color>
+
+</ResourceDictionary>
