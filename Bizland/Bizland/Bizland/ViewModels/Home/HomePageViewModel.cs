@@ -249,7 +249,7 @@ namespace Bizland.ViewModels
                     //ShowMessageInfo("Xin chào NamCkiku", 5);
 
                     //Xamarin.Forms.DependencyService.Get<IBadge>().SetBadge(1, "đâsdasdasdas");
-                    _tooltipService.ShowToast("Xin chào tôi là Trần Hoàng Nam Xin chào tôi là Trần Hoàng Nam Xin chào tôi là Trần Hoàng Nam");
+                    
 
                 });
             }
