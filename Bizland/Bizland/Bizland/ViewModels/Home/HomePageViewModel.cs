@@ -21,7 +21,11 @@ namespace Bizland.ViewModels
         private readonly INavigationService _navigationService;
         private readonly IPlacesGeocode _placesGeocode;
         private readonly IEventAggregator _eventAggregator;
-        public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IPlacesGeocode placesGeocode, IEventAggregator eventAggregator)
+        private readonly ITooltipService _tooltipService;
+        public HomePageViewModel(INavigationService navigationService,
+            IPageDialogService dialogService,
+            IPlacesGeocode placesGeocode,
+            IEventAggregator eventAggregator, ITooltipService tooltipService)
             : base(navigationService)
         {
             Title = "Trang chủ";
@@ -29,6 +33,7 @@ namespace Bizland.ViewModels
             this._navigationService = navigationService;
             this._placesGeocode = placesGeocode;
             this._eventAggregator = eventAggregator;
+            this._tooltipService = tooltipService;
 
             eventAggregator.GetEvent<SelectMapAddressEvent>().Subscribe(UpdateMyAddress);
 
@@ -239,11 +244,12 @@ namespace Bizland.ViewModels
             {
                 return new Command(() =>
                 {
-                    ShowMessage("Xin chào NamCkiku", 5);
+                    //ShowMessage("Xin chào NamCkiku", 5);
 
-                    ShowMessageInfo("Xin chào NamCkiku", 5);
+                    //ShowMessageInfo("Xin chào NamCkiku", 5);
 
-                    Xamarin.Forms.DependencyService.Get<IBadge>().SetBadge(1, "đâsdasdasdas");
+                    //Xamarin.Forms.DependencyService.Get<IBadge>().SetBadge(1, "đâsdasdasdas");
+                    _tooltipService.ShowToast("Xin chào tôi là Trần Hoàng Nam Xin chào tôi là Trần Hoàng Nam Xin chào tôi là Trần Hoàng Nam");
 
                 });
             }
