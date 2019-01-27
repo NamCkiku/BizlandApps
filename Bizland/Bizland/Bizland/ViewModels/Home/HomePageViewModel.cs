@@ -3,6 +3,7 @@ using Bizland.Events;
 using Bizland.Model;
 using Bizland.Views;
 using BizlandApiService.Service;
+using Com.OneSignal;
 using Prism.Events;
 using Prism.Navigation;
 using Prism.Services;
@@ -41,6 +42,7 @@ namespace Bizland.ViewModels
 
             //GetAddressesForPositionCommand.Execute(null);
 
+            OneSignal.Current.SendTag("UserID", "123456");
 
         }
 
@@ -249,7 +251,7 @@ namespace Bizland.ViewModels
                     //ShowMessageInfo("Xin chào NamCkiku", 5);
 
                     //Xamarin.Forms.DependencyService.Get<IBadge>().SetBadge(1, "đâsdasdasdas");
-                    
+
 
                 });
             }

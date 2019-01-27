@@ -6,8 +6,8 @@
 	<array>
 		<integer>1</integer>
 	</array>
-  <key>LSRequiresIPhoneOS</key>
-  <true/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -40,7 +40,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Bizland</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.Bizland</string>
+	<string>com.namckiku.Bizland</string>
 	<key>CFBundleVersion</key>
 	<string>1.5</string>
 	<key>FacebookAppID</key>
@@ -64,12 +64,11 @@
 	<string>Media.xcassets/LaunchImages.launchimage</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.5</string>
-
-  <key>UIAppFonts</key>
-  <array>
-    <string>iconize-fontawesome-regular.ttf</string>
-    <string>iconize-fontawesome-solid.ttf</string>
-    <string>iconize-fontawesome-brands.ttf</string>
-  </array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>iconize-fontawesome-regular.ttf</string>
+		<string>iconize-fontawesome-solid.ttf</string>
+		<string>iconize-fontawesome-brands.ttf</string>
+	</array>
 </dict>
 </plist>

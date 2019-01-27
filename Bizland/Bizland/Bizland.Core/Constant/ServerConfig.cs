@@ -47,5 +47,16 @@
         /// Namth  16/1/2018   created
         /// </Modified>
         public const string SyncfusionKey = "MzkwMTdAMzEzNjJlMzMyZTMwRnRJRGRiS2xUNFFOaVYxZGdqcVNDMmRMT1FzU0QwSjE3aFNMYnp6TGFPMD0=";
+
+
+        /// <summary>
+        /// Key cho Google Map cho WEB
+        /// </summary>
+        /// <Modified>
+        /// Name     Date         Comments
+        /// Namth  16/1/2018   created
+        /// </Modified>
+        public const string OnesignalKey = "3cd7b6cb-ceb9-46bf-ab08-b3bb88c6d062";
+       
     }
 }
