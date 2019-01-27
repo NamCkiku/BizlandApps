@@ -6,6 +6,8 @@ using Bizland.ViewModels;
 using Bizland.Views;
 using BizlandApiService.IService;
 using BizlandApiService.Service;
+using Com.OneSignal;
+using Com.OneSignal.Abstractions;
 using Newtonsoft.Json;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
@@ -14,6 +16,9 @@ using Prism;
 using Prism.Ioc;
 using Prism.Plugin.Popups;
 using Prism.Unity;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -61,7 +66,26 @@ namespace Bizland
             // Khởi tạo Culture mặc định là Viet Nam
             CultureInfo vietnamCulture = new CultureInfo("vi-VN");
             CultureInfo.DefaultThreadCurrentCulture = vietnamCulture;
+            InitializeComponent();
 
+
+            //if you want to require user consent, change this to true
+            SetRequiresConsent(true);
+
+
+            OneSignal.Current.StartInit(ServerConfig.OnesignalKey)
+                .Settings(new Dictionary<string, bool>() {
+            { IOSSettings.kOSSettingsKeyAutoPrompt, false },
+            { IOSSettings.kOSSettingsKeyInAppLaunchURL, true } })
+               .HandleNotificationOpened(HandleNotificationOpened)
+               .HandleNotificationReceived(HandleNotificationReceived)
+                       .InFocusDisplaying(OSInFocusDisplayOption.Notification)
+                     .EndInit();
+
+            OneSignal.Current.IdsAvailable((playerID, pushToken) =>
+            {
+                Debug.WriteLine("OneSignal.Current.IdsAvailable:D playerID: {0}, pushToken: {1}", playerID, pushToken);
+            });
 
             Plugin.Iconize.Iconize
                .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
@@ -71,7 +95,7 @@ namespace Bizland
             //Register Syncfusion license
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(ServerConfig.SyncfusionKey);
 
-            InitializeComponent();
+
             var url = string.Empty;
             if (string.IsNullOrEmpty(Settings.UserInfomation))
             {
@@ -91,17 +115,6 @@ namespace Bizland
             Settings.Longitude = (float)mylocation.Longitude;
             // Handle when your app starts  
             CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
-        }
-        void HandleConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
-        {
-            if (e.IsConnected)
-            {
-                "Kết nối mạng ổn định".ToToast(ToastNotificationType.Info, null, 10);
-            }
-            else if (!e.IsConnected)
-            {
-                "Kết nối mạng không ổn định".ToToast(ToastNotificationType.Info, null, 10);
-            }
         }
         protected override void OnResume()
         {
@@ -153,6 +166,33 @@ namespace Bizland
             containerRegistry.RegisterForNavigation<SelectSexPage, SelectSexPageViewModel>("SelectSexPage");
             containerRegistry.RegisterForNavigation<RoomDetailPage, RoomDetailPageViewModel>("RoomDetailPage");
             containerRegistry.RegisterForNavigation<DistrictPage, DistrictPageViewModel>("DistrictPage");
+        }
+
+
+        void HandleConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        {
+            if (e.IsConnected)
+            {
+                "Kết nối mạng ổn định".ToToast(ToastNotificationType.Info, null, 10);
+            }
+            else if (!e.IsConnected)
+            {
+                "Kết nối mạng không ổn định".ToToast(ToastNotificationType.Info, null, 10);
+            }
+        }
+        private void HandleNotificationReceived(OSNotification notification)
+        {
+
+        }
+
+        private void HandleNotificationOpened(OSNotificationOpenedResult result)
+        {
+
+        }
+
+        public static void SetRequiresConsent(bool required)
+        {
+            OneSignal.Current.SetRequiresUserPrivacyConsent(required);
         }
     }
 }
