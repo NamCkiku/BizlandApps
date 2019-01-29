@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "746356577413",
-    "firebase_url": "https://bizlandpushnotification.firebaseio.com",
-    "project_id": "bizlandpushnotification",
-    "storage_bucket": "bizlandpushnotification.appspot.com"
+    "project_number": "450852037767",
+    "firebase_url": "https://bizland-d747a.firebaseio.com",
+    "project_id": "bizland-d747a",
+    "storage_bucket": "bizland-d747a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:746356577413:android:53b89f0d1ff83a0c",
+        "mobilesdk_app_id": "1:450852037767:android:bf64f22aef488fc7",
         "android_client_info": {
-          "package_name": "com.namckiku.Bizland"
+          "package_name": "com.namckiku.bizland"
         }
       },
       "oauth_client": [
         {
-          "client_id": "746356577413-j4n0ava42as56pnviolo1hnnv39s19mg.apps.googleusercontent.com",
+          "client_id": "450852037767-v8muio8kb9bula13sme3b21vv8c2tkte.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDth9OS-LG1tOCQ2j_csTCiBG4FCrdpUSs"
+          "current_key": "AIzaSyAeRUBedVZrm0Rd6YpMaJI_9v3yAIDiavY"
         }
       ],
       "services": {

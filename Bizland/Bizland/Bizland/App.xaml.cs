@@ -70,7 +70,7 @@ namespace Bizland
 
 
             //if you want to require user consent, change this to true
-            SetRequiresConsent(true);
+            //SetRequiresConsent(true);
 
 
             OneSignal.Current.StartInit(ServerConfig.OnesignalKey)
