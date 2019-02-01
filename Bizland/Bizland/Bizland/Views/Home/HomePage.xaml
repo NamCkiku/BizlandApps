@@ -8,6 +8,7 @@
              xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
              xmlns:controls="clr-namespace:Bizland.CustomControl;assembly=Bizland" 
               xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:i18n="clr-namespace:Bizland.Core.Helpers;assembly=Bizland.Core"
              x:Class="Bizland.Views.HomePage">
 
     <ContentPage.ToolbarItems>
@@ -163,7 +164,7 @@
                                      xe:Commands.Tap="{Binding PushModalRoomType}">
                             <Image Source="ic_home.png" VerticalOptions="Center" Margin="10,0,0,0" />
                             <StackLayout VerticalOptions="Center" Spacing="0">
-                                <Label Text="Loại phòng" Opacity="0.5" FontSize="12" />
+                                <Label Text="{i18n:Translate Message_RoomType}" Opacity="0.5" FontSize="12" />
                                 <Label Text="{Binding RoomType.RoomTypeName}" LineBreakMode="TailTruncation" FontSize="16" />
                             </StackLayout>
                         </StackLayout>

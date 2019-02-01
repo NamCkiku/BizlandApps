@@ -1,5 +1,6 @@
 ﻿using Bizland.ApiService;
 using Bizland.Core;
+using Bizland.Core.Helpers;
 using Bizland.Interfaces;
 using Bizland.Model;
 using Bizland.ViewModels;
@@ -16,10 +17,8 @@ using Prism;
 using Prism.Ioc;
 using Prism.Plugin.Popups;
 using Prism.Unity;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -64,8 +63,10 @@ namespace Bizland
         protected override async void OnInitialized()
         {
             // Khởi tạo Culture mặc định là Viet Nam
-            CultureInfo vietnamCulture = new CultureInfo("vi-VN");
-            CultureInfo.DefaultThreadCurrentCulture = vietnamCulture;
+            //CultureInfo vietnamCulture = new CultureInfo("vi-VN");
+            //CultureInfo.DefaultThreadCurrentCulture = vietnamCulture;
+            CultureHelper.SetCulture();
+
             InitializeComponent();
 
 
