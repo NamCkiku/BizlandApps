@@ -19,22 +19,24 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Ứng dụng này cần truy cập vị trí của bạn để có thể đề cử xe phù hợp, bạn có cho phép ứng dụng sử dụng vị trí của bạn không?</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Bạn có cho phép ứng dụng này luôn sử dụng vị trí của bạn không?</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Bạn có cho phép ứng dụng này sử dụng vị trí hiện tại của bạn không?</string>
+  
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string></string>
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string></string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string></string>
+  <key>NSCalendarsUsageDescription</key>
+  <string></string>
 	<key>NSCameraUsageDescription</key>
-	<string>Ứng dụng cần truy cập quyền Camera của bạn.</string>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Ứng dụng cần truy cập quyền Thư viện ảnh của bạn.</string>
+	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>This app needs microphone for video</string>
+	<string></string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Ứng dụng cần truy cập quyền Thư viện ảnh của bạn.</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>Bizland cần bạn cho phép truy cập lịch của bạn để chọn thời gian, bạn có cho phép ứng dụng truy cập lịch của bạn không?</string>
+	<string></string>
+
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>

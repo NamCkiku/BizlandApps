@@ -111,6 +111,7 @@
     <Compile Include="CustomRenderer\ShapeRenderer.cs" />
     <Compile Include="CustomRenderer\TransparentNavigationRenderer.cs" />
     <Compile Include="CustomRenderer\UntintedNavigationPageRenderer.cs" />
+    <Compile Include="DependencyService\AppVersionService.cs" />
     <Compile Include="DependencyService\AccountKitService.cs" />
     <Compile Include="DependencyService\BadgeService.cs" />
     <Compile Include="DependencyService\DisplayMessageService.cs" />
@@ -130,12 +131,14 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Providers\ToastNotifier.cs" />
     <Compile Include="Utils\BarButtonItemExtensions.cs" />
+    <BundleResource Include="en.lproj\InfoPlist.strings" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist">
       <SubType>Designer</SubType>
     </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\animation.json" />
+    <BundleResource Include="vi.lproj\InfoPlist.strings" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -297,6 +300,12 @@
     <BundleResource Include="Resources\ic_Search%402x.png" />
   </ItemGroup>
   <ItemGroup>
+    <ImageAsset Include="AppVersionService.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="AppVersionService.xcassets\LaunchImages.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Media.xcassets\AppIcons.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>

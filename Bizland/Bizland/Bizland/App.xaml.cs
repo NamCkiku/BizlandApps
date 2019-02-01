@@ -69,11 +69,6 @@ namespace Bizland
 
             InitializeComponent();
 
-
-            //if you want to require user consent, change this to true
-            //SetRequiresConsent(true);
-
-
             OneSignal.Current.StartInit(ServerConfig.OnesignalKey)
                 .Settings(new Dictionary<string, bool>() {
             { IOSSettings.kOSSettingsKeyAutoPrompt, false },
@@ -82,11 +77,6 @@ namespace Bizland
                .HandleNotificationReceived(HandleNotificationReceived)
                        .InFocusDisplaying(OSInFocusDisplayOption.Notification)
                      .EndInit();
-
-            OneSignal.Current.IdsAvailable((playerID, pushToken) =>
-            {
-                Debug.WriteLine("OneSignal.Current.IdsAvailable:D playerID: {0}, pushToken: {1}", playerID, pushToken);
-            });
 
             Plugin.Iconize.Iconize
                .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
