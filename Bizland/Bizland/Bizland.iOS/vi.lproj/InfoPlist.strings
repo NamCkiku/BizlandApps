@@ -1,0 +1,14 @@
+﻿
+
+"CFBundleDisplayName" = "Bizland";
+"CFBundleName" = "Bizland";
+
+"NSLocationAlwaysUsageDescription" = "Dịch vụ vị trí cho phép ứng dụng lấy được vị trí hiện tại của bạn.";
+"NSLocationWhenInUseUsageDescription" = "Dịch vụ vị trí cho phép ứng dụng lấy được vị trí hiện tại của bạn.";
+"NSLocationUsageDescription" = "Dịch vụ vị trí cho phép ứng dụng lấy được vị trí hiện tại của bạn.";
+"NSLocationAlwaysAndWhenInUseUsageDescription"="Ứng dụng này cần truy cập vị trí của bạn để có thể đề cử khóa phù hợp, bạn có cho phép ứng dụng sử dụng vị trí của bạn không?";
+"NSCalendarsUsageDescription"="Ứng dụng này cần bạn cho phép truy cập lịch của bạn để chọn thời gian, bạn có cho phép ứng dụng truy cập lịch của bạn không?";
+"NSCameraUsageDescription"="Ứng dụng cần truy cập quyền Camera của bạn.";
+"NSPhotoLibraryUsageDescription"="Ứng dụng cần truy cập quyền Thư viện ảnh của bạn.";
+"NSMicrophoneUsageDescription"="This app needs microphone for video";
+"NSPhotoLibraryAddUsageDescription"="Ứng dụng cần truy cập quyền Thư viện ảnh của bạn.";

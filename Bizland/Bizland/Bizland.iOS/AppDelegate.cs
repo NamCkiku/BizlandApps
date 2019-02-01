@@ -23,6 +23,7 @@ namespace Bizland.iOS
         static readonly BadgeService badgeService = new BadgeService();
         static readonly MediaService mediaService = new MediaService();
         static readonly PushLocalNotificationService pushLocalNotificationService = new PushLocalNotificationService();
+        static AppVersionService appVersionService = new AppVersionService();
 
 
         //
@@ -64,6 +65,7 @@ namespace Bizland.iOS
                 container.RegisterInstance<IBadge>(badgeService);
                 container.RegisterInstance<IMediaService>(mediaService);
                 container.RegisterInstance<IPushLocalNotification>(pushLocalNotificationService);
+                container.RegisterInstance<IAppVersionService>(appVersionService);
             }
         }
     }

@@ -1,5 +1,7 @@
 ﻿using Bizland.Core;
 using Bizland.iOS.DependencyService;
+using CRToast;
+using Foundation;
 using GlobalToast;
 using GlobalToast.Animation;
 using UIKit;
@@ -98,6 +100,61 @@ namespace Bizland.iOS.DependencyService
                      // Other properties removed for brevity
                  })
                  .Show();
+        }
+
+        public void ShowMessageSuccess(string message, double time)
+        {
+            // More configurations
+            Toast.MakeToast(message)
+                 .SetPosition(ToastPosition.Bottom) // Default is Bottom
+                 .SetDuration(time) // Default is Regular
+                 .SetShowShadow(false) // Default is true
+                 .SetAnimator(new ScaleAnimator()) // Default is FadeAnimator
+                 .SetBlockTouches(true) // Default is false. If false touches that occur on the toast will be sent down to parent view
+                 .SetAutoDismiss(true) // Default is true. If set to false Dismiss button will be shown
+                 .SetParentController(null)
+                 .SetAppearance(new ToastAppearance
+                 {
+                     Color = UIColor.Green,
+                     CornerRadius = 8,
+                     // Other properties removed for brevity
+                 }).SetLayout(new ToastLayout
+                 {
+                     PaddingLeading = 16,
+                     PaddingTrailing = 16,
+                     Spacing = 6,
+                     // Other properties removed for brevity
+                 })
+                 .Show();
+        }
+
+
+        public void ShowToast(string message, double time)
+        {
+            //BTProgressHUD.ShowToast(message, toastPosition: ProgressHUD.ToastPosition.Center, timeoutMs: time);
+            CRToastManager.ShowNotificationWithOptions(
+              Options(message, time),
+               () =>
+               {
+               }
+           );
+        }
+
+        NSDictionary Options(string message, double time)
+        {
+            var keys = new NSString[] {
+                Constants.kCRToastTextKey,
+                Constants.kCRToastTimeIntervalKey,
+            };
+
+            var objects = new NSObject[] {
+                (NSString) message,
+                NSNumber.FromDouble(time/1000),
+            };
+
+            var options = NSMutableDictionary.FromObjectsAndKeys(objects, keys);
+
+            return NSDictionary.FromDictionary(options);
         }
     }
 }

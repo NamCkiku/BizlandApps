@@ -20,17 +20,27 @@ namespace Bizland.Droid.DependencyService
     {
         public void ShowMessageError(string message, double time)
         {
-            throw new System.NotImplementedException();
+            AndroidHUD.AndHUD.Shared.ShowToast(Forms.Context, message, maskType: AndroidHUD.MaskType.None, timeout: TimeSpan.FromMilliseconds(time));
         }
 
         public void ShowMessageInfo(string message, double time)
         {
-            throw new System.NotImplementedException();
+            AndroidHUD.AndHUD.Shared.ShowToast(Forms.Context, message, maskType: AndroidHUD.MaskType.None, timeout: TimeSpan.FromMilliseconds(time));
         }
 
         public void ShowMessageWarning(string message, double time)
         {
-            throw new System.NotImplementedException();
+            AndroidHUD.AndHUD.Shared.ShowToast(Forms.Context, message, maskType: AndroidHUD.MaskType.None, timeout: TimeSpan.FromMilliseconds(time));
+        }
+
+        public void ShowMessageSuccess(string message, double time)
+        {
+            AndroidHUD.AndHUD.Shared.ShowToast(Forms.Context, message, maskType: AndroidHUD.MaskType.None, timeout: TimeSpan.FromMilliseconds(time));
+        }
+
+        public void ShowToast(string message, double time)
+        {
+            AndroidHUD.AndHUD.Shared.ShowToast(Forms.Context, message, maskType: AndroidHUD.MaskType.None, timeout: TimeSpan.FromMilliseconds(time));
         }
     }
 }

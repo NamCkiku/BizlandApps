@@ -23,6 +23,9 @@ namespace Bizland.Droid
         static readonly BadgeService badgeService = new BadgeService();
         static readonly MediaService mediaService = new MediaService();
         static readonly PushLocalNotificationService pushLocalNotificationService = new PushLocalNotificationService();
+        static AppVersionService appVersionService = new AppVersionService();
+
+
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -46,6 +49,7 @@ namespace Bizland.Droid
                 container.RegisterInstance<IBadge>(badgeService);
                 container.RegisterInstance<IMediaService>(mediaService);
                 container.RegisterInstance<IPushLocalNotification>(pushLocalNotificationService);
+                container.RegisterInstance<IAppVersionService>(appVersionService);
             }
         }
     }
