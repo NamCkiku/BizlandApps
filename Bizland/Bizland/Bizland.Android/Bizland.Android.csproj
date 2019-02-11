@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acitivity\SplashScreenActivity.cs" />
+    <Compile Include="CustomRenderer\CustomSliderRenderer.cs" />
     <Compile Include="CustomRenderer\ExtendedViewCellRenderer.cs" />
     <Compile Include="CustomRenderer\FloatingActionButtonRenderer.cs" />
     <Compile Include="CustomRenderer\HorizontalScrollViewRenderer.cs" />

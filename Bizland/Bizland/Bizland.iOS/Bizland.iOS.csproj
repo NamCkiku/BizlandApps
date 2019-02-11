@@ -93,6 +93,7 @@
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CustomRenderer\CustomSliderRenderer.cs" />
     <Compile Include="CustomRenderer\ContentPageRenderer.cs" />
     <Compile Include="CustomRenderer\CustomSearchBarRenderer.cs" />
     <Compile Include="CustomRenderer\ExtendedViewCellRenderer.cs" />
