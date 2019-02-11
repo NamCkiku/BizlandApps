@@ -38,6 +38,12 @@
             <tabView:SfTabItem Title="Google" TitleFontAttributes="None" TitleFontColor="White" SelectionColor="{StaticResource Color_Navigation}">
                 <tabView:SfTabItem.Content>
                     <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <controls:RatingSlider x:Name="positionSlider"
+                              HorizontalOptions="FillAndExpand"
+                              ItemSpacing="5"
+                              SelectedPosition="0"
+                              NumberOfItems="5" />
+                        
                         <iconize:IconImage
                             HeightRequest="20"
                             Icon="fas-address-book"
