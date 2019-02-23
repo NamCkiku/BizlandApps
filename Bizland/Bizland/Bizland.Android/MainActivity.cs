@@ -24,6 +24,7 @@ namespace Bizland.Droid
         static readonly MediaService mediaService = new MediaService();
         static readonly PushLocalNotificationService pushLocalNotificationService = new PushLocalNotificationService();
         static AppVersionService appVersionService = new AppVersionService();
+        static AccountKitService accountKitService = new AccountKitService();
 
 
         protected override void OnCreate(Bundle bundle)
@@ -50,6 +51,7 @@ namespace Bizland.Droid
                 container.RegisterInstance<IMediaService>(mediaService);
                 container.RegisterInstance<IPushLocalNotification>(pushLocalNotificationService);
                 container.RegisterInstance<IAppVersionService>(appVersionService);
+                container.RegisterInstance<IAccountKitService>(accountKitService);
             }
         }
     }
