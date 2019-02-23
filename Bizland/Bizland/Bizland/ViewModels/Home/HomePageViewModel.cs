@@ -23,10 +23,11 @@ namespace Bizland.ViewModels
         private readonly IPlacesGeocode _placesGeocode;
         private readonly IEventAggregator _eventAggregator;
         private readonly ITooltipService _tooltipService;
+        private readonly IAccountKitService _accountKitService;
         public HomePageViewModel(INavigationService navigationService,
             IPageDialogService dialogService,
             IPlacesGeocode placesGeocode,
-            IEventAggregator eventAggregator, ITooltipService tooltipService)
+            IEventAggregator eventAggregator, ITooltipService tooltipService, IAccountKitService accountKitService)
             : base(navigationService)
         {
             Title = "Trang chủ";
@@ -166,7 +167,12 @@ namespace Bizland.ViewModels
                     try
                     {
                         //await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage?createTab=GoogleAutocomplete&createTab=SelectAddressMapPage", useModalNavigation: true);
-                        await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage", useModalNavigation: true);
+                        //await NavigationService.NavigateAsync("MasterDetailNavigationPage/SelectAddressPage", useModalNavigation: true);
+                        var result = await _accountKitService.LoginWithAccountKit(LoginType.Phone, ResponseType.AuthorizationCode);
+                        if (result.IsSuccessful)
+                        {
+                            await _dialogService.DisplayAlertAsync("adasdasdasda", "đâsdasdasdasd", "Oke");
+                        };
                     }
                     catch (Exception ex)
                     {

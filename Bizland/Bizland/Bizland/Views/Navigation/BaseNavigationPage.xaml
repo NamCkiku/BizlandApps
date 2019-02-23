@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<NavigationPage xmlns="http://xamarin.com/schemas/2014/forms"
-                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-                prism:ViewModelLocator.AutowireViewModel="True"
-                BarTextColor="White"
-                x:Class="Bizland.Views.BaseNavigationPage">
+<NavigationPage
+    x:Class="Bizland.Views.BaseNavigationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    BarTextColor="White">
     <NavigationPage.ToolbarItems>
-        <ToolbarItem Text="Đóng" x:Name="btnClose"  Command="{Binding ClosePageCommand}" Order="Primary" Priority="0" />
+        <ToolbarItem
+            x:Name="btnClose"
+            Command="{Binding ClosePageCommand}"
+            Order="Primary"
+            Priority="0"
+            Text="Đóng" />
     </NavigationPage.ToolbarItems>
 </NavigationPage>
